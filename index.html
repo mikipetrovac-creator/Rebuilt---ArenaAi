@@ -106,6 +106,14 @@ section{padding:80px 40px}
 .transparency-text{font-size:13px;opacity:.9;margin-top:3px}
 
 /* ================================
+   TOUR SCHEDULE NOTICE
+================================ */
+.schedule-notice{background:#fff8f0;border:1.5px solid rgba(196,98,45,.25);border-radius:10px;padding:12px 18px;margin:24px 0;display:flex;gap:10px;align-items:center;font-size:14px;color:var(--terra-dark);font-weight:600;line-height:1.5}
+.schedule-notice-icon{font-size:18px;flex-shrink:0}
+.schedule-notice-price-card{background:#fff8f0;border-top:1.5px solid rgba(196,98,45,.2);margin:14px -10px 16px -10px;padding:12px 14px;font-size:12px;color:var(--terra-dark);font-weight:600;text-align:center;line-height:1.5;display:flex;gap:8px;align-items:center;justify-content:center;border-radius:8px}
+.schedule-notice-book{background:rgba(255,255,255,.15);border:1px solid rgba(255,255,255,.3);border-radius:8px;padding:10px 16px;margin:14px 0 0 0;font-size:13px;color:#fff;font-weight:600;text-align:center;line-height:1.5;display:flex;gap:8px;align-items:center;justify-content:center}
+
+/* ================================
    TOUR DETAILS
 ================================ */
 #tour-details{background:#fff}
@@ -562,9 +570,14 @@ footer{background:var(--dark);color:rgba(255,255,255,.7);padding:60px 40px 30px}
     </div>
 
     <div class="pkg-tabs reveal">
-      <button class="pkg-tab active-premium" onclick="switchPkg('premium')" id="tab-premium">⭐ <span data-i18n="tourDetails.premiumTab">Premium</span> – €100</button>
-      <button class="pkg-tab" onclick="switchPkg('basic')" id="tab-basic">🎒 <span data-i18n="tourDetails.budgetTab">Budget</span> – €50</button>
-    </div>
+  <button class="pkg-tab active-premium" onclick="switchPkg('premium')" id="tab-premium">⭐ <span data-i18n="tourDetails.premiumTab">Premium</span> – €100</button>
+  <button class="pkg-tab" onclick="switchPkg('basic')" id="tab-basic">🎒 <span data-i18n="tourDetails.budgetTab">Budget</span> – €50</button>
+</div>
+
+<div class="schedule-notice reveal">
+  <span class="schedule-notice-icon">📅</span>
+  <span data-i18n="schedule.notice">Tours to Cappadocia are organized on Mondays, Thursdays, and Saturdays.</span>
+</div>
 
     <!-- PREMIUM PACKAGE -->
     <div id="pkg-premium" class="pkg-content">
@@ -627,8 +640,12 @@ footer{background:var(--dark);color:rgba(255,255,255,.7);padding:60px 40px 30px}
             <li><span class="feat-icon">🏨</span> <span data-i18n="tourDetails.feat4">Hotel Accommodation</span></li>
             <li><span class="feat-icon">🍽</span> <span data-i18n="tourDetails.feat5">All Meals Included</span></li>
             <li><span class="feat-icon">🎫</span> <span data-i18n="tourDetails.feat6">All Entrance Fees</span></li>
-            <li><span class="feat-icon">🛡</span> <span data-i18n="tourDetails.feat7">Travel Insurance</span></li>
+          <li><span class="feat-icon">🛡</span> <span data-i18n="tourDetails.feat7">Travel Insurance</span></li>
           </ul>
+          <div class="schedule-notice-price-card">
+            <span>📅</span>
+            <span data-i18n="schedule.notice">Tours to Cappadocia are organized on Mondays, Thursdays, and Saturdays.</span>
+          </div>
           <div class="price-breakdown">
             👶 <strong data-i18n="tourDetails.infant">Infants 0–3:</strong> <span data-i18n="tourDetails.infantPrice">Free, no separate seat.</span><br>
             🧒 <strong data-i18n="tourDetails.child">Children 4–10:</strong> €50<br>
@@ -701,8 +718,12 @@ footer{background:var(--dark);color:rgba(255,255,255,.7);padding:60px 40px 30px}
             <li><span class="feat-icon">🏨</span> <span data-i18n="tourDetails.feat4">Hotel Accommodation</span></li>
             <li><span class="feat-icon">🍽</span> <span data-i18n="tourDetails.budgetFeat5">Dinner + Breakfast at hotel</span></li>
             <li><span class="feat-icon">🏛</span> <span data-i18n="tourDetails.budgetFeat6">Underground City Entrance</span></li>
-            <li><span class="feat-icon">🛡</span> <span data-i18n="tourDetails.feat7">Travel Insurance</span></li>
+           <li><span class="feat-icon">🛡</span> <span data-i18n="tourDetails.feat7">Travel Insurance</span></li>
           </ul>
+          <div class="schedule-notice-price-card">
+            <span>📅</span>
+            <span data-i18n="schedule.notice">Tours to Cappadocia are organized on Mondays, Thursdays, and Saturdays.</span>
+          </div>
           <div class="price-breakdown">
             👶 <strong data-i18n="tourDetails.infant">Infants 0–3:</strong> <span data-i18n="tourDetails.infantPrice">Free, no separate seat.</span><br>
             🧒 <strong data-i18n="tourDetails.child">Children 4–10:</strong> €25<br>
@@ -927,10 +948,15 @@ footer{background:var(--dark);color:rgba(255,255,255,.7);padding:60px 40px 30px}
       <a href="#reviews" class="btn-outline" style="display:inline-block;margin-top:20px;" data-i18n="booking.btnReviews">Read our reviews →</a>
     </div>
     <div class="book-form">
-      <h3 class="book-form-title" data-i18n="booking.formTitle">Book Your Cappadocia Tour</h3>
-      <p class="book-form-subtitle" data-i18n="booking.formSubtitle">Fill in the details below and we'll handle the rest.</p>
+    <h3 class="book-form-title" data-i18n="booking.formTitle">Book Your Cappadocia Tour</h3>
+<p class="book-form-subtitle" data-i18n="booking.formSubtitle">Fill in the details below and we'll handle the rest.</p>
 
-      <div class="form-section-label" data-i18n="booking.selectPackage">SELECT PACKAGE</div>
+<div class="schedule-notice" style="margin:16px 0 20px 0;">
+  <span class="schedule-notice-icon">📅</span>
+  <span data-i18n="schedule.notice">Tours to Cappadocia are organized on Mondays, Thursdays, and Saturdays.</span>
+</div>
+
+<div class="form-section-label" data-i18n="booking.selectPackage">SELECT PACKAGE</div>
       <div class="book-pkg-selector">
         <div class="book-pkg-btn active-premium" id="book-pkg-premium" onclick="switchBookingPkg('premium')">⭐ <span data-i18n="tourDetails.premiumTab">Premium</span> – €100</div>
         <div class="book-pkg-btn" id="book-pkg-budget" onclick="switchBookingPkg('budget')">🎒 <span data-i18n="tourDetails.budgetTab">Budget</span> – €50</div>
@@ -1406,6 +1432,7 @@ const translations = {
     "tourDetails.tag": "TOUR PACKAGES",
     "tourDetails.title": "Choose Your Cappadocia Experience",
     "tourDetails.subtitle": "Two options to fit your budget — both include the same breathtaking destinations and professional guiding. Pick what suits you best.",
+    "schedule.notice": "Tours to Cappadocia are organized on Mondays, Thursdays, and Saturdays.",
     "tourDetails.infantTitle": "Important note about infants (0–3 years):",
     "tourDetails.infantText": "Children aged 0–3 travel free of charge in both packages. However, free places do not include a separate seat on the bus — the child must be held on a parent's or guardian's lap throughout the journey.",
     "tourDetails.premiumTab": "Premium",
@@ -1754,6 +1781,7 @@ const translations = {
     "tourDetails.tag": "ПАКЕТЫ ТУРОВ",
     "tourDetails.title": "Выберите свой тур в Каппадокию",
     "tourDetails.subtitle": "Два варианта на любой бюджет — оба включают одни и те же захватывающие места и профессионального гида. Выберите то, что подходит вам.",
+    "schedule.notice": "Туры в Каппадокию организуются по понедельникам, четвергам и субботам.",
     "tourDetails.infantTitle": "Важная информация о младенцах (0–3 года):",
     "tourDetails.infantText": "Дети в возрасте 0–3 лет путешествуют бесплатно в обоих пакетах. Однако бесплатные места не включают отдельное сиденье в автобусе — ребёнок должен сидеть на коленях родителя или опекуна.",
     "tourDetails.premiumTab": "Премиум",
@@ -2058,6 +2086,7 @@ const translations = {
     "tourDetails.tag": "TUR PAKETLERİ",
     "tourDetails.title": "Kapadokya Deneyiminizi Seçin",
     "tourDetails.subtitle": "Bütçenize uygun iki seçenek — her ikisi de aynı nefes kesici destinasyonları ve profesyonel rehberliği içerir. Size en uygun olanı seçin.",
+    "schedule.notice": "Kapadokya turları Pazartesi, Perşembe ve Cumartesi günleri düzenlenmektedir.",
     "tourDetails.infantTitle": "Bebekler hakkında önemli not (0–3 yaş):",
     "tourDetails.infantText": "0–3 yaş arası çocuklar her iki pakette de ücretsiz seyahat eder. Ancak ücretsiz yerler otobüste ayrı bir koltuk içermez — çocuk yolculuk boyunca ebeveynin veya vasinin kucağında oturmalıdır.",
     "tourDetails.premiumTab": "Premium",
@@ -2362,6 +2391,7 @@ const translations = {
     "tourDetails.tag": "ПАКЕТИ ТУРІВ",
     "tourDetails.title": "Оберіть свій тур до Каппадокії",
     "tourDetails.subtitle": "Два варіанти на будь-який бюджет — обидва включають однакові захоплюючі місця та професійного гіда. Оберіть те, що підходить вам.",
+    "schedule.notice": "Тури до Каппадокії організовуються в понеділок, четвер і суботу.",
     "tourDetails.infantTitle": "Важлива інформація про немовлят (0–3 роки):",
     "tourDetails.infantText": "Діти віком 0–3 роки подорожують безкоштовно в обох пакетах. Однак безкоштовні місця не включають окреме сидіння в автобусі — дитина повинна сидіти на колінах батька або опікуна.",
     "tourDetails.premiumTab": "Преміум",
@@ -2666,6 +2696,7 @@ const translations = {
     "tourDetails.tag": "TOURPAKETE",
     "tourDetails.title": "Wählen Sie Ihr Kappadokien-Erlebnis",
     "tourDetails.subtitle": "Zwei Optionen für jedes Budget — beide beinhalten die gleichen atemberaubenden Ziele und professionelle Führung. Wählen Sie, was am besten zu Ihnen passt.",
+    "schedule.notice": "Touren nach Kappadokien werden montags, donnerstags und samstags organisiert.",
     "tourDetails.infantTitle": "Wichtiger Hinweis zu Kleinkindern (0–3 Jahre):",
     "tourDetails.infantText": "Kinder im Alter von 0–3 Jahren reisen in beiden Paketen kostenlos. Allerdings beinhalten kostenlose Plätze keinen separaten Sitzplatz im Bus — das Kind muss während der gesamten Fahrt auf dem Schoß eines Elternteils oder Erziehungsberechtigten sitzen.",
     "tourDetails.premiumTab": "Premium",
@@ -2970,6 +3001,7 @@ const translations = {
     "tourDetails.tag": "PAKETI TURA",
     "tourDetails.title": "Izaberite svoje Kapadokija iskustvo",
     "tourDetails.subtitle": "Dve opcije za svaki budžet — obe uključuju iste prelepe destinacije i profesionalno vođenje. Izaberite ono što vam najviše odgovara.",
+    "schedule.notice": "Ture za Kapadokiju se organizuju ponedeljkom, četvrtkom i subotom.",
     "tourDetails.infantTitle": "Važna napomena o bebama (0–3 godine):",
     "tourDetails.infantText": "Deca uzrasta 0–3 godine putuju besplatno u oba paketa. Međutim, besplatna mesta ne uključuju posebno sedište u autobusu — dete mora da sedi u krilu roditelja ili staratelja tokom celog putovanja.",
     "tourDetails.premiumTab": "Premium",
