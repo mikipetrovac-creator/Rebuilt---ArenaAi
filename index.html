@@ -91,6 +91,15 @@ section{padding:80px 40px}
 ================================ */
 #about-cap{background:var(--cream)}
 .about-cap-text p{font-size:15px;color:var(--muted);line-height:1.8;margin-bottom:16px}
+.about-cap-fullwidth{margin-top:40px;padding-top:40px;border-top:1px solid rgba(196,98,45,.15)}
+.about-cap-fullwidth p{font-size:15px;color:var(--muted);line-height:1.8;margin-bottom:18px;max-width:900px;margin-left:auto;margin-right:auto;text-align:left}
+.about-cap-fullwidth .about-btns{margin-top:32px;justify-content:center;display:flex}
+@media(max-width:900px){
+  .about-cap-fullwidth{margin-top:30px;padding-top:30px}
+  .about-cap-fullwidth p{font-size:14px}
+  .about-cap-fullwidth .about-btns{flex-direction:column;align-items:center;gap:10px}
+  .about-cap-fullwidth .about-btns a{width:100%;max-width:280px;text-align:center}
+}
 .about-btns{display:flex;gap:12px;margin-top:28px;flex-wrap:wrap}
 .btn-terra{background:var(--terra);color:#fff;border:none;padding:12px 24px;border-radius:8px;font-size:14px;font-weight:600;cursor:pointer;text-decoration:none;transition:all .2s;display:inline-block}
 .btn-terra:hover{background:var(--terra-dark);transform:translateY(-1px)}
@@ -528,13 +537,17 @@ footer{background:var(--dark);color:rgba(255,255,255,.7);padding:60px 40px 30px}
       <h2 class="section-title" data-i18n="aboutCap.title">Discover the Wonders, History, and Legends of Magical Cappadocia</h2>
     </div>
     <div class="about-cap-text reveal">
-      <p data-i18n="aboutCap.p1">Cappadocia is not just a standard holiday destination – it is a timeless fairy tale carved in stone.</p>
-      <p data-i18n="aboutCap.p2">The result is the iconic 'Fairy Chimneys' (peribacaları), unique rock formations that captivate travelers from all over the world.</p>
-      <p data-i18n="aboutCap.p3">Today, Cappadocia is globally recognized for its unforgettable, magical hot air balloon flights.</p>
-      <div class="about-btns">
-        <a href="#tour-details" class="btn-ghost" data-i18n="aboutCap.btnDetails">View Tour Details</a>
-        <a href="#book-now" class="btn-terra" data-i18n="aboutCap.btnReserve">Reserve Your Spot</a>
-      </div>
+      <p data-i18n="aboutCap.p1">Few places on Earth feel as magical as Cappadocia. With its surreal landscapes, ancient cave dwellings, and world-famous hot air balloons floating above the valleys at sunrise, this extraordinary region offers an experience unlike anywhere else in the world.</p>
+      <p data-i18n="aboutCap.p2">Millions of years ago, volcanic eruptions from Mount Erciyes and Mount Hasan covered the area with layers of volcanic rock. Over time, wind, rain, and natural erosion sculpted the landscape into the spectacular Fairy Chimneys (Peribacaları) that have become the symbol of Cappadocia.</p>
+    </div>
+  </div>
+
+  <div class="container about-cap-fullwidth reveal">
+    <p data-i18n="aboutCap.p3">Beyond its breathtaking scenery lies a rich history spanning thousands of years. The region has been home to numerous civilizations, including the Hittites, Persians, Romans, and early Christians, who created underground cities, rock-carved churches, and hidden settlements that can still be explored today.</p>
+    <p data-i18n="aboutCap.p4">Today, Cappadocia is one of Türkiye's most visited destinations and a bucket-list location for travelers from around the globe. Whether you are fascinated by history, captivated by nature, or dreaming of an unforgettable balloon flight, Cappadocia offers memories that last a lifetime. Our carefully crafted 2-Day Cappadocia Tour takes you through the region's most iconic landmarks, breathtaking viewpoints, and historical treasures, offering an unforgettable journey through one of Türkiye's most extraordinary destinations.</p>
+    <div class="about-btns">
+      <a href="#tour-details" class="btn-ghost" data-i18n="aboutCap.btnDetails">View Tour Details</a>
+      <a href="#book-now" class="btn-terra" data-i18n="aboutCap.btnReserve">Reserve Your Spot</a>
     </div>
   </div>
 </section>
@@ -1418,9 +1431,10 @@ const translations = {
     // About Cappadocia
     "aboutCap.tag": "ABOUT THE DESTINATION",
     "aboutCap.title": "Discover the Wonders, History, and Legends of Magical Cappadocia",
-    "aboutCap.p1": "Cappadocia is not just a standard holiday destination – it is a timeless fairy tale carved in stone. Formed millions of years ago by tectonic activity and powerful volcanic eruptions of Mount Erciyes and Mount Hasan, this unique landscape was sculpted over millennia by relentless winds, rain, and natural erosion.",
-    "aboutCap.p2": "The result is the iconic 'Fairy Chimneys' (peribacaları), unique rock formations that captivate travelers from all over the world. Beyond its visual wonders, Cappadocia preserves an incredibly rich cultural and historical heritage — from the Hittites and Persians to the Romans and early Christians.",
-    "aboutCap.p3": "Today, Cappadocia is globally recognized for its unforgettable, magical hot air balloon flights. Our carefully structured 2-day tour is designed to immerse you into the very heart of this historical region.",
+    "aboutCap.p1": "Few places on Earth feel as magical as Cappadocia. With its surreal landscapes, ancient cave dwellings, and world-famous hot air balloons floating above the valleys at sunrise, this extraordinary region offers an experience unlike anywhere else in the world.",
+    "aboutCap.p2": "Millions of years ago, volcanic eruptions from Mount Erciyes and Mount Hasan covered the area with layers of volcanic rock. Over time, wind, rain, and natural erosion sculpted the landscape into the spectacular Fairy Chimneys (Peribacaları) that have become the symbol of Cappadocia.",
+    "aboutCap.p3": "Beyond its breathtaking scenery lies a rich history spanning thousands of years. The region has been home to numerous civilizations, including the Hittites, Persians, Romans, and early Christians, who created underground cities, rock-carved churches, and hidden settlements that can still be explored today.",
+    "aboutCap.p4": "Today, Cappadocia is one of Türkiye's most visited destinations and a bucket-list location for travelers from around the globe. Whether you are fascinated by history, captivated by nature, or dreaming of an unforgettable balloon flight, Cappadocia offers memories that last a lifetime. Our carefully crafted 2-Day Cappadocia Tour takes you through the region's most iconic landmarks, breathtaking viewpoints, and historical treasures, offering an unforgettable journey through one of Türkiye's most extraordinary destinations.",
     "aboutCap.btnDetails": "View Tour Details",
     "aboutCap.btnReserve": "Reserve Your Spot",
     
@@ -1771,9 +1785,10 @@ const translations = {
     "video.subtitle": "Посмотрите, как воздушные шары парят над скалами на рассвете — предвкушение того, что вас ждёт.",
     "aboutCap.tag": "О НАПРАВЛЕНИИ",
     "aboutCap.title": "Откройте чудеса, историю и легенды волшебной Каппадокии",
-    "aboutCap.p1": "Каппадокия — это не просто туристическое направление, это вечная сказка, высеченная в камне. Сформированный миллионы лет назад вулканической активностью и мощными извержениями гор Эрджиес и Хасан, этот уникальный ландшафт был создан ветрами, дождями и естественной эрозией.",
-    "aboutCap.p2": "Результатом стали знаменитые «Волшебные дымоходы» (перибаджалары) — уникальные скальные образования, которые восхищают путешественников со всего мира. Помимо визуальных чудес, Каппадокия хранит невероятно богатое культурное и историческое наследие — от хеттов и персов до римлян и ранних христиан.",
-    "aboutCap.p3": "Сегодня Каппадокия всемирно известна своими незабываемыми полётами на воздушных шарах. Наш тщательно спланированный 2-дневный тур погрузит вас в самое сердце этого исторического региона.",
+    "aboutCap.p1": "Мало мест на Земле кажутся такими волшебными, как Каппадокия. Со своими сюрреалистическими пейзажами, древними пещерными жилищами и всемирно известными воздушными шарами, парящими над долинами на рассвете, этот удивительный регион предлагает опыт, не похожий ни на что другое в мире.",
+    "aboutCap.p2": "Миллионы лет назад вулканические извержения гор Эрджиес и Хасан покрыли территорию слоями вулканических пород. Со временем ветер, дождь и естественная эрозия высекли в ландшафте впечатляющие Волшебные дымоходы (Peribacaları), которые стали символом Каппадокии.",
+    "aboutCap.p3": "За захватывающими дух пейзажами скрывается богатая история, охватывающая тысячелетия. В регионе жили многочисленные цивилизации, включая хеттов, персов, римлян и ранних христиан, которые создали подземные города, высеченные в скалах церкви и скрытые поселения, которые можно исследовать и сегодня.",
+    "aboutCap.p4": "Сегодня Каппадокия — одно из самых посещаемых направлений Турции и место из списка желаний путешественников со всего мира. Очарованы ли вы историей, покорены природой или мечтаете о незабываемом полёте на воздушном шаре — Каппадокия дарит воспоминания на всю жизнь. Наш тщательно разработанный 2-дневный тур по Каппадокии проведёт вас через самые знаковые достопримечательности региона, захватывающие смотровые площадки и исторические сокровища, предлагая незабываемое путешествие по одному из самых необычных мест Турции.",    
     "aboutCap.btnDetails": "Подробнее о туре",
     "aboutCap.btnReserve": "Забронировать место",
     "transparency.title": "100% прозрачные цены — без скрытых расходов",
@@ -2076,9 +2091,10 @@ const translations = {
     "video.subtitle": "Gün doğumunda peri bacaları üzerinde süzülen sıcak hava balonlarının büyüsünü izleyin — sizi bekleyenlerin bir önizlemesi.",
     "aboutCap.tag": "HEDEF HAKKINDA",
     "aboutCap.title": "Büyülü Kapadokya'nın Harikalarını, Tarihini ve Efsanelerini Keşfedin",
-    "aboutCap.p1": "Kapadokya sadece standart bir tatil destinasyonu değil — taşa oyulmuş zamansız bir peri masalıdır. Milyonlarca yıl önce tektonik aktivite ve Erciyes ile Hasan Dağı'nın güçlü volkanik patlamalarıyla oluşan bu eşsiz peyzaj, binlerce yıl boyunca amansız rüzgarlar, yağmur ve doğal erozyonla şekillendirilmiştir.",
-    "aboutCap.p2": "Sonuç, dünyanın dört bir yanından gezginleri büyüleyen eşsiz kaya oluşumları olan ikonik 'Peri Bacaları'dır (peribacaları). Görsel harikalarının ötesinde, Kapadokya Hititlerden ve Perslerden Romalılara ve erken Hristiyanlara kadar inanılmaz zengin bir kültürel ve tarihi mirası korumaktadır.",
-    "aboutCap.p3": "Bugün Kapadokya, unutulmaz, büyülü sıcak hava balonu uçuşlarıyla dünya çapında tanınmaktadır. Özenle yapılandırılmış 2 günlük turumuz sizi bu tarihi bölgenin kalbine daldırmak için tasarlanmıştır.",
+    "aboutCap.p1": "Dünyada Kapadokya kadar büyülü hissettiren çok az yer vardır. Gerçeküstü manzaraları, antik mağara yerleşimleri ve gün doğumunda vadilerin üzerinde süzülen dünyaca ünlü sıcak hava balonlarıyla bu olağanüstü bölge, dünyanın hiçbir yerinde olmayan bir deneyim sunar.",
+    "aboutCap.p2": "Milyonlarca yıl önce Erciyes ve Hasan Dağı'ndan püsküren volkanik patlamalar bölgeyi volkanik kaya katmanlarıyla kapladı. Zaman içinde rüzgar, yağmur ve doğal erozyon, peyzajı Kapadokya'nın sembolü haline gelen muhteşem Peri Bacaları (Peribacaları) şeklinde yontmuştur.",
+    "aboutCap.p3": "Nefes kesen manzarasının ötesinde, binlerce yıla uzanan zengin bir tarih yatar. Bölge, yeraltı şehirleri, kayaya oyulmuş kiliseler ve bugün hala keşfedilebilen gizli yerleşimler yaratan Hititler, Persler, Romalılar ve erken Hristiyanlar dahil olmak üzere çok sayıda medeniyete ev sahipliği yapmıştır.",
+    "aboutCap.p4": "Bugün Kapadokya, Türkiye'nin en çok ziyaret edilen destinasyonlarından biri ve dünyanın dört bir yanından gezginler için bir hayal listesi konumudur. Tarihten etkilenseniz, doğaya hayran kalsanız veya unutulmaz bir balon uçuşunu hayal etseniz de Kapadokya, ömür boyu sürecek anılar sunar. Özenle hazırlanmış 2 Günlük Kapadokya Turumuz, sizi bölgenin en ikonik simge yapıları, nefes kesen seyir noktaları ve tarihi hazinelerinden geçirerek Türkiye'nin en olağanüstü destinasyonlarından birinde unutulmaz bir yolculuk sunar.",
     "aboutCap.btnDetails": "Tur Detaylarını Görün",
     "aboutCap.btnReserve": "Yerinizi Ayırın",
     "transparency.title": "100% Şeffaf Fiyatlandırma — Gizli Maliyet Yok",
@@ -2381,9 +2397,10 @@ const translations = {
     "video.subtitle": "Подивіться, як повітряні кулі ширяють над скелями на світанку — передчуття того, що вас чекає.",
     "aboutCap.tag": "ПРО НАПРЯМОК",
     "aboutCap.title": "Відкрийте дива, історію та легенди чарівної Каппадокії",
-    "aboutCap.p1": "Каппадокія — це не просто туристичний напрямок, це вічна казка, висічена в камені. Сформований мільйони років тому вулканічною активністю та потужними виверженнями гір Ерджієс і Хасан, цей унікальний ландшафт був створений вітрами, дощами та природною ерозією.",
-    "aboutCap.p2": "Результатом стали знамениті «Чарівні димоходи» (перібаджалари) — унікальні скельні утворення, які захоплюють мандрівників з усього світу. Окрім візуальних див, Каппадокія зберігає неймовірно багату культурну та історичну спадщину — від хетів і персів до римлян і ранніх християн.",
-    "aboutCap.p3": "Сьогодні Каппадокія всесвітньо відома своїми незабутніми польотами на повітряних кулях. Наш ретельно спланований 2-денний тур занурить вас у саме серце цього історичного регіону.",
+    "aboutCap.p1": "Мало місць на Землі здаються такими чарівними, як Каппадокія. Зі своїми сюрреалістичними пейзажами, стародавніми печерними житлами та всесвітньо відомими повітряними кулями, що ширяють над долинами на світанку, цей надзвичайний регіон пропонує досвід, не схожий ні на що інше у світі.",
+    "aboutCap.p2": "Мільйони років тому вулканічні виверження гір Ерджієс і Хасан вкрили територію шарами вулканічних порід. З часом вітер, дощ і природна ерозія висікли в ландшафті вражаючі Чарівні димоходи (Peribacaları), які стали символом Каппадокії.",
+    "aboutCap.p3": "За захоплюючими дух пейзажами ховається багата історія, що охоплює тисячоліття. У регіоні жили численні цивілізації, включаючи хетів, персів, римлян і ранніх християн, які створили підземні міста, висічені в скелях церкви та приховані поселення, які можна досліджувати і сьогодні.",
+    "aboutCap.p4": "Сьогодні Каппадокія — один із найвідвідуваніших напрямків Туреччини та місце зі списку бажань мандрівників з усього світу. Чи зачаровані ви історією, скорені природою, чи мрієте про незабутній політ на повітряній кулі — Каппадокія дарує спогади на все життя. Наш ретельно розроблений 2-денний тур Каппадокією проведе вас через найзнаковіші пам'ятки регіону, захоплюючі оглядові майданчики та історичні скарби, пропонуючи незабутню подорож одним із найнезвичайніших місць Туреччини.",
     "aboutCap.btnDetails": "Детальніше про тур",
     "aboutCap.btnReserve": "Забронювати місце",
     "transparency.title": "100% прозорі ціни — без прихованих витрат",
@@ -2686,9 +2703,10 @@ const translations = {
     "video.subtitle": "Erleben Sie die Magie der Heißluftballons, die bei Sonnenaufgang über die Feenkamine gleiten — ein Vorgeschmack auf das, was Sie erwartet.",
     "aboutCap.tag": "ÜBER DAS REISEZIEL",
     "aboutCap.title": "Entdecken Sie die Wunder, Geschichte und Legenden des magischen Kappadokiens",
-    "aboutCap.p1": "Kappadokien ist nicht nur ein gewöhnliches Urlaubsziel — es ist ein zeitloses Märchen, in Stein gemeißelt. Vor Millionen von Jahren durch tektonische Aktivität und mächtige Vulkanausbrüche des Berges Erciyes und des Berges Hasan entstanden, wurde diese einzigartige Landschaft über Jahrtausende durch unerbittliche Winde, Regen und natürliche Erosion geformt.",
-    "aboutCap.p2": "Das Ergebnis sind die ikonischen 'Feenkamine' (Peribacaları), einzigartige Felsformationen, die Reisende aus aller Welt faszinieren. Neben seinen visuellen Wundern bewahrt Kappadokien ein unglaublich reiches kulturelles und historisches Erbe — von den Hethitern und Persern bis zu den Römern und frühen Christen.",
-    "aboutCap.p3": "Heute ist Kappadokien weltweit bekannt für seine unvergesslichen, magischen Heißluftballonfahrten. Unsere sorgfältig strukturierte 2-tägige Tour ist darauf ausgelegt, Sie in das Herz dieser historischen Region eintauchen zu lassen.",
+    "aboutCap.p1": "Wenige Orte auf der Erde fühlen sich so magisch an wie Kappadokien. Mit seinen surrealen Landschaften, antiken Höhlenwohnungen und weltberühmten Heißluftballons, die bei Sonnenaufgang über die Täler schweben, bietet diese außergewöhnliche Region ein Erlebnis, das es nirgendwo sonst auf der Welt gibt.",
+    "aboutCap.p2": "Vor Millionen von Jahren bedeckten Vulkanausbrüche der Berge Erciyes und Hasan das Gebiet mit Schichten aus Vulkangestein. Im Laufe der Zeit formten Wind, Regen und natürliche Erosion die Landschaft zu den spektakulären Feenkaminen (Peribacaları), die zum Symbol Kappadokiens geworden sind.",
+    "aboutCap.p3": "Hinter der atemberaubenden Landschaft verbirgt sich eine reiche Geschichte, die Tausende von Jahren umspannt. Die Region war Heimat zahlreicher Zivilisationen, darunter die Hethiter, Perser, Römer und frühen Christen, die unterirdische Städte, in Felsen gehauene Kirchen und versteckte Siedlungen schufen, die noch heute erkundet werden können.",
+    "aboutCap.p4": "Heute ist Kappadokien eines der meistbesuchten Reiseziele der Türkei und ein Bucket-List-Ort für Reisende aus aller Welt. Ob Sie von Geschichte fasziniert sind, von der Natur begeistert sind oder von einer unvergesslichen Ballonfahrt träumen — Kappadokien bietet Erinnerungen, die ein Leben lang halten. Unsere sorgfältig gestaltete 2-Tages-Tour durch Kappadokien führt Sie durch die ikonischsten Wahrzeichen, atemberaubenden Aussichtspunkte und historischen Schätze der Region und bietet eine unvergessliche Reise durch eines der außergewöhnlichsten Reiseziele der Türkei.",
     "aboutCap.btnDetails": "Tourdetails ansehen",
     "aboutCap.btnReserve": "Platz reservieren",
     "transparency.title": "100% Transparente Preise — Keine versteckten Kosten",
@@ -2991,9 +3009,10 @@ const translations = {
     "video.subtitle": "Gledajte magiju balona na vreli vazduh kako lebde iznad vilinskih dimnjaka na izlasku sunca — pregled onoga što vas čeka.",
     "aboutCap.tag": "O DESTINACIJI",
     "aboutCap.title": "Otkrijte čuda, istoriju i legende čarobne Kapadokije",
-    "aboutCap.p1": "Kapadokija nije samo standardna turistička destinacija — to je bezvremenska bajka uklesana u kamen. Formiran pre miliona godina tektonskom aktivnošću i snažnim vulkanskim erupcijama planina Erdžijes i Hasan, ovaj jedinstveni pejzaž je oblikovan hiljadama godina nemilosrdnim vetrovima, kišom i prirodnom erozijom.",
-    "aboutCap.p2": "Rezultat su ikonični 'Vilinski dimnjaci' (peribadžalari), jedinstvene stenske formacije koje fasciniraju putnike iz celog sveta. Pored vizuelnih čuda, Kapadokija čuva neverovatno bogato kulturno i istorijsko nasleđe — od Hetita i Persijanaca do Rimljana i ranih hrišćana.",
-    "aboutCap.p3": "Danas je Kapadokija globalno poznata po nezaboravnim, čarobnim letovima balonima na vreli vazduh. Naša pažljivo strukturirana dvodnevna tura je osmišljena da vas uroni u samo srce ovog istorijskog regiona.",
+    "aboutCap.p1": "Malo mesta na Zemlji deluje tako magično kao Kapadokija. Sa svojim nadrealnim pejzažima, drevnim pećinskim naseljima i svetski poznatim balonima na topli vazduh koji lebde iznad dolina u zoru, ovaj izvanredan region nudi iskustvo kakvo se ne može pronaći nigde drugde na svetu.",
+    "aboutCap.p2": "Pre miliona godina, vulkanske erupcije sa planina Erdžijes i Hasan prekrile su područje slojevima vulkanske stene. Tokom vremena, vetar, kiša i prirodna erozija oblikovali su pejzaž u spektakularne Vilinske dimnjake (Peribacaları) koji su postali simbol Kapadokije.",
+    "aboutCap.p3": "Iza zadivljujućeg pejzaža krije se bogata istorija koja se proteže hiljadama godina. Region je bio dom mnogim civilizacijama, uključujući Hetite, Persijance, Rimljane i rane hrišćane, koji su stvorili podzemne gradove, crkve uklesane u stenu i skrivena naselja koja se i danas mogu istraživati.",
+    "aboutCap.p4": "Danas je Kapadokija jedna od najposećenijih destinacija Turske i mesto sa liste želja putnika iz celog sveta. Bilo da vas fascinira istorija, oduševljava priroda ili sanjate o nezaboravnom letu balonom — Kapadokija pruža uspomene koje traju ceo život. Naša pažljivo osmišljena dvodnevna tura Kapadokije vodi vas kroz najikoničnije znamenitosti regiona, zadivljujuće vidikovce i istorijska blaga, nudeći nezaboravno putovanje kroz jednu od najizvanrednijih destinacija Turske.",
     "aboutCap.btnDetails": "Detalji ture",
     "aboutCap.btnReserve": "Rezervišite mesto",
     "transparency.title": "100% Transparentne cene — Bez skrivenih troškova",
