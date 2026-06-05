@@ -3692,13 +3692,16 @@ function calcTotal() {
 }
 
 // ============================================
-// FORM SUBMISSION
+// FORM SUBMISSION → WhatsApp
 // ============================================
 function submitBooking() {
+  const WHATSAPP_NUMBER = '905331429037'; // +90 533 142 90 37
+
+  // Validate required fields with red highlight
   const fields = [
-    { id: 'form-name', v: document.getElementById('form-name').value.trim() },
+    { id: 'form-name',  v: document.getElementById('form-name').value.trim() },
     { id: 'form-phone', v: document.getElementById('form-phone').value.trim() },
-    { id: 'form-date', v: document.getElementById('form-date').value },
+    { id: 'form-date',  v: document.getElementById('form-date').value },
     { id: 'form-hotel', v: document.getElementById('form-hotel').value.trim() }
   ];
   let err = false;
@@ -3711,7 +3714,61 @@ function submitBooking() {
       setTimeout(() => { el.style.borderColor = '#e0d6cc'; el.style.boxShadow = 'none'; }, 3000);
     }
   });
-  if (err) { for (const f of fields) { if (!f.v) { document.getElementById(f.id).focus(); break; } } return; }
+  if (err) {
+    for (const f of fields) { if (!f.v) { document.getElementById(f.id).focus(); break; } }
+    return;
+  }
+
+  // Collect all values
+  const fullName = document.getElementById('form-name').value.trim();
+  const phone    = document.getElementById('form-phone').value.trim();
+  const tourDate = document.getElementById('form-date').value;
+  const pickup   = document.getElementById('form-pickup').value.trim();
+  const hotel    = document.getElementById('form-hotel').value.trim();
+  const adults   = document.getElementById('adults').value;
+  const children = document.getElementById('children').value;
+  const infants  = document.getElementById('infants').value;
+  const notes    = document.getElementById('form-notes').value.trim();
+  const total    = document.getElementById('total').textContent.trim();
+
+  // Detect selected package
+  const isPremium = document.getElementById('book-pkg-premium').classList.contains('active-premium');
+  const pkgName   = isPremium ? '⭐ PREMIUM (€100/adult)' : '🎒 BUDGET (€50/adult)';
+
+  // Build the WhatsApp message
+  const msg =
+`🌍 *NEW CAPPADOCIA TOUR BOOKING*
+━━━━━━━━━━━━━━━━━━━━
+
+📦 *Package:* ${pkgName}
+
+👤 *Customer Details*
+• Name: ${fullName}
+• Phone: ${phone}
+
+📅 *Tour Information*
+• Date: ${tourDate}
+• Pickup: ${pickup}
+• Hotel: ${hotel}
+
+👥 *Group Size*
+• Adults (11+): ${adults}
+• Children (4-10): ${children}
+• Infants (0-3): ${infants}
+
+💰 *Estimated Total:* ${total}
+
+📝 *Special Requests:*
+${notes || '(none)'}
+
+━━━━━━━━━━━━━━━━━━━━
+Sent from myvalanyatravel.com`;
+
+  // Open WhatsApp with pre-filled message
+  const url = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(msg)}`;
+  window.open(url, '_blank');
+
+  // Show success modal
   document.getElementById('successModal').classList.add('open');
   document.body.style.overflow = 'hidden';
 }
