@@ -369,17 +369,17 @@ footer{background:var(--dark);color:rgba(255,255,255,.7);padding:60px 40px 30px}
    FLOATING CHAT MENU
 ================================ */
 .chat-fab{position:fixed;bottom:24px;left:24px;z-index:900}
-.chat-fab-main{width:56px;height:56px;border-radius:50%;background:var(--terra);color:#fff;display:flex;align-items:center;justify-content:center;font-size:26px;box-shadow:0 4px 16px rgba(196,98,45,.35);cursor:pointer;border:none;transition:all .3s ease;position:relative;z-index:2}
+.chat-fab-main{width:56px;height:56px;border-radius:50%;background:var(--terra);color:#fff;display:flex;align-items:center;justify-content:center;box-shadow:0 4px 16px rgba(196,98,45,.35);cursor:pointer;border:none;transition:all .3s ease;position:relative;z-index:2;padding:0}
 .chat-fab-main:hover{transform:scale(1.08);box-shadow:0 6px 24px rgba(196,98,45,.45)}
-.chat-fab-main svg{width:28px;height:28px;transition:transform .3s ease}
-.chat-fab.open .chat-fab-main svg{transform:rotate(180deg)}
-.chat-fab-list{position:absolute;bottom:70px;left:0;display:flex;flex-direction:column;gap:12px;opacity:0;pointer-events:none;transform:translateY(10px);transition:opacity .3s ease,transform .3s ease}
+.chat-fab-main svg{width:26px;height:26px;fill:#fff;transition:transform .3s ease}
+.chat-fab.open .chat-fab-main svg{transform:rotate(90deg)}
+.chat-fab-list{position:absolute;bottom:70px;left:0;display:flex;flex-direction:column;gap:10px;opacity:0;pointer-events:none;transform:translateY(10px);transition:opacity .3s ease,transform .3s ease}
 .chat-fab.open .chat-fab-list{opacity:1;pointer-events:auto;transform:translateY(0)}
 .chat-fab-item{display:flex;align-items:center;gap:10px;text-decoration:none;position:relative}
-.chat-fab-icon{width:48px;height:48px;border-radius:50%;display:flex;align-items:center;justify-content:center;box-shadow:0 4px 12px rgba(0,0,0,.18);cursor:pointer;border:none;flex-shrink:0;transition:transform .2s ease}
+.chat-fab-icon{width:42px;height:42px;border-radius:50%;display:flex;align-items:center;justify-content:center;box-shadow:0 3px 10px rgba(0,0,0,.18);cursor:pointer;border:none;flex-shrink:0;transition:transform .2s ease;padding:0}
 .chat-fab-icon:hover{transform:scale(1.1)}
-.chat-fab-icon svg{width:26px;height:26px;fill:#fff}
-.chat-fab-label{background:#fff;color:#222;font-size:14px;font-weight:600;padding:8px 14px;border-radius:10px;box-shadow:0 4px 12px rgba(0,0,0,.12);white-space:nowrap;font-family:'DM Sans',sans-serif}
+.chat-fab-icon svg{width:22px;height:22px;fill:#fff;display:block}
+.chat-fab-label{background:#fff;color:#222;font-size:13px;font-weight:600;padding:7px 13px;border-radius:8px;box-shadow:0 3px 10px rgba(0,0,0,.12);white-space:nowrap;font-family:'DM Sans',sans-serif}
 
 /* Brand colors */
 .chat-fab-whatsapp{background:#25D366}
@@ -389,19 +389,20 @@ footer{background:var(--dark);color:rgba(255,255,255,.7);padding:60px 40px 30px}
 .chat-fab-max{background:#3D8BFF}
 
 /* Sub-menu for WhatsApp/Viber (2 phone numbers) */
-.chat-submenu{position:absolute;left:60px;top:50%;transform:translateY(-50%) translateX(10px);background:#fff;border-radius:14px;box-shadow:0 8px 28px rgba(0,0,0,.18);padding:10px;display:none;flex-direction:column;gap:6px;min-width:200px;z-index:10}
+.chat-submenu{position:absolute;left:52px;top:50%;transform:translateY(-50%) translateX(10px);background:#fff;border-radius:14px;box-shadow:0 8px 28px rgba(0,0,0,.18);padding:8px;display:none;flex-direction:column;gap:4px;min-width:180px;z-index:10}
 .chat-fab-item.submenu-open .chat-submenu{display:flex;animation:fadeInRight .25s ease}
 @keyframes fadeInRight{from{opacity:0;transform:translateY(-50%) translateX(0)}to{opacity:1;transform:translateY(-50%) translateX(10px)}}
-.chat-submenu a{display:flex;align-items:center;gap:8px;padding:10px 12px;border-radius:8px;text-decoration:none;color:#222;font-size:14px;font-weight:500;transition:background .2s}
+.chat-submenu a{display:flex;align-items:center;gap:8px;padding:9px 11px;border-radius:7px;text-decoration:none;color:#222;font-size:13px;font-weight:500;transition:background .2s}
 .chat-submenu a:hover{background:#f5f5f5}
-.chat-submenu-flags{font-size:18px;letter-spacing:-2px}
+.chat-submenu-flags{font-size:16px;letter-spacing:-2px}
 
 @media(max-width:480px){
   .chat-fab{bottom:16px;left:16px}
-  .chat-fab-main{width:52px;height:52px;font-size:24px}
-  .chat-fab-icon{width:44px;height:44px}
-  .chat-fab-icon svg{width:22px;height:22px}
-  .chat-fab-label{font-size:13px;padding:7px 12px}
+  .chat-fab-main{width:52px;height:52px}
+  .chat-fab-main svg{width:24px;height:24px}
+  .chat-fab-icon{width:40px;height:40px}
+  .chat-fab-icon svg{width:20px;height:20px}
+  .chat-fab-label{font-size:12px;padding:6px 11px}
 }
 .back-to-top{position:fixed;bottom:24px;right:24px;width:46px;height:46px;border-radius:50%;background:var(--terra);color:#fff;border:none;font-size:18px;cursor:pointer;display:flex;align-items:center;justify-content:center;box-shadow:0 4px 16px rgba(196,98,45,.3);opacity:0;transform:translateY(20px);transition:all .3s;z-index:900}
 .back-to-top.visible{opacity:1;transform:translateY(0)}
@@ -1244,8 +1245,8 @@ footer{background:var(--dark);color:rgba(255,255,255,.7);padding:60px 40px 30px}
 
     <!-- Viber (with sub-menu) -->
     <div class="chat-fab-item" data-submenu="viber">
-      <button class="chat-fab-icon chat-fab-viber" onclick="toggleChatSubmenu(this,'viber')" aria-label="Viber">
-        <svg viewBox="0 0 24 24"><path d="M11.4 0C9.473.028 5.333.344 3.02 2.467 1.302 4.187.696 6.7.633 9.817c-.06 3.11-.13 8.95 5.5 10.535v2.42s-.038.98.61 1.18c.79.244 1.25-.508 2-1.32l1.4-1.58c3.84.32 6.79-.42 7.13-.53.78-.25 5.18-.81 5.89-6.66.74-6.03-.36-9.84-2.34-11.56h-.01c-.6-.55-3-2.3-8.37-2.32 0 0-.396-.026-1.262 0M11.5 1.728c.732 0 1.182.023 1.182.023 4.542.014 6.717 1.382 7.225 1.84 1.673 1.435 2.53 4.868 1.904 9.9-.59 4.88-4.155 5.19-4.815 5.4-.28.09-2.88.74-6.15.53 0 0-2.44 2.94-3.2 3.7-.12.13-.26.18-.35.15-.13-.03-.16-.18-.16-.4l.02-4.02c-4.762-1.32-4.484-6.29-4.432-8.89.05-2.6.542-4.73 1.991-6.16C7.626 1.964 11.14 1.728 12.5 1.728h-.99zm.275 2.715a.51.51 0 0 0-.508.512.51.51 0 0 0 .508.51c1.21-.01 2.21.39 3.04 1.18.84.81 1.25 1.86 1.25 3.15a.51.51 0 0 0 .508.51c.28 0 .51-.23.51-.51.014-1.51-.5-2.84-1.504-3.86-1.005-1.02-2.27-1.5-3.804-1.49M9.448 5.65c-.18-.02-.45.04-.74.18l-.01.01c-.62.32-1.18.74-1.66 1.27-.43.49-.67 1-.74 1.49-.04.27-.01.55.07.85l.04.02c.32 1.27 1.18 3.13 3.6 5.42 2.18 2.07 3.93 2.95 4.94 3.27.01 0 .03.02.06.03.27.07.51.1.74.07.51-.07 1.02-.31 1.5-.74.51-.43.93-.97 1.25-1.58.27-.55.18-1.07-.24-1.42-.84-.7-1.74-1.31-2.7-1.81-.64-.34-1.29-.13-1.55.21l-.55.7c-.28.35-.8.31-.8.31-3.8-1-4.81-4.95-4.81-4.95s-.04-.53.32-.81l.7-.55c.34-.27.55-.92.21-1.56-.5-.96-1.11-1.86-1.81-2.7-.16-.19-.36-.31-.58-.36zm3.34 1.93a.51.51 0 0 0-.508.51c0 .28.23.51.508.51.84-.01 1.49.23 1.99.74.51.51.75 1.15.74 2 0 .28.23.51.51.51.28 0 .508-.23.508-.51.015-1.13-.34-2.07-1.045-2.78-.71-.71-1.66-1.07-2.694-1.05" /></svg>
+     <button class="chat-fab-icon chat-fab-viber" onclick="toggleChatSubmenu(this,'viber')" aria-label="Viber">
+        <svg viewBox="0 0 24 24"><path d="M18.93 2.86C18.36 2.3 16.06.62 10.94.6c0 0-6.04-.37-8.99 2.33C.31 4.57-.27 7 -.33 10c-.06 3 -.13 8.62 5.29 10.14h.01l-.01 2.33s-.03.94.59 1.14c.75.23 1.19-.49 1.91-1.27.39-.43.94-1.06 1.36-1.54 3.71.31 6.56-.4 6.88-.5.75-.25 5-.79 5.69-6.43.71-5.82-.34-9.49-2.26-11.15zM19.32 16c-.59 4.7-3.93 5-4.57 5.2-.27.09-2.78.71-5.93.5 0 0-2.35 2.83-3.08 3.57-.11.11-.25.16-.34.13-.13-.03-.17-.18-.16-.4l.02-3.89c-4.59-1.28-4.32-6.06-4.27-8.59.05-2.53.52-4.6 1.92-5.99 2.5-2.28 7.62-1.94 7.62-1.94 4.34.02 6.42 1.33 6.91 1.79 1.62 1.39 2.45 4.7 1.88 9.62zm-5.27-7.27c.02.5-.73.54-.76.04-.07-1.28-.67-1.9-1.9-1.97-.5-.03-.46-.78.04-.76 1.62.09 2.53.99 2.62 2.69zm1.18.65c.06-2.39-1.43-4.26-4.27-4.47-.5-.03-.45-.78.05-.76 3.27.24 5.04 2.45 4.97 5.24-.01.51-.76.49-.75-.01zm1.21.78c0 .5-.76.5-.76 0-.04-4.71-3.18-7.28-6.99-7.31-.5-.01-.5-.76 0-.76 4.22.03 7.74 2.92 7.75 8.07z" transform="translate(0.5 0)"/></svg>
       </button>
       <span class="chat-fab-label">Viber</span>
       <div class="chat-submenu">
@@ -1287,7 +1288,7 @@ footer{background:var(--dark);color:rgba(255,255,255,.7);padding:60px 40px 30px}
   </div>
 
   <button class="chat-fab-main" onclick="toggleChatFab()" aria-label="Open chat menu">
-    <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20 2H4c-1.1 0-1.99.9-1.99 2L2 22l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zM9 11H7V9h2v2zm4 0h-2V9h2v2zm4 0h-2V9h2v2z"/></svg>
+    <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12c0 1.85.5 3.58 1.38 5.07L2.05 22l4.93-1.33C8.42 21.5 10.15 22 12 22c5.52 0 10-4.48 10-10S17.52 2 12 2zm-3.5 9c.83 0 1.5.67 1.5 1.5S9.33 14 8.5 14 7 13.33 7 12.5 7.67 11 8.5 11zm7 0c.83 0 1.5.67 1.5 1.5s-.67 1.5-1.5 1.5-1.5-.67-1.5-1.5.67-1.5 1.5-1.5zM12 11c.83 0 1.5.67 1.5 1.5S12.83 14 12 14s-1.5-.67-1.5-1.5S11.17 11 12 11z"/></svg>
   </button>
 </div>
 
