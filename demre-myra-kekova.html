@@ -826,6 +826,39 @@ footer{background:var(--dark);color:rgba(255,255,255,.7);padding:60px 40px 30px}
      }
      /* ===== UNIVERZALNI MOBILNI FIX — kraj ===== */
 
+
+/* ===== SCROLL PERFORMANCE FIX — pocetak ===== */
+
+/* A) Reduced-motion users (also a perf win) */
+@media (prefers-reduced-motion: reduce){
+  *,*::before,*::after{animation-duration:.001ms !important;animation-iteration-count:1 !important;transition-duration:.001ms !important;scroll-behavior:auto !important}
+}
+
+/* B) GPU-promote ONLY persistent compositor-heavy elements (targeted, not everything) */
+.hero-bg-img{transform:translateZ(0);backface-visibility:hidden;will-change:transform}
+.site-header,.chat-fab,.back-to-top{transform:translateZ(0);backface-visibility:hidden}
+
+/* C) Entry-animation elements: hint the browser, then release the hint */
+.reveal{will-change:transform,opacity}
+.reveal.visible{will-change:auto}
+
+/* D) Skip painting off-screen heavy sections until they near the viewport */
+#about-cap,#about-dest,#tour-details,#itinerary,#about,#gallery,#reviews,#faq,#book-now,#ask-us,#contact{
+  content-visibility:auto;
+  contain-intrinsic-size:auto 800px;
+}
+
+/* E) MOBILE (<768px): remove the properties that jank Android Chrome scrolling */
+@media (max-width:768px){
+  /* backdrop-filter recomputes the blur every scroll frame -> the main culprit */
+  .hero-badge{backdrop-filter:none !important;-webkit-backdrop-filter:none !important;background:rgba(0,0,0,.32) !important;border-color:rgba(255,255,255,.25) !important}
+  .hero-stats,.custom-modal{backdrop-filter:none !important;-webkit-backdrop-filter:none !important}
+  /* pause the infinite hero zoom while scrolling on phones */
+  .hero-bg-img{animation:none !important}
+}
+
+/* ===== SCROLL PERFORMANCE FIX — kraj ===== */
+
 </style>
 </head>
 <body>
