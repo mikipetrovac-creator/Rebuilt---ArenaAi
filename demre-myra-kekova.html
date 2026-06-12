@@ -5,10 +5,15 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>M.Y.V. Alanya Travel – Demre · Myra · Kekova Tour</title>
 <meta name="description" content="Guided Demre, Myra & Kekova day tour from Alanya & Side — visit the St. Nicholas Church in Demre, the ancient rock-cut tombs and theatre of Myra, and sail over the sunken city of Kekova with M.Y.V. Alanya Travel.">
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://images.pexels.com">
+<link rel="preload" as="image" fetchpriority="high" href="https://images.pexels.com/photos/13197277/pexels-photo-13197277.jpeg?auto=compress&cs=tinysrgb&w=1600&fm=webp">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&family=DM+Sans:wght@300;400;500;600&display=swap" media="print" onload="this.media='all'">
+<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&family=DM+Sans:wght@300;400;500;600&display=swap"></noscript>
 <style>
 :root{
-  --terra:#008094;--terra-dark:#005662;--terra-light:#4fb0c4;
+  --terra:#007385;--terra-dark:#005662;--terra-light:#4fb0c4;
   --gold:#D4A017;--gold-light:#F0C040;
   --cream:#FAF6F0;--dark:#0A1A1E;--text:#1A2E33;--muted:#4A6A72;
 }
@@ -865,7 +870,7 @@ footer{background:var(--dark);color:rgba(255,255,255,.7);padding:60px 40px 30px}
 
     <!-- Desktop-only language selector (far right) -->
     <div class="language-selector header-lang-desktop">
-      <select id="langSelect" onchange="changeLanguage(this.value)">
+      <select id="langSelect" onchange="changeLanguage(this.value)" aria-label="Language">
         <option value="en">🇬🇧 EN</option>
         <option value="ru">🇷🇺 RU</option>
         <option value="tr">🇹🇷 TR</option>
@@ -885,7 +890,7 @@ footer{background:var(--dark);color:rgba(255,255,255,.7);padding:60px 40px 30px}
 ================================ -->
 <section id="home">
   <div class="hero-bg">
-    <img class="hero-bg-img" src="https://images.pexels.com/photos/13197277/pexels-photo-13197277.jpeg?auto=compress&cs=tinysrgb&w=1600" alt="Kekova sunken city Mediterranean Turkey">
+    <img fetchpriority="high" decoding="async" class="hero-bg-img" src="https://images.pexels.com/photos/13197277/pexels-photo-13197277.jpeg?auto=compress&cs=tinysrgb&w=1600&fm=webp" alt="Kekova sunken city Mediterranean Turkey">
   </div>
   <div class="hero-badge" data-i18n="hero.badge">✦ From Alanya & Side to the Turquoise Coast</div>
   <h1 class="hero-title">
@@ -1184,7 +1189,7 @@ footer{background:var(--dark);color:rgba(255,255,255,.7);padding:60px 40px 30px}
 <section id="about">
   <div class="container two-col">
     <div class="about-image reveal">
-      <img src="https://images.pexels.com/photos/12932802/pexels-photo-12932802.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Alanya Castle and coastline">
+      <img loading="lazy" decoding="async" src="https://images.pexels.com/photos/12932802/pexels-photo-12932802.jpeg?auto=compress&cs=tinysrgb&w=800&fm=webp" alt="Alanya Castle and coastline">
     </div>
     <div class="reveal">
       <div class="section-tag" data-i18n="about.tag">ABOUT US</div>
@@ -1222,23 +1227,23 @@ footer{background:var(--dark);color:rgba(255,255,255,.7);padding:60px 40px 30px}
     <h2 class="section-title reveal" data-i18n="gallery.title">The Turquoise Coast Awaits</h2>
     <div class="gallery-grid reveal">
       <div class="gallery-item" onclick="openLightbox(0)">
-        <img src="https://images.pexels.com/photos/13197277/pexels-photo-13197277.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="Kekova">
+        <img loading="lazy" decoding="async" src="https://images.pexels.com/photos/13197277/pexels-photo-13197277.jpeg?auto=compress&cs=tinysrgb&w=1200&fm=webp" alt="Kekova">
         <div class="gallery-caption" data-i18n="gallery.cap1">Kekova & Simena Castle</div>
       </div>
       <div class="gallery-item" onclick="openLightbox(1)">
-        <img src="https://images.pexels.com/photos/16692240/pexels-photo-16692240.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Myra Rock Tombs">
+        <img loading="lazy" decoding="async" src="https://images.pexels.com/photos/16692240/pexels-photo-16692240.jpeg?auto=compress&cs=tinysrgb&w=600&fm=webp" alt="Myra Rock Tombs">
         <div class="gallery-caption" data-i18n="gallery.cap2">Lycian Rock Tombs, Myra</div>
       </div>
       <div class="gallery-item" onclick="openLightbox(2)">
-        <img src="https://images.pexels.com/photos/15167459/pexels-photo-15167459.jpeg?auto=compress&cs=tinysrgb&w=600" alt="St Nicholas Church">
+        <img loading="lazy" decoding="async" src="https://images.pexels.com/photos/15167459/pexels-photo-15167459.jpeg?auto=compress&cs=tinysrgb&w=600&fm=webp" alt="St Nicholas Church">
         <div class="gallery-caption" data-i18n="gallery.cap3">St. Nicholas Church</div>
       </div>
       <div class="gallery-item" onclick="openLightbox(3)">
-        <img src="https://images.pexels.com/photos/18961891/pexels-photo-18961891.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Myra Ancient City">
+        <img loading="lazy" decoding="async" src="https://images.pexels.com/photos/18961891/pexels-photo-18961891.jpeg?auto=compress&cs=tinysrgb&w=600&fm=webp" alt="Myra Ancient City">
         <div class="gallery-caption" data-i18n="gallery.cap4">Myra Ancient City</div>
       </div>
       <div class="gallery-item" onclick="openLightbox(4)">
-        <img src="https://images.pexels.com/photos/19015514/pexels-photo-19015514.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Mediterranean Coast">
+        <img loading="lazy" decoding="async" src="https://images.pexels.com/photos/19015514/pexels-photo-19015514.jpeg?auto=compress&cs=tinysrgb&w=600&fm=webp" alt="Mediterranean Coast">
         <div class="gallery-caption" data-i18n="gallery.cap5">Mediterranean Coast</div>
       </div>
     </div>
@@ -1425,21 +1430,21 @@ footer{background:var(--dark);color:rgba(255,255,255,.7);padding:60px 40px 30px}
 
       <div class="form-row">
         <div class="form-group">
-          <label data-i18n="booking.fullName">Full Name <span>*</span></label>
+          <label for="form-name" data-i18n="booking.fullName">Full Name <span>*</span></label>
           <input type="text" id="form-name" placeholder="Your full name" required>
         </div>
         <div class="form-group">
-          <label data-i18n="booking.phone">Phone Number <span>*</span></label>
+          <label for="form-phone" data-i18n="booking.phone">Phone Number <span>*</span></label>
           <input type="tel" id="form-phone" placeholder="+90 551 006 68 57" required>
         </div>
       </div>
       <div class="form-row">
         <div class="form-group">
-          <label data-i18n="booking.tourDate">Tour Date <span>*</span></label>
+          <label for="form-date" data-i18n="booking.tourDate">Tour Date <span>*</span></label>
           <input type="date" id="form-date" required>
         </div>
         <div class="form-group">
-          <label data-i18n="booking.pickup">Pickup Location <span>*</span></label>
+          <label for="form-pickup" data-i18n="booking.pickup">Pickup Location <span>*</span></label>
           <select id="form-pickup">
             <option data-i18n="booking.pickupAlanya">Alanya (and nearby hotels)</option>
             <option data-i18n="booking.pickupSide">Side (and nearby hotels)</option>
@@ -1447,12 +1452,12 @@ footer{background:var(--dark);color:rgba(255,255,255,.7);padding:60px 40px 30px}
         </div>
       </div>
       <div class="form-group">
-        <label data-i18n="booking.hotel">Hotel name <span>*</span></label>
+        <label for="form-hotel" data-i18n="booking.hotel">Hotel name <span>*</span></label>
         <input type="text" id="form-hotel" placeholder="Enter hotel name" required>
       </div>
       <div class="form-row-3">
         <div class="form-group">
-          <label data-i18n="booking.adultsLabel">Adults <span>*</span></label>
+          <label for="adults" data-i18n="booking.adultsLabel">Adults <span>*</span></label>
           <select id="adults" onchange="calcTotal()">
             <option value="1">1</option>
             <option value="2" selected>2</option>
@@ -1463,7 +1468,7 @@ footer{background:var(--dark);color:rgba(255,255,255,.7);padding:60px 40px 30px}
           </select>
         </div>
         <div class="form-group">
-          <label data-i18n="booking.childrenLabel">Children</label>
+          <label for="children" data-i18n="booking.childrenLabel">Children</label>
           <select id="children" onchange="calcTotal()">
             <option value="0" selected>0</option>
             <option value="1">1</option>
@@ -1472,7 +1477,7 @@ footer{background:var(--dark);color:rgba(255,255,255,.7);padding:60px 40px 30px}
           </select>
         </div>
         <div class="form-group">
-          <label data-i18n="booking.infantsLabel">Infants</label>
+          <label for="infants" data-i18n="booking.infantsLabel">Infants</label>
           <select id="infants">
             <option value="0" selected>0</option>
             <option value="1">1</option>
@@ -1485,7 +1490,7 @@ footer{background:var(--dark);color:rgba(255,255,255,.7);padding:60px 40px 30px}
         <div class="total-amount" id="total">€160</div>
       </div>
       <div class="form-group">
-        <label data-i18n="booking.requests">Special Requests</label>
+        <label for="form-notes" data-i18n="booking.requests">Special Requests</label>
         <textarea id="form-notes" placeholder="Dietary requirements, accessibility needs, or anything else..."></textarea>
       </div>
       <button class="btn-book" onclick="submitBooking()" data-i18n="booking.submitBtn">Reserve Your Spot →</button>
@@ -1519,23 +1524,23 @@ footer{background:var(--dark);color:rgba(255,255,255,.7);padding:60px 40px 30px}
         <p class="ask-form-subtitle" data-i18n="ask.formSubtitle">Have a question about the tour? We'll reply via WhatsApp or email within a few hours.</p>
 
         <div class="form-group">
-          <label data-i18n="ask.name">Your Name <span>*</span></label>
+          <label for="ask-name" data-i18n="ask.name">Your Name <span>*</span></label>
           <input type="text" id="ask-name" placeholder="Your full name" required>
         </div>
 
         <div class="form-row">
           <div class="form-group">
-            <label data-i18n="ask.email">Email <span>*</span></label>
+            <label for="ask-email" data-i18n="ask.email">Email <span>*</span></label>
             <input type="email" id="ask-email" placeholder="you@example.com" required>
           </div>
           <div class="form-group">
-            <label data-i18n="ask.phone">Phone (optional)</label>
+            <label for="ask-phone" data-i18n="ask.phone">Phone (optional)</label>
             <input type="tel" id="ask-phone" placeholder="+90 ...">
           </div>
         </div>
 
         <div class="form-group">
-          <label data-i18n="ask.message">Your Question <span>*</span></label>
+          <label for="ask-message" data-i18n="ask.message">Your Question <span>*</span></label>
           <textarea id="ask-message" placeholder="Type your question here..." required style="min-height:110px;"></textarea>
         </div>
 
@@ -1683,8 +1688,8 @@ footer{background:var(--dark);color:rgba(255,255,255,.7);padding:60px 40px 30px}
     <h2 class="modal-title" data-i18n="modal.kekova.title">⛵ The Sunken City of Kekova</h2>
     <p class="modal-badge" data-i18n="modal.kekova.badge">Special Highlight • Boat Cruise</p>
     <div class="modal-gallery">
-      <img src="https://images.pexels.com/photos/13197277/pexels-photo-13197277.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Kekova sunken city">
-      <img src="https://images.pexels.com/photos/27330526/pexels-photo-27330526.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Sunken city ruins in turquoise water">
+      <img loading="lazy" decoding="async" src="https://images.pexels.com/photos/13197277/pexels-photo-13197277.jpeg?auto=compress&cs=tinysrgb&w=600&fm=webp" alt="Kekova sunken city">
+      <img loading="lazy" decoding="async" src="https://images.pexels.com/photos/27330526/pexels-photo-27330526.jpeg?auto=compress&cs=tinysrgb&w=600&fm=webp" alt="Sunken city ruins in turquoise water">
     </div>
     <div class="modal-text">
       <p data-i18n="modal.kekova.desc1">The <strong>Sunken City of Kekova</strong> (ancient Dolchiste) was a thriving Lycian settlement that was partially submerged beneath the Mediterranean following a devastating 2nd-century earthquake. Today, the remarkably preserved ruins — staircases, walls, and foundations — are clearly visible through the crystal-clear turquoise water from the boat's glass bottom.</p>
@@ -1707,8 +1712,8 @@ footer{background:var(--dark);color:rgba(255,255,255,.7);padding:60px 40px 30px}
     <h2 class="modal-title" data-i18n="modal.myra.title">🏛 Lycian Rock Tombs & Roman Theatre — Myra</h2>
     <p class="modal-badge" data-i18n="modal.myra.badge">Special Highlight • Ancient Ruins</p>
     <div class="modal-gallery">
-      <img src="https://images.pexels.com/photos/16692240/pexels-photo-16692240.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Myra Lycian rock tombs">
-      <img src="https://images.pexels.com/photos/18961891/pexels-photo-18961891.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Myra ancient city ruins">
+      <img loading="lazy" decoding="async" src="https://images.pexels.com/photos/16692240/pexels-photo-16692240.jpeg?auto=compress&cs=tinysrgb&w=600&fm=webp" alt="Myra Lycian rock tombs">
+      <img loading="lazy" decoding="async" src="https://images.pexels.com/photos/18961891/pexels-photo-18961891.jpeg?auto=compress&cs=tinysrgb&w=600&fm=webp" alt="Myra ancient city ruins">
     </div>
     <div class="modal-text">
       <p data-i18n="modal.myra.desc1">The ancient city of <strong>Myra</strong> was one of the six leading cities of the Lycian League. Its most spectacular feature is the collection of extraordinary rock-cut tombs carved directly into the sheer vertical cliff face — each one an intricate, temple-like façade that once housed the Lycian elite.</p>
@@ -1731,8 +1736,8 @@ footer{background:var(--dark);color:rgba(255,255,255,.7);padding:60px 40px 30px}
     <h2 class="modal-title" data-i18n="modal.nicholas.title">⛪ St. Nicholas Church — Demre</h2>
     <p class="modal-badge" data-i18n="modal.nicholas.badge">Special Highlight • Historical Pilgrimage</p>
     <div class="modal-gallery">
-      <img src="https://images.pexels.com/photos/15167459/pexels-photo-15167459.jpeg?auto=compress&cs=tinysrgb&w=600" alt="St Nicholas Church interior">
-      <img src="https://images.pexels.com/photos/35624257/pexels-photo-35624257.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Byzantine frescoes">
+      <img loading="lazy" decoding="async" src="https://images.pexels.com/photos/15167459/pexels-photo-15167459.jpeg?auto=compress&cs=tinysrgb&w=600&fm=webp" alt="St Nicholas Church interior">
+      <img loading="lazy" decoding="async" src="https://images.pexels.com/photos/35624257/pexels-photo-35624257.jpeg?auto=compress&cs=tinysrgb&w=600&fm=webp" alt="Byzantine frescoes">
     </div>
     <div class="modal-text">
       <p data-i18n="modal.nicholas.desc1">This ancient pilgrimage church was built over the tomb of <strong>St. Nicholas of Myra</strong>, the historical 4th-century bishop whose legendary generosity inspired the global figure of <strong>Santa Claus</strong>. The church dates from the 6th century and contains beautiful Byzantine-era floor mosaics and frescoes.</p>
