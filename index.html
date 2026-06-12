@@ -4,10 +4,17 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>M.Y.V. Alanya Travel – Discover the Magic of Cappadocia</title>
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+<meta name="description" content="Unforgettable 2-day Cappadocia tour from Alanya & Side — sunrise hot air balloons, fairy chimneys, underground cities & Göreme, with hotel, meals & expert guide included. Book with M.Y.V. Alanya Travel.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://images.pexels.com">
+<link rel="preconnect" href="https://images.unsplash.com">
+<link rel="preload" as="image" fetchpriority="high" href="https://images.unsplash.com/photo-1641128324972-af3212f0f6bd?auto=format&q=68&w=1600" imagesrcset="https://images.unsplash.com/photo-1641128324972-af3212f0f6bd?auto=format&q=68&w=640 640w, https://images.unsplash.com/photo-1641128324972-af3212f0f6bd?auto=format&q=68&w=960 960w, https://images.unsplash.com/photo-1641128324972-af3212f0f6bd?auto=format&q=68&w=1280 1280w, https://images.unsplash.com/photo-1641128324972-af3212f0f6bd?auto=format&q=68&w=1600 1600w" imagesizes="100vw">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&family=DM+Sans:wght@300;400;500;600&display=swap" media="print" onload="this.media='all'">
+<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&family=DM+Sans:wght@300;400;500;600&display=swap"></noscript>
 <style>
 :root {
-  --terra:#C4622D;--terra-dark:#8B3A14;--terra-light:#E8956D;
+  --terra:#A8501F;--terra-dark:#8B3A14;--terra-light:#E8956D;
   --gold:#D4A017;--gold-light:#F0C040;
   --cream:#FAF6F0;--dark:#1A0F08;--text:#3D2010;--muted:#7A5C44;
 }
@@ -364,7 +371,7 @@ section{padding:80px 40px}
    BOOKING
 ================================ */
 #book-now{background:linear-gradient(135deg,var(--terra-dark) 0%,#5C1F00 100%);position:relative;overflow:hidden}
-#book-now::before{content:'';position:absolute;inset:0;background:url('https://images.unsplash.com/photo-1577083552431-6e5fd01988ec?w=1200') center/cover;opacity:.12}
+#book-now::before{content:'';position:absolute;inset:0;background:url('https://images.unsplash.com/photo-1577083552431-6e5fd01988ec?w=1200&auto=format&q=55') center/cover;opacity:.12}
 .book-inner{display:grid;grid-template-columns:1fr 1fr;gap:50px;align-items:start;position:relative}
 .book-left .section-title{color:#fff}
 .book-left .section-sub{color:rgba(255,255,255,.7);max-width:100%}
@@ -641,7 +648,7 @@ footer{background:var(--dark);color:rgba(255,255,255,.7);padding:60px 40px 30px}
 
     <!-- Desktop-only language selector -->
     <div class="language-selector header-lang-desktop">
-      <select id="langSelect" onchange="changeLanguage(this.value)">
+      <select id="langSelect" onchange="changeLanguage(this.value)" aria-label="Language">
         <option value="en">🇬🇧 EN</option>
         <option value="ru">🇷🇺 RU</option>
         <option value="tr">🇹🇷 TR</option>
@@ -661,7 +668,7 @@ footer{background:var(--dark);color:rgba(255,255,255,.7);padding:60px 40px 30px}
 ================================ -->
 <section id="home">
   <div class="hero-bg">
-    <img class="hero-bg-img" src="https://images.unsplash.com/photo-1641128324972-af3212f0f6bd?w=1600" alt="Cappadocia hot air balloons">
+    <img fetchpriority="high" decoding="async" class="hero-bg-img" src="https://images.unsplash.com/photo-1641128324972-af3212f0f6bd?auto=format&q=68&w=1600" srcset="https://images.unsplash.com/photo-1641128324972-af3212f0f6bd?auto=format&q=68&w=640 640w, https://images.unsplash.com/photo-1641128324972-af3212f0f6bd?auto=format&q=68&w=960 960w, https://images.unsplash.com/photo-1641128324972-af3212f0f6bd?auto=format&q=68&w=1280 1280w, https://images.unsplash.com/photo-1641128324972-af3212f0f6bd?auto=format&q=68&w=1600 1600w" sizes="100vw" alt="Cappadocia hot air balloons">
   </div>
   <div class="hero-badge" data-i18n="hero.badge">✦ From Alanya & Side to Cappadocia</div>
   <h1 class="hero-title">
@@ -981,7 +988,7 @@ footer{background:var(--dark);color:rgba(255,255,255,.7);padding:60px 40px 30px}
 <section id="about">
   <div class="container two-col">
     <div class="about-image reveal">
-      <img src="https://images.pexels.com/photos/12932802/pexels-photo-12932802.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Alanya Castle and coastline - M.Y.V. Alanya Travel">
+      <img loading="lazy" decoding="async" src="https://images.pexels.com/photos/12932802/pexels-photo-12932802.jpeg?auto=compress&cs=tinysrgb&w=800&fm=webp" alt="Alanya Castle and coastline - M.Y.V. Alanya Travel">
     </div>
     <div class="reveal">
       <div class="section-tag" data-i18n="about.tag">ABOUT US</div>
@@ -1008,23 +1015,23 @@ footer{background:var(--dark);color:rgba(255,255,255,.7);padding:60px 40px 30px}
     <h2 class="section-title reveal" data-i18n="gallery.title">A Land Like No Other</h2>
     <div class="gallery-grid reveal">
       <div class="gallery-item" onclick="openLightbox(0)">
-        <img src="https://images.pexels.com/photos/12594236/pexels-photo-12594236.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="Red Valley at sunset">
+        <img loading="lazy" decoding="async" src="https://images.pexels.com/photos/12594236/pexels-photo-12594236.jpeg?auto=compress&cs=tinysrgb&w=1200&fm=webp" alt="Red Valley at sunset">
         <div class="gallery-caption" data-i18n="gallery.cap1">Red Valley at sunset</div>
       </div>
       <div class="gallery-item" onclick="openLightbox(1)">
-        <img src="https://images.pexels.com/photos/34648074/pexels-photo-34648074.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Göreme Open Air Museum">
+        <img loading="lazy" decoding="async" src="https://images.pexels.com/photos/34648074/pexels-photo-34648074.jpeg?auto=compress&cs=tinysrgb&w=800&fm=webp" alt="Göreme Open Air Museum">
         <div class="gallery-caption" data-i18n="gallery.cap2">Göreme Open Air Museum</div>
       </div>
       <div class="gallery-item" onclick="openLightbox(2)">
-        <img src="https://images.pexels.com/photos/14816456/pexels-photo-14816456.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Fairy Chimneys viewpoint">
+        <img loading="lazy" decoding="async" src="https://images.pexels.com/photos/14816456/pexels-photo-14816456.jpeg?auto=compress&cs=tinysrgb&w=800&fm=webp" alt="Fairy Chimneys viewpoint">
         <div class="gallery-caption" data-i18n="gallery.cap3">Fairy Chimneys viewpoint</div>
       </div>
       <div class="gallery-item" onclick="openLightbox(3)">
-        <img src="https://images.pexels.com/photos/11669264/pexels-photo-11669264.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Tatlarin Underground City">
+        <img loading="lazy" decoding="async" src="https://images.pexels.com/photos/11669264/pexels-photo-11669264.jpeg?auto=compress&cs=tinysrgb&w=800&fm=webp" alt="Tatlarin Underground City">
         <div class="gallery-caption" data-i18n="gallery.cap4">Tatlarin Underground City</div>
       </div>
       <div class="gallery-item" onclick="openLightbox(4)">
-        <img src="https://images.pexels.com/photos/34718291/pexels-photo-34718291.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Devrent Valley">
+        <img loading="lazy" decoding="async" src="https://images.pexels.com/photos/34718291/pexels-photo-34718291.jpeg?auto=compress&cs=tinysrgb&w=800&fm=webp" alt="Devrent Valley">
         <div class="gallery-caption" data-i18n="gallery.cap5">Devrent Valley</div>
       </div>
     </div>
@@ -1172,21 +1179,21 @@ footer{background:var(--dark);color:rgba(255,255,255,.7);padding:60px 40px 30px}
 
       <div class="form-row">
         <div class="form-group">
-          <label data-i18n="booking.fullName">Full Name <span>*</span></label>
+          <label for="form-name" data-i18n="booking.fullName">Full Name <span>*</span></label>
           <input type="text" id="form-name" data-i18n-placeholder="booking.fullNamePlaceholder" placeholder="Your full name" required>
         </div>
         <div class="form-group">
-          <label data-i18n="booking.phone">Phone Number <span>*</span></label>
+          <label for="form-phone" data-i18n="booking.phone">Phone Number <span>*</span></label>
           <input type="tel" id="form-phone" placeholder="+90 551 006 68 57" required>
         </div>
       </div>
       <div class="form-row">
         <div class="form-group">
-          <label data-i18n="booking.tourDate">Tour Date <span>*</span></label>
+          <label for="form-date" data-i18n="booking.tourDate">Tour Date <span>*</span></label>
           <input type="date" id="form-date" required>
         </div>
         <div class="form-group">
-          <label data-i18n="booking.pickup">Pickup Location <span>*</span></label>
+          <label for="form-pickup" data-i18n="booking.pickup">Pickup Location <span>*</span></label>
           <select id="form-pickup">
             <option data-i18n="booking.pickupAlanya">Alanya (and nearby hotels)</option>
             <option data-i18n="booking.pickupSide">Side (and nearby hotels)</option>
@@ -1194,12 +1201,12 @@ footer{background:var(--dark);color:rgba(255,255,255,.7);padding:60px 40px 30px}
         </div>
       </div>
       <div class="form-group">
-        <label data-i18n="booking.hotel">Hotel name <span>*</span></label>
+        <label for="form-hotel" data-i18n="booking.hotel">Hotel name <span>*</span></label>
         <input type="text" id="form-hotel" data-i18n-placeholder="booking.hotelPlaceholder" placeholder="Enter hotel name" required>
       </div>
       <div class="form-row-3">
         <div class="form-group">
-          <label data-i18n="booking.adultsLabel">Adults <span>*</span></label>
+          <label for="adults" data-i18n="booking.adultsLabel">Adults <span>*</span></label>
           <select id="adults" onchange="calcTotal()">
             <option value="1">1</option>
             <option value="2" selected>2</option>
@@ -1210,7 +1217,7 @@ footer{background:var(--dark);color:rgba(255,255,255,.7);padding:60px 40px 30px}
           </select>
         </div>
         <div class="form-group">
-          <label data-i18n="booking.childrenLabel">Children</label>
+          <label for="children" data-i18n="booking.childrenLabel">Children</label>
           <select id="children" onchange="calcTotal()">
             <option value="0" selected>0</option>
             <option value="1">1</option>
@@ -1219,7 +1226,7 @@ footer{background:var(--dark);color:rgba(255,255,255,.7);padding:60px 40px 30px}
           </select>
         </div>
         <div class="form-group">
-          <label data-i18n="booking.infantsLabel">Infants</label>
+          <label for="infants" data-i18n="booking.infantsLabel">Infants</label>
           <select id="infants">
             <option value="0" selected>0</option>
             <option value="1">1</option>
@@ -1232,7 +1239,7 @@ footer{background:var(--dark);color:rgba(255,255,255,.7);padding:60px 40px 30px}
         <div class="total-amount" id="total">€200</div>
       </div>
       <div class="form-group">
-        <label data-i18n="booking.requests">Special Requests</label>
+        <label for="form-notes" data-i18n="booking.requests">Special Requests</label>
         <textarea id="form-notes" data-i18n-placeholder="booking.requestsPlaceholder" placeholder="Dietary requirements, accessibility needs, or anything else..."></textarea>
       </div>
       <button class="btn-book" onclick="submitBooking()" data-i18n="booking.submitBtn">Reserve Your Spot →</button>
@@ -1443,8 +1450,8 @@ footer{background:var(--dark);color:rgba(255,255,255,.7);padding:60px 40px 30px}
     <h2 class="modal-title" data-i18n="modal.tatlarin.title">🏛 Tatlarin Underground City</h2>
     <p class="modal-badge" data-i18n="modal.tatlarin.badge">Special Highlight • Day 1</p>
     <div class="modal-gallery">
-      <img src="https://images.pexels.com/photos/11669264/pexels-photo-11669264.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Tatlarin Underground City tunnel">
-      <img src="https://images.pexels.com/photos/36209538/pexels-photo-36209538.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Tatlarin Underground City interior">
+      <img loading="lazy" decoding="async" src="https://images.pexels.com/photos/11669264/pexels-photo-11669264.jpeg?auto=compress&cs=tinysrgb&w=600&fm=webp" alt="Tatlarin Underground City tunnel">
+      <img loading="lazy" decoding="async" src="https://images.pexels.com/photos/36209538/pexels-photo-36209538.jpeg?auto=compress&cs=tinysrgb&w=600&fm=webp" alt="Tatlarin Underground City interior">
     </div>
     <div class="modal-text">
       <p data-i18n="modal.tatlarin.desc1">Discovered in 1975 and opened to visitors in 1991, <strong>Tatlarin Underground City</strong> is one of the most remarkable subterranean settlements in Cappadocia.</p>
@@ -1465,8 +1472,8 @@ footer{background:var(--dark);color:rgba(255,255,255,.7);padding:60px 40px 30px}
     <h2 class="modal-title" data-i18n="modal.devrent.title">🌄 Devrent Valley (Imagination Valley)</h2>
     <p class="modal-badge" data-i18n="modal.devrent.badge">Special Highlight • Day 1 • Imagination Valley</p>
     <div class="modal-gallery">
-      <img src="https://images.pexels.com/photos/34718291/pexels-photo-34718291.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Devrent Valley rock formations">
-      <img src="https://images.pexels.com/photos/8206886/pexels-photo-8206886.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Devrent Valley landscape">
+      <img loading="lazy" decoding="async" src="https://images.pexels.com/photos/34718291/pexels-photo-34718291.jpeg?auto=compress&cs=tinysrgb&w=600&fm=webp" alt="Devrent Valley rock formations">
+      <img loading="lazy" decoding="async" src="https://images.pexels.com/photos/8206886/pexels-photo-8206886.jpeg?auto=compress&cs=tinysrgb&w=600&fm=webp" alt="Devrent Valley landscape">
     </div>
     <div class="modal-text">
       <p data-i18n="modal.devrent.desc1">Devrent Valley, also known as <strong>Imagination Valley</strong> or <strong>Pink Valley</strong>, is famous for its lunar-like landscape.</p>
@@ -1488,8 +1495,8 @@ footer{background:var(--dark);color:rgba(255,255,255,.7);padding:60px 40px 30px}
     <h2 class="modal-title" data-i18n="modal.pigeon.title">🕊 Pigeon Valley</h2>
     <p class="modal-badge" data-i18n="modal.pigeon.badge">Special Highlight • Day 1</p>
     <div class="modal-gallery">
-      <img src="https://images.pexels.com/photos/17574358/pexels-photo-17574358.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Pigeon Valley panoramic view">
-      <img src="https://images.pexels.com/photos/32447623/pexels-photo-32447623.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Pigeon Valley landscape">
+      <img loading="lazy" decoding="async" src="https://images.pexels.com/photos/17574358/pexels-photo-17574358.jpeg?auto=compress&cs=tinysrgb&w=600&fm=webp" alt="Pigeon Valley panoramic view">
+      <img loading="lazy" decoding="async" src="https://images.pexels.com/photos/32447623/pexels-photo-32447623.jpeg?auto=compress&cs=tinysrgb&w=600&fm=webp" alt="Pigeon Valley landscape">
     </div>
     <div class="modal-text">
       <p data-i18n="modal.pigeon.desc1"><strong>Pigeon Valley</strong>, located between Göreme and Uçhisar, is one of the most picturesque valleys in Cappadocia.</p>
@@ -1511,8 +1518,8 @@ footer{background:var(--dark);color:rgba(255,255,255,.7);padding:60px 40px 30px}
     <h2 class="modal-title" data-i18n="modal.hittite.title">🎨 Hittite Ceramic Workshop</h2>
     <p class="modal-badge" data-i18n="modal.hittite.badge">Special Highlight • Day 1 • Interactive Experience</p>
     <div class="modal-gallery">
-      <img src="https://images.pexels.com/photos/33827942/pexels-photo-33827942.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Turkish potter crafting clay pottery">
-      <img src="https://images.pexels.com/photos/34259428/pexels-photo-34259428.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Hands shaping clay on pottery wheel">
+      <img loading="lazy" decoding="async" src="https://images.pexels.com/photos/33827942/pexels-photo-33827942.jpeg?auto=compress&cs=tinysrgb&w=600&fm=webp" alt="Turkish potter crafting clay pottery">
+      <img loading="lazy" decoding="async" src="https://images.pexels.com/photos/34259428/pexels-photo-34259428.jpeg?auto=compress&cs=tinysrgb&w=600&fm=webp" alt="Hands shaping clay on pottery wheel">
     </div>
     <div class="modal-text">
       <p data-i18n="modal.hittite.desc1">The <strong>Hittite Ceramic Workshop</strong> offers an immersive journey into Cappadocia's ancient pottery tradition.</p>
@@ -1534,8 +1541,8 @@ footer{background:var(--dark);color:rgba(255,255,255,.7);padding:60px 40px 30px}
     <h2 class="modal-title" data-i18n="modal.lovevalley.title">🏔️ Love Valley</h2>
     <p class="modal-badge" data-i18n="modal.lovevalley.badge">Special Highlight • Day 1 • Panoramic Experience</p>
     <div class="modal-gallery">
-      <img src="https://images.pexels.com/photos/32742838/pexels-photo-32742838.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Love Valley rock formations">
-      <img src="https://images.pexels.com/photos/8206868/pexels-photo-8206868.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Love Valley landscape">
+      <img loading="lazy" decoding="async" src="https://images.pexels.com/photos/32742838/pexels-photo-32742838.jpeg?auto=compress&cs=tinysrgb&w=600&fm=webp" alt="Love Valley rock formations">
+      <img loading="lazy" decoding="async" src="https://images.pexels.com/photos/8206868/pexels-photo-8206868.jpeg?auto=compress&cs=tinysrgb&w=600&fm=webp" alt="Love Valley landscape">
     </div>
     <div class="modal-text">
       <p data-i18n="modal.lovevalley.desc1"><strong>Love Valley</strong> is one of Cappadocia's most iconic landscapes.</p>
@@ -1557,8 +1564,8 @@ footer{background:var(--dark);color:rgba(255,255,255,.7);padding:60px 40px 30px}
     <h2 class="modal-title" data-i18n="modal.redvalley.title">🌅 Red Valley at Sunset</h2>
     <p class="modal-badge" data-i18n="modal.redvalley.badge">Special Highlight • Day 1 • Sunset Experience</p>
     <div class="modal-gallery">
-      <img src="https://images.pexels.com/photos/12594236/pexels-photo-12594236.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Red Valley sunset">
-      <img src="https://images.pexels.com/photos/8206938/pexels-photo-8206938.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Red Valley golden sunset">
+      <img loading="lazy" decoding="async" src="https://images.pexels.com/photos/12594236/pexels-photo-12594236.jpeg?auto=compress&cs=tinysrgb&w=600&fm=webp" alt="Red Valley sunset">
+      <img loading="lazy" decoding="async" src="https://images.pexels.com/photos/8206938/pexels-photo-8206938.jpeg?auto=compress&cs=tinysrgb&w=600&fm=webp" alt="Red Valley golden sunset">
     </div>
     <div class="modal-text">
       <p data-i18n="modal.redvalley.desc1"><strong>Red Valley</strong> is famous for its stunning red-hued rock formations.</p>
@@ -1580,8 +1587,8 @@ footer{background:var(--dark);color:rgba(255,255,255,.7);padding:60px 40px 30px}
     <h2 class="modal-title" data-i18n="modal.onyx.title">💎 Onyx & Alabaster Workshop</h2>
     <p class="modal-badge" data-i18n="modal.onyx.badge">Special Highlight • Day 2 • Cultural Experience</p>
     <div class="modal-gallery">
-      <img src="https://images.pexels.com/photos/29284796/pexels-photo-29284796.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Artisan crafting in stone workshop">
-      <img src="https://images.pexels.com/photos/30076439/pexels-photo-30076439.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Craftsman shaping gemstone jewelry">
+      <img loading="lazy" decoding="async" src="https://images.pexels.com/photos/29284796/pexels-photo-29284796.jpeg?auto=compress&cs=tinysrgb&w=600&fm=webp" alt="Artisan crafting in stone workshop">
+      <img loading="lazy" decoding="async" src="https://images.pexels.com/photos/30076439/pexels-photo-30076439.jpeg?auto=compress&cs=tinysrgb&w=600&fm=webp" alt="Craftsman shaping gemstone jewelry">
     </div>
     <div class="modal-text">
       <p data-i18n="modal.onyx.desc1">Discover the rich tradition of Turkish stonemasonry at a local onyx workshop.</p>
@@ -1603,8 +1610,8 @@ footer{background:var(--dark);color:rgba(255,255,255,.7);padding:60px 40px 30px}
     <h2 class="modal-title" data-i18n="modal.goreme.title">⛰️ Göreme Open Air Museum</h2>
     <p class="modal-badge" data-i18n="modal.goreme.badge">Special Highlight • Day 2 • Historical Experience</p>
     <div class="modal-gallery">
-      <img src="https://images.pexels.com/photos/34648074/pexels-photo-34648074.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Göreme cave architecture">
-      <img src="https://images.pexels.com/photos/34678133/pexels-photo-34678133.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Göreme rock formations">
+      <img loading="lazy" decoding="async" src="https://images.pexels.com/photos/34648074/pexels-photo-34648074.jpeg?auto=compress&cs=tinysrgb&w=600&fm=webp" alt="Göreme cave architecture">
+      <img loading="lazy" decoding="async" src="https://images.pexels.com/photos/34678133/pexels-photo-34678133.jpeg?auto=compress&cs=tinysrgb&w=600&fm=webp" alt="Göreme rock formations">
     </div>
     <div class="modal-text">
       <p data-i18n="modal.goreme.desc1">A <strong>UNESCO World Heritage Site</strong>, this vast monastic complex contains some of the finest rock-cut churches in Cappadocia.</p>
@@ -1626,8 +1633,8 @@ footer{background:var(--dark);color:rgba(255,255,255,.7);padding:60px 40px 30px}
     <h2 class="modal-title" data-i18n="modal.fairy.title">🪨 Fairy Chimneys Viewpoint</h2>
     <p class="modal-badge" data-i18n="modal.fairy.badge">Special Highlight • Day 2 • Panoramic Experience</p>
     <div class="modal-gallery">
-      <img src="https://images.pexels.com/photos/14816456/pexels-photo-14816456.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Fairy Chimneys Pasabag">
-      <img src="https://images.pexels.com/photos/5324414/pexels-photo-5324414.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Fairy Chimneys landscape">
+      <img loading="lazy" decoding="async" src="https://images.pexels.com/photos/14816456/pexels-photo-14816456.jpeg?auto=compress&cs=tinysrgb&w=600&fm=webp" alt="Fairy Chimneys Pasabag">
+      <img loading="lazy" decoding="async" src="https://images.pexels.com/photos/5324414/pexels-photo-5324414.jpeg?auto=compress&cs=tinysrgb&w=600&fm=webp" alt="Fairy Chimneys landscape">
     </div>
     <div class="modal-text">
       <p data-i18n="modal.fairy.desc1">Witness the multi-capped mushroom-shaped rock formations that define the visual identity of Cappadocia.</p>
