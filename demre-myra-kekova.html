@@ -1415,6 +1415,61 @@ section {
   }
 }
 
+/* ============================================
+   MOBILE MENU CLOSE FIX
+   Garantuje da X dugme i tap-outside rade
+   ============================================ */
+
+@media (max-width: 1024px) {
+
+  /* X dugme MORA biti klikabilno */
+  .menu-close-btn {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    position: absolute !important;
+    top: 18px !important;
+    right: 18px !important;
+    width: 44px !important;
+    height: 44px !important;
+    background: rgba(255, 255, 255, 0.1) !important;
+    border: none !important;
+    border-radius: 50% !important;
+    color: #fff !important;
+    font-size: 1.6rem !important;
+    cursor: pointer !important;
+    z-index: 10000 !important;
+    pointer-events: auto !important;
+    -webkit-tap-highlight-color: rgba(255,255,255,0.2) !important;
+    touch-action: manipulation !important;
+    margin: 0 !important;
+  }
+
+  .menu-close-btn:active {
+    background: rgba(255, 255, 255, 0.25) !important;
+    transform: scale(0.95);
+  }
+
+  /* Backdrop MORA da bude klikabilan */
+  .menu-backdrop {
+    pointer-events: none;
+    z-index: 9998 !important;
+  }
+
+  .menu-backdrop.active {
+    pointer-events: auto !important;
+    display: block !important;
+    opacity: 1 !important;
+  }
+
+  /* Meni iznad backdrop-a */
+  .header-right-group {
+    pointer-events: auto !important;
+    z-index: 9999 !important;
+  }
+
+}
+
 </style>
 </head>
 <body>
@@ -2624,6 +2679,38 @@ function closeMenu() {
 }
 menuToggle && menuToggle.addEventListener('click', openMenu);
 menuClose && menuClose.addEventListener('click', closeMenu);
+
+// ============================================
+// MENU CLOSE — SIGURNOSNA MREŽA
+// Garantuje da X dugme i klik van menija zatvaraju meni
+// ============================================
+
+// 1. Bind X dugme PONOVO (u slučaju da je prvi listener zakazao)
+document.addEventListener('click', function(e) {
+  
+  // Ako je kliknut X dugme (ili bilo šta unutar njega)
+  if (e.target.closest('.menu-close-btn')) {
+    e.preventDefault();
+    e.stopPropagation();
+    closeMenu();
+    return;
+  }
+  
+  // Ako je meni otvoren i klik je VAN menija (i nije hamburger)
+  if (!headerRight || !headerRight.classList.contains('active')) return;
+  if (headerRight.contains(e.target)) return;
+  if (menuToggle && menuToggle.contains(e.target)) return;
+  
+  closeMenu();
+});
+
+// 2. Touch event za Android (Chrome ponekad ignoriše click)
+document.addEventListener('touchend', function(e) {
+  if (e.target.closest('.menu-close-btn')) {
+    e.preventDefault();
+    closeMenu();
+  }
+}, { passive: false });
 menuBackdrop && menuBackdrop.addEventListener('click', closeMenu);
 
 // Safety net — zatvori meni klikom bilo gde van njega
