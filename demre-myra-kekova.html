@@ -435,44 +435,9 @@ footer{background:var(--dark);color:rgba(255,255,255,.7);padding:60px 40px 30px}
   flex-direction:column;
   align-items:flex-start;
 }
-.chat-fab-main{
-  width:56px !important;
-  height:56px !important;
-  min-width:56px !important;
-  min-height:56px !important;
-  max-width:56px !important;
-  max-height:56px !important;
-  border-radius:50% !important;
-  background:var(--terra);
-  color:#fff;
-  display:flex !important;
-  align-items:center !important;
-  justify-content:center !important;
-  box-shadow:0 4px 16px rgba(0,128,148,.35);
-  cursor:pointer;
-  border:none;
-  transition:transform .3s ease, box-shadow .3s ease;
-  position:relative;
-  z-index:2;
-  padding:0 !important;
-  margin:0 !important;
-  flex-shrink:0 !important;
-  box-sizing:border-box !important;
-  overflow:hidden;
-}
+.chat-fab-main{width:56px;height:56px;border-radius:50%;background:var(--terra);color:#fff;display:flex;align-items:center;justify-content:center;box-shadow:0 4px 16px rgba(0,128,148,.35);cursor:pointer;border:none;transition:all .3s ease;position:relative;z-index:2;padding:0}
 .chat-fab-main:hover{transform:scale(1.08);box-shadow:0 6px 24px rgba(0,128,148,.45)}
-.chat-fab-main svg{
-  width:28px !important;
-  height:28px !important;
-  min-width:28px !important;
-  min-height:28px !important;
-  max-width:28px !important;
-  max-height:28px !important;
-  fill:#fff;
-  transition:transform .3s ease;
-  display:block;
-  flex-shrink:0;
-}
+.chat-fab-main svg{width:26px;height:26px;fill:#fff;transition:transform .3s ease;display:block}
 .chat-fab-main svg path{fill:#fff !important}
 .chat-fab.open .chat-fab-main svg{transform:rotate(90deg)}
 .chat-fab-list{position:absolute;bottom:70px;left:0;display:flex;flex-direction:column;gap:10px;opacity:0;pointer-events:none;transform:translateY(10px);transition:opacity .3s ease,transform .3s ease}
@@ -482,6 +447,15 @@ footer{background:var(--dark);color:rgba(255,255,255,.7);padding:60px 40px 30px}
 .chat-fab-icon:hover{transform:scale(1.1)}
 .chat-fab-icon svg{width:22px;height:22px;fill:#fff;display:block}
 .chat-fab-label{background:#fff;color:#222;font-size:13px;font-weight:600;padding:7px 13px;border-radius:8px;box-shadow:0 3px 10px rgba(0,0,0,.12);white-space:nowrap;font-family:'DM Sans',sans-serif}
+
+@media(max-width:480px){
+  .chat-fab{bottom:16px;left:16px}
+  .chat-fab-main{width:52px;height:52px}
+  .chat-fab-main svg{width:24px;height:24px}
+  .chat-fab-icon{width:40px;height:40px}
+  .chat-fab-icon svg{width:20px;height:20px}
+  .chat-fab-label{font-size:12px;padding:6px 11px}
+}
 
 /* Brand colors */
 .chat-fab-whatsapp{background:#25D366}
@@ -662,7 +636,7 @@ footer{background:var(--dark);color:rgba(255,255,255,.7);padding:60px 40px 30px}
 
   /* Ask Us */
   #ask-us .ask-left,#ask-us .ask-left .section-title,#ask-us .ask-left .section-sub{text-align:center}
-  #ask-us .ask-contact-list{display:inline-block;text-align:left;margin:0 auto}
+  #ask-us .ask-contact-list{display:inline-block;text-align:left;margin:28px auto 0}
   #ask-us .ask-contact-list li{justify-content:flex-start}
   #ask-us .ask-form{text-align:left}
 

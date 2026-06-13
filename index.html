@@ -606,6 +606,30 @@ footer{background:var(--dark);color:rgba(255,255,255,.7);padding:60px 40px 30px}
      /* ===== UNIVERZALNI MOBILNI FIX — kraj ===== */
 
 
+/* ================================
+   ASK FORM (Still Have Questions)
+================================ */
+#ask-us{background:linear-gradient(135deg,var(--terra-dark) 0%,#5C1F00 100%);position:relative;overflow:hidden;padding-top:0}
+#ask-us::before{content:'';position:absolute;inset:0;background:url('https://images.unsplash.com/photo-1577083552431-6e5fd01988ec?w=1200&auto=format&q=55') center/cover;opacity:.12}
+.ask-inner{display:grid;grid-template-columns:1fr 1fr;gap:50px;align-items:start;position:relative;padding-top:40px;border-top:1px solid rgba(255,255,255,.12)}
+.ask-left .section-title{color:#fff}
+.ask-left .section-sub{color:rgba(255,255,255,.7);max-width:100%}
+.ask-form{background:#fff;border-radius:20px;padding:28px;box-shadow:0 20px 60px rgba(0,0,0,.2)}
+.ask-form-title{font-family:'Playfair Display',serif;font-size:22px;color:var(--dark);margin-bottom:6px}
+.ask-form-subtitle{font-size:13px;color:var(--muted);margin-bottom:20px}
+.ask-contact-list{list-style:none;margin-top:24px}
+.ask-contact-list li{display:flex;align-items:flex-start;gap:10px;margin-bottom:14px;font-size:14px;color:rgba(255,255,255,.85);line-height:1.6}
+.ask-contact-icon{font-size:18px;flex-shrink:0;margin-top:1px}
+.ask-contact-list a{color:rgba(255,255,255,.85);text-decoration:none;transition:color .2s}
+.ask-contact-list a:hover{color:var(--gold-light)}
+@media(max-width:900px){
+  .ask-inner{grid-template-columns:1fr;gap:30px;padding-top:30px}
+  .ask-left{text-align:center}
+  .ask-form{padding:24px 20px}
+  .ask-contact-list li{justify-content:flex-start;text-align:left}
+  #ask-us .ask-contact-list{display:inline-block;text-align:left;margin:28px auto 0}
+  #ask-us .ask-contact-list li{justify-content:flex-start}
+}
 </style>
 </head>
 <body>
@@ -1324,6 +1348,59 @@ footer{background:var(--dark);color:rgba(255,255,255,.7);padding:60px 40px 30px}
 <!-- ================================
      FOOTER
 ================================ -->
+<!-- ================================
+     ASK US A QUESTION
+================================ -->
+<section id="ask-us">
+  <div class="container">
+    <div class="ask-inner">
+
+      <div class="ask-left reveal">
+        <div class="section-tag" style="color:var(--gold-light);" data-i18n="ask.tag">CONTACT</div>
+        <h2 class="section-title" data-i18n="ask.title">Still Have Questions?</h2>
+        <p class="section-sub" data-i18n="ask.subtitle">Our team is happy to help. Reach out with any question about the Cappadocia tour — pickup, languages, special requests, anything.</p>
+
+        <ul class="ask-contact-list">
+          <li><a href="tel:+905510066857"><span class="ask-contact-icon">📞</span> +90 551 006 68 57</a> (Eng, Rus, Tur)</li>
+          <li><a href="tel:+905331429037"><span class="ask-contact-icon">📞</span> +90 533 142 90 37</a> (Eng, SRB)</li>
+          <li><a href="mailto:info@myvalanyatravel.com"><span class="ask-contact-icon">✉️</span> info@myvalanyatravel.com</a></li>
+          <li><span class="ask-contact-icon">📍</span> Saray Mah. Macaroğlu Sok.<br>Macaroğlu Apt. No 1/8, Alanya / Antalya, Turkey</li>
+        </ul>
+      </div>
+
+      <div class="ask-form reveal">
+        <h3 class="ask-form-title" data-i18n="ask.formTitle">Ask Us a Question</h3>
+        <p class="ask-form-subtitle" data-i18n="ask.formSubtitle">Have a question about the tour? We'll reply via WhatsApp or email within a few hours.</p>
+
+        <div class="form-group">
+          <label for="ask-name" data-i18n="ask.name">Your Name <span>*</span></label>
+          <input type="text" id="ask-name" placeholder="Your full name" required>
+        </div>
+
+        <div class="form-row">
+          <div class="form-group">
+            <label for="ask-email" data-i18n="ask.email">Email <span>*</span></label>
+            <input type="email" id="ask-email" placeholder="you@example.com" required>
+          </div>
+          <div class="form-group">
+            <label for="ask-phone" data-i18n="ask.phone">Phone (optional)</label>
+            <input type="tel" id="ask-phone" placeholder="+90 ...">
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="ask-message" data-i18n="ask.message">Your Question <span>*</span></label>
+          <textarea id="ask-message" placeholder="Type your question here..." required style="min-height:110px;"></textarea>
+        </div>
+
+        <button class="btn-book" onclick="submitAskForm()" data-i18n="ask.submitBtn">Send Message →</button>
+        <p class="form-note" data-i18n="ask.formNote">We typically reply within 2 hours. You can also reach us directly via WhatsApp.</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
 <footer id="contact">
   <div class="footer-grid">
     <div>
@@ -1658,6 +1735,10 @@ footer{background:var(--dark);color:rgba(255,255,255,.7);padding:60px 40px 30px}
 // ============================================
 const translations = {
   en: {
+    "ask.tag":"CONTACT","ask.title":"Still Have Questions?","ask.subtitle":"Our team is happy to help. Reach out with any question about the Cappadocia tour — pickup, languages, special requests, anything.",
+    "ask.formTitle":"Ask Us a Question","ask.formSubtitle":"Have a question about the tour? We'll reply via WhatsApp or email within a few hours.",
+    "ask.name":"Your Name <span>*</span>","ask.email":"Email <span>*</span>","ask.phone":"Phone (optional)","ask.message":"Your Question <span>*</span>",
+    "ask.submitBtn":"Send Message →","ask.formNote":"We typically reply within 2 hours. You can also reach us directly via WhatsApp.",
     // Navigation
     "nav.home": "Home",
     "nav.tourDetails": "Tour Details",
@@ -2022,6 +2103,10 @@ const translations = {
     "nav.faq": "FAQ"
   },
   ru: {
+    "ask.tag":"КОНТАКТ","ask.title":"Остались вопросы?","ask.subtitle":"Наша команда с радостью поможет. Обращайтесь с любыми вопросами о туре по Каппадокии — трансфер, языки, особые пожелания, что угодно.",
+    "ask.formTitle":"Задайте нам вопрос","ask.formSubtitle":"Есть вопрос о туре? Мы ответим через WhatsApp или email в течение нескольких часов.",
+    "ask.name":"Ваше имя <span>*</span>","ask.email":"Email <span>*</span>","ask.phone":"Телефон (необязательно)","ask.message":"Ваш вопрос <span>*</span>",
+    "ask.submitBtn":"Отправить сообщение →","ask.formNote":"Обычно отвечаем в течение 2 часов. Вы также можете связаться с нами напрямую через WhatsApp.",
     "nav.home": "Главная",
     "nav.tourDetails": "О туре",
     "nav.itinerary": "Маршрут",
@@ -2331,6 +2416,10 @@ const translations = {
     "nav.faq": "Вопросы"
   },
   tr: {
+    "ask.tag":"İLETİŞİM","ask.title":"Hâlâ Sorularınız mı Var?","ask.subtitle":"Ekibimiz yardımcı olmaktan mutluluk duyar. Kapadokya turu hakkında herhangi bir sorunuz için bize ulaşın — alış noktası, diller, özel istekler, her şey.",
+    "ask.formTitle":"Bize Bir Soru Sorun","ask.formSubtitle":"Tur hakkında sorunuz mu var? WhatsApp veya e-posta yoluyla birkaç saat içinde yanıt vereceğiz.",
+    "ask.name":"Adınız <span>*</span>","ask.email":"E-posta <span>*</span>","ask.phone":"Telefon (isteğe bağlı)","ask.message":"Sorunuz <span>*</span>",
+    "ask.submitBtn":"Mesaj Gönder →","ask.formNote":"Genellikle 2 saat içinde yanıt veriyoruz. WhatsApp üzerinden doğrudan da bize ulaşabilirsiniz.",
     "nav.home": "Ana Sayfa",
     "nav.tourDetails": "Tur Detayları",
     "nav.itinerary": "Program",
@@ -2640,6 +2729,10 @@ const translations = {
     "nav.faq": "SSS"
   },
   uk: {
+    "ask.tag":"КОНТАКТ","ask.title":"Залишилися питання?","ask.subtitle":"Наша команда з радістю допоможе. Звертайтеся з будь-якими питаннями про тур до Каппадокії — трансфер, мови, особливі побажання, що завгодно.",
+    "ask.formTitle":"Задайте нам питання","ask.formSubtitle":"Є питання про тур? Ми відповімо через WhatsApp або email протягом кількох годин.",
+    "ask.name":"Ваше ім'я <span>*</span>","ask.email":"Email <span>*</span>","ask.phone":"Телефон (необов'язково)","ask.message":"Ваше питання <span>*</span>",
+    "ask.submitBtn":"Надіслати повідомлення →","ask.formNote":"Зазвичай відповідаємо протягом 2 годин. Ви також можете зв'язатися з нами напряму через WhatsApp.",
     "nav.home": "Головна",
     "nav.tourDetails": "Про тур",
     "nav.itinerary": "Маршрут",
@@ -2949,6 +3042,10 @@ const translations = {
     "nav.faq": "Питання"
   },
   de: {
+    "ask.tag":"KONTAKT","ask.title":"Noch Fragen?","ask.subtitle":"Unser Team hilft Ihnen gerne. Stellen Sie uns jede Frage zur Kappadokien-Tour — Abholung, Sprachen, besondere Wünsche, alles.",
+    "ask.formTitle":"Stellen Sie uns eine Frage","ask.formSubtitle":"Haben Sie eine Frage zur Tour? Wir antworten innerhalb weniger Stunden über WhatsApp oder E-Mail.",
+    "ask.name":"Ihr Name <span>*</span>","ask.email":"E-Mail <span>*</span>","ask.phone":"Telefon (optional)","ask.message":"Ihre Frage <span>*</span>",
+    "ask.submitBtn":"Nachricht senden →","ask.formNote":"Wir antworten in der Regel innerhalb von 2 Stunden. Sie können uns auch direkt über WhatsApp erreichen.",
     "nav.home": "Startseite",
     "nav.tourDetails": "Tourdetails",
     "nav.itinerary": "Reiseroute",
@@ -3258,6 +3355,10 @@ const translations = {
     "nav.faq": "FAQ"
   },
   sr: {
+    "ask.tag":"KONTAKT","ask.title":"Imate još pitanja?","ask.subtitle":"Naš tim će vam rado pomoći. Obratite nam se sa bilo kojim pitanjem o turi po Kapadokiji — preuzimanje, jezici, posebni zahtevi, bilo šta.",
+    "ask.formTitle":"Postavite nam pitanje","ask.formSubtitle":"Imate pitanje o turi? Odgovorićemo putem WhatsApp-a ili email-a u roku od nekoliko sati.",
+    "ask.name":"Vaše ime <span>*</span>","ask.email":"Email <span>*</span>","ask.phone":"Telefon (opciono)","ask.message":"Vaše pitanje <span>*</span>",
+    "ask.submitBtn":"Pošalji poruku →","ask.formNote":"Obično odgovaramo u roku od 2 sata. Možete nas kontaktirati i direktno putem WhatsApp-a.",
     "nav.home": "Početna",
     "nav.tourDetails": "O turi",
     "nav.itinerary": "Program",
@@ -3811,6 +3912,37 @@ Sent from myvalanyatravel.com`;
 function openModal(id) { document.getElementById(id).classList.add('open'); document.body.style.overflow = 'hidden'; document.getElementById(id).offsetHeight; }
 function closeModalById(id) { document.getElementById(id).classList.remove('open'); document.body.style.overflow = ''; }
 function closeModalOutside(e, id) { if (e.target.id === id) closeModalById(id); }
+// ============================================
+// ASK FORM SUBMIT (WhatsApp redirect)
+// ============================================
+function submitAskForm() {
+  const name = document.getElementById('ask-name').value.trim();
+  const email = document.getElementById('ask-email').value.trim();
+  const phone = document.getElementById('ask-phone').value.trim();
+  const message = document.getElementById('ask-message').value.trim();
+
+  if (!name || !email || !message) {
+    alert('Please fill in your name, email and question.');
+    return;
+  }
+
+  const text = `Hello! I have a question about the Cappadocia tour.%0A%0A` +
+               `*Name:* ${encodeURIComponent(name)}%0A` +
+               `*Email:* ${encodeURIComponent(email)}%0A` +
+               (phone ? `*Phone:* ${encodeURIComponent(phone)}%0A` : '') +
+               `%0A*Question:*%0A${encodeURIComponent(message)}`;
+
+  window.open(`https://wa.me/905331429037?text=${text}`, '_blank');
+
+  const modal = document.getElementById('successModal');
+  if (modal) { modal.classList.add('open'); document.body.style.overflow = 'hidden'; }
+
+  document.getElementById('ask-name').value = '';
+  document.getElementById('ask-email').value = '';
+  document.getElementById('ask-phone').value = '';
+  document.getElementById('ask-message').value = '';
+}
+
 function closeModal() { document.getElementById('successModal').classList.remove('open'); document.body.style.overflow = ''; }
 function openPrivacy() { document.getElementById('privacyModal').classList.add('open'); document.body.style.overflow = 'hidden'; }
 function closePrivacy() { document.getElementById('privacyModal').classList.remove('open'); document.body.style.overflow = ''; }
