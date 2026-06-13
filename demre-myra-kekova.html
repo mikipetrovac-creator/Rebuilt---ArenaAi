@@ -838,23 +838,17 @@ footer{background:var(--dark);color:rgba(255,255,255,.7);padding:60px 40px 30px}
 .hero-bg-img{transform:translateZ(0);backface-visibility:hidden;will-change:transform}
 .site-header,.chat-fab,.back-to-top{transform:translateZ(0);backface-visibility:hidden}
 
-/* C) Entry-animation elements: hint the browser, then release the hint */
-.reveal{will-change:transform,opacity}
-.reveal.visible{will-change:auto}
-
-/* D) Skip painting off-screen heavy sections until they near the viewport */
-#about-cap,#about-dest,#tour-details,#itinerary,#about,#gallery,#reviews,#faq,#book-now,#ask-us,#contact{
-  content-visibility:auto;
-  contain-intrinsic-size:auto 800px;
-}
-
-/* E) MOBILE (<768px): remove the properties that jank Android Chrome scrolling */
+/* C) MOBILE (<=768px): remove the properties that jank Android Chrome scrolling */
 @media (max-width:768px){
-  /* backdrop-filter recomputes the blur every scroll frame -> the main culprit */
+  /* frosted glass (backdrop-filter) is recomputed every scroll frame -> biggest culprit */
   .hero-badge{backdrop-filter:none !important;-webkit-backdrop-filter:none !important;background:rgba(0,0,0,.32) !important;border-color:rgba(255,255,255,.25) !important}
   .hero-stats,.custom-modal{backdrop-filter:none !important;-webkit-backdrop-filter:none !important}
-  /* pause the infinite hero zoom while scrolling on phones */
+  /* pause the infinite hero zoom while scrolling */
   .hero-bg-img{animation:none !important}
+  /* a sticky element repaints every scroll frame -> unstick the price card on phones */
+  .price-card{position:static !important;top:auto !important}
+  /* heavy drop-shadows are costly to repaint -> lighten them on phones */
+  .review-card,.price-card,.included-box,.stop-item,.gallery-item,.about-image,.book-form,.faq-item,.day-content{box-shadow:0 2px 8px rgba(0,0,0,.08) !important}
 }
 
 /* ===== SCROLL PERFORMANCE FIX — kraj ===== */
@@ -2207,6 +2201,10 @@ function setLanguage(lang) {
     const key = el.getAttribute('data-i18n');
     if (t[key] !== undefined) el.innerHTML = t[key];
   });
+
+  document.documentElement.lang = lang;
+  var _ls=document.getElementById('langSelect'); if(_ls) _ls.value=lang;
+  var _lsm=document.getElementById('langSelectMobile'); if(_lsm) _lsm.value=lang;
 }
 
 // Lightbox
@@ -2233,7 +2231,7 @@ document.getElementById('lightbox').addEventListener('click',function(e){if(e.ta
 
 // Scroll
 const backToTop=document.getElementById('backToTop');
-window.addEventListener('scroll',function(){backToTop.classList.toggle('visible',window.scrollY>600)});
+let _bttTick=false;window.addEventListener('scroll',function(){if(_bttTick)return;_bttTick=true;requestAnimationFrame(function(){backToTop.classList.toggle('visible',window.scrollY>600);_bttTick=false});},{passive:true});
 
 // Reveal
 const revealObserver=new IntersectionObserver(entries=>{entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add('visible');revealObserver.unobserve(e.target)}})},{threshold:.1,rootMargin:'0px 0px -40px 0px'});
