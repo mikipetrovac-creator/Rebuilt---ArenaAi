@@ -1,12 +1,25 @@
-<!DOCTYPE html>
+
+/* <!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>M.Y.V. Alanya Travel – Demre · Myra · Kekova Tour</title>
 <meta name="description" content="Guided Demre, Myra & Kekova day tour from Alanya & Side — visit the St. Nicholas Church in Demre, the ancient rock-cut tombs and theatre of Myra, and sail over the sunken city of Kekova with M.Y.V. Alanya Travel.">
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+<link rel="stylesheet"
+  href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&family=DM+Sans:wght@300;400;500;600&display=swap"
+  media="print" onload="this.media='all'">
+<noscript>
+  <link rel="stylesheet"
+  href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&family=DM+Sans:wght@300;400;500;600&display=swap">
+</noscript>
+<link rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+  media="print" onload="this.media='all'">
+<noscript>
+  <link rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</noscript>
 <style>
 :root{
   --terra:#007385;--terra-dark:#005662;--terra-light:#4fb0c4;
@@ -78,8 +91,20 @@ body{font-family:'DM Sans',sans-serif;color:var(--text);background:var(--cream);
 #home .hero-badge{margin-top:-60px}
 .hero-bg{position:absolute;inset:0;z-index:-1;overflow:hidden}
 .hero-bg::before{content:'';position:absolute;inset:0;background:linear-gradient(to bottom,rgba(0,26,30,.35) 0%,rgba(0,26,30,.55) 100%);z-index:1}
-.hero-bg-img{width:100%;height:100%;object-fit:cover;animation:heroSlowZoom 25s ease-in-out infinite alternate}
-@keyframes heroSlowZoom{0%{transform:scale(1)}100%{transform:scale(1.1)}}
+.hero-bg-img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    animation:heroSlowZoom 25s ease-in-out infinite alternate;
+    will-change:transform;
+    transform:translate3d(0,0,0);
+    backface-visibility:hidden;
+    -webkit-backface-visibility:hidden;
+}
+@keyframes heroSlowZoom{
+    0%{transform:scale(1) translate3d(0,0,0)}
+    100%{transform:scale(1.1) translate3d(0,0,0)}
+}
 .hero-badge{background:rgba(255,255,255,.15);backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);border:1px solid rgba(255,255,255,.3);color:#fff;font-size:13px;font-weight:500;padding:8px 20px;border-radius:50px;margin-bottom:28px;letter-spacing:.5px}
 .hero-title{font-family:'Playfair Display',serif;font-size:clamp(36px,8vw,76px);color:#fff;line-height:1.1;margin-bottom:16px}
 .hero-title span{color:var(--gold-light);font-style:italic;display:block}
@@ -167,7 +192,17 @@ section{padding:80px 40px}
 /* ================================
    PRICE CARD
 ================================ */
-.price-card{background:var(--cream);border:2px solid rgba(0,128,148,.2);border-radius:16px;padding:24px;position:sticky;top:90px}
+.price-card{
+    background:var(--cream);
+    border:2px solid rgba(0,128,148,.2);
+    border-radius:16px;
+    padding:24px;
+    position:sticky;
+    top:90px;
+}
+@media(max-width:1024px){
+    .price-card{position:static}
+}
 .price-card-header{font-size:11px;font-weight:700;letter-spacing:1.5px;text-align:center;padding:6px;border-radius:8px;margin-bottom:14px;color:#fff}
 .price-card-header.premium{background:var(--terra)}
 .price-card-header.budget{background:#3a7bd5}
@@ -822,6 +857,153 @@ footer{background:var(--dark);color:rgba(255,255,255,.7);padding:60px 40px 30px}
      }
      /* ===== UNIVERZALNI MOBILNI FIX — kraj ===== */
 
+     /* ============================================
+   DEMRE PERFORMANCE + MOBILE FIX
+   ============================================ */
+
+html, body {
+    overflow-x: hidden;
+}
+
+section,
+.container,
+.two-col,
+.tour-overview,
+.book-inner,
+.ask-inner,
+.footer-grid,
+.stops-grid,
+.gallery-grid,
+.reviews-grid,
+.form-row,
+.form-row-3,
+.included-grid {
+    max-width: 100%;
+    min-width: 0;
+}
+
+.btn-primary,
+.btn-outline,
+.btn-terra,
+.btn-ghost,
+.btn-book,
+.pkg-tab,
+.book-pkg-btn {
+    max-width: 100%;
+    white-space: normal;
+}
+
+/* GPU ubrzanje samo za kritične elemente */
+.hero-bg,
+.hero-bg-img,
+.site-header,
+.chat-fab,
+.back-to-top {
+    transform: translateZ(0);
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+}
+
+/* Mobile fixes */
+@media (max-width: 768px) {
+
+    /* Ugasi backdrop-filter — glavni krivac za jank */
+    .hero-badge,
+    .hero-stats,
+    .custom-modal {
+        backdrop-filter: none !important;
+        -webkit-backdrop-filter: none !important;
+    }
+
+    /* Manji font */
+    html {
+        font-size: 15px;
+    }
+
+    /* Hero title */
+    .hero-title {
+        font-size: clamp(28px, 7vw, 38px) !important;
+        line-height: 1.15;
+    }
+
+    /* Section title */
+    .section-title {
+        font-size: clamp(24px, 6vw, 32px) !important;
+        line-height: 1.2;
+    }
+
+    /* Tekst */
+    .hero-sub,
+    .section-sub,
+    .about-text,
+    .about-dest-text p,
+    .about-dest-full,
+    .tour-overview-text p,
+    .review-text,
+    .modal-text p,
+    .transparency-text,
+    .footer-desc {
+        font-size: 14px !important;
+        line-height: 1.7;
+    }
+
+    /* Dugmad */
+    .btn-primary,
+    .btn-outline,
+    .btn-terra,
+    .btn-ghost,
+    .btn-book {
+        padding: 12px 18px !important;
+        font-size: 14px !important;
+    }
+
+    .pkg-tab,
+    .book-pkg-btn {
+        padding: 10px 14px !important;
+        font-size: 13px !important;
+    }
+
+    /* Manje senke = lakše iscrtavanje */
+    .review-card,
+    .video-wrap,
+    .book-form,
+    .ask-form,
+    .price-card {
+        box-shadow: 0 4px 12px rgba(0,0,0,.08) !important;
+    }
+
+    /* Sekcije */
+    section {
+        padding-left: 16px !important;
+        padding-right: 16px !important;
+    }
+
+    .review-card,
+    .price-card,
+    .book-form,
+    .ask-form,
+    .stop-item,
+    .infant-note {
+        min-width: 0;
+        overflow: hidden;
+    }
+
+    /* Pauziraj hero animaciju na mobilnom */
+    .hero-bg-img {
+        animation-play-state: paused;
+    }
+
+    /* Reveal animacije - iskljuci na mobilnom */
+    .js-reveal-ready .reveal {
+        opacity: 1 !important;
+        transform: none !important;
+        transition: none !important;
+    }
+
+}
+/* ============================================
+   KRAJ PATCHA
+   ============================================ */
 
 
 </style>
