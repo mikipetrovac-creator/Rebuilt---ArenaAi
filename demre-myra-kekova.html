@@ -339,11 +339,10 @@ section{padding:80px 40px}
 .ask-form-title{font-family:'Playfair Display',serif;font-size:22px;color:var(--dark);margin-bottom:6px}
 .ask-form-subtitle{font-size:13px;color:var(--muted);margin-bottom:20px}
 .ask-contact-list{list-style:none;margin-top:24px}
-.ask-contact-list li{display:flex;align-items:center;gap:18px;margin-bottom:18px;font-size:14px;color:rgba(255,255,255,.85);line-height:1.6}
-.ask-contact-icon{font-size:18px;flex-shrink:0;margin-top:0 !important;margin-right:4px;min-width:24px;text-align:center}
+.ask-contact-list li{display:flex;align-items:flex-start;gap:10px;margin-bottom:14px;font-size:14px;color:rgba(255,255,255,.85);line-height:1.6}
+.ask-contact-icon{font-size:18px;flex-shrink:0;margin-top:1px}
 .ask-contact-list a{color:rgba(255,255,255,.85);text-decoration:none;transition:color .2s}
 .ask-contact-list a:hover{color:var(--gold-light)}
-.ask-contact-icon{font-size:18px;flex-shrink:0;margin-top:1px}
 @media(max-width:900px){
   .ask-inner{grid-template-columns:1fr;gap:30px;padding-top:30px}
   .ask-left{text-align:center}
@@ -950,526 +949,6 @@ footer{background:var(--dark);color:rgba(255,255,255,.7);padding:60px 40px 30px}
        section { padding-left: 16px !important; padding-right: 16px !important; }
      }
      /* ===== UNIVERZALNI MOBILNI FIX — kraj ===== */
-
-     /* ============================================
-   DEMRE PERFORMANCE + MOBILE FIX
-   ============================================ */
-
-html, body {
-    overflow-x: hidden;
-}
-
-section,
-.container,
-.two-col,
-.tour-overview,
-.book-inner,
-.ask-inner,
-.footer-grid,
-.stops-grid,
-.gallery-grid,
-.reviews-grid,
-.form-row,
-.form-row-3,
-.included-grid {
-    max-width: 100%;
-    min-width: 0;
-}
-
-.btn-primary,
-.btn-outline,
-.btn-terra,
-.btn-ghost,
-.btn-book,
-.pkg-tab,
-.book-pkg-btn {
-    max-width: 100%;
-    white-space: normal;
-}
-
-/* GPU ubrzanje samo za kritične elemente */
-.hero-bg,
-.hero-bg-img,
-.site-header,
-.chat-fab,
-.back-to-top {
-    transform: translateZ(0);
-    backface-visibility: hidden;
-    -webkit-backface-visibility: hidden;
-}
-
-/* Mobile fixes */
-@media (max-width: 768px) {
-
-    /* Ugasi backdrop-filter — glavni krivac za jank */
-    .hero-badge,
-    .hero-stats,
-    .custom-modal {
-        backdrop-filter: none !important;
-        -webkit-backdrop-filter: none !important;
-    }
-
-    /* Manji font */
-    html {
-        font-size: 15px;
-    }
-
-    /* Hero title */
-    .hero-title {
-        font-size: clamp(28px, 7vw, 38px) !important;
-        line-height: 1.15;
-    }
-
-    /* Section title */
-    .section-title {
-        font-size: clamp(24px, 6vw, 32px) !important;
-        line-height: 1.2;
-    }
-
-    /* Tekst */
-    .hero-sub,
-    .section-sub,
-    .about-text,
-    .about-dest-text p,
-    .about-dest-full,
-    .tour-overview-text p,
-    .review-text,
-    .modal-text p,
-    .transparency-text,
-    .footer-desc {
-        font-size: 14px !important;
-        line-height: 1.7;
-    }
-
-    /* Dugmad */
-    .btn-primary,
-    .btn-outline,
-    .btn-terra,
-    .btn-ghost,
-    .btn-book {
-        padding: 12px 18px !important;
-        font-size: 14px !important;
-    }
-
-    .pkg-tab,
-    .book-pkg-btn {
-        padding: 10px 14px !important;
-        font-size: 13px !important;
-    }
-
-    /* Manje senke = lakše iscrtavanje */
-    .review-card,
-    .video-wrap,
-    .book-form,
-    .ask-form,
-    .price-card {
-        box-shadow: 0 4px 12px rgba(0,0,0,.08) !important;
-    }
-
-    /* Sekcije */
-    section {
-        padding-left: 16px !important;
-        padding-right: 16px !important;
-    }
-
-    .review-card,
-    .price-card,
-    .book-form,
-    .ask-form,
-    .stop-item,
-    .infant-note {
-        min-width: 0;
-        overflow: hidden;
-    }
-
-    /* Pauziraj hero animaciju na mobilnom */
-    .hero-bg-img {
-        animation-play-state: paused;
-    }
-
-    /* Reveal animacije - iskljuci na mobilnom */
-    .js-reveal-ready .reveal {
-        opacity: 1 !important;
-        transform: none !important;
-        transition: none !important;
-    }
-
-}
-/* ============================================
-   KRAJ PATCHA
-   ============================================ */
-
-   /* ============================================
-   FINAL MOBILE LAYOUT FIX
-   za hamburger meni i modal
-   ============================================ */
-
-/* === 1. Sigurnosna zaštita protiv pomeranja ulevo === */
-html {
-    overflow-x: hidden !important;
-    width: 100% !important;
-}
-
-body {
-    overflow-x: hidden !important;
-    width: 100% !important;
-    position: relative !important;
-    min-height: 100vh;
-}
-
-/* === 2. Hamburger meni — OVERLAY, ne push === */
-@media (max-width: 1024px) {
-
-    .site-header {
-        max-width: 100vw !important;
-        width: 100% !important;
-        left: 0 !important;
-        right: 0 !important;
-    }
-
-    .header-right-group {
-        position: fixed !important;
-        top: 0 !important;
-        right: 0 !important;
-        left: auto !important;
-        width: 300px !important;
-        max-width: 85vw !important;
-        height: 100vh !important;
-        height: 100dvh !important;
-        z-index: 9999 !important;
-        transform: translateX(100%);
-        transition: transform .3s ease;
-        will-change: transform;
-        margin: 0 !important;
-    }
-
-    .header-right-group.active {
-        transform: translateX(0) !important;
-    }
-
-    .menu-backdrop {
-        z-index: 9998 !important;
-    }
-
-    .menu-backdrop.active {
-        display: block !important;
-    }
-
-}
-
-/* === 3. Modal popravka na mobile === */
-@media (max-width: 768px) {
-
-    .custom-modal {
-        padding: 0 !important;
-        align-items: flex-end !important;
-    }
-
-    .custom-modal .modal-content {
-        width: 100% !important;
-        max-width: 100% !important;
-        max-height: 92vh !important;
-        padding: 26px 18px !important;
-        margin: 0 !important;
-        border-radius: 20px 20px 0 0 !important;
-        overflow-x: hidden !important;
-        overflow-y: auto !important;
-        box-sizing: border-box !important;
-    }
-
-    .custom-modal .modal-title {
-        font-size: 20px !important;
-        line-height: 1.3 !important;
-        padding-right: 50px !important;
-        word-wrap: break-word !important;
-        overflow-wrap: break-word !important;
-        max-width: 100% !important;
-    }
-
-    .custom-modal .modal-badge {
-        word-wrap: break-word !important;
-        overflow-wrap: break-word !important;
-    }
-
-    .modal-text,
-    .modal-text p,
-    .modal-info-box {
-        word-wrap: break-word !important;
-        overflow-wrap: break-word !important;
-        max-width: 100% !important;
-    }
-
-    .modal-gallery {
-        grid-template-columns: 1fr !important;
-        gap: 10px !important;
-        max-width: 100% !important;
-    }
-
-    .modal-gallery img {
-        width: 100% !important;
-        max-width: 100% !important;
-        height: 200px !important;
-        object-fit: cover !important;
-    }
-
-    .custom-modal .modal-content .close-btn {
-        top: 12px !important;
-        right: 12px !important;
-        width: 40px !important;
-        height: 40px !important;
-        font-size: 24px !important;
-        z-index: 5 !important;
-    }
-
-}
-
-/* === 4. Sigurnost svih flex/grid kontejnera === */
-.site-header,
-.container,
-section {
-    max-width: 100vw !important;
-    box-sizing: border-box !important;
-}
-
-/* ============================================
-   KRAJ FINAL FIX-A
-   ============================================ */
-
-   /* ============================================
-   CHAT FAB MOBILE LOCK
-   Sprečava da se chat dugme naduva na mobilnom
-   ============================================ */
-
-@media (max-width: 768px) {
-
-  .chat-fab {
-    width:auto !important;
-    height:auto !important;
-    bottom:20px !important;
-    left:20px !important;
-  }
-
-  .chat-fab-main {
-    width:56px !important;
-    height:56px !important;
-    min-width:56px !important;
-    min-height:56px !important;
-    max-width:56px !important;
-    max-height:56px !important;
-    border-radius:50% !important;
-    display:flex !important;
-    align-items:center !important;
-    justify-content:center !important;
-    padding:0 !important;
-    margin:0 !important;
-    flex-shrink:0 !important;
-    box-sizing:border-box !important;
-    overflow:hidden !important;
-  }
-
-  .chat-fab-main svg {
-    width:24px !important;
-    height:24px !important;
-    min-width:24px !important;
-    min-height:24px !important;
-    max-width:24px !important;
-    max-height:24px !important;
-    display:block !important;
-    flex-shrink:0 !important;
-  }
-
-  .chat-fab-icon {
-    width:42px !important;
-    height:42px !important;
-    min-width:42px !important;
-    min-height:42px !important;
-    max-width:42px !important;
-    max-height:42px !important;
-    display:flex !important;
-    align-items:center !important;
-    justify-content:center !important;
-    flex-shrink:0 !important;
-    box-sizing:border-box !important;
-    padding:0 !important;
-  }
-
-  .chat-fab-icon svg {
-    width:22px !important;
-    height:22px !important;
-    max-width:22px !important;
-    max-height:22px !important;
-    display:block !important;
-  }
-
-}
-
-/* ============================================
-   ANDROID ANTI-JANK — NUCLEAR OPTION
-   Poslednja linija odbrane protiv seckanja
-   ============================================ */
-
-@media (max-width: 1024px) {
-
-  /* 1. KILL backdrop-filter SVUDA na mobilnom */
-  *,
-  *::before,
-  *::after {
-    backdrop-filter: none !important;
-    -webkit-backdrop-filter: none !important;
-  }
-
-  /* 2. Zameni providne pozadine punim (Android ne mora da računa transparency) */
-  .hero-badge {
-    background: rgba(0, 80, 95, 0.85) !important;
-    border: 1px solid rgba(255, 255, 255, 0.2) !important;
-  }
-
-  .hero-stats {
-    background: rgba(0, 26, 30, 0.9) !important;
-  }
-
-  .custom-modal {
-    background: rgba(0, 26, 30, 0.95) !important;
-  }
-
-  /* 3. POTPUNO UBIJ hero animaciju (ne samo pause) */
-  .hero-bg-img {
-    animation: none !important;
-    transform: none !important;
-    will-change: auto !important;
-  }
-
-  /* 4. Skini will-change sa svega — Android ga doživljava kao "uvek aktivan GPU layer" */
-  .hero-bg,
-  .hero-bg-img,
-  .site-header,
-  .header-right-group,
-  .chat-fab,
-  .back-to-top,
-  .reveal {
-    will-change: auto !important;
-    transform: none !important;
-  }
-
-  /* 5. Smanji teret na fixed elementima */
-  .chat-fab,
-  .back-to-top {
-    contain: layout style paint;
-  }
-
-  /* 6. Optimizuj scroll na celom body-ju */
-  html, body {
-    -webkit-overflow-scrolling: touch;
-    overscroll-behavior-y: none;
-  }
-
-  /* 7. KLJUČNO: content-visibility za sve sekcije */
-  /* Renderuje samo ono što je trenutno na ekranu */
-  section {
-    content-visibility: auto;
-    contain-intrinsic-size: auto 600px;
-  }
-
-  /* Izuzeci — ove sekcije UVEK renderuj */
-  #home,
-  .site-header {
-    content-visibility: visible;
-  }
-
-  /* 8. Disable hover efekti na mobilnom (Android ih sve tretira kao "click hold") */
-  .gallery-item:hover img,
-  .stop-item:hover,
-  .review-card:hover,
-  .chat-fab-main:hover,
-  .chat-fab-icon:hover {
-    transform: none !important;
-    box-shadow: inherit !important;
-  }
-
-  /* 9. Smanji senke koje Android jedva renderuje */
-  .review-card,
-  .stop-item,
-  .price-card,
-  .book-form,
-  .ask-form,
-  .video-wrap,
-  .gallery-item {
-    box-shadow: 0 2px 8px rgba(0,0,0,0.1) !important;
-  }
-
-  /* 10. Iskljuci sve transitions tokom scroll-a */
-  .reveal {
-    transition: opacity 0.3s ease !important;
-    transform: none !important;
-  }
-}
-
-/* Dodatno za stari Android (Samsung Internet, Chrome <90) */
-@media (max-width: 768px) and (hover: none) and (pointer: coarse) {
-  * {
-    -webkit-tap-highlight-color: transparent;
-  }
-  
-  img {
-    image-rendering: -webkit-optimize-contrast;
-  }
-}
-
-/* ============================================
-   MOBILE MENU CLOSE FIX
-   Garantuje da X dugme i tap-outside rade
-   ============================================ */
-
-@media (max-width: 1024px) {
-
-  /* X dugme MORA biti klikabilno */
-  .menu-close-btn {
-    display: flex !important;
-    align-items: center !important;
-    justify-content: center !important;
-    position: absolute !important;
-    top: 18px !important;
-    right: 18px !important;
-    width: 44px !important;
-    height: 44px !important;
-    background: rgba(255, 255, 255, 0.1) !important;
-    border: none !important;
-    border-radius: 50% !important;
-    color: #fff !important;
-    font-size: 1.6rem !important;
-    cursor: pointer !important;
-    z-index: 10000 !important;
-    pointer-events: auto !important;
-    -webkit-tap-highlight-color: rgba(255,255,255,0.2) !important;
-    touch-action: manipulation !important;
-    margin: 0 !important;
-  }
-
-  .menu-close-btn:active {
-    background: rgba(255, 255, 255, 0.25) !important;
-    transform: scale(0.95);
-  }
-
-  /* Backdrop MORA da bude klikabilan */
-  .menu-backdrop {
-    pointer-events: none;
-    z-index: 9998 !important;
-  }
-
-  .menu-backdrop.active {
-    pointer-events: auto !important;
-    display: block !important;
-    opacity: 1 !important;
-  }
-
-  /* Meni iznad backdrop-a */
-  .header-right-group {
-    pointer-events: auto !important;
-    z-index: 9999 !important;
-  }
-
-}
-
 </style>
 </head>
 <body>
@@ -1499,7 +978,7 @@ section {
 
   <!-- Side menu / desktop nav -->
   <div class="header-right-group" id="headerRightGroup">
-    <button class="menu-close-btn" aria-label="Close Menu" onclick="closeMenu()">✕</button>
+    <button class="menu-close-btn" aria-label="Close Menu">✕</button>
 
     <a href="#about" data-i18n="nav.about">About</a>
     <a href="#contact" data-i18n="nav.contact">Contact</a>
@@ -1526,7 +1005,7 @@ section {
   </div>
 
   <!-- Backdrop for tap-outside-to-close -->
-  <div class="menu-backdrop" id="menuBackdrop" onclick="closeMenu()"></div>
+  <div class="menu-backdrop" id="menuBackdrop"></div>
 </header>
 
 <!-- ================================
@@ -2156,9 +1635,9 @@ section {
         <p class="section-sub" data-i18n="ask.subtitle">Our team is happy to help. Reach out with any question about the Demre · Myra · Kekova tour — pickup, languages, special requests, anything.</p>
 
         <ul class="ask-contact-list">
-          <li><span class="ask-contact-icon">📞</span> <a href="tel:+905510066857">+90 551 006 68 57</a> (Eng, Rus, Tur)</li>
-          <li><span class="ask-contact-icon">📞</span> <a href="tel:+905331429037">+90 533 142 90 37</a> (Eng, SRB)</li>
-          <li><span class="ask-contact-icon">✉️</span> <a href="mailto:info@myvalanyatravel.com">info@myvalanyatravel.com</a></li>
+          <li><a href="tel:+905510066857"><span class="ask-contact-icon">📞</span> +90 551 006 68 57</a> (Eng, Rus, Tur)</li>
+          <li><a href="tel:+905331429037"><span class="ask-contact-icon">📞</span> +90 533 142 90 37</a> (Eng, SRB)</li>
+          <li><a href="mailto:info@myvalanyatravel.com"><span class="ask-contact-icon">✉️</span> info@myvalanyatravel.com</a></li>
           <li><span class="ask-contact-icon">📍</span> Saray Mah. Macaroğlu Sok.<br>Macaroğlu Apt. No 1/8, Alanya / Antalya, Turkey</li>
         </ul>
       </div>
@@ -2660,78 +2139,44 @@ const translations = {
 };
 
 // ============================================
-// MOBILE MENU
+// MOBILE MENU — open/close + tap-outside
 // ============================================
-const menuToggle = document.querySelector('.menu-toggle');
-const menuClose = document.querySelector('.menu-close-btn');
-const headerRight = document.getElementById('headerRightGroup');
-const menuBackdrop = document.getElementById('menuBackdrop');
+(function(){
+  const toggleBtn  = document.querySelector('.menu-toggle');
+  const closeBtn   = document.querySelector('.menu-close-btn');
+  const menu       = document.getElementById('headerRightGroup');
+  const backdrop   = document.getElementById('menuBackdrop');
 
-function openMenu() {
-  headerRight.classList.add('active');
-  menuBackdrop.classList.add('active');
-  document.body.style.overflow = 'hidden';
-}
-function closeMenu() {
-  // Pronađi elemente svaki put (ne oslanja se na cached varijable)
-  var hr = document.getElementById('headerRightGroup');
-  var mb = document.getElementById('menuBackdrop');
-  
-  if (hr) hr.classList.remove('active');
-  if (mb) mb.classList.remove('active');
-  document.body.style.overflow = '';
-  document.body.style.position = '';
-  
-  console.log('closeMenu() pozvana — meni zatvoren'); // Za debug
-}
-menuToggle && menuToggle.addEventListener('click', openMenu);
-menuClose && menuClose.addEventListener('click', closeMenu);
+  if(!toggleBtn || !menu) return;
 
-// ============================================
-// MENU CLOSE — SIGURNOSNA MREŽA
-// Garantuje da X dugme i klik van menija zatvaraju meni
-// ============================================
+  function openMenu(){
+    menu.classList.add('active');
+    if(backdrop) backdrop.classList.add('active');
+    document.body.style.overflow = 'hidden';
+  }
 
-// 1. Bind X dugme PONOVO (u slučaju da je prvi listener zakazao)
-document.addEventListener('click', function(e) {
-  
-  // Ako je kliknut X dugme (ili bilo šta unutar njega)
-  if (e.target.closest('.menu-close-btn')) {
-    e.preventDefault();
+  function closeMenu(){
+    menu.classList.remove('active');
+    if(backdrop) backdrop.classList.remove('active');
+    document.body.style.overflow = '';
+  }
+
+  toggleBtn.addEventListener('click', (e) => {
     e.stopPropagation();
-    closeMenu();
-    return;
-  }
-  
-  // Ako je meni otvoren i klik je VAN menija (i nije hamburger)
-  if (!headerRight || !headerRight.classList.contains('active')) return;
-  if (headerRight.contains(e.target)) return;
-  if (menuToggle && menuToggle.contains(e.target)) return;
-  
-  closeMenu();
-});
+    menu.classList.contains('active') ? closeMenu() : openMenu();
+  });
 
-// 2. Touch event za Android (Chrome ponekad ignoriše click)
-document.addEventListener('touchend', function(e) {
-  if (e.target.closest('.menu-close-btn')) {
-    e.preventDefault();
-    closeMenu();
-  }
-}, { passive: false });
-menuBackdrop && menuBackdrop.addEventListener('click', closeMenu);
+  if(closeBtn) closeBtn.addEventListener('click', closeMenu);
+  if(backdrop) backdrop.addEventListener('click', closeMenu);
 
-// Safety net — zatvori meni klikom bilo gde van njega
-document.addEventListener('click', function(e) {
-  if (!headerRight || !headerRight.classList.contains('active')) return;
-  if (headerRight.contains(e.target)) return;
-  if (menuToggle && menuToggle.contains(e.target)) return;
-  closeMenu();
-});
+  menu.querySelectorAll('a').forEach(link => {
+    link.addEventListener('click', closeMenu);
+  });
 
-// Close menu when any nav link is tapped
-headerRight && headerRight.querySelectorAll('a').forEach(link => {
-  link.addEventListener('click', closeMenu);
-});
+  document.addEventListener('keydown', (e) => {
+    if(e.key === 'Escape' && menu.classList.contains('active')) closeMenu();
+  });
+})();
 
 // ============================================
 // HIGHLIGHT MODALS (Kekova, Myra, St. Nicholas)
