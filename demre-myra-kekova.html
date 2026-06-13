@@ -1303,6 +1303,118 @@ section {
 
 }
 
+/* ============================================
+   ANDROID ANTI-JANK — NUCLEAR OPTION
+   Poslednja linija odbrane protiv seckanja
+   ============================================ */
+
+@media (max-width: 1024px) {
+
+  /* 1. KILL backdrop-filter SVUDA na mobilnom */
+  *,
+  *::before,
+  *::after {
+    backdrop-filter: none !important;
+    -webkit-backdrop-filter: none !important;
+  }
+
+  /* 2. Zameni providne pozadine punim (Android ne mora da računa transparency) */
+  .hero-badge {
+    background: rgba(0, 80, 95, 0.85) !important;
+    border: 1px solid rgba(255, 255, 255, 0.2) !important;
+  }
+
+  .hero-stats {
+    background: rgba(0, 26, 30, 0.9) !important;
+  }
+
+  .custom-modal {
+    background: rgba(0, 26, 30, 0.95) !important;
+  }
+
+  /* 3. POTPUNO UBIJ hero animaciju (ne samo pause) */
+  .hero-bg-img {
+    animation: none !important;
+    transform: none !important;
+    will-change: auto !important;
+  }
+
+  /* 4. Skini will-change sa svega — Android ga doživljava kao "uvek aktivan GPU layer" */
+  .hero-bg,
+  .hero-bg-img,
+  .site-header,
+  .header-right-group,
+  .chat-fab,
+  .back-to-top,
+  .reveal {
+    will-change: auto !important;
+    transform: none !important;
+  }
+
+  /* 5. Smanji teret na fixed elementima */
+  .chat-fab,
+  .back-to-top {
+    contain: layout style paint;
+  }
+
+  /* 6. Optimizuj scroll na celom body-ju */
+  html, body {
+    -webkit-overflow-scrolling: touch;
+    overscroll-behavior-y: none;
+  }
+
+  /* 7. KLJUČNO: content-visibility za sve sekcije */
+  /* Renderuje samo ono što je trenutno na ekranu */
+  section {
+    content-visibility: auto;
+    contain-intrinsic-size: auto 600px;
+  }
+
+  /* Izuzeci — ove sekcije UVEK renderuj */
+  #home,
+  .site-header {
+    content-visibility: visible;
+  }
+
+  /* 8. Disable hover efekti na mobilnom (Android ih sve tretira kao "click hold") */
+  .gallery-item:hover img,
+  .stop-item:hover,
+  .review-card:hover,
+  .chat-fab-main:hover,
+  .chat-fab-icon:hover {
+    transform: none !important;
+    box-shadow: inherit !important;
+  }
+
+  /* 9. Smanji senke koje Android jedva renderuje */
+  .review-card,
+  .stop-item,
+  .price-card,
+  .book-form,
+  .ask-form,
+  .video-wrap,
+  .gallery-item {
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1) !important;
+  }
+
+  /* 10. Iskljuci sve transitions tokom scroll-a */
+  .reveal {
+    transition: opacity 0.3s ease !important;
+    transform: none !important;
+  }
+}
+
+/* Dodatno za stari Android (Samsung Internet, Chrome <90) */
+@media (max-width: 768px) and (hover: none) and (pointer: coarse) {
+  * {
+    -webkit-tap-highlight-color: transparent;
+  }
+  
+  img {
+    image-rendering: -webkit-optimize-contrast;
+  }
+}
+
 </style>
 </head>
 <body>
