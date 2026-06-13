@@ -1499,7 +1499,7 @@ section {
 
   <!-- Side menu / desktop nav -->
   <div class="header-right-group" id="headerRightGroup">
-    <button class="menu-close-btn" aria-label="Close Menu">✕</button>
+    <button class="menu-close-btn" aria-label="Close Menu" onclick="closeMenu()">✕</button>
 
     <a href="#about" data-i18n="nav.about">About</a>
     <a href="#contact" data-i18n="nav.contact">Contact</a>
@@ -1526,7 +1526,7 @@ section {
   </div>
 
   <!-- Backdrop for tap-outside-to-close -->
-  <div class="menu-backdrop" id="menuBackdrop"></div>
+  <div class="menu-backdrop" id="menuBackdrop" onclick="closeMenu()"></div>
 </header>
 
 <!-- ================================
@@ -2673,9 +2673,16 @@ function openMenu() {
   document.body.style.overflow = 'hidden';
 }
 function closeMenu() {
-  headerRight.classList.remove('active');
-  menuBackdrop.classList.remove('active');
+  // Pronađi elemente svaki put (ne oslanja se na cached varijable)
+  var hr = document.getElementById('headerRightGroup');
+  var mb = document.getElementById('menuBackdrop');
+  
+  if (hr) hr.classList.remove('active');
+  if (mb) mb.classList.remove('active');
   document.body.style.overflow = '';
+  document.body.style.position = '';
+  
+  console.log('closeMenu() pozvana — meni zatvoren'); // Za debug
 }
 menuToggle && menuToggle.addEventListener('click', openMenu);
 menuClose && menuClose.addEventListener('click', closeMenu);
