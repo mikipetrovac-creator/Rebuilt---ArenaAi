@@ -2357,18 +2357,6 @@ headerRight && headerRight.querySelectorAll('a').forEach(link => {
   link.addEventListener('click', closeMenu);
 });
 
-// 1. Ovde su tvoji linkovi
-headerRight && headerRight.querySelectorAll('a').forEach(link => {
-  link.addEventListener('click', closeMenu);
-});
-
-// 2. OVDE STAVI ESCAPE LOGIKU
-document.addEventListener('keydown', (e) => {
-  if (e.key === 'Escape' && headerRight && headerRight.classList.contains('active')) {
-    closeMenu();
-  }
-});
-
 // ============================================
 // HIGHLIGHT MODALS (Kekova, Myra, St. Nicholas)
 // ============================================
@@ -2521,11 +2509,6 @@ function closeLightbox(){document.getElementById('lightbox').classList.remove('o
 function navigateLightbox(dir){currentLightboxIndex=(currentLightboxIndex+dir+galleryImages.length)%galleryImages.length;updateLightbox()}
 function updateLightbox(){const img=galleryImages[currentLightboxIndex];document.getElementById('lightbox-img').src=img.src;document.getElementById('lightbox-caption').textContent=translations[currentLang][img.captionKey]||translations.en[img.captionKey]}
 
-// Keyboard
-document.addEventListener('keydown',function(e){
-  if(document.getElementById('lightbox').classList.contains('open')){if(e.key==='Escape')closeLightbox();if(e.key==='ArrowLeft')navigateLightbox(-1);if(e.key==='ArrowRight')navigateLightbox(1)}
-  if(e.key==='Escape'){document.querySelectorAll('.custom-modal.open,.modal-overlay.open').forEach(m=>{m.classList.remove('open');document.body.style.overflow=''})}
-});
 document.getElementById('successModal').addEventListener('click',function(e){if(e.target===this){this.classList.remove('open');document.body.style.overflow=''}});
 document.getElementById('lightbox').addEventListener('click',function(e){if(e.target===this)closeLightbox()});
 
@@ -2614,6 +2597,42 @@ document.addEventListener('DOMContentLoaded',function(){
   setLanguage(currentLang);
   switchPkg('premium');
   calcTotal();
+});
+
+// ============================================
+// UNIVERZALNI KEYBOARD HANDLER (ESC & Strelice)
+// ============================================
+document.addEventListener('keydown', function(e) {
+  
+  // 1. Ako je pritisnut ESCAPE taster
+  if (e.key === 'Escape') {
+    
+    // Zatvori mobilni meni (ako je otvoren)
+    const headerRight = document.getElementById('headerRightGroup');
+    if (headerRight && headerRight.classList.contains('active')) {
+      closeMenu();
+    }
+    
+    // Zatvori Lightbox (galeriju) (ako je otvoren)
+    const lightbox = document.getElementById('lightbox');
+    if (lightbox && lightbox.classList.contains('open')) {
+      closeLightbox();
+    }
+    
+    // Zatvori sve ostale modale i pop-upove (ako su otvoreni)
+    document.querySelectorAll('.custom-modal.open, .modal-overlay.open').forEach(modal => {
+      modal.classList.remove('open');
+      document.body.style.overflow = ''; // Vraća skrol na stranicu
+    });
+  }
+
+  // 2. Ako su pritisnute STRELICE levo/desno (samo za Lightbox galeriju)
+  const lightbox = document.getElementById('lightbox');
+  if (lightbox && lightbox.classList.contains('open')) {
+    if (e.key === 'ArrowLeft') navigateLightbox(-1);
+    if (e.key === 'ArrowRight') navigateLightbox(1);
+  }
+  
 });
 </script>
 </body>
