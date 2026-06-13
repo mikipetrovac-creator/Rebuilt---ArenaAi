@@ -827,31 +827,6 @@ footer{background:var(--dark);color:rgba(255,255,255,.7);padding:60px 40px 30px}
      /* ===== UNIVERZALNI MOBILNI FIX — kraj ===== */
 
 
-/* ===== SCROLL PERFORMANCE FIX — pocetak ===== */
-
-/* A) Reduced-motion users (also a perf win) */
-@media (prefers-reduced-motion: reduce){
-  *,*::before,*::after{animation-duration:.001ms !important;animation-iteration-count:1 !important;transition-duration:.001ms !important;scroll-behavior:auto !important}
-}
-
-/* B) GPU-promote ONLY persistent compositor-heavy elements (targeted, not everything) */
-.hero-bg-img{transform:translateZ(0);backface-visibility:hidden;will-change:transform}
-.site-header,.chat-fab,.back-to-top{transform:translateZ(0);backface-visibility:hidden}
-
-/* C) MOBILE (<=768px): remove the properties that jank Android Chrome scrolling */
-@media (max-width:768px){
-  /* frosted glass (backdrop-filter) is recomputed every scroll frame -> biggest culprit */
-  .hero-badge{backdrop-filter:none !important;-webkit-backdrop-filter:none !important;background:rgba(0,0,0,.32) !important;border-color:rgba(255,255,255,.25) !important}
-  .hero-stats,.custom-modal{backdrop-filter:none !important;-webkit-backdrop-filter:none !important}
-  /* pause the infinite hero zoom while scrolling */
-  .hero-bg-img{animation:none !important}
-  /* a sticky element repaints every scroll frame -> unstick the price card on phones */
-  .price-card{position:static !important;top:auto !important}
-  /* heavy drop-shadows are costly to repaint -> lighten them on phones */
-  .review-card,.price-card,.included-box,.stop-item,.gallery-item,.about-image,.book-form,.faq-item,.day-content{box-shadow:0 2px 8px rgba(0,0,0,.08) !important}
-}
-
-/* ===== SCROLL PERFORMANCE FIX — kraj ===== */
 
 </style>
 </head>
@@ -1216,7 +1191,7 @@ footer{background:var(--dark);color:rgba(255,255,255,.7);padding:60px 40px 30px}
 <section id="about">
   <div class="container two-col">
     <div class="about-image reveal">
-      <img loading="lazy" decoding="async" src="https://images.pexels.com/photos/12932802/pexels-photo-12932802.jpeg?auto=compress&cs=tinysrgb&w=800&fm=webp" alt="Alanya Castle and coastline">
+      <img decoding="async" src="https://images.pexels.com/photos/12932802/pexels-photo-12932802.jpeg?auto=compress&cs=tinysrgb&w=800&fm=webp" alt="Alanya Castle and coastline">
     </div>
     <div class="reveal">
       <div class="section-tag" data-i18n="about.tag">ABOUT US</div>
@@ -1254,23 +1229,23 @@ footer{background:var(--dark);color:rgba(255,255,255,.7);padding:60px 40px 30px}
     <h2 class="section-title reveal" data-i18n="gallery.title">The Turquoise Coast Awaits</h2>
     <div class="gallery-grid reveal">
       <div class="gallery-item" onclick="openLightbox(0)">
-        <img loading="lazy" decoding="async" src="https://images.pexels.com/photos/13197277/pexels-photo-13197277.jpeg?auto=compress&cs=tinysrgb&w=1200&fm=webp" alt="Kekova">
+        <img decoding="async" src="https://images.pexels.com/photos/13197277/pexels-photo-13197277.jpeg?auto=compress&cs=tinysrgb&w=1200&fm=webp" alt="Kekova">
         <div class="gallery-caption" data-i18n="gallery.cap1">Kekova & Simena Castle</div>
       </div>
       <div class="gallery-item" onclick="openLightbox(1)">
-        <img loading="lazy" decoding="async" src="https://images.pexels.com/photos/16692240/pexels-photo-16692240.jpeg?auto=compress&cs=tinysrgb&w=600&fm=webp" alt="Myra Rock Tombs">
+        <img decoding="async" src="https://images.pexels.com/photos/16692240/pexels-photo-16692240.jpeg?auto=compress&cs=tinysrgb&w=600&fm=webp" alt="Myra Rock Tombs">
         <div class="gallery-caption" data-i18n="gallery.cap2">Lycian Rock Tombs, Myra</div>
       </div>
       <div class="gallery-item" onclick="openLightbox(2)">
-        <img loading="lazy" decoding="async" src="https://images.pexels.com/photos/15167459/pexels-photo-15167459.jpeg?auto=compress&cs=tinysrgb&w=600&fm=webp" alt="St Nicholas Church">
+        <img decoding="async" src="https://images.pexels.com/photos/15167459/pexels-photo-15167459.jpeg?auto=compress&cs=tinysrgb&w=600&fm=webp" alt="St Nicholas Church">
         <div class="gallery-caption" data-i18n="gallery.cap3">St. Nicholas Church</div>
       </div>
       <div class="gallery-item" onclick="openLightbox(3)">
-        <img loading="lazy" decoding="async" src="https://images.pexels.com/photos/18961891/pexels-photo-18961891.jpeg?auto=compress&cs=tinysrgb&w=600&fm=webp" alt="Myra Ancient City">
+        <img decoding="async" src="https://images.pexels.com/photos/18961891/pexels-photo-18961891.jpeg?auto=compress&cs=tinysrgb&w=600&fm=webp" alt="Myra Ancient City">
         <div class="gallery-caption" data-i18n="gallery.cap4">Myra Ancient City</div>
       </div>
       <div class="gallery-item" onclick="openLightbox(4)">
-        <img loading="lazy" decoding="async" src="https://images.pexels.com/photos/19015514/pexels-photo-19015514.jpeg?auto=compress&cs=tinysrgb&w=600&fm=webp" alt="Mediterranean Coast">
+        <img decoding="async" src="https://images.pexels.com/photos/19015514/pexels-photo-19015514.jpeg?auto=compress&cs=tinysrgb&w=600&fm=webp" alt="Mediterranean Coast">
         <div class="gallery-caption" data-i18n="gallery.cap5">Mediterranean Coast</div>
       </div>
     </div>
@@ -1715,8 +1690,8 @@ footer{background:var(--dark);color:rgba(255,255,255,.7);padding:60px 40px 30px}
     <h2 class="modal-title" data-i18n="modal.kekova.title">⛵ The Sunken City of Kekova</h2>
     <p class="modal-badge" data-i18n="modal.kekova.badge">Special Highlight • Boat Cruise</p>
     <div class="modal-gallery">
-      <img loading="lazy" decoding="async" src="https://images.pexels.com/photos/13197277/pexels-photo-13197277.jpeg?auto=compress&cs=tinysrgb&w=600&fm=webp" alt="Kekova sunken city">
-      <img loading="lazy" decoding="async" src="https://images.pexels.com/photos/27330526/pexels-photo-27330526.jpeg?auto=compress&cs=tinysrgb&w=600&fm=webp" alt="Sunken city ruins in turquoise water">
+      <img decoding="async" src="https://images.pexels.com/photos/13197277/pexels-photo-13197277.jpeg?auto=compress&cs=tinysrgb&w=600&fm=webp" alt="Kekova sunken city">
+      <img decoding="async" src="https://images.pexels.com/photos/27330526/pexels-photo-27330526.jpeg?auto=compress&cs=tinysrgb&w=600&fm=webp" alt="Sunken city ruins in turquoise water">
     </div>
     <div class="modal-text">
       <p data-i18n="modal.kekova.desc1">The <strong>Sunken City of Kekova</strong> (ancient Dolchiste) was a thriving Lycian settlement that was partially submerged beneath the Mediterranean following a devastating 2nd-century earthquake. Today, the remarkably preserved ruins — staircases, walls, and foundations — are clearly visible through the crystal-clear turquoise water from the boat's glass bottom.</p>
@@ -1739,8 +1714,8 @@ footer{background:var(--dark);color:rgba(255,255,255,.7);padding:60px 40px 30px}
     <h2 class="modal-title" data-i18n="modal.myra.title">🏛 Lycian Rock Tombs & Roman Theatre — Myra</h2>
     <p class="modal-badge" data-i18n="modal.myra.badge">Special Highlight • Ancient Ruins</p>
     <div class="modal-gallery">
-      <img loading="lazy" decoding="async" src="https://images.pexels.com/photos/16692240/pexels-photo-16692240.jpeg?auto=compress&cs=tinysrgb&w=600&fm=webp" alt="Myra Lycian rock tombs">
-      <img loading="lazy" decoding="async" src="https://images.pexels.com/photos/18961891/pexels-photo-18961891.jpeg?auto=compress&cs=tinysrgb&w=600&fm=webp" alt="Myra ancient city ruins">
+      <img decoding="async" src="https://images.pexels.com/photos/16692240/pexels-photo-16692240.jpeg?auto=compress&cs=tinysrgb&w=600&fm=webp" alt="Myra Lycian rock tombs">
+      <img decoding="async" src="https://images.pexels.com/photos/18961891/pexels-photo-18961891.jpeg?auto=compress&cs=tinysrgb&w=600&fm=webp" alt="Myra ancient city ruins">
     </div>
     <div class="modal-text">
       <p data-i18n="modal.myra.desc1">The ancient city of <strong>Myra</strong> was one of the six leading cities of the Lycian League. Its most spectacular feature is the collection of extraordinary rock-cut tombs carved directly into the sheer vertical cliff face — each one an intricate, temple-like façade that once housed the Lycian elite.</p>
@@ -1763,8 +1738,8 @@ footer{background:var(--dark);color:rgba(255,255,255,.7);padding:60px 40px 30px}
     <h2 class="modal-title" data-i18n="modal.nicholas.title">⛪ St. Nicholas Church — Demre</h2>
     <p class="modal-badge" data-i18n="modal.nicholas.badge">Special Highlight • Historical Pilgrimage</p>
     <div class="modal-gallery">
-      <img loading="lazy" decoding="async" src="https://images.pexels.com/photos/15167459/pexels-photo-15167459.jpeg?auto=compress&cs=tinysrgb&w=600&fm=webp" alt="St Nicholas Church interior">
-      <img loading="lazy" decoding="async" src="https://images.pexels.com/photos/35624257/pexels-photo-35624257.jpeg?auto=compress&cs=tinysrgb&w=600&fm=webp" alt="Byzantine frescoes">
+      <img decoding="async" src="https://images.pexels.com/photos/15167459/pexels-photo-15167459.jpeg?auto=compress&cs=tinysrgb&w=600&fm=webp" alt="St Nicholas Church interior">
+      <img decoding="async" src="https://images.pexels.com/photos/35624257/pexels-photo-35624257.jpeg?auto=compress&cs=tinysrgb&w=600&fm=webp" alt="Byzantine frescoes">
     </div>
     <div class="modal-text">
       <p data-i18n="modal.nicholas.desc1">This ancient pilgrimage church was built over the tomb of <strong>St. Nicholas of Myra</strong>, the historical 4th-century bishop whose legendary generosity inspired the global figure of <strong>Santa Claus</strong>. The church dates from the 6th century and contains beautiful Byzantine-era floor mosaics and frescoes.</p>
