@@ -1047,15 +1047,17 @@ footer{background:var(--dark);color:rgba(255,255,255,.7);padding:60px 40px 30px}
       <div class="stops-grid">
         <div class="stop-item"><div class="stop-num">01</div><div class="stop-icon gray">🎈</div><div><div class="stop-name" data-i18n="itinerary.stop13">Optional: Hot air balloon ride at sunrise</div></div></div>
         <div class="stop-item"><div class="stop-num">02</div><div class="stop-icon gray">🍳</div><div><div class="stop-name" data-i18n="itinerary.stop14">Breakfast at the hotel</div></div></div>
-        <div class="stop-item clickable" onclick="openModal('onyxModal')"><div class="stop-num">03</div><div class="stop-icon">💎</div><div><div class="stop-badge" data-i18n="itinerary.highlight">Special Highlight</div><div class="stop-name" data-i18n="itinerary.stop15">Onyx & Alabaster Workshop</div></div></div>
-        <div class="stop-item clickable" onclick="openModal('goremeModal')"><div class="stop-num">04</div><div class="stop-icon">⛰️</div><div><div class="stop-badge" data-i18n="itinerary.highlight">Special Highlight</div><div class="stop-name" data-i18n="itinerary.stop16">Göreme Open Air Museum</div></div></div>
-        <div class="stop-item"><div class="stop-num">05</div><div class="stop-icon gray">🍽</div><div><div class="stop-name" data-i18n="itinerary.stop17">Lunch at local restaurant</div></div></div>
-        <div class="stop-item clickable" onclick="openModal('fairyModal')"><div class="stop-num">06</div><div class="stop-icon">🪨</div><div><div class="stop-badge" data-i18n="itinerary.highlight">Special Highlight</div><div class="stop-name" data-i18n="itinerary.stop18">Fairy Chimneys viewpoint</div></div></div>
-        <div class="stop-item"><div class="stop-num">07</div><div class="stop-icon gray">🚌</div><div><div class="stop-name" data-i18n="itinerary.stop19">Return journey to Alanya</div></div></div>
-        <div class="stop-item"><div class="stop-num">08</div><div class="stop-icon gray">🏠</div><div><div class="stop-name" data-i18n="itinerary.stop20">Arrival back in Alanya</div></div></div>
+        <div class="stop-item"><div class="stop-num">03</div><div class="stop-icon gray">🛎️</div><div><div class="stop-name" data-i18n="itinerary.stop15">Hotel check-out</div></div></div>
+        <div class="stop-item clickable" onclick="openModal('ucGuzellerModal')"><div class="stop-num">04</div><div class="stop-icon">🌄</div><div><div class="stop-badge" data-i18n="itinerary.highlight">Special Highlight</div><div class="stop-name" data-i18n="itinerary.stop16">Üç Güzeller Valley (Three Graces)</div></div></div>
+        <div class="stop-item clickable" onclick="openModal('uchisarModal')"><div class="stop-num">05</div><div class="stop-icon">🏘️</div><div><div class="stop-badge" data-i18n="itinerary.highlight">Special Highlight</div><div class="stop-name" data-i18n="itinerary.stop17">Uçhisar</div></div></div>
+        <div class="stop-item clickable" onclick="openModal('goremeModal')"><div class="stop-num">06</div><div class="stop-icon">⛰️</div><div><div class="stop-badge" data-i18n="itinerary.highlight">Special Highlight</div><div class="stop-name" data-i18n="itinerary.stop18">Göreme Panorama</div></div></div>
+        <div class="stop-item clickable" onclick="openModal('onyxModal')"><div class="stop-num">07</div><div class="stop-icon">💎</div><div><div class="stop-badge" data-i18n="itinerary.highlight">Special Highlight</div><div class="stop-name" data-i18n="itinerary.stop19">Onyx & Alabaster Workshop</div></div></div>
+        <div class="stop-item"><div class="stop-num">08</div><div class="stop-icon gray">🕌</div><div><div class="stop-name" data-i18n="itinerary.stop20">Karavan Saray</div></div></div>
+        <div class="stop-item"><div class="stop-num">09</div><div class="stop-icon gray">🍽</div><div><div class="stop-name" data-i18n="itinerary.stop21">Lunch in Konya</div></div></div>
+        <div class="stop-item"><div class="stop-num">10</div><div class="stop-icon gray">🏠</div><div><div class="stop-name" data-i18n="itinerary.stop22">Arrival at hotels</div></div></div>
       </div>
+     </div>
     </div>
-  </div>
 </section>
 
 <!-- ================================
@@ -1731,52 +1733,76 @@ footer{background:var(--dark);color:rgba(255,255,255,.7);padding:60px 40px 30px}
   </div>
 </div>
 
-<!-- GÖREME -->
+<!-- GÖREME PANORAMA -->
 <div id="goremeModal" class="custom-modal" onclick="closeModalOutside(event,'goremeModal')">
   <div class="modal-content">
     <span class="close-btn" onclick="closeModalById('goremeModal')">&times;</span>
-    <h2 class="modal-title" data-i18n="modal.goreme.title">⛰️ Göreme Open Air Museum</h2>
-    <p class="modal-badge" data-i18n="modal.goreme.badge">Special Highlight • Day 2 • Historical Experience</p>
+    <h2 class="modal-title" data-i18n="modal.goreme.title">⛰️ Göreme Panorama</h2>
+    <p class="modal-badge" data-i18n="modal.goreme.badge">Special Highlight • Day 2 • Panoramic Experience</p>
     <div class="modal-gallery">
-      <img decoding="async" src="https://images.pexels.com/photos/34648074/pexels-photo-34648074.jpeg?auto=compress&cs=tinysrgb&w=600&fm=webp" alt="Göreme cave architecture">
-      <img decoding="async" src="https://images.pexels.com/photos/34678133/pexels-photo-34678133.jpeg?auto=compress&cs=tinysrgb&w=600&fm=webp" alt="Göreme rock formations">
+      <img decoding="async" src="https://images.pexels.com/photos/34648074/pexels-photo-34648074.jpeg?auto=compress&cs=tinysrgb&w=600&fm=webp" alt="Göreme Valley panoramic view">
+      <img decoding="async" src="https://images.pexels.com/photos/34678133/pexels-photo-34678133.jpeg?auto=compress&cs=tinysrgb&w=600&fm=webp" alt="Göreme rock formations and fairy chimneys">
     </div>
     <div class="modal-text">
-      <p data-i18n="modal.goreme.desc1">A <strong>UNESCO World Heritage Site</strong>, this vast monastic complex contains some of the finest rock-cut churches in Cappadocia.</p>
-      <p data-i18n="modal.goreme.desc2">Visitors can explore ancient cave chapels, living quarters, and dining halls.</p>
+      <p data-i18n="modal.goreme.desc1">Enjoy spectacular panoramic views over the <strong>Göreme Valley</strong> — a unique landscape of fairy chimneys, cave dwellings, and ancient rock-cut churches.</p>
+      <p data-i18n="modal.goreme.desc2">One of Cappadocia's most iconic vistas — a perfect spot for unforgettable photos and a true taste of the region's magical atmosphere.</p>
       <div class="modal-info-box">
         <span data-i18n="modal.goreme.location"><strong>📍 Location:</strong> Göreme, Nevşehir Province</span><br>
-        <span data-i18n="modal.goreme.duration"><strong>🕐 Duration:</strong> Approximately 1.5–2 hours</span><br>
-        <span data-i18n="modal.goreme.highlight"><strong>🌄 Experience:</strong> Guided historical tour</span><br>
-        <span data-i18n="modal.goreme.included"><strong>✓ Included:</strong> In Premium (Ticket incl.) / Budget (Optional entry)</span>
+        <span data-i18n="modal.goreme.duration"><strong>🕐 Duration:</strong> Approximately 30–45 minutes</span><br>
+        <span data-i18n="modal.goreme.highlight"><strong>🌄 Experience:</strong> Panoramic viewpoint & photo session</span><br>
+        <span data-i18n="modal.goreme.included"><strong>✓ Included:</strong> In both Premium and Budget packages</span>
       </div>
     </div>
   </div>
 </div>
 
-<!-- FAIRY CHIMNEYS -->
-<div id="fairyModal" class="custom-modal" onclick="closeModalOutside(event,'fairyModal')">
+<!-- ÜÇ GÜZELLER VALLEY -->
+<div id="ucGuzellerModal" class="custom-modal" onclick="closeModalOutside(event,'ucGuzellerModal')">
   <div class="modal-content">
-    <span class="close-btn" onclick="closeModalById('fairyModal')">&times;</span>
-    <h2 class="modal-title" data-i18n="modal.fairy.title">🪨 Fairy Chimneys Viewpoint</h2>
-    <p class="modal-badge" data-i18n="modal.fairy.badge">Special Highlight • Day 2 • Panoramic Experience</p>
+    <span class="close-btn" onclick="closeModalById('ucGuzellerModal')">&times;</span>
+    <h2 class="modal-title" data-i18n="modal.ucGuzeller.title">🌄 Üç Güzeller Valley (Three Graces)</h2>
+    <p class="modal-badge" data-i18n="modal.ucGuzeller.badge">Special Highlight • Day 2 • Scenic Experience</p>
     <div class="modal-gallery">
-      <img decoding="async" src="https://images.pexels.com/photos/14816456/pexels-photo-14816456.jpeg?auto=compress&cs=tinysrgb&w=600&fm=webp" alt="Fairy Chimneys Pasabag">
-      <img decoding="async" src="https://images.pexels.com/photos/5324414/pexels-photo-5324414.jpeg?auto=compress&cs=tinysrgb&w=600&fm=webp" alt="Fairy Chimneys landscape">
+      <img decoding="async" src="https://images.pexels.com/photos/32094811/pexels-photo-32094811.jpeg?auto=compress&cs=tinysrgb&w=600&fm=webp" alt="Üç Güzeller Three Graces rock formations">
+      <img decoding="async" src="https://images.pexels.com/photos/5345501/pexels-photo-5345501.jpeg?auto=compress&cs=tinysrgb&w=600&fm=webp" alt="Üç Güzeller Valley fairy chimneys">
     </div>
     <div class="modal-text">
-      <p data-i18n="modal.fairy.desc1">Witness the multi-capped mushroom-shaped rock formations that define the visual identity of Cappadocia.</p>
-      <p data-i18n="modal.fairy.desc2">This famous viewpoint offers a spectacular close-up look at these unique geological wonders.</p>
+      <p data-i18n="modal.ucGuzeller.desc1">Admire the iconic <strong>Three Graces</strong> — three towering fairy chimneys standing side by side, shaped by millions of years of natural erosion.</p>
+      <p data-i18n="modal.ucGuzeller.desc2">A perfect photo stop with sweeping views over the Cappadocian landscape.</p>
       <div class="modal-info-box">
-        <span data-i18n="modal.fairy.location"><strong>📍 Location:</strong> Paşabağı (Monks Valley) / Göreme</span><br>
-        <span data-i18n="modal.fairy.duration"><strong>🕐 Duration:</strong> Approximately 30–45 minutes</span><br>
-        <span data-i18n="modal.fairy.highlight"><strong>🌄 Experience:</strong> Panoramic viewpoint & photo session</span><br>
-        <span data-i18n="modal.fairy.included"><strong>✓ Included:</strong> In both Premium and Budget packages</span>
+        <span data-i18n="modal.ucGuzeller.location"><strong>📍 Location:</strong> Ürgüp, Nevşehir</span><br>
+        <span data-i18n="modal.ucGuzeller.duration"><strong>🕐 Duration:</strong> Approximately 20–30 minutes</span><br>
+        <span data-i18n="modal.ucGuzeller.highlight"><strong>🌄 Experience:</strong> Panoramic viewpoint & photo session</span><br>
+        <span data-i18n="modal.ucGuzeller.included"><strong>✓ Included:</strong> In both Premium and Budget packages</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- UÇHISAR -->
+<div id="uchisarModal" class="custom-modal" onclick="closeModalOutside(event,'uchisarModal')">
+  <div class="modal-content">
+    <span class="close-btn" onclick="closeModalById('uchisarModal')">&times;</span>
+    <h2 class="modal-title" data-i18n="modal.uchisar.title">🏘️ Uçhisar</h2>
+    <p class="modal-badge" data-i18n="modal.uchisar.badge">Special Highlight • Day 2 • Panoramic Experience</p>
+    <div class="modal-gallery">
+      <img decoding="async" src="https://images.pexels.com/photos/14185601/pexels-photo-14185601.jpeg?auto=compress&cs=tinysrgb&w=600&fm=webp" alt="Uçhisar Castle panoramic view">
+      <img decoding="async" src="https://images.pexels.com/photos/36242513/pexels-photo-36242513.jpeg?auto=compress&cs=tinysrgb&w=600&fm=webp" alt="Uçhisar village and cave dwellings">
+    </div>
+    <div class="modal-text">
+      <p data-i18n="modal.uchisar.desc1">Visit <strong>Uçhisar Castle</strong>, the highest point in Cappadocia, carved entirely from a massive volcanic rock formation.</p>
+      <p data-i18n="modal.uchisar.desc2">Enjoy breathtaking 360° views of the surrounding valleys, fairy chimneys, and cave dwellings.</p>
+      <div class="modal-info-box">
+        <span data-i18n="modal.uchisar.location"><strong>📍 Location:</strong> Uçhisar, Nevşehir</span><br>
+        <span data-i18n="modal.uchisar.duration"><strong>🕐 Duration:</strong> Approximately 30–45 minutes</span><br>
+        <span data-i18n="modal.uchisar.highlight"><strong>🌄 Experience:</strong> Panoramic viewpoint & cultural stop</span><br>
+        <span data-i18n="modal.uchisar.included"><strong>✓ Included:</strong> In both Premium and Budget packages</span>
       </div>
     </div>
   </div>
 </div>
 <script>
+
 // ============================================
 // TRANSLATIONS — Copy your existing translations object here
 // from your original index.html (Parts 24-42)
@@ -1906,12 +1932,14 @@ const translations = {
     "itinerary.stop12": "Dinner at the hotel",
     "itinerary.stop13": "Optional: Hot air balloon ride at sunrise",
     "itinerary.stop14": "Breakfast at the hotel",
-    "itinerary.stop15": "Onyx & Alabaster Workshop",
-    "itinerary.stop16": "Göreme Open Air Museum",
-    "itinerary.stop17": "Lunch at local restaurant",
-    "itinerary.stop18": "Fairy Chimneys viewpoint",
-    "itinerary.stop19": "Return journey to Alanya",
-    "itinerary.stop20": "Arrival back in Alanya",
+    "itinerary.stop15": "Hotel check-out",
+    "itinerary.stop16": "Üç Güzeller Valley (Three Graces)",
+    "itinerary.stop17": "Uçhisar",
+    "itinerary.stop18": "Göreme Panorama",
+    "itinerary.stop19": "Onyx & Alabaster Workshop",
+    "itinerary.stop20": "Karavan Saray",
+    "itinerary.stop21": "Lunch in Konya",
+    "itinerary.stop22": "Arrival at hotels",
     
     // About Us
     "about.tag": "ABOUT US",
@@ -2074,25 +2102,35 @@ const translations = {
     "modal.onyx.highlight": "<strong>🌄 Experience:</strong> Demonstration & showroom tour",
     "modal.onyx.included": "<strong>✓ Included:</strong> In both Premium and Budget packages",
     
-    // Modal - Göreme Open Air Museum
-    "modal.goreme.title": "⛰️ Göreme Open Air Museum",
-    "modal.goreme.badge": "Special Highlight • Day 2 • Historical Experience",
-    "modal.goreme.desc1": "A <strong>UNESCO World Heritage Site</strong>, this vast monastic complex contains some of the finest rock-cut churches in Cappadocia, dating back to the 10th to 12th centuries.",
-    "modal.goreme.desc2": "Visitors can explore ancient cave chapels, living quarters, and dining halls, marveling at the beautifully preserved <strong>Byzantine frescoes</strong> that decorate the stone walls.",
+    // Modal - Göreme Panorama
+    "modal.goreme.title": "⛰️ Göreme Panorama",
+    "modal.goreme.badge": "Special Highlight • Day 2 • Panoramic Experience",
+    "modal.goreme.desc1": "Enjoy spectacular panoramic views over the <strong>Göreme Valley</strong> — a unique landscape of fairy chimneys, cave dwellings, and ancient rock-cut churches stretching to the horizon.",
+    "modal.goreme.desc2": "From this scenic viewpoint, admire one of Cappadocia's most iconic vistas — a perfect spot for unforgettable photos and a true taste of the region's magical atmosphere.",
     "modal.goreme.location": "<strong>📍 Location:</strong> Göreme, Nevşehir Province",
-    "modal.goreme.duration": "<strong>🕐 Duration:</strong> Approximately 1.5–2 hours",
-    "modal.goreme.highlight": "<strong>🌄 Experience:</strong> Guided historical tour",
-    "modal.goreme.included": "<strong>✓ Included:</strong> In Premium (Ticket incl.) / Budget (Optional entry)",
+    "modal.goreme.duration": "<strong>🕐 Duration:</strong> Approximately 30–45 minutes",
+    "modal.goreme.highlight": "<strong>🌄 Experience:</strong> Panoramic viewpoint & photo session",
+    "modal.goreme.included": "<strong>✓ Included:</strong> In both Premium and Budget packages",
     
-    // Modal - Fairy Chimneys Viewpoint
-    "modal.fairy.title": "🪨 Fairy Chimneys Viewpoint",
-    "modal.fairy.badge": "Special Highlight • Day 2 • Panoramic Experience",
-    "modal.fairy.desc1": "Witness the multi-capped mushroom-shaped rock formations that define the visual identity of Cappadocia, formed through volcanic eruptions and centuries of natural erosion.",
-    "modal.fairy.desc2": "This famous viewpoint offers a spectacular close-up look at these unique geological wonders, providing the perfect backdrop for legendary travel photographs.",
-    "modal.fairy.location": "<strong>📍 Location:</strong> Paşabağı (Monks Valley) / Göreme",
-    "modal.fairy.duration": "<strong>🕐 Duration:</strong> Approximately 30–45 minutes",
-    "modal.fairy.highlight": "<strong>🌄 Experience:</strong> Panoramic viewpoint & photo session",
-    "modal.fairy.included": "<strong>✓ Included:</strong> In both Premium and Budget packages",
+    // Modal - Üç Güzeller Valley (Three Graces)
+    "modal.ucGuzeller.title": "🌄 Üç Güzeller Valley (Three Graces)",
+    "modal.ucGuzeller.badge": "Special Highlight • Day 2 • Scenic Experience",
+    "modal.ucGuzeller.desc1": "Admire the iconic <strong>Three Graces</strong> — three towering fairy chimneys standing side by side, shaped by millions of years of volcanic activity and natural erosion.",
+    "modal.ucGuzeller.desc2": "One of Cappadocia's most photographed landmarks, this scenic viewpoint offers sweeping panoramas over the surrounding valleys and a perfect setting for memorable travel photos.",
+    "modal.ucGuzeller.location": "<strong>📍 Location:</strong> Ürgüp, Nevşehir",
+    "modal.ucGuzeller.duration": "<strong>🕐 Duration:</strong> Approximately 20–30 minutes",
+    "modal.ucGuzeller.highlight": "<strong>🌄 Experience:</strong> Panoramic viewpoint & photo session",
+    "modal.ucGuzeller.included": "<strong>✓ Included:</strong> In both Premium and Budget packages",
+    
+    // Modal - Uçhisar
+    "modal.uchisar.title": "🏘️ Uçhisar",
+    "modal.uchisar.badge": "Special Highlight • Day 2 • Panoramic Experience",
+    "modal.uchisar.desc1": "Visit <strong>Uçhisar Castle</strong>, the highest point in Cappadocia, carved entirely from a massive volcanic rock formation and once used as a natural fortress and shelter.",
+    "modal.uchisar.desc2": "Enjoy breathtaking 360° views of the surrounding valleys, fairy chimneys, and traditional cave dwellings — one of the most spectacular panoramas in the entire region.",
+    "modal.uchisar.location": "<strong>📍 Location:</strong> Uçhisar, Nevşehir",
+    "modal.uchisar.duration": "<strong>🕐 Duration:</strong> Approximately 30–45 minutes",
+    "modal.uchisar.highlight": "<strong>🌄 Experience:</strong> Panoramic viewpoint & cultural stop",
+    "modal.uchisar.included": "<strong>✓ Included:</strong> In both Premium and Budget packages",
     
     // Terms & Conditions
     "terms.title": "📜 Terms & Conditions",
@@ -2259,14 +2297,16 @@ const translations = {
     "itinerary.stop10": "Красная долина на закате",
     "itinerary.stop11": "Размещение в отеле в Юргюпе",
     "itinerary.stop12": "Ужин в отеле",
-    "itinerary.stop13": "Опционально: полёт на шаре на рассвете",
+    "itinerary.stop13": "По желанию: полёт на воздушном шаре на рассвете",
     "itinerary.stop14": "Завтрак в отеле",
-    "itinerary.stop15": "Мастерская оникса и алебастра",
-    "itinerary.stop16": "Музей под открытым небом Гёреме",
-    "itinerary.stop17": "Обед в местном ресторане",
-    "itinerary.stop18": "Смотровая площадка «Волшебные дымоходы»",
-    "itinerary.stop19": "Возвращение в Аланью",
-    "itinerary.stop20": "Прибытие в Аланью",
+    "itinerary.stop15": "Выезд из отеля",
+    "itinerary.stop16": "Долина Три Грации (Üç Güzeller)",
+    "itinerary.stop17": "Учхисар",
+    "itinerary.stop18": "Панорама Гёреме",
+    "itinerary.stop19": "Мастерская оникса и алебастра",
+    "itinerary.stop20": "Караван-сарай",
+    "itinerary.stop21": "Обед в Конье",
+    "itinerary.stop22": "Прибытие в отели",
     "about.tag": "О НАС",
     "about.title": "M.Y.V. Alanya Travel",
     "about.subtitle": "Ваши надёжные местные эксперты в Аланье по турам в Каппадокию",
@@ -2400,22 +2440,30 @@ const translations = {
     "modal.onyx.duration": "<strong>🕐 Продолжительность:</strong> Около 30–45 минут",
     "modal.onyx.highlight": "<strong>🌄 Впечатления:</strong> Демонстрация ремесла и тур по шоуруму",
     "modal.onyx.included": "<strong>✓ Включено:</strong> В Премиум и Бюджетный пакеты",
-    "modal.goreme.title": "⛰️ Музей под открытым небом Гёреме",
-    "modal.goreme.badge": "Особое событие • День 2 • Историческая программа",
-    "modal.goreme.desc1": "Этот огромный монастырский комплекс, внесённый в список <strong>Всемирного наследия ЮНЕСКО</strong>, содержит одни из лучших скальных церквей Каппадокии X–XII веков.",
-    "modal.goreme.desc2": "Посетители могут исследовать древние пещерные часовни, жилые помещения и столовые, любуясь прекрасно сохранившимися <strong>византийскими фресками</strong> на каменных стенах.",
+    "modal.goreme.title": "⛰️ Панорама Гёреме",
+    "modal.goreme.badge": "Особое событие • День 2 • Панорамный обзор",
+    "modal.goreme.desc1": "Насладитесь захватывающими панорамными видами на <strong>долину Гёреме</strong> — уникальный ландшафт сказочных дымоходов, пещерных жилищ и древних скальных церквей, простирающихся до горизонта.",
+    "modal.goreme.desc2": "С этой живописной смотровой площадки открывается один из самых знаковых видов Каппадокии — идеальное место для незабываемых фотографий и настоящего ощущения магической атмосферы региона.",
     "modal.goreme.location": "<strong>📍 Локация:</strong> Гёреме, провинция Невшехир",
-    "modal.goreme.duration": "<strong>🕐 Продолжительность:</strong> Около 1.5–2 часов",
-    "modal.goreme.highlight": "<strong>🌄 Впечатления:</strong> Историческая экскурсия с гидом",
-    "modal.goreme.included": "<strong>✓ Включено:</strong> В Премиум (Билет вкл.) / Бюджет (Вход опционально)",
-    "modal.fairy.title": "🪨 Смотровая площадка «Волшебные дымоходы»",
-    "modal.fairy.badge": "Особое событие • День 2 • Панорамный обзор",
-    "modal.fairy.desc1": "Увидьте знаменитые скальные образования в форме грибов с несколькими шляпками, которые определяют облик Каппадокии, сформированные из-за извержений вулканов и веков эрозии.",
-    "modal.fairy.desc2": "Эта знаменитая смотровая площадка предлагает захватывающий вид вблизи на уникальные геологические чудеса, создавая идеальный фон для легендарных фотографий.",
-    "modal.fairy.location": "<strong>📍 Локация:</strong> Пашабаг (Долина монахов) / Гёреме",
-    "modal.fairy.duration": "<strong>🕐 Продолжительность:</strong> Около 30–45 минут",
-    "modal.fairy.highlight": "<strong>🌄 Впечатления:</strong> Смотровая площадка и фотосессия",
-    "modal.fairy.included": "<strong>✓ Включено:</strong> В Премиум и Бюджетный пакеты",
+    "modal.goreme.duration": "<strong>🕐 Продолжительность:</strong> Около 30–45 минут",
+    "modal.goreme.highlight": "<strong>🌄 Впечатления:</strong> Смотровая площадка и фотосессия",
+    "modal.goreme.included": "<strong>✓ Включено:</strong> В Премиум и Бюджетный пакеты",
+    "modal.ucGuzeller.title": "🌄 Долина Üç Güzeller (Три Грации)",
+    "modal.ucGuzeller.badge": "Особое событие • День 2 • Живописный обзор",
+    "modal.ucGuzeller.desc1": "Полюбуйтесь знаменитыми <strong>«Тремя Грациями»</strong> — тремя величественными сказочными дымоходами, стоящими бок о бок, сформированными миллионами лет вулканической активности и природной эрозии.",
+    "modal.ucGuzeller.desc2": "Одна из самых фотографируемых достопримечательностей Каппадокии — эта живописная смотровая площадка открывает широкие виды на окружающие долины и идеально подходит для незабываемых фотографий.",
+    "modal.ucGuzeller.location": "<strong>📍 Локация:</strong> Ургюп, Невшехир",
+    "modal.ucGuzeller.duration": "<strong>🕐 Продолжительность:</strong> Около 20–30 минут",
+    "modal.ucGuzeller.highlight": "<strong>🌄 Впечатления:</strong> Смотровая площадка и фотосессия",
+    "modal.ucGuzeller.included": "<strong>✓ Включено:</strong> В Премиум и Бюджетный пакеты",
+    "modal.uchisar.title": "🏘️ Учхисар",
+    "modal.uchisar.badge": "Особое событие • День 2 • Панорамный обзор",
+    "modal.uchisar.desc1": "Посетите <strong>крепость Учхисар</strong> — самую высокую точку Каппадокии, полностью высеченную из массивной вулканической скалы и когда-то использовавшуюся как природная крепость и убежище.",
+    "modal.uchisar.desc2": "Насладитесь захватывающими 360° видами на окружающие долины, сказочные дымоходы и традиционные пещерные жилища — одна из самых впечатляющих панорам всего региона.",
+    "modal.uchisar.location": "<strong>📍 Локация:</strong> Учхисар, Невшехир",
+    "modal.uchisar.duration": "<strong>🕐 Продолжительность:</strong> Около 30–45 минут",
+    "modal.uchisar.highlight": "<strong>🌄 Впечатления:</strong> Смотровая площадка и культурная остановка",
+    "modal.uchisar.included": "<strong>✓ Включено:</strong> В Премиум и Бюджетный пакеты",
     "terms.title": "📜 Правила и условия",
     "terms.updated": "Последнее обновление: Январь 2026",
     "terms.section1Title": "1. Бронирование и расписание туров",
@@ -2572,14 +2620,16 @@ const translations = {
     "itinerary.stop10": "Gün batımında Kızıl Vadi",
     "itinerary.stop11": "Ürgüp'te otel konaklaması",
     "itinerary.stop12": "Otelde akşam yemeği",
-    "itinerary.stop13": "Opsiyonel: Gün doğumunda sıcak hava balonu turu",
+    "itinerary.stop13": "Opsiyonel: Gün doğumunda sıcak hava balonu",
     "itinerary.stop14": "Otelde kahvaltı",
-    "itinerary.stop15": "Oniks ve Kaymaktaşı Atölyesi",
-    "itinerary.stop16": "Göreme Açık Hava Müzesi",
-    "itinerary.stop17": "Yerel restoranda öğle yemeği",
-    "itinerary.stop18": "Peri Bacaları seyir noktası",
-    "itinerary.stop19": "Alanya'ya dönüş yolculuğu",
-    "itinerary.stop20": "Alanya'ya varış",
+    "itinerary.stop15": "Otelden çıkış",
+    "itinerary.stop16": "Üç Güzeller Vadisi",
+    "itinerary.stop17": "Uçhisar",
+    "itinerary.stop18": "Göreme Panoraması",
+    "itinerary.stop19": "Oniks ve Mermer Atölyesi",
+    "itinerary.stop20": "Kervansaray",
+    "itinerary.stop21": "Konya'da öğle yemeği",
+    "itinerary.stop22": "Otellere varış",
     "about.tag": "HAKKIMIZDA",
     "about.title": "M.Y.V. Alanya Travel",
     "about.subtitle": "Kapadokya gezileri için Alanya'daki güvenilir yerel uzmanlarınız",
@@ -2713,22 +2763,30 @@ const translations = {
     "modal.onyx.duration": "<strong>🕐 Süre:</strong> Yaklaşık 30–45 dakika",
     "modal.onyx.highlight": "<strong>🌄 Deneyim:</strong> Zanaat gösterisi ve showroom turu",
     "modal.onyx.included": "<strong>✓ Dahil:</strong> Hem Premium hem Ekonomik paketlerde",
-    "modal.goreme.title": "⛰️ Göreme Açık Hava Müzesi",
-    "modal.goreme.badge": "Özel Detay • 2. Gün • Tarihi Deneyim",
-    "modal.goreme.desc1": "<strong>UNESCO Dünya Mirası Listesi</strong>'nde yer alan bu devasa manastır kompleksi, Kapadokya'nın 10. ila 12. yüzyıllardan kalma en iyi kaya kiliselerini barındırmaktadır.",
-    "modal.goreme.desc2": "Ziyaretçiler, taş duvarları süsleyen ve mükemmel şekilde korunmuş <strong>Bizans fresklerine</strong> hayran kalarak antik mağara şapellerini, yaşam alanlarını ve yemekhaneleri keşfedebilirler.",
+    "modal.goreme.title": "⛰️ Göreme Panoraması",
+    "modal.goreme.badge": "Özel Detay • 2. Gün • Panoramik Deneyim",
+    "modal.goreme.desc1": "<strong>Göreme Vadisi</strong> üzerinde muhteşem panoramik manzaranın tadını çıkarın — peri bacaları, mağara evleri ve antik kaya kiliselerinden oluşan, ufuğa kadar uzanan eşsiz bir manzara.",
+    "modal.goreme.desc2": "Bu manzara seyir noktasından, Kapadokya'nın en ikonik manzaralarından birine hayran kalın — unutulmaz fotoğraflar ve bölgenin büyülü atmosferinin gerçek bir tadı için mükemmel bir nokta.",
     "modal.goreme.location": "<strong>📍 Konum:</strong> Göreme, Nevşehir Bölgesi",
-    "modal.goreme.duration": "<strong>🕐 Süre:</strong> Yaklaşık 1.5–2 saat",
-    "modal.goreme.highlight": "<strong>🌄 Deneyim:</strong> Rehberli tarihi tur",
-    "modal.goreme.included": "<strong>✓ Dahil:</strong> Premium (Bilet dahil) / Ekonomik (Giriş isteğe bağlı)",
-    "modal.fairy.title": "🪨 Peri Bacaları Seyir Noktası",
-    "modal.fairy.badge": "Özel Detay • 2. Gün • Panoramik Deneyim",
-    "modal.fairy.desc1": "Volkanik patlamalar ve yüzyıllar süren doğal erozyonla şekillenen, Kapadokya'nın görsel kimliğini oluşturan çok şapkalı, mantar şeklindeki kaya oluşumlarına tanıklık edin.",
-    "modal.fairy.desc2": "Bu ünlü seyir noktası, benzersiz jeolojik harikalara muhteşem bir yakından bakış sunarak efsanevi seyahat fotoğrafları için mükemmel bir arka plan sağlar.",
-    "modal.fairy.location": "<strong>📍 Konum:</strong> Paşabağı (Rahipler Vadisi) / Göreme",
-    "modal.fairy.duration": "<strong>🕐 Süre:</strong> Yaklaşık 30–45 dakika",
-    "modal.fairy.highlight": "<strong>🌄 Deneyim:</strong> Panoramik seyir noktası ve fotoğraf seansı",
-    "modal.fairy.included": "<strong>✓ Dahil:</strong> Hem Premium hem Ekonomik paketlerde",
+    "modal.goreme.duration": "<strong>🕐 Süre:</strong> Yaklaşık 30–45 dakika",
+    "modal.goreme.highlight": "<strong>🌄 Deneyim:</strong> Panoramik seyir noktası ve fotoğraf seansı",
+    "modal.goreme.included": "<strong>✓ Dahil:</strong> Hem Premium hem Ekonomik paketlerde",
+    "modal.ucGuzeller.title": "🌄 Üç Güzeller Vadisi",
+    "modal.ucGuzeller.badge": "Özel Detay • 2. Gün • Manzara Deneyimi",
+    "modal.ucGuzeller.desc1": "İkonik <strong>Üç Güzeller</strong>'e hayran kalın — milyonlarca yıllık volkanik aktivite ve doğal erozyonla şekillenmiş, yan yana duran üç görkemli peri bacası.",
+    "modal.ucGuzeller.desc2": "Kapadokya'nın en çok fotoğraflanan simgelerinden biri olan bu manzaralı seyir noktası, çevredeki vadiler üzerinde geniş panoramalar sunar ve unutulmaz seyahat fotoğrafları için mükemmel bir ortam yaratır.",
+    "modal.ucGuzeller.location": "<strong>📍 Konum:</strong> Ürgüp, Nevşehir",
+    "modal.ucGuzeller.duration": "<strong>🕐 Süre:</strong> Yaklaşık 20–30 dakika",
+    "modal.ucGuzeller.highlight": "<strong>🌄 Deneyim:</strong> Panoramik seyir noktası ve fotoğraf seansı",
+    "modal.ucGuzeller.included": "<strong>✓ Dahil:</strong> Hem Premium hem Ekonomik paketlerde",
+    "modal.uchisar.title": "🏘️ Uçhisar",
+    "modal.uchisar.badge": "Özel Detay • 2. Gün • Panoramik Deneyim",
+    "modal.uchisar.desc1": "Kapadokya'nın en yüksek noktası olan, tamamen devasa bir volkanik kaya oluşumundan oyulmuş ve bir zamanlar doğal kale ve sığınak olarak kullanılan <strong>Uçhisar Kalesi</strong>'ni ziyaret edin.",
+    "modal.uchisar.desc2": "Çevredeki vadiler, peri bacaları ve geleneksel mağara evlerinin nefes kesici 360° manzaralarının tadını çıkarın — tüm bölgenin en muhteşem panoramalarından biri.",
+    "modal.uchisar.location": "<strong>📍 Konum:</strong> Uçhisar, Nevşehir",
+    "modal.uchisar.duration": "<strong>🕐 Süre:</strong> Yaklaşık 30–45 dakika",
+    "modal.uchisar.highlight": "<strong>🌄 Deneyim:</strong> Panoramik seyir noktası ve kültürel durak",
+    "modal.uchisar.included": "<strong>✓ Dahil:</strong> Hem Premium hem Ekonomik paketlerde",
     "terms.title": "📜 Şartlar ve Koşullar",
     "terms.updated": "Son güncelleme: Ocak 2026",
     "terms.section1Title": "1. Tur Rezervasyonu ve Program",
@@ -2885,14 +2943,16 @@ const translations = {
     "itinerary.stop10": "Червона долина на заході сонця",
     "itinerary.stop11": "Розміщення в готелі в Юргюпі",
     "itinerary.stop12": "Вечеря в готелі",
-    "itinerary.stop13": "Опціонально: політ на кулі на світанку",
+    "itinerary.stop13": "За бажанням: політ на повітряній кулі на світанку",
     "itinerary.stop14": "Сніданок у готелі",
-    "itinerary.stop15": "Майстерня оніксу та алебастру",
-    "itinerary.stop16": "Музей просто неба Гьореме",
-    "itinerary.stop17": "Обід у місцевому ресторані",
-    "itinerary.stop18": "Оглядовий майданчик «Чарівні димоходи»",
-    "itinerary.stop19": "Повернення до Аланії",
-    "itinerary.stop20": "Прибуття до Аланії",
+    "itinerary.stop15": "Виїзд з готелю",
+    "itinerary.stop16": "Долина Три Грації (Üç Güzeller)",
+    "itinerary.stop17": "Учхісар",
+    "itinerary.stop18": "Панорама Гереме",
+    "itinerary.stop19": "Майстерня оніксу та алебастру",
+    "itinerary.stop20": "Караван-сарай",
+    "itinerary.stop21": "Обід у Коньї",
+    "itinerary.stop22": "Прибуття до готелів",
     "about.tag": "ПРО НАС",
     "about.title": "M.Y.V. Alanya Travel",
     "about.subtitle": "Ваші надійні місцеві експерти в Аланії з турів до Каппадокії",
@@ -3026,22 +3086,30 @@ const translations = {
     "modal.onyx.duration": "<strong>🕐 Тривалість:</strong> Приблизно 30–45 хвилин",
     "modal.onyx.highlight": "<strong>🌄 Враження:</strong> Демонстрація ремесла та тур шоурумом",
     "modal.onyx.included": "<strong>✓ Включено:</strong> У Преміум та Бюджетний пакети",
-    "modal.goreme.title": "⛰️ Музей під відкритим небом Гьореме",
-    "modal.goreme.badge": "Особлива подія • День 2 • Історична програма",
-    "modal.goreme.desc1": "Цей величезний монастирський комплекс, внесений до списку <strong>Всесвітньої спадщини ЮНЕСКО</strong>, містить одні з найкращих скельних церков Каппадокії X–XII століть.",
-    "modal.goreme.desc2": "Відвідувачі можуть досліджувати стародавні печерні каплиці, житлові приміщення та їдальні, милуючись чудово збереженими <strong>візантійськими фресками</strong> на кам'яних стінах.",
+    "modal.goreme.title": "⛰️ Панорама Гьореме",
+    "modal.goreme.badge": "Особлива подія • День 2 • Панорамний огляд",
+    "modal.goreme.desc1": "Насолоджуйтеся захоплюючими панорамними видами на <strong>долину Гьореме</strong> — унікальний ландшафт казкових димарів, печерних осель та стародавніх скельних церков, що простягається до горизонту.",
+    "modal.goreme.desc2": "З цього мальовничого оглядового майданчика відкривається один із найвідоміших краєвидів Каппадокії — ідеальне місце для незабутніх фотографій та справжнього відчуття магічної атмосфери регіону.",
     "modal.goreme.location": "<strong>📍 Локація:</strong> Гьореме, провінція Невшехір",
-    "modal.goreme.duration": "<strong>🕐 Тривалість:</strong> Приблизно 1.5–2 години",
-    "modal.goreme.highlight": "<strong>🌄 Враження:</strong> Історична екскурсія з гідом",
-    "modal.goreme.included": "<strong>✓ Включено:</strong> У Преміум (Квиток вкл.) / Бюджет (Вхід опціонально)",
-    "modal.fairy.title": "🪨 Оглядовий майданчик «Димарі фей»",
-    "modal.fairy.badge": "Особлива подія • День 2 • Панорамний обзор",
-    "modal.fairy.desc1": "Побачте знамениті скельні утворення у формі грибів з кількома капелюшками, які визначають вигляд Каппадокії, створені через вулканічні виверження та віки ерозії.",
-    "modal.fairy.desc2": "Цей відомий оглядовий майданчик пропонує захоплюючий вид зблизька на унікальні геологічні дива, створюючи ідеальний фон для легендарних фотографій.",
-    "modal.fairy.location": "<strong>📍 Локація:</strong> Пашабаг (Долина ченців) / Гьореме",
-    "modal.fairy.duration": "<strong>🕐 Тривалість:</strong> Приблизно 30–45 хвилин",
-    "modal.fairy.highlight": "<strong>🌄 Враження:</strong> Панорамний оглядовий майданчик та фотосесія",
-    "modal.fairy.included": "<strong>✓ Включено:</strong> У Преміум та Бюджетний пакети",
+    "modal.goreme.duration": "<strong>🕐 Тривалість:</strong> Приблизно 30–45 хвилин",
+    "modal.goreme.highlight": "<strong>🌄 Враження:</strong> Оглядовий майданчик та фотосесія",
+    "modal.goreme.included": "<strong>✓ Включено:</strong> У Преміум та Бюджетний пакети",
+    "modal.ucGuzeller.title": "🌄 Долина Üç Güzeller (Три Грації)",
+    "modal.ucGuzeller.badge": "Особлива подія • День 2 • Мальовничий огляд",
+    "modal.ucGuzeller.desc1": "Помилуйтеся знаменитими <strong>«Трьома Граціями»</strong> — трьома величними казковими димарями, що стоять поруч, сформованими мільйонами років вулканічної активності та природної ерозії.",
+    "modal.ucGuzeller.desc2": "Одна з найбільш фотографованих визначних пам'яток Каппадокії — цей мальовничий оглядовий майданчик відкриває широкі панорами навколишніх долин та ідеально підходить для незабутніх фотографій.",
+    "modal.ucGuzeller.location": "<strong>📍 Локація:</strong> Ургюп, Невшехір",
+    "modal.ucGuzeller.duration": "<strong>🕐 Тривалість:</strong> Приблизно 20–30 хвилин",
+    "modal.ucGuzeller.highlight": "<strong>🌄 Враження:</strong> Оглядовий майданчик та фотосесія",
+    "modal.ucGuzeller.included": "<strong>✓ Включено:</strong> У Преміум та Бюджетний пакети",
+    "modal.uchisar.title": "🏘️ Учхісар",
+    "modal.uchisar.badge": "Особлива подія • День 2 • Панорамний огляд",
+    "modal.uchisar.desc1": "Відвідайте <strong>фортецю Учхісар</strong> — найвищу точку Каппадокії, повністю висічену з масивної вулканічної скелі та колись використовувану як природна фортеця та притулок.",
+    "modal.uchisar.desc2": "Насолоджуйтеся захоплюючими 360° видами на навколишні долини, казкові димарі та традиційні печерні оселі — одна з найвражаючих панорам усього регіону.",
+    "modal.uchisar.location": "<strong>📍 Локація:</strong> Учхісар, Невшехір",
+    "modal.uchisar.duration": "<strong>🕐 Тривалість:</strong> Приблизно 30–45 хвилин",
+    "modal.uchisar.highlight": "<strong>🌄 Враження:</strong> Оглядовий майданчик та культурна зупинка",
+    "modal.uchisar.included": "<strong>✓ Включено:</strong> У Преміум та Бюджетний пакети",
     "terms.title": "📜 Правила та умови",
     "terms.updated": "Останнє оновлення: Січень 2026",
     "terms.section1Title": "1. Бронювання та розклад турів",
@@ -3200,12 +3268,14 @@ const translations = {
     "itinerary.stop12": "Abendessen im Hotel",
     "itinerary.stop13": "Optional: Heißluftballonfahrt bei Sonnenaufgang",
     "itinerary.stop14": "Frühstück im Hotel",
-    "itinerary.stop15": "Onyx- & Alabaster-Werkstatt",
-    "itinerary.stop16": "Göreme Freilichtmuseum",
-    "itinerary.stop17": "Mittagessen im lokalen Restaurant",
-    "itinerary.stop18": "Feenkamine Aussichtspunkt",
-    "itinerary.stop19": "Rückreise nach Alanya",
-    "itinerary.stop20": "Ankunft in Alanya",
+    "itinerary.stop15": "Hotel-Check-out",
+    "itinerary.stop16": "Üç Güzeller-Tal (Drei Grazien)",
+    "itinerary.stop17": "Uçhisar",
+    "itinerary.stop18": "Göreme-Panorama",
+    "itinerary.stop19": "Onyx- und Alabaster-Werkstatt",
+    "itinerary.stop20": "Karawanserei",
+    "itinerary.stop21": "Mittagessen in Konya",
+    "itinerary.stop22": "Ankunft in den Hotels",
     "about.tag": "ÜBER UNS",
     "about.title": "M.Y.V. Alanya Travel",
     "about.subtitle": "Ihre vertrauenswürdigen lokalen Experten in Alanya für Kappadokien-Ausflüge",
@@ -3339,22 +3409,30 @@ const translations = {
     "modal.onyx.duration": "<strong>🕐 Dauer:</strong> Ca. 30–45 Minuten",
     "modal.onyx.highlight": "<strong>🌄 Erlebnis:</strong> Handwerksvorführung & Showroom-Tour",
     "modal.onyx.included": "<strong>✓ Inklusive:</strong> In Premium- und Budget-Paketen",
-    "modal.goreme.title": "⛰️ Open-Air-Museum Göreme",
-    "modal.goreme.badge": "Besonderes Highlight • Tag 2 • Historisches Erlebnis",
-    "modal.goreme.desc1": "Dieses weitläufige Klosterkomplex gehört zum <strong>UNESCO-Weltkulturerbe</strong> und beherbergt einige der schönsten Höhlenkirchen Kappadokiens aus dem 10. bis 12. Jahrhundert.",
-    "modal.goreme.desc2": "Besucher können antike Höhlenkapellen, Wohnräume und Speisesäle erkunden und die wunderschön erhaltenen <strong>byzantinischen Fresken</strong> bewundern, die die Steinwände zieren.",
+    "modal.goreme.title": "⛰️ Göreme Panorama",
+    "modal.goreme.badge": "Besonderes Highlight • Tag 2 • Panorama-Erlebnis",
+    "modal.goreme.desc1": "Genießen Sie spektakuläre Panoramablicke über das <strong>Göreme-Tal</strong> — eine einzigartige Landschaft aus Feenkaminen, Höhlenwohnungen und alten Felsenkirchen, die sich bis zum Horizont erstreckt.",
+    "modal.goreme.desc2": "Von diesem malerischen Aussichtspunkt aus bewundern Sie eine der ikonischsten Aussichten Kappadokiens — der perfekte Ort für unvergessliche Fotos und ein echtes Gefühl für die magische Atmosphäre der Region.",
     "modal.goreme.location": "<strong>📍 Ort:</strong> Göreme, Provinz Nevşehir",
-    "modal.goreme.duration": "<strong>🕐 Dauer:</strong> Ca. 1.5–2 Stunden",
-    "modal.goreme.highlight": "<strong>🌄 Erlebnis:</strong> Geführte historische Tour",
-    "modal.goreme.included": "<strong>✓ Inklusive:</strong> In Premium (Ticket inkl.) / Budget (Eintritt optional)",
-    "modal.fairy.title": "🪨 Feenkamine Aussichtspunkt",
-    "modal.fairy.badge": "Besonderes Highlight • Tag 2 • Panorama-Erlebnis",
-    "modal.fairy.desc1": "Erleben Sie die pilzförmigen Felsformationen mit mehreren Kappen, die das visuelle Wahrzeichen Kappadokiens prägen und durch Vulkanausbrüche sowie jahrhundertelange Erosion entstanden sind.",
-    "modal.fairy.desc2": "Dieser berühmte Aussichtspunkt bietet einen spektakulären Nahblick auf diese einzigartigen geologischen Wunder und bildet die perfekte Kulisse für legendäre Reisefotos.",
-    "modal.fairy.location": "<strong>📍 Ort:</strong> Paşabağı (Mönchstal) / Göreme",
-    "modal.fairy.duration": "<strong>🕐 Dauer:</strong> Ca. 30–45 Minuten",
-    "modal.fairy.highlight": "<strong>🌄 Erlebnis:</strong> Panorama-Aussichtspunkt & Fotoshooting",
-    "modal.fairy.included": "<strong>✓ Inklusive:</strong> In Premium- und Budget-Paketen",
+    "modal.goreme.duration": "<strong>🕐 Dauer:</strong> Ca. 30–45 Minuten",
+    "modal.goreme.highlight": "<strong>🌄 Erlebnis:</strong> Panorama-Aussichtspunkt & Fotoshooting",
+    "modal.goreme.included": "<strong>✓ Inklusive:</strong> In Premium- und Budget-Paketen",
+    "modal.ucGuzeller.title": "🌄 Üç Güzeller Tal (Drei Grazien)",
+    "modal.ucGuzeller.badge": "Besonderes Highlight • Tag 2 • Landschaftliches Erlebnis",
+    "modal.ucGuzeller.desc1": "Bewundern Sie die berühmten <strong>Drei Grazien</strong> — drei mächtige Feenkamine, die nebeneinander stehen und durch Millionen Jahre vulkanischer Aktivität und natürlicher Erosion geformt wurden.",
+    "modal.ucGuzeller.desc2": "Eines der meistfotografierten Wahrzeichen Kappadokiens — dieser malerische Aussichtspunkt bietet weite Panoramen über die umliegenden Täler und eine perfekte Kulisse für unvergessliche Reisefotos.",
+    "modal.ucGuzeller.location": "<strong>📍 Ort:</strong> Ürgüp, Nevşehir",
+    "modal.ucGuzeller.duration": "<strong>🕐 Dauer:</strong> Ca. 20–30 Minuten",
+    "modal.ucGuzeller.highlight": "<strong>🌄 Erlebnis:</strong> Panorama-Aussichtspunkt & Fotoshooting",
+    "modal.ucGuzeller.included": "<strong>✓ Inklusive:</strong> In Premium- und Budget-Paketen",
+    "modal.uchisar.title": "🏘️ Uçhisar",
+    "modal.uchisar.badge": "Besonderes Highlight • Tag 2 • Panorama-Erlebnis",
+    "modal.uchisar.desc1": "Besuchen Sie die <strong>Burg Uçhisar</strong>, den höchsten Punkt Kappadokiens, vollständig aus einer massiven vulkanischen Felsformation gehauen und einst als natürliche Festung und Zuflucht genutzt.",
+    "modal.uchisar.desc2": "Genießen Sie atemberaubende 360°-Ausblicke auf die umliegenden Täler, Feenkamine und traditionellen Höhlenwohnungen — eines der spektakulärsten Panoramen der gesamten Region.",
+    "modal.uchisar.location": "<strong>📍 Ort:</strong> Uçhisar, Nevşehir",
+    "modal.uchisar.duration": "<strong>🕐 Dauer:</strong> Ca. 30–45 Minuten",
+    "modal.uchisar.highlight": "<strong>🌄 Erlebnis:</strong> Panorama-Aussichtspunkt & kultureller Stopp",
+    "modal.uchisar.included": "<strong>✓ Inklusive:</strong> In Premium- und Budget-Paketen",
     "terms.title": "📜 Allgemeine Geschäftsbedingungen",
     "terms.updated": "Zuletzt aktualisiert: Januar 2026",
     "terms.section1Title": "1. Tourbuchung & Zeitplan",
@@ -3511,14 +3589,16 @@ const translations = {
     "itinerary.stop10": "Crvena dolina na zalasku sunca",
     "itinerary.stop11": "Smeštaj u hotelu u Ürgüpu",
     "itinerary.stop12": "Večera u hotelu",
-    "itinerary.stop13": "Opciono: Let balonom na topli vazduh u svitanje",
+    "itinerary.stop13": "Opciono: Vožnja balonom na izlasku sunca",
     "itinerary.stop14": "Doručak u hotelu",
-    "itinerary.stop15": "Radionica oniksa i alabastera",
-    "itinerary.stop16": "Göreme muzej na otvorenom",
-    "itinerary.stop17": "Ručak u lokalnom restoranu",
-    "itinerary.stop18": "Vidikovac Vilinski dimnjaci",
-    "itinerary.stop19": "Povratak za Alanju",
-    "itinerary.stop20": "Dolazak u Alanju",
+    "itinerary.stop15": "Odjavljivanje iz hotela",
+    "itinerary.stop16": "Dolina Tri Gracije (Üç Güzeller)",
+    "itinerary.stop17": "Učhisar",
+    "itinerary.stop18": "Goreme Panorama",
+    "itinerary.stop19": "Radionica oniksa i alabastera",
+    "itinerary.stop20": "Karavan Saraj",
+    "itinerary.stop21": "Ručak u Konji",
+    "itinerary.stop22": "Dolazak u hotele",
     "about.tag": "O NAMA",
     "about.title": "M.Y.V. Alanya Travel",
     "about.subtitle": "Vaši pouzdani lokalni stručnjaci u Alanji za izlete u Kapadokiju",
@@ -3652,22 +3732,30 @@ const translations = {
     "modal.onyx.duration": "<strong>🕐 Trajanje:</strong> Oko 30–45 minuta",
     "modal.onyx.highlight": "<strong>🌄 Iskustvo:</strong> Demonstracija zanata i obilazak salona",
     "modal.onyx.included": "<strong>✓ Uključeno:</strong> U Premium i Budget paketima",
-    "modal.goreme.title": "⛰️ Muzej na otvorenom Göreme",
-    "modal.goreme.badge": "Specijalni detalj • Dan 2 • Istorijsko iskustvo",
-    "modal.goreme.desc1": "Ovaj ogromni manastirski kompleks, koji je na listi <strong>UNESCO-ve svetske baštine</strong>, sadrži neke od najlepših crkava u stenama u Kapadokiji, koje datiraju iz 10. do 12. veka.",
-    "modal.goreme.desc2": "Posetioci mogu istražiti drevne kapele u pećinama, stambene prostorije i trpezarije, diveći se prelepo očuvanim <strong>vizantijskim freskama</strong> koje krase kamene zidove.",
+    "modal.goreme.title": "⛰️ Göreme Panorama",
+    "modal.goreme.badge": "Specijalni detalj • Dan 2 • Panoramsko iskustvo",
+    "modal.goreme.desc1": "Uživajte u spektakularnim panoramskim pogledima na <strong>dolinu Göreme</strong> — jedinstveni pejzaž vilinskih dimnjaka, pećinskih nastambi i drevnih crkava isklesanih u stenama, koji se proteže do horizonta.",
+    "modal.goreme.desc2": "Sa ovog živopisnog vidikovca divite se jednom od najprepoznatljivijih panorama Kapadokije — savršenom mestu za nezaboravne fotografije i pravi osećaj magične atmosfere regiona.",
     "modal.goreme.location": "<strong>📍 Lokacija:</strong> Göreme, Provincija Nevşehir",
-    "modal.goreme.duration": "<strong>🕐 Trajanje:</strong> Oko 1.5–2 sata",
-    "modal.goreme.highlight": "<strong>🌄 Iskustvo:</strong> Istorijska tura sa vodičem",
-    "modal.goreme.included": "<strong>✓ Uključeno:</strong> U Premium (Ulaznica uklj.) / Budget (Opcioni ulaz)",
-    "modal.fairy.title": "🪨 Vidikovac Vilinski dimnjaci",
-    "modal.fairy.badge": "Specijalni detalj • Dan 2 • Panoramsko iskustvo",
-    "modal.fairy.desc1": "Svedočite višeslojnim stenskim formacijama u obliku pečuraka koje definišu vizuelni identitet Kapadokije, nastalim usled vulkanskih erupcija i vekova prirodne erozije.",
-    "modal.fairy.desc2": "Ovaj poznati vidikovac nudi spektakularan pogled izbliza na jedinstvena geološka čuda, pružajući savršenu pozadinu za legendarne putopisne fotografije.",
-    "modal.fairy.location": "<strong>📍 Lokacija:</strong> Paşabağı (Dolina monaha) / Göreme",
-    "modal.fairy.duration": "<strong>🕐 Trajanje:</strong> Oko 30–45 minuta",
-    "modal.fairy.highlight": "<strong>🌄 Iskustvo:</strong> Panoramski vidikovac i slikanje",
-    "modal.fairy.included": "<strong>✓ Uključeno:</strong> U Premium i Budget paketima",
+    "modal.goreme.duration": "<strong>🕐 Trajanje:</strong> Oko 30–45 minuta",
+    "modal.goreme.highlight": "<strong>🌄 Iskustvo:</strong> Panoramski vidikovac i slikanje",
+    "modal.goreme.included": "<strong>✓ Uključeno:</strong> U Premium i Budget paketima",
+    "modal.ucGuzeller.title": "🌄 Dolina Üç Güzeller (Tri Gracije)",
+    "modal.ucGuzeller.badge": "Specijalni detalj • Dan 2 • Slikovito iskustvo",
+    "modal.ucGuzeller.desc1": "Divite se ikoničnim <strong>Trima Gracijama</strong> — trima visokim vilinskim dimnjacima koji stoje jedan pored drugog, oblikovanim milionima godina vulkanske aktivnosti i prirodne erozije.",
+    "modal.ucGuzeller.desc2": "Jedna od najfotografisanijih znamenitosti Kapadokije — ovaj slikoviti vidikovac pruža široke panorame okolnih dolina i savršen ambijent za nezaboravne putopisne fotografije.",
+    "modal.ucGuzeller.location": "<strong>📍 Lokacija:</strong> Ürgüp, Nevşehir",
+    "modal.ucGuzeller.duration": "<strong>🕐 Trajanje:</strong> Oko 20–30 minuta",
+    "modal.ucGuzeller.highlight": "<strong>🌄 Iskustvo:</strong> Panoramski vidikovac i slikanje",
+    "modal.ucGuzeller.included": "<strong>✓ Uključeno:</strong> U Premium i Budget paketima",
+    "modal.uchisar.title": "🏘️ Uçhisar",
+    "modal.uchisar.badge": "Specijalni detalj • Dan 2 • Panoramsko iskustvo",
+    "modal.uchisar.desc1": "Posetite <strong>tvrđavu Uçhisar</strong> — najvišu tačku Kapadokije, u potpunosti isklesanu iz masivne vulkanske stene i nekada korišćenu kao prirodna tvrđava i sklonište.",
+    "modal.uchisar.desc2": "Uživajte u zadivljujućim 360° pogledima na okolne doline, vilinske dimnjake i tradicionalne pećinske nastambe — jedna od najspektakularnijih panorama čitavog regiona.",
+    "modal.uchisar.location": "<strong>📍 Lokacija:</strong> Uçhisar, Nevşehir",
+    "modal.uchisar.duration": "<strong>🕐 Trajanje:</strong> Oko 30–45 minuta",
+    "modal.uchisar.highlight": "<strong>🌄 Iskustvo:</strong> Panoramski vidikovac i kulturna stanica",
+    "modal.uchisar.included": "<strong>✓ Uključeno:</strong> U Premium i Budget paketima",
     "terms.title": "📜 Uslovi korišćenja",
     "terms.updated": "Poslednje ažuriranje: Januar 2026",
     "terms.section1Title": "1. Rezervacija ture i raspored",
