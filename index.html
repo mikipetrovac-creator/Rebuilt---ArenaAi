@@ -630,6 +630,56 @@ footer{background:var(--dark);color:rgba(255,255,255,.7);padding:60px 40px 30px}
   #ask-us .ask-contact-list{display:inline-block;text-align:left;margin:28px auto 0}
   #ask-us .ask-contact-list li{justify-content:flex-start}
 }
+@media(max-width:1024px){
+  /* Svi naslovi sekcija na sredini */
+  section .container .section-tag,
+  section .container .section-title,
+  section .container .section-sub{text-align:center}
+
+  /* About Cappadocia */
+  #about-cap .two-col > div,
+  #about-cap .about-cap-text,
+  #about-cap .about-cap-text p,
+  #about-cap .about-cap-fullwidth,
+  #about-cap .about-cap-fullwidth p{text-align:center;margin-left:auto;margin-right:auto}
+  #about-cap .about-btns{justify-content:center}
+
+  /* Tour Packages + price kartice (premium/budget) */
+  #tour-details .pkg-badge,
+  #tour-details .tour-overview-text,
+  #tour-details .tour-overview-text p{text-align:center;margin-left:auto;margin-right:auto}
+  #tour-details .pkg-tabs{justify-content:center}
+  #tour-details .included-grid{text-align:center}
+  #tour-details .included-box{display:flex;flex-direction:column;align-items:center}
+  #tour-details .included-box h4{justify-content:center}
+  #tour-details .included-box ul{display:inline-block;text-align:left;margin:0 auto}
+  #tour-details .infant-note{text-align:left}
+  #tour-details .price-card{max-width:420px;margin-left:auto;margin-right:auto;text-align:center}
+  #tour-details .price-card .price-features{display:inline-block;text-align:left;margin:0 auto 20px}
+
+  /* Itinerary — day dugmad + labele */
+  #itinerary .day-tabs{justify-content:center}
+  #itinerary .day-label,#itinerary .day-title{text-align:center}
+
+  /* About Us (M.Y.V. Alanya Travel + Meet Us dugme) */
+  #about .container > div{text-align:center;display:flex;flex-direction:column;align-items:center}
+  #about .about-text,#about .about-subtitle{text-align:center}
+  #about .about-stats{justify-content:center}
+
+  /* Reviews */
+  #reviews .review-stats{justify-content:center;text-align:center}
+  #reviews .review-card{text-align:center}
+  #reviews .review-header{flex-direction:column;align-items:center;gap:4px}
+  #reviews .stars{text-align:center}
+
+  /* Booking */
+  #book-now .book-left,#book-now .book-left .section-title,#book-now .book-left .section-sub{text-align:center}
+  #book-now .book-form{text-align:left}
+
+  /* Ask Us */
+  #ask-us .ask-left,#ask-us .ask-left .section-title,#ask-us .ask-left .section-sub{text-align:center}
+  #ask-us .ask-form{text-align:left}
+}
 </style>
 </head>
 <body>
@@ -1078,13 +1128,12 @@ footer{background:var(--dark);color:rgba(255,255,255,.7);padding:60px 40px 30px}
 ================================ -->
 <section id="reviews">
   <div class="container">
-    <div class="section-tag reveal" data-i18n="reviews.tag">TESTIMONIALS</div>
+    <div class="section-tag reveal" data-i18n="reviews.tag">REVIEWS</div>
     <h2 class="section-title reveal" data-i18n="reviews.title">Real Stories from Real Travelers</h2>
     <div class="review-stats reveal">
       <div><div class="review-stat-num">4.9</div><div class="review-stat-label" data-i18n="reviews.statRating">Average Rating</div></div>
       <div><div class="review-stat-num">500+</div><div class="review-stat-label" data-i18n="reviews.statTravelers">Happy Travelers</div></div>
       <div><div class="review-stat-num">98%</div><div class="review-stat-label" data-i18n="reviews.statRecommend">Would Recommend</div></div>
-      <div><div class="review-stat-num">30+</div><div class="review-stat-label" data-i18n="reviews.statCountries">Countries</div></div>
     </div>
     <div class="reviews-grid">
       <div class="review-card reveal">
@@ -1885,7 +1934,7 @@ const translations = {
     "gallery.cap5": "Devrent Valley",
     
     // Reviews
-    "reviews.tag": "TESTIMONIALS",
+    "reviews.tag": "REVIEWS",
     "reviews.title": "Real Stories from Real Travelers",
     "reviews.statRating": "Average Rating",
     "reviews.statTravelers": "Happy Travelers",
