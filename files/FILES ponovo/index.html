@@ -680,18 +680,6 @@ footer{background:var(--dark);color:rgba(255,255,255,.7);padding:60px 40px 30px}
   #ask-us .ask-left,#ask-us .ask-left .section-title,#ask-us .ask-left .section-sub{text-align:center}
   #ask-us .ask-form{text-align:left}
 }
-
-/* ===== WRITE A REVIEW ===== */
-.write-review{max-width:640px;margin:46px auto 0;background:#fff;border:1px solid rgba(0,0,0,.08);border-radius:18px;padding:34px 30px;box-shadow:0 12px 40px rgba(0,0,0,.07);text-align:center}
-.write-review-title{font-size:23px;font-weight:800;color:var(--dark);margin-bottom:8px}
-.write-review-sub{color:var(--muted);font-size:15px;margin-bottom:24px;line-height:1.55}
-.write-review .form-group{text-align:left}
-.rf-rating{display:flex;align-items:center;justify-content:center;gap:12px;margin:4px 0 16px;flex-wrap:wrap}
-.rf-rating-label{font-weight:700;color:var(--dark)}
-.star-pick{display:inline-flex;gap:5px;font-size:32px;line-height:1;cursor:pointer;color:#dcdcdc;user-select:none}
-.star-pick span{transition:transform .1s ease,color .15s ease}
-.star-pick span:hover{transform:scale(1.15)}
-.star-pick span.active{color:var(--gold)}
 </style>
 </head>
 <body>
@@ -1109,8 +1097,8 @@ footer{background:var(--dark);color:rgba(255,255,255,.7);padding:60px 40px 30px}
         <div class="gallery-caption" data-i18n="gallery.cap1">Red Valley at sunset</div>
       </div>
       <div class="gallery-item" onclick="openLightbox(1)">
-        <img decoding="async" src="https://images.pexels.com/photos/34648074/pexels-photo-34648074.jpeg?auto=compress&cs=tinysrgb&w=800&fm=webp" alt="Göreme Panorama">
-        <div class="gallery-caption" data-i18n="gallery.cap2">Göreme Panorama</div>
+        <img decoding="async" src="https://images.pexels.com/photos/34648074/pexels-photo-34648074.jpeg?auto=compress&cs=tinysrgb&w=800&fm=webp" alt="Göreme Open Air Museum">
+        <div class="gallery-caption" data-i18n="gallery.cap2">Göreme Open Air Museum</div>
       </div>
       <div class="gallery-item" onclick="openLightbox(2)">
         <img decoding="async" src="https://images.pexels.com/photos/14816456/pexels-photo-14816456.jpeg?auto=compress&cs=tinysrgb&w=800&fm=webp" alt="Fairy Chimneys viewpoint">
@@ -1181,29 +1169,6 @@ footer{background:var(--dark);color:rgba(255,255,255,.7);padding:60px 40px 30px}
         <div class="review-text" data-i18n="reviews.review6">Even as a Turkish person I learned so much about Cappadocia's history on this tour. The guide was passionate and the pace was perfect — not rushed at all. Highly recommended!</div>
       </div>
      </div>
-  
-    <!-- WRITE A REVIEW -->
-    <div class="write-review">
-      <h3 class="write-review-title" data-i18n="writeReview.title">Share Your Experience</h3>
-      <p class="write-review-sub" data-i18n="writeReview.subtitle">Have you traveled with us? We'd love to hear about it &mdash; your review helps fellow travelers.</p>
-      <div class="form-group">
-        <input type="text" id="rev-name" data-i18n-placeholder="writeReview.namePh" placeholder="Your name" required>
-      </div>
-      <div class="form-group">
-        <input type="text" id="rev-country" data-i18n-placeholder="writeReview.countryPh" placeholder="Your country (optional)">
-      </div>
-      <div class="rf-rating">
-        <span class="rf-rating-label" data-i18n="writeReview.ratingLabel">Your rating:</span>
-        <div class="star-pick" id="starPick">
-          <span onclick="setStars(1)">&#9733;</span><span onclick="setStars(2)">&#9733;</span><span onclick="setStars(3)">&#9733;</span><span onclick="setStars(4)">&#9733;</span><span onclick="setStars(5)">&#9733;</span>
-        </div>
-      </div>
-      <div class="form-group">
-        <textarea id="rev-text" data-i18n-placeholder="writeReview.textPh" placeholder="Tell us about your experience..." style="min-height:110px;"></textarea>
-      </div>
-      <button class="btn-book" onclick="submitReview()" data-i18n="writeReview.submitBtn">Send My Review &rarr;</button>
-      <p class="form-note" data-i18n="writeReview.note">Your review will be sent to us via WhatsApp so we can share it with future travelers.</p>
-    </div>
   </div>
 </section>
 
@@ -1371,16 +1336,6 @@ footer{background:var(--dark);color:rgba(255,255,255,.7);padding:60px 40px 30px}
     <button class="modal-close" onclick="closeModal()" data-i18n="modal.successBtn">Got it, thanks!</button>
   </div>
 </div>
-
-<div class="modal-overlay" id="reviewSuccessModal">
-  <div class="modal-box">
-    <div class="modal-icon">&#11088;</div>
-    <div class="modal-title" data-i18n="modal.reviewTitle">Thank You for Your Review!</div>
-    <div class="modal-text" data-i18n="modal.reviewText">We truly appreciate you sharing your experience. Your review has been sent to us via WhatsApp and helps future travelers choose with confidence.</div>
-    <button class="modal-close" onclick="closeReviewSuccess()" data-i18n="modal.reviewBtn">You're welcome!</button>
-  </div>
-</div>
-
 
 <!-- ================================
      PRIVACY MODAL
@@ -1855,7 +1810,6 @@ footer{background:var(--dark);color:rgba(255,255,255,.7);padding:60px 40px 30px}
 // ============================================
 const translations = {
   en: {
-    "writeReview.title": "Share Your Experience", "writeReview.subtitle": "Have you traveled with us? We'd love to hear about it \u2014 your review helps fellow travelers.", "writeReview.namePh": "Your name", "writeReview.countryPh": "Your country (optional)", "writeReview.ratingLabel": "Your rating:", "writeReview.textPh": "Tell us about your experience...", "writeReview.submitBtn": "Send My Review \u2192", "writeReview.note": "Your review will be sent to us via WhatsApp so we can share it with future travelers.", "modal.reviewTitle": "Thank You for Your Review!", "modal.reviewText": "We truly appreciate you sharing your experience. Your review has been sent to us via WhatsApp and helps future travelers choose with confidence.", "modal.reviewBtn": "You're welcome!",
     "ask.tag":"CONTACT","ask.title":"Still Have Questions?","ask.subtitle":"Our team is happy to help. Reach out with any question about the Cappadocia tour — pickup, languages, special requests, anything.",
     "ask.formTitle":"Ask Us a Question","ask.formSubtitle":"Have a question about the tour? We'll reply via WhatsApp or email within a few hours.",
     "ask.name":"Your Name <span>*</span>","ask.email":"Email <span>*</span>","ask.phone":"Phone (optional)","ask.message":"Your Question <span>*</span>",
@@ -2002,7 +1956,7 @@ const translations = {
     "gallery.tag": "GALLERY",
     "gallery.title": "A Land Like No Other",
     "gallery.cap1": "Red Valley at sunset",
-    "gallery.cap2": "Göreme Panorama",
+    "gallery.cap2": "Göreme Open Air Museum",
     "gallery.cap3": "Fairy Chimneys viewpoint",
     "gallery.cap4": "Tatlarin Underground City",
     "gallery.cap5": "Devrent Valley",
@@ -2236,7 +2190,6 @@ const translations = {
     "nav.faq": "FAQ"
   },
   ru: {
-    "writeReview.title": "\u041f\u043e\u0434\u0435\u043b\u0438\u0442\u0435\u0441\u044c \u0432\u043f\u0435\u0447\u0430\u0442\u043b\u0435\u043d\u0438\u044f\u043c\u0438", "writeReview.subtitle": "\u041f\u0443\u0442\u0435\u0448\u0435\u0441\u0442\u0432\u043e\u0432\u0430\u043b\u0438 \u0441 \u043d\u0430\u043c\u0438? \u0411\u0443\u0434\u0435\u043c \u0440\u0430\u0434\u044b \u0443\u0441\u043b\u044b\u0448\u0430\u0442\u044c \u0432\u0430\u0448 \u043e\u0442\u0437\u044b\u0432 \u2014 \u043e\u043d \u043f\u043e\u043c\u043e\u0436\u0435\u0442 \u0434\u0440\u0443\u0433\u0438\u043c \u043f\u0443\u0442\u0435\u0448\u0435\u0441\u0442\u0432\u0435\u043d\u043d\u0438\u043a\u0430\u043c.", "writeReview.namePh": "\u0412\u0430\u0448\u0435 \u0438\u043c\u044f", "writeReview.countryPh": "\u0412\u0430\u0448\u0430 \u0441\u0442\u0440\u0430\u043d\u0430 (\u043d\u0435\u043e\u0431\u044f\u0437\u0430\u0442\u0435\u043b\u044c\u043d\u043e)", "writeReview.ratingLabel": "\u0412\u0430\u0448\u0430 \u043e\u0446\u0435\u043d\u043a\u0430:", "writeReview.textPh": "\u0420\u0430\u0441\u0441\u043a\u0430\u0436\u0438\u0442\u0435 \u043e \u0432\u0430\u0448\u0438\u0445 \u0432\u043f\u0435\u0447\u0430\u0442\u043b\u0435\u043d\u0438\u044f\u0445...", "writeReview.submitBtn": "\u041e\u0442\u043f\u0440\u0430\u0432\u0438\u0442\u044c \u043e\u0442\u0437\u044b\u0432 \u2192", "writeReview.note": "\u0412\u0430\u0448 \u043e\u0442\u0437\u044b\u0432 \u0431\u0443\u0434\u0435\u0442 \u043e\u0442\u043f\u0440\u0430\u0432\u043b\u0435\u043d \u043d\u0430\u043c \u0447\u0435\u0440\u0435\u0437 WhatsApp, \u0447\u0442\u043e\u0431\u044b \u043c\u044b \u043c\u043e\u0433\u043b\u0438 \u043f\u043e\u0434\u0435\u043b\u0438\u0442\u044c\u0441\u044f \u0438\u043c \u0441 \u0431\u0443\u0434\u0443\u0449\u0438\u043c\u0438 \u043f\u0443\u0442\u0435\u0448\u0435\u0441\u0442\u0432\u0435\u043d\u043d\u0438\u043a\u0430\u043c\u0438.", "modal.reviewTitle": "\u0421\u043f\u0430\u0441\u0438\u0431\u043e \u0437\u0430 \u0432\u0430\u0448 \u043e\u0442\u0437\u044b\u0432!", "modal.reviewText": "\u041c\u044b \u0438\u0441\u043a\u0440\u0435\u043d\u043d\u0435 \u0431\u043b\u0430\u0433\u043e\u0434\u0430\u0440\u043d\u044b \u0437\u0430 \u0442\u043e, \u0447\u0442\u043e \u0432\u044b \u043f\u043e\u0434\u0435\u043b\u0438\u043b\u0438\u0441\u044c \u0432\u043f\u0435\u0447\u0430\u0442\u043b\u0435\u043d\u0438\u044f\u043c\u0438. \u0412\u0430\u0448 \u043e\u0442\u0437\u044b\u0432 \u043e\u0442\u043f\u0440\u0430\u0432\u043b\u0435\u043d \u043d\u0430\u043c \u0447\u0435\u0440\u0435\u0437 WhatsApp \u0438 \u043f\u043e\u043c\u043e\u0436\u0435\u0442 \u0431\u0443\u0434\u0443\u0449\u0438\u043c \u043f\u0443\u0442\u0435\u0448\u0435\u0441\u0442\u0432\u0435\u043d\u043d\u0438\u043a\u0430\u043c \u0441\u0434\u0435\u043b\u0430\u0442\u044c \u0432\u044b\u0431\u043e\u0440.", "modal.reviewBtn": "\u041f\u043e\u0436\u0430\u043b\u0443\u0439\u0441\u0442\u0430!",
     "ask.tag":"КОНТАКТ","ask.title":"Остались вопросы?","ask.subtitle":"Наша команда с радостью поможет. Обращайтесь с любыми вопросами о туре по Каппадокии — трансфер, языки, особые пожелания, что угодно.",
     "ask.formTitle":"Задайте нам вопрос","ask.formSubtitle":"Есть вопрос о туре? Мы ответим через WhatsApp или email в течение нескольких часов.",
     "ask.name":"Ваше имя <span>*</span>","ask.email":"Email <span>*</span>","ask.phone":"Телефон (необязательно)","ask.message":"Ваш вопрос <span>*</span>",
@@ -2366,7 +2319,7 @@ const translations = {
     "gallery.tag": "ГАЛЕРЕЯ",
     "gallery.title": "Земля, не похожая ни на что",
     "gallery.cap1": "Красная долина на закате",
-    "gallery.cap2": "Панорама Гёреме",
+    "gallery.cap2": "Музей под открытым небом Гёреме",
     "gallery.cap3": "Смотровая площадка «Волшебные дымоходы»",
     "gallery.cap4": "Подземный город Татларин",
     "gallery.cap5": "Долина Деврент",
@@ -2560,7 +2513,6 @@ const translations = {
     "nav.faq": "Вопросы"
   },
   tr: {
-    "writeReview.title": "Deneyiminizi Payla\u015f\u0131n", "writeReview.subtitle": "Bizimle seyahat ettiniz mi? Yorumunuzu duymak isteriz \u2014 di\u011fer gezginlere yard\u0131mc\u0131 olur.", "writeReview.namePh": "Ad\u0131n\u0131z", "writeReview.countryPh": "\u00dclkeniz (iste\u011fe ba\u011fl\u0131)", "writeReview.ratingLabel": "Puan\u0131n\u0131z:", "writeReview.textPh": "Deneyiminizi bizimle payla\u015f\u0131n...", "writeReview.submitBtn": "Yorumumu G\u00f6nder \u2192", "writeReview.note": "Yorumunuz WhatsApp \u00fczerinden bize iletilecek, b\u00f6ylece gelecekteki gezginlerle payla\u015fabiliriz.", "modal.reviewTitle": "Yorumunuz \u0130\u00e7in Te\u015fekk\u00fcrler!", "modal.reviewText": "Deneyiminizi payla\u015ft\u0131\u011f\u0131n\u0131z i\u00e7in i\u00e7tenlikle te\u015fekk\u00fcr ederiz. Yorumunuz WhatsApp \u00fczerinden bize ula\u015ft\u0131 ve gelecekteki gezginlerin g\u00fcvenle se\u00e7im yapmas\u0131na yard\u0131mc\u0131 olur.", "modal.reviewBtn": "Rica ederiz!",
     "ask.tag":"İLETİŞİM","ask.title":"Hâlâ Sorularınız mı Var?","ask.subtitle":"Ekibimiz yardımcı olmaktan mutluluk duyar. Kapadokya turu hakkında herhangi bir sorunuz için bize ulaşın — alış noktası, diller, özel istekler, her şey.",
     "ask.formTitle":"Bize Bir Soru Sorun","ask.formSubtitle":"Tur hakkında sorunuz mu var? WhatsApp veya e-posta yoluyla birkaç saat içinde yanıt vereceğiz.",
     "ask.name":"Adınız <span>*</span>","ask.email":"E-posta <span>*</span>","ask.phone":"Telefon (isteğe bağlı)","ask.message":"Sorunuz <span>*</span>",
@@ -2690,7 +2642,7 @@ const translations = {
     "gallery.tag": "GALERİ",
     "gallery.title": "Hiçbir Şeye Benzemeyen Bir Toprak",
     "gallery.cap1": "Gün batımında Kızıl Vadi",
-    "gallery.cap2": "Göreme Panoraması",
+    "gallery.cap2": "Göreme Açık Hava Müzesi",
     "gallery.cap3": "Peri Bacaları seyir noktası",
     "gallery.cap4": "Tatlarin Yeraltı Şehri",
     "gallery.cap5": "Devrent Vadisi",
@@ -2884,7 +2836,6 @@ const translations = {
     "nav.faq": "SSS"
   },
   uk: {
-    "writeReview.title": "\u041f\u043e\u0434\u0456\u043b\u0456\u0442\u044c\u0441\u044f \u0432\u0440\u0430\u0436\u0435\u043d\u043d\u044f\u043c\u0438", "writeReview.subtitle": "\u041f\u043e\u0434\u043e\u0440\u043e\u0436\u0443\u0432\u0430\u043b\u0438 \u0437 \u043d\u0430\u043c\u0438? \u0411\u0443\u0434\u0435\u043c\u043e \u0440\u0430\u0434\u0456 \u043f\u043e\u0447\u0443\u0442\u0438 \u0432\u0430\u0448 \u0432\u0456\u0434\u0433\u0443\u043a \u2014 \u0432\u0456\u043d \u0434\u043e\u043f\u043e\u043c\u043e\u0436\u0435 \u0456\u043d\u0448\u0438\u043c \u043c\u0430\u043d\u0434\u0440\u0456\u0432\u043d\u0438\u043a\u0430\u043c.", "writeReview.namePh": "\u0412\u0430\u0448\u0435 \u0456\u043c\u02bc\u044f", "writeReview.countryPh": "\u0412\u0430\u0448\u0430 \u043a\u0440\u0430\u0457\u043d\u0430 (\u043d\u0435\u043e\u0431\u043e\u0432\u02bc\u044f\u0437\u043a\u043e\u0432\u043e)", "writeReview.ratingLabel": "\u0412\u0430\u0448\u0430 \u043e\u0446\u0456\u043d\u043a\u0430:", "writeReview.textPh": "\u0420\u043e\u0437\u043a\u0430\u0436\u0456\u0442\u044c \u043f\u0440\u043e \u0432\u0430\u0448\u0456 \u0432\u0440\u0430\u0436\u0435\u043d\u043d\u044f...", "writeReview.submitBtn": "\u041d\u0430\u0434\u0456\u0441\u043b\u0430\u0442\u0438 \u0432\u0456\u0434\u0433\u0443\u043a \u2192", "writeReview.note": "\u0412\u0430\u0448 \u0432\u0456\u0434\u0433\u0443\u043a \u0431\u0443\u0434\u0435 \u043d\u0430\u0434\u0456\u0441\u043b\u0430\u043d\u043e \u043d\u0430\u043c \u0447\u0435\u0440\u0435\u0437 WhatsApp, \u0449\u043e\u0431 \u043c\u0438 \u043c\u043e\u0433\u043b\u0438 \u043f\u043e\u0434\u0456\u043b\u0438\u0442\u0438\u0441\u044f \u043d\u0438\u043c \u0437 \u043c\u0430\u0439\u0431\u0443\u0442\u043d\u0456\u043c\u0438 \u043c\u0430\u043d\u0434\u0440\u0456\u0432\u043d\u0438\u043a\u0430\u043c\u0438.", "modal.reviewTitle": "\u0414\u044f\u043a\u0443\u0454\u043c\u043e \u0437\u0430 \u0432\u0430\u0448 \u0432\u0456\u0434\u0433\u0443\u043a!", "modal.reviewText": "\u041c\u0438 \u0449\u0438\u0440\u043e \u0432\u0434\u044f\u0447\u043d\u0456, \u0449\u043e \u0432\u0438 \u043f\u043e\u0434\u0456\u043b\u0438\u043b\u0438\u0441\u044f \u0432\u0440\u0430\u0436\u0435\u043d\u043d\u044f\u043c\u0438. \u0412\u0430\u0448 \u0432\u0456\u0434\u0433\u0443\u043a \u043d\u0430\u0434\u0456\u0441\u043b\u0430\u043d\u043e \u043d\u0430\u043c \u0447\u0435\u0440\u0435\u0437 WhatsApp \u0456 \u0434\u043e\u043f\u043e\u043c\u043e\u0436\u0435 \u043c\u0430\u0439\u0431\u0443\u0442\u043d\u0456\u043c \u043c\u0430\u043d\u0434\u0440\u0456\u0432\u043d\u0438\u043a\u0430\u043c \u0437\u0440\u043e\u0431\u0438\u0442\u0438 \u0432\u0438\u0431\u0456\u0440.", "modal.reviewBtn": "\u0411\u0443\u0434\u044c \u043b\u0430\u0441\u043a\u0430!",
     "ask.tag":"КОНТАКТ","ask.title":"Залишилися питання?","ask.subtitle":"Наша команда з радістю допоможе. Звертайтеся з будь-якими питаннями про тур до Каппадокії — трансфер, мови, особливі побажання, що завгодно.",
     "ask.formTitle":"Задайте нам питання","ask.formSubtitle":"Є питання про тур? Ми відповімо через WhatsApp або email протягом кількох годин.",
     "ask.name":"Ваше ім'я <span>*</span>","ask.email":"Email <span>*</span>","ask.phone":"Телефон (необов'язково)","ask.message":"Ваше питання <span>*</span>",
@@ -3014,7 +2965,7 @@ const translations = {
     "gallery.tag": "ГАЛЕРЕЯ",
     "gallery.title": "Земля, не схожа ні на що",
     "gallery.cap1": "Червона долина на заході сонця",
-    "gallery.cap2": "Панорама Гьореме",
+    "gallery.cap2": "Музей просто неба Гьореме",
     "gallery.cap3": "Оглядовий майданчик «Чарівні димоходи»",
     "gallery.cap4": "Підземне місто Татларін",
     "gallery.cap5": "Долина Деврент",
@@ -3208,7 +3159,6 @@ const translations = {
     "nav.faq": "Питання"
   },
   de: {
-    "writeReview.title": "Teilen Sie Ihre Erfahrung", "writeReview.subtitle": "Sind Sie mit uns gereist? Wir w\u00fcrden uns \u00fcber Ihre Bewertung freuen \u2014 sie hilft anderen Reisenden.", "writeReview.namePh": "Ihr Name", "writeReview.countryPh": "Ihr Land (optional)", "writeReview.ratingLabel": "Ihre Bewertung:", "writeReview.textPh": "Erz\u00e4hlen Sie uns von Ihrer Erfahrung...", "writeReview.submitBtn": "Bewertung senden \u2192", "writeReview.note": "Ihre Bewertung wird uns per WhatsApp gesendet, damit wir sie mit zuk\u00fcnftigen Reisenden teilen k\u00f6nnen.", "modal.reviewTitle": "Vielen Dank f\u00fcr Ihre Bewertung!", "modal.reviewText": "Wir sch\u00e4tzen es sehr, dass Sie Ihre Erfahrung teilen. Ihre Bewertung wurde uns per WhatsApp gesendet und hilft zuk\u00fcnftigen Reisenden bei der Entscheidung.", "modal.reviewBtn": "Gern geschehen!",
     "ask.tag":"KONTAKT","ask.title":"Noch Fragen?","ask.subtitle":"Unser Team hilft Ihnen gerne. Stellen Sie uns jede Frage zur Kappadokien-Tour — Abholung, Sprachen, besondere Wünsche, alles.",
     "ask.formTitle":"Stellen Sie uns eine Frage","ask.formSubtitle":"Haben Sie eine Frage zur Tour? Wir antworten innerhalb weniger Stunden über WhatsApp oder E-Mail.",
     "ask.name":"Ihr Name <span>*</span>","ask.email":"E-Mail <span>*</span>","ask.phone":"Telefon (optional)","ask.message":"Ihre Frage <span>*</span>",
@@ -3338,7 +3288,7 @@ const translations = {
     "gallery.tag": "GALERIE",
     "gallery.title": "Ein Land wie kein anderes",
     "gallery.cap1": "Rotes Tal bei Sonnenuntergang",
-    "gallery.cap2": "Göreme Panorama",
+    "gallery.cap2": "Göreme Freilichtmuseum",
     "gallery.cap3": "Aussichtspunkt Feenkamine",
     "gallery.cap4": "Unterirdische Stadt Tatlarin",
     "gallery.cap5": "Devrent-Tal",
@@ -3532,7 +3482,6 @@ const translations = {
     "nav.faq": "FAQ"
   },
   sr: {
-    "writeReview.title": "Podelite svoj utisak", "writeReview.subtitle": "Putovali ste sa nama? Voleli bismo da \u010dujemo va\u0161 utisak \u2014 va\u0161a recenzija poma\u017ee drugim putnicima.", "writeReview.namePh": "Va\u0161e ime", "writeReview.countryPh": "Va\u0161a dr\u017eava (opciono)", "writeReview.ratingLabel": "Va\u0161a ocena:", "writeReview.textPh": "Ispri\u010dajte nam o svom iskustvu...", "writeReview.submitBtn": "Po\u0161alji recenziju \u2192", "writeReview.note": "Va\u0161a recenzija \u0107e nam biti poslata preko WhatsApp-a kako bismo je podelili sa budu\u0107im putnicima.", "modal.reviewTitle": "Hvala na va\u0161oj recenziji!", "modal.reviewText": "Iskreno cenimo \u0161to ste podelili svoj utisak. Va\u0161a recenzija nam je poslata preko WhatsApp-a i poma\u017ee budu\u0107im putnicima da se sa sigurno\u0161\u0107u odlu\u010de.", "modal.reviewBtn": "Nema na \u010demu!",
     "ask.tag":"KONTAKT","ask.title":"Imate još pitanja?","ask.subtitle":"Naš tim će vam rado pomoći. Obratite nam se sa bilo kojim pitanjem o turi po Kapadokiji — preuzimanje, jezici, posebni zahtevi, bilo šta.",
     "ask.formTitle":"Postavite nam pitanje","ask.formSubtitle":"Imate pitanje o turi? Odgovorićemo putem WhatsApp-a ili email-a u roku od nekoliko sati.",
     "ask.name":"Vaše ime <span>*</span>","ask.email":"Email <span>*</span>","ask.phone":"Telefon (opciono)","ask.message":"Vaše pitanje <span>*</span>",
@@ -3662,7 +3611,7 @@ const translations = {
     "gallery.tag": "GALERIJA",
     "gallery.title": "Zemlja kao nijedna druga",
     "gallery.cap1": "Crvena dolina na zalasku sunca",
-    "gallery.cap2": "Göreme Panorama",
+    "gallery.cap2": "Göreme muzej na otvorenom",
     "gallery.cap3": "Vidikovac Vilinski dimnjaci",
     "gallery.cap4": "Podzemni grad Tatlarin",
     "gallery.cap5": "Dolina Devrent",
@@ -4278,33 +4227,6 @@ document.addEventListener('DOMContentLoaded', function() {
   setLanguage(currentLang);
   calcTotal();
 });
-
-/* ===== WRITE A REVIEW ===== */
-let revStars = 0;
-function setStars(n){
-  revStars = n;
-  document.querySelectorAll('#starPick span').forEach(function(s,i){ s.classList.toggle('active', i < n); });
-}
-function submitReview(){
-  var name = document.getElementById('rev-name').value.trim();
-  var country = document.getElementById('rev-country').value.trim();
-  var text = document.getElementById('rev-text').value.trim();
-  if(!name || !text || revStars === 0){ alert('Please add your name, a star rating, and your review.'); return; }
-  var stars = '\u2605'.repeat(revStars) + '\u2606'.repeat(5-revStars);
-  var msg = 'New traveler review!%0A%0A' +
-            '*Name:* ' + encodeURIComponent(name) + '%0A' +
-            (country ? '*Country:* ' + encodeURIComponent(country) + '%0A' : '') +
-            '*Rating:* ' + encodeURIComponent(stars) + ' (' + revStars + '/5)%0A%0A' +
-            '*Review:*%0A' + encodeURIComponent(text);
-  window.open('https://wa.me/905331429037?text=' + msg, '_blank');
-  var m = document.getElementById('reviewSuccessModal');
-  if(m){ m.classList.add('open'); document.body.style.overflow = 'hidden'; }
-  document.getElementById('rev-name').value = '';
-  document.getElementById('rev-country').value = '';
-  document.getElementById('rev-text').value = '';
-  setStars(0);
-}
-function closeReviewSuccess(){ var m = document.getElementById('reviewSuccessModal'); if(m){ m.classList.remove('open'); document.body.style.overflow = ''; } }
 </script>
 </body>
 </html>
