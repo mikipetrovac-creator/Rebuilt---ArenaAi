@@ -704,7 +704,7 @@ footer{background:var(--dark);color:rgba(255,255,255,.7);padding:60px 40px 30px}
   #tour-details .included-grid{text-align:center}
   #tour-details .included-box{display:flex;flex-direction:column;align-items:center}
   #tour-details .included-box h4{justify-content:center}
-  #tour-details .included-box ul{display:inline-block;text-align:left;margin:0 auto}
+  #tour-details .included-box ul{display:block;width:100%;max-width:340px;text-align:left;margin:0 auto}
   #tour-details .infant-note{text-align:left}
   #tour-details .price-card{max-width:420px;margin-left:auto;margin-right:auto;text-align:center}
   #tour-details .price-card .price-features{display:inline-block;text-align:left;margin:0 auto 20px}
@@ -1636,7 +1636,7 @@ html{scroll-padding-top:56px}
     </a>
 
     <!-- VKontakte (direct) -->
-    <a href="https://vk.com/im?sel=&msg=Hello" target="_blank" rel="noopener noreferrer" class="chat-fab-item">
+    <a href="https://vk.me/id1117211795" target="_blank" rel="noopener noreferrer" class="chat-fab-item">
       <span class="chat-fab-icon chat-fab-vk" aria-label="VKontakte">
         <svg viewBox="0 0 24 24"><path d="M12.785 16.241s.288-.032.435-.193c.135-.148.131-.425.131-.425s-.019-1.302.584-1.494c.594-.19 1.357 1.265 2.165 1.825.61.422 1.075.33 1.075.33l2.162-.03s1.13-.07.594-.961c-.044-.073-.312-.658-1.606-1.864-1.355-1.262-1.173-1.057.459-3.238.994-1.327 1.392-2.137 1.268-2.483-.118-.331-.844-.244-.844-.244l-2.43.015s-.181-.025-.314.055c-.131.078-.215.262-.215.262s-.385 1.031-.899 1.908c-1.083 1.85-1.518 1.948-1.695 1.832-.412-.267-.309-1.072-.309-1.643 0-1.784.27-2.53-.524-2.722-.264-.063-.458-.106-1.132-.113-.865-.009-1.597.003-2.011.207-.276.135-.488.437-.359.454.16.022.522.099.713.36.249.336.24 1.094.24 1.094s.142 2.086-.333 2.345c-.327.178-.775-.184-1.74-1.864-.494-.86-.868-1.812-.868-1.812s-.072-.177-.201-.272c-.156-.115-.376-.151-.376-.151l-2.311.015s-.346.01-.473.161c-.114.135-.01.413-.01.413s1.812 4.243 3.863 6.38c1.883 1.96 4.02 1.832 4.02 1.832h.97z"/></svg>
       </span>
@@ -1644,7 +1644,7 @@ html{scroll-padding-top:56px}
     </a>
 
     <!-- MAX Chat (direct) -->
-    <a href="https://max.ru/+905510066857" target="_blank" rel="noopener noreferrer" class="chat-fab-item">
+    <a href="https://max.ru/u/f9LHodD0cOK3zZiSLmyd54PgwQQOLnBmWDpF7i7oB3IuIMBnS3nAFyCkP84" target="_blank" rel="noopener noreferrer" class="chat-fab-item">
       <span class="chat-fab-icon chat-fab-max" aria-label="MAX Chat">
         <svg viewBox="0 0 24 24"><path d="M20 2H4c-1.1 0-2 .9-2 2v18l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm-2 12H6v-2h12v2zm0-3H6V9h12v2zm0-3H6V6h12v2z"/></svg>
       </span>
@@ -3958,6 +3958,7 @@ function setLanguage(lang) {
   });
   const langSelect = document.getElementById('langSelect');
   if (langSelect) langSelect.value = lang;
+  var lsm = document.getElementById('langSelectMobile'); if (lsm) lsm.value = lang;
   const titles = {
     en: "M.Y.V. Alanya Travel – Discover the Magic of Cappadocia",
     ru: "M.Y.V. Alanya Travel – Откройте магию Каппадокии",
