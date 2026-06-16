@@ -104,7 +104,7 @@ body{font-family:'DM Sans',sans-serif;color:var(--text);background:var(--cream);
 .menu-close-btn{display:none;background:none;border:none;color:#fff;font-size:2rem;cursor:pointer;line-height:1;padding:0;z-index:5}
 
 /* Backdrop for tap-outside-to-close */
-.menu-backdrop{display:none;position:fixed;inset:0;background:rgba(0,0,0,.45);z-index:1000;opacity:0;transition:opacity .3s ease}
+.menu-backdrop{display:none;position:fixed;inset:0;background:rgba(0,0,0,.45);z-index:999;opacity:0;transition:opacity .3s ease}
 .menu-backdrop.active{display:block;opacity:1}
 
 /* ===== TABLET & MOBILE (≤1024px) ===== */
@@ -679,7 +679,7 @@ footer{background:var(--dark);color:rgba(255,255,255,.7);padding:60px 40px 30px}
   .ask-left{text-align:center}
   .ask-form{padding:24px 20px}
   .ask-contact-list li{justify-content:flex-start;text-align:left}
-  #ask-us .ask-contact-list{display:inline-block;text-align:left;margin:28px auto 0}
+  #ask-us .ask-contact-list{display:block;text-align:center;margin:28px 0 0}#ask-us .ask-contact-list li{display:block;text-align:center}
   #ask-us .ask-contact-list li{justify-content:flex-start}
 }
 @media(max-width:1024px){
@@ -807,8 +807,9 @@ html{scroll-padding-top:56px}
   </div>
 
   <!-- Backdrop for tap-outside-to-close -->
-  <div class="menu-backdrop" id="menuBackdrop"></div>
+  
 </header>
+  <div class="menu-backdrop" id="menuBackdrop"></div>
 
 <!-- ================================
      HERO
