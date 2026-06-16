@@ -85,7 +85,7 @@ body{font-family:'DM Sans',sans-serif;color:var(--text);background:var(--cream);
 /* ================================
    SITE HEADER (matches Cappadocia)
 ================================ */
-.site-header{position:absolute;top:0;left:0;width:100%;display:flex;justify-content:space-between;align-items:center;padding:25px 40px;box-sizing:border-box;background:transparent;z-index:1000;gap:12px}
+.site-header{position:fixed;top:0;left:0;width:100%;display:flex;justify-content:space-between;align-items:center;padding:7px 40px;box-sizing:border-box;background:transparent;z-index:1000;gap:12px;transition:background .35s ease,box-shadow .35s ease}
 .header-left{flex:1 1 auto;min-width:0}
 .header-left .logo{color:#fff !important;font-size:1.4rem;font-weight:700;text-decoration:none;font-family:'Playfair Display',serif;white-space:nowrap;text-shadow:0 1px 6px rgba(0,0,0,.35);display:flex;align-items:center;gap:10px;overflow:hidden}
 .logo-text{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
@@ -113,7 +113,7 @@ body{font-family:'DM Sans',sans-serif;color:var(--text);background:var(--cream);
 .menu-backdrop.active{display:block;opacity:1}
 
 @media(max-width:1024px){
-  .site-header{padding:18px 20px}
+  .site-header{padding:8px 20px}
   .menu-toggle{display:block}
   .header-mobile-controls{display:flex}
   .header-lang-mobile{display:block}
@@ -129,7 +129,7 @@ body{font-family:'DM Sans',sans-serif;color:var(--text);background:var(--cream);
 @media(max-width:767px){
   .header-left .logo{font-size:1.25rem !important;gap:10px}
   .logo-badge{width:36px;height:36px;font-size:16px}
-  .site-header{padding:14px 14px}
+  .site-header{padding:7px 14px}
   .header-mobile-controls{gap:8px}
   .header-lang-mobile select{padding:4px 6px;font-size:11px}
   .menu-toggle{font-size:1.75rem}
@@ -980,7 +980,10 @@ footer{background:var(--dark);color:rgba(255,255,255,.7);padding:60px 40px 30px}
 /* Centrirani naslovi sekcija (sve sirine) */
 #tour-details > .container > .section-tag,#tour-details > .container > .section-title,#tour-details > .container > .section-sub,#itinerary > .container > .section-tag,#itinerary > .container > .section-title,#itinerary > .container > .section-sub,#gallery > .container > .section-tag,#gallery > .container > .section-title,#reviews > .container > .section-tag,#reviews > .container > .section-title,#faq > .container > .section-tag,#faq > .container > .section-title,#faq > .container > .section-sub{text-align:center;margin-left:auto;margin-right:auto}
 #reviews .review-stats{justify-content:center}
-</style>
+
+html{scroll-padding-top:56px}
+.site-header.scrolled{background:rgba(250,246,240,.62);-webkit-backdrop-filter:blur(12px);backdrop-filter:blur(12px);box-shadow:0 1px 0 rgba(0,0,0,.06),0 6px 18px rgba(0,0,0,.05)}.site-header.scrolled .logo,.site-header.scrolled .logo-text{color:var(--dark)!important;text-shadow:none}.site-header.scrolled .menu-toggle{color:var(--dark);text-shadow:none}@media(min-width:1025px){.site-header.scrolled .header-right-group a{color:var(--dark)!important;text-shadow:none}.site-header.scrolled .tour-switcher{border-left-color:rgba(0,0,0,.18);border-right-color:rgba(0,0,0,.18)}.site-header.scrolled.demre-page #nav-demre{color:var(--terra)!important;border-bottom-color:var(--terra)!important}}
+.site-header.scrolled .language-selector select{color:var(--dark);border-color:rgba(0,0,0,.28);background:rgba(0,0,0,.05)}</style>
 </head>
 <body>
 
@@ -2563,6 +2566,14 @@ function submitReview(){
   setStars(0);
 }
 function closeReviewSuccess(){ var m = document.getElementById('reviewSuccessModal'); if(m){ m.classList.remove('open'); document.body.style.overflow = ''; } }
+
+(function(){
+  var h=document.querySelector('.site-header');
+  if(!h)return;
+  var f=function(){h.classList.toggle('scrolled',(window.scrollY||window.pageYOffset)>40);};
+  window.addEventListener('scroll',f,{passive:true});
+  f();
+})();
 </script>
 </body>
 </html>
