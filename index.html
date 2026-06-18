@@ -418,6 +418,19 @@ section{padding:80px 40px}
 .review-date{font-size:11px;color:var(--muted);white-space:nowrap}
 .stars{color:var(--gold);font-size:13px;margin-bottom:12px}
 .review-text{font-size:13px;color:var(--muted);line-height:1.7}
+/* Featured reviews (homepage) + all-reviews modal */
+.review-card--featured{position:relative;overflow:hidden}
+.review-card--featured::before{content:'\201C';position:absolute;top:-10px;right:16px;font-family:'Playfair Display',serif;font-size:96px;line-height:1;color:var(--terra);opacity:.07;pointer-events:none}
+.review-card--featured .review-text{max-height:11.4em;overflow:hidden;-webkit-mask-image:linear-gradient(180deg,#000 64%,transparent 100%);mask-image:linear-gradient(180deg,#000 64%,transparent 100%)}
+.reviews-cta{text-align:center;margin-top:36px}
+.btn-allreviews{display:inline-flex;align-items:center;gap:10px;background:transparent;color:var(--terra);border:1.5px solid var(--terra);padding:13px 32px;border-radius:50px;font-family:'DM Sans',sans-serif;font-size:15px;font-weight:600;cursor:pointer;transition:background .25s ease,color .25s ease,transform .25s ease,box-shadow .25s ease;-webkit-tap-highlight-color:transparent}
+.btn-allreviews:hover,.btn-allreviews:focus-visible{background:var(--terra);color:#fff;transform:translateY(-2px);box-shadow:0 10px 26px rgba(168,80,31,.25)}
+.btn-allreviews svg{width:16px;height:16px;transition:transform .25s ease}
+.btn-allreviews:hover svg{transform:translateX(4px)}
+.reviews-modal .modal-content{max-width:1000px;background:var(--cream)}
+.reviews-masonry{columns:3 268px;column-gap:18px;margin-top:24px}
+.reviews-masonry .review-card{background:#fff;break-inside:avoid;-webkit-column-break-inside:avoid;page-break-inside:avoid;margin:0 0 18px;width:100%;display:inline-block;vertical-align:top;text-align:left}
+@media (prefers-reduced-motion:reduce){.btn-allreviews,.btn-allreviews svg{transition:none}}
 /* ================================
    BOOKING
 ================================ */
@@ -829,16 +842,16 @@ html{scroll-padding-top:56px}
   </div>
   <div class="hero-stats">
     <div class="hero-stat">
-      <div class="hero-stat-num" data-count="500">0</div>
-      <div class="hero-stat-label" data-i18n="hero.statTravelers">Happy Travelers</div>
+      <div class="hero-stat-num" data-count="9">0</div>
+      <div class="hero-stat-label" data-i18n="reviews.statReviews">Google Reviews</div>
     </div>
     <div class="hero-stat">
-      <div class="hero-stat-num" data-count="4.9" data-decimal="true">0</div>
+      <div class="hero-stat-num" data-count="5.0" data-decimal="true">0</div>
       <div class="hero-stat-label" data-i18n="hero.statRating">Average Rating</div>
     </div>
     <div class="hero-stat">
-      <div class="hero-stat-num" data-count="100">0</div>
-      <div class="hero-stat-label" data-i18n="hero.statSatisfaction">Satisfaction</div>
+      <div class="hero-stat-num" data-count="17" data-suffix="+">0</div>
+      <div class="hero-stat-label" data-i18n="about.statYears">Years Experience</div>
     </div>
   </div>
 </section>
@@ -1147,7 +1160,7 @@ html{scroll-padding-top:56px}
       <p class="about-text" data-i18n="about.text2">Our tours are led by licensed/certified guides with 17 years of experience. We handle every detail — from your hotel pick-up in Alanya or Side to the moment we drop you back. Our tours are operated in full partnership and compliance with the licensed travel agency AXIGEL TURİZM (TÜRSAB Belge No: 2484).</p>
       <div class="about-stats">
         <div><div class="about-stat-num">17+</div><div class="about-stat-label" data-i18n="about.statYears">Years Experience</div></div>
-        <div><div class="about-stat-num">500+</div><div class="about-stat-label" data-i18n="about.statTours">Tours Completed</div></div>
+        <div><div class="about-stat-num">5.0</div><div class="about-stat-label" data-i18n="reviews.statRating">Average Rating</div></div>
         <div><div class="about-stat-num">100%</div><div class="about-stat-label" data-i18n="about.statSafety">Safety Record</div></div>
       </div>
       <a href="#book-now" class="btn-terra" style="display:inline-block;margin-top:24px;border-radius:50px;padding:12px 28px;" data-i18n="about.btn">Meet Us on Your Next Adventure →</a>
@@ -1204,43 +1217,19 @@ html{scroll-padding-top:56px}
     <div class="section-tag reveal" data-i18n="reviews.tag">REVIEWS</div>
     <h2 class="section-title reveal" data-i18n="reviews.title">Real Stories from Real Travelers</h2>
     <div class="review-stats reveal">
-      <div><div class="review-stat-num">4.9</div><div class="review-stat-label" data-i18n="reviews.statRating">Average Rating</div></div>
-      <div><div class="review-stat-num">500+</div><div class="review-stat-label" data-i18n="reviews.statTravelers">Happy Travelers</div></div>
-      <div><div class="review-stat-num">98%</div><div class="review-stat-label" data-i18n="reviews.statRecommend">Would Recommend</div></div>
+      <div><div class="review-stat-num">5.0</div><div class="review-stat-label" data-i18n="reviews.statRating">Average Rating</div></div>
+      <div><div class="review-stat-num">9</div><div class="review-stat-label" data-i18n="reviews.statReviews">Google Reviews</div></div>
+      <div><div class="review-stat-num">17+</div><div class="review-stat-label" data-i18n="about.statYears">Years Experience</div></div>
     </div>
-    <div class="reviews-grid">
-      <div class="review-card reveal">
-        <div class="review-header"><div><div class="reviewer-name">Emily Carter</div><div class="reviewer-country">🇺🇸 United States</div></div><div class="review-date">Sep 2020</div></div>
-        <div class="stars">★★★★★</div>
-        <div class="review-text" data-i18n="reviews.review1">We were picked up from our hotel in Alanya right on time. Our guide explained the history of Tatlarin and the fairy chimneys in a way that made the landscape feel alive. Seeing the balloons rise at sunrise over the valleys was honestly one of the most emotional travel moments I have ever had.</div>
-      </div>
-      <div class="review-card reveal">
-        <div class="review-header"><div><div class="reviewer-name">Milan Petrović</div><div class="reviewer-country">🇷🇸 Serbia</div></div><div class="review-date">May 2021</div></div>
-        <div class="stars">★★★★★</div>
-        <div class="review-text" data-i18n="reviews.review2">The trip from Side was well organized, and the guide shared so many details about Devrent Valley, Love Valley, and the old cave settlements. I especially liked the pottery workshop and the stop at Pigeon Valley for photos.</div>
-      </div>
-      <div class="review-card reveal">
-        <div class="review-header"><div><div class="reviewer-name">Anna Müller</div><div class="reviewer-country">🇩🇪 Germany</div></div><div class="review-date">Oct 2022</div></div>
-        <div class="stars">★★★★★</div>
-        <div class="review-text" data-i18n="reviews.review3">I booked this Cappadocia tour with my mother and we felt taken care of from the first message. The guide was very knowledgeable and patient, especially when explaining the underground city and the early Christian history.</div>
-      </div>
-      <div class="review-card reveal">
-        <div class="review-header"><div><div class="reviewer-name">Omar Al-Hassan</div><div class="reviewer-country">🇯🇴 Jordan</div></div><div class="review-date">Jun 2023</div></div>
-        <div class="stars">★★★★★</div>
-        <div class="review-text" data-i18n="reviews.review4">Exceptional experience from start to finish. The ceramic workshop was a wonderful cultural highlight and our guide spoke excellent English. Everything was on time and the hotel in Ürgüp was charming.</div>
-      </div>
-      <div class="review-card reveal">
-        <div class="review-header"><div><div class="reviewer-name">Sofia Rossi</div><div class="reviewer-country">🇮🇹 Italy</div></div><div class="review-date">Apr 2024</div></div>
-        <div class="stars">★★★★★</div>
-        <div class="review-text" data-i18n="reviews.review5">Bellissimo! The organization was perfect, the food at the included restaurants was delicious, and the scenery was beyond anything I imagined. The balloon ride at sunrise was a dream come true.</div>
-      </div>
-      <div class="review-card reveal">
-        <div class="review-header"><div><div class="reviewer-name">Leila Demir</div><div class="reviewer-country">🇹🇷 Turkey</div></div><div class="review-date">Aug 2025</div></div>
-        <div class="stars">★★★★★</div>
-        <div class="review-text" data-i18n="reviews.review6">Even as a Turkish person I learned so much about Cappadocia's history on this tour. The guide was passionate and the pace was perfect — not rushed at all. Highly recommended!</div>
-      </div>
-     </div>
-  
+    <div class="reviews-grid" id="featuredReviews"></div>
+
+    <div class="reviews-cta">
+      <button class="btn-allreviews" type="button" onclick="openModal('reviewsModal')" aria-haspopup="dialog">
+        <span data-i18n="reviews.viewAll">Read all reviews</span>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+      </button>
+    </div>
+
     <!-- WRITE A REVIEW -->
     <div class="write-review">
       <h3 class="write-review-title" data-i18n="writeReview.title">Share Your Experience</h3>
@@ -1891,6 +1880,64 @@ html{scroll-padding-top:56px}
     </div>
   </div>
 </div>
+<!-- ================================
+     ALL REVIEWS MODAL
+================================ -->
+<div id="reviewsModal" class="custom-modal reviews-modal" role="dialog" aria-modal="true" aria-labelledby="reviewsModalTitle" onclick="closeModalOutside(event,'reviewsModal')">
+  <div class="modal-content">
+    <span class="close-btn" onclick="closeModalById('reviewsModal')" role="button" aria-label="Close">&times;</span>
+    <div class="modal-badge" data-i18n="reviews.tag">REVIEWS</div>
+    <h3 class="modal-title" id="reviewsModalTitle" data-i18n="reviews.title">Real Stories from Real Travelers</h3>
+    <div class="reviews-masonry">
+      <div class="review-card">
+        <div class="review-header"><div><div class="reviewer-name">Murat Gürlek</div></div><div class="review-date">Jun 2026</div></div>
+        <div class="stars">★★★★★</div>
+        <div class="review-text">Elena hanım çok güzel bir insan, kapadokya turunda bizlere çok güzel bilgiler anlattı, harika bir deneyimdi, herkese tavsiye ederim, çok memnun kaldık, çok teşekkürler.</div>
+      </div>
+      <div class="review-card">
+        <div class="review-header"><div><div class="reviewer-name">Ayşegül Aydın</div></div><div class="review-date">Jun 2026</div></div>
+        <div class="stars">★★★★★</div>
+        <div class="review-text">Kapadokya turundan karşılama olmak üzere tüm turdan memnun kaldım. Gideceklere tavsiye ederim. Güleryüzlü ve saygılı karşılama yapıldı. Teşekkürler.</div>
+      </div>
+      <div class="review-card" data-featured>
+        <div class="review-header"><div><div class="reviewer-name">Жасмин Базылжанова</div></div><div class="review-date">Jun 2026</div></div>
+        <div class="stars">★★★★★</div>
+        <div class="review-text">Недавно побывала на экскурсии в Каппадокии, и хочу выразить огромную благодарность нашему гиду Лене! 🌷 Экскурсия была очень интересной, насыщенной и отлично организованной. Лена рассказывала увлекательно, с душой и знанием дела, отвечала на все вопросы и создавала очень приятную атмосферу на протяжении всей поездки. Благодаря ей Каппадокия открылась совершенно по-особенному — с её историей, красивыми местами и удивительными фактами. Видно, что Лена любит свою работу и действительно заботится о туристах. Спасибо за прекрасные впечатления, хорошее настроение и незабываемую экскурсию! Обязательно буду рекомендовать Лену своим друзьям и знакомым.</div>
+      </div>
+      <div class="review-card">
+        <div class="review-header"><div><div class="reviewer-name">alice!</div></div><div class="review-date">Jun 2026</div></div>
+        <div class="stars">★★★★★</div>
+        <div class="review-text">Ездила недавно в Кападокию. Безумно красиво, очень понравилось особенно наш гид Елена. Прекрасный человек, все конструктивно объяснила, было очень интересно. Все понравилось, всем рекомендую!!</div>
+      </div>
+      <div class="review-card">
+        <div class="review-header"><div><div class="reviewer-name">Gülnaz Domaç</div></div><div class="review-date">Jun 2026</div></div>
+        <div class="stars">★★★★★</div>
+        <div class="review-text">Мне понравилась поездка в Каппадокию с гидом Леной. Очень красиво все объяснила, очень хорошо провела время. Всем советую. Спасибо большое гиду Елене.</div>
+      </div>
+      <div class="review-card">
+        <div class="review-header"><div><div class="reviewer-name">Natalia Fajek</div></div><div class="review-date">Jun 2026</div></div>
+        <div class="stars">★★★★★</div>
+        <div class="review-text">Здравствуйте, впечатления и воспоминания у нас останутся на всю жизнь. Нам очень всё понравилось. Гид Елена замечательная женщина. Всё отлично подробно рассказывала, приятно было слушать. Наша группа стала как одной семьёй. Елена большое вам спасибо за такую замечательную и не забываемую экскурсию. Как будет у нас возможность обязательно обратимся к вам.</div>
+      </div>
+      <div class="review-card" data-featured>
+        <div class="review-header"><div><div class="reviewer-name">Людмила Никитина</div></div><div class="review-date">Jun 2026</div></div>
+        <div class="stars">★★★★★</div>
+        <div class="review-text">Вы когда нибудь бывали в сказке наяву? А я была! И это Каппадокия! Фантастический пейзаж! И конечно захватывающий дух повествование об этом волшебном месте. Это не передать словами! Реальность исчезает, и ты вдруг оказываешься в далёком прошлом... Я столкнулась с человеком влюблённым в своё дело, для которого работа словно дыхание! Елена Радованович рассказывает много интересного и познавательного! Ни одной минуты не пожалела потраченных денег и времени! Словно произошла перезагрузка... Ты вдруг увидел то, что видели до тебя сотни лет назад. Это ошеломляет! А если учесть, что увиденное подкрепляется интереснейшей информацией, которую тебе доносит профессиональный гид, это превосходит все твои ожидания!</div>
+      </div>
+      <div class="review-card">
+        <div class="review-header"><div><div class="reviewer-name">Lyudmila Mahul</div></div><div class="review-date">Jun 2026</div></div>
+        <div class="stars">★★★★★</div>
+        <div class="review-text">Большое спасибо Елене за прекрасное путешествие! Очень приятно, когда гид не просто проводит экскурсию, а искренне делится своими знаниями, интересными деталями и любовью к своему делу. С Еленой узнаёшь больше, чем ожидаешь, а поездка…</div>
+      </div>
+      <div class="review-card" data-featured>
+        <div class="review-header"><div><div class="reviewer-name">Pochemuchka KZ</div></div><div class="review-date">Jun 2026</div></div>
+        <div class="stars">★★★★★</div>
+        <div class="review-text">Изумительные места! Это очень впечатляет, когда смотришь по телевизору, но живьём впечатления оказываются ещё сильнее. Мы ездили в этот тур уже дважды, и поедем ещё, если получится опять побывать в Турции. Посещаемые локации немного поменялись во второй раз, но интересны были и те и другие. Красивая местность, напоминающая пейзаж из «Звёздных войн», подземный город — одна из главных изюминок всего тура, посещение мастерских по изготовлению полудрагоценных камней и гончарных изделий, ну конечно полёты на воздушных шарах. Незабываемые воспоминания и красивые фотографии в домашнем альбоме. Очень рекомендую!</div>
+      </div>
+    </div>
+  </div>
+</div>
+
 <script>
 
 // ============================================
@@ -2057,6 +2104,8 @@ const translations = {
     "reviews.tag": "REVIEWS",
     "reviews.title": "Real Stories from Real Travelers",
     "reviews.statRating": "Average Rating",
+    "reviews.statReviews": "Google Reviews",
+    "reviews.viewAll": "Read all reviews",
     "reviews.statTravelers": "Happy Travelers",
     "reviews.statRecommend": "Would Recommend",
     "reviews.statCountries": "Countries",
@@ -2420,6 +2469,8 @@ const translations = {
     "reviews.tag": "ОТЗЫВЫ",
     "reviews.title": "Реальные истории от реальных путешественников",
     "reviews.statRating": "Средний рейтинг",
+    "reviews.statReviews": "Отзывы Google",
+    "reviews.viewAll": "Читать все отзывы",
     "reviews.statTravelers": "Довольных туристов",
     "reviews.statRecommend": "Рекомендуют",
     "reviews.statCountries": "Стран",
@@ -2745,6 +2796,8 @@ const translations = {
     "reviews.tag": "YORUMLAR",
     "reviews.title": "Gerçek Gezginlerden Gerçek Hikayeler",
     "reviews.statRating": "Ortalama Puan",
+    "reviews.statReviews": "Google Yorumları",
+    "reviews.viewAll": "Tüm yorumları oku",
     "reviews.statTravelers": "Mutlu Gezgin",
     "reviews.statRecommend": "Tavsiye Eder",
     "reviews.statCountries": "Ülke",
@@ -3070,6 +3123,8 @@ const translations = {
     "reviews.tag": "ВІДГУКИ",
     "reviews.title": "Реальні історії від реальних мандрівників",
     "reviews.statRating": "Середній рейтинг",
+    "reviews.statReviews": "Відгуки Google",
+    "reviews.viewAll": "Читати всі відгуки",
     "reviews.statTravelers": "Задоволених туристів",
     "reviews.statRecommend": "Рекомендують",
     "reviews.statCountries": "Країн",
@@ -3395,6 +3450,8 @@ const translations = {
     "reviews.tag": "BEWERTUNGEN",
     "reviews.title": "Echte Geschichten von echten Reisenden",
     "reviews.statRating": "Durchschnittsbewertung",
+    "reviews.statReviews": "Google-Bewertungen",
+    "reviews.viewAll": "Alle Bewertungen lesen",
     "reviews.statTravelers": "Zufriedene Reisende",
     "reviews.statRecommend": "Würden empfehlen",
     "reviews.statCountries": "Länder",
@@ -3720,6 +3777,8 @@ const translations = {
     "reviews.tag": "RECENZIJE",
     "reviews.title": "Prave priče od pravih putnika",
     "reviews.statRating": "Prosečna ocena",
+    "reviews.statReviews": "Google recenzije",
+    "reviews.viewAll": "Pogledaj sve recenzije",
     "reviews.statTravelers": "Zadovoljnih putnika",
     "reviews.statRecommend": "Bi preporučilo",
     "reviews.statCountries": "Zemalja",
@@ -4288,6 +4347,22 @@ if ('IntersectionObserver' in window) {
 }
 
 // ============================================
+// FEATURED REVIEWS (clone marked cards into homepage grid)
+// ============================================
+(function(){
+  var grid = document.getElementById('featuredReviews');
+  var modal = document.getElementById('reviewsModal');
+  if(!grid || !modal) return;
+  modal.querySelectorAll('.review-card[data-featured]').forEach(function(card){
+    var clone = card.cloneNode(true);
+    clone.removeAttribute('data-featured');
+    clone.classList.remove('reveal');
+    clone.classList.add('review-card--featured');
+    grid.appendChild(clone);
+  });
+})();
+
+// ============================================
 // COUNTER ANIMATION
 // ============================================
 let countAnimated = false;
@@ -4298,7 +4373,7 @@ const heroStatsObserver = new IntersectionObserver(entries => {
       document.querySelectorAll('.hero-stat-num[data-count]').forEach(el => {
         const target = parseFloat(el.dataset.count);
         const isDecimal = el.dataset.decimal === 'true';
-        const suffix = target === 500 ? '+' : (target === 100 ? '%' : '');
+        const suffix = el.dataset.suffix || '';
         const duration = 1500;
         const start = performance.now();
         function animate(now) {
