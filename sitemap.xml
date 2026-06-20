@@ -1,15 +1,124 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://myvalanyatravel.com/</loc>
-    <lastmod>2026-06-15</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://myvalanyatravel.com/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://myvalanyatravel.com/ru/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://myvalanyatravel.com/de/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://myvalanyatravel.com/tr/"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://myvalanyatravel.com/uk/"/>
+    <xhtml:link rel="alternate" hreflang="sr" href="https://myvalanyatravel.com/sr/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://myvalanyatravel.com/"/>
+  </url>
+  <url>
+    <loc>https://myvalanyatravel.com/ru/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://myvalanyatravel.com/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://myvalanyatravel.com/ru/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://myvalanyatravel.com/de/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://myvalanyatravel.com/tr/"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://myvalanyatravel.com/uk/"/>
+    <xhtml:link rel="alternate" hreflang="sr" href="https://myvalanyatravel.com/sr/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://myvalanyatravel.com/"/>
+  </url>
+  <url>
+    <loc>https://myvalanyatravel.com/de/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://myvalanyatravel.com/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://myvalanyatravel.com/ru/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://myvalanyatravel.com/de/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://myvalanyatravel.com/tr/"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://myvalanyatravel.com/uk/"/>
+    <xhtml:link rel="alternate" hreflang="sr" href="https://myvalanyatravel.com/sr/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://myvalanyatravel.com/"/>
+  </url>
+  <url>
+    <loc>https://myvalanyatravel.com/tr/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://myvalanyatravel.com/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://myvalanyatravel.com/ru/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://myvalanyatravel.com/de/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://myvalanyatravel.com/tr/"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://myvalanyatravel.com/uk/"/>
+    <xhtml:link rel="alternate" hreflang="sr" href="https://myvalanyatravel.com/sr/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://myvalanyatravel.com/"/>
+  </url>
+  <url>
+    <loc>https://myvalanyatravel.com/uk/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://myvalanyatravel.com/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://myvalanyatravel.com/ru/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://myvalanyatravel.com/de/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://myvalanyatravel.com/tr/"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://myvalanyatravel.com/uk/"/>
+    <xhtml:link rel="alternate" hreflang="sr" href="https://myvalanyatravel.com/sr/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://myvalanyatravel.com/"/>
+  </url>
+  <url>
+    <loc>https://myvalanyatravel.com/sr/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://myvalanyatravel.com/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://myvalanyatravel.com/ru/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://myvalanyatravel.com/de/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://myvalanyatravel.com/tr/"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://myvalanyatravel.com/uk/"/>
+    <xhtml:link rel="alternate" hreflang="sr" href="https://myvalanyatravel.com/sr/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://myvalanyatravel.com/"/>
   </url>
   <url>
     <loc>https://myvalanyatravel.com/demre-myra-kekova</loc>
-    <lastmod>2026-06-15</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://myvalanyatravel.com/demre-myra-kekova"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://myvalanyatravel.com/ru/demre-myra-kekova.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://myvalanyatravel.com/de/demre-myra-kekova.html"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://myvalanyatravel.com/tr/demre-myra-kekova.html"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://myvalanyatravel.com/uk/demre-myra-kekova.html"/>
+    <xhtml:link rel="alternate" hreflang="sr" href="https://myvalanyatravel.com/sr/demre-myra-kekova.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://myvalanyatravel.com/demre-myra-kekova"/>
+  </url>
+  <url>
+    <loc>https://myvalanyatravel.com/ru/demre-myra-kekova.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://myvalanyatravel.com/demre-myra-kekova"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://myvalanyatravel.com/ru/demre-myra-kekova.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://myvalanyatravel.com/de/demre-myra-kekova.html"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://myvalanyatravel.com/tr/demre-myra-kekova.html"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://myvalanyatravel.com/uk/demre-myra-kekova.html"/>
+    <xhtml:link rel="alternate" hreflang="sr" href="https://myvalanyatravel.com/sr/demre-myra-kekova.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://myvalanyatravel.com/demre-myra-kekova"/>
+  </url>
+  <url>
+    <loc>https://myvalanyatravel.com/de/demre-myra-kekova.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://myvalanyatravel.com/demre-myra-kekova"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://myvalanyatravel.com/ru/demre-myra-kekova.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://myvalanyatravel.com/de/demre-myra-kekova.html"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://myvalanyatravel.com/tr/demre-myra-kekova.html"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://myvalanyatravel.com/uk/demre-myra-kekova.html"/>
+    <xhtml:link rel="alternate" hreflang="sr" href="https://myvalanyatravel.com/sr/demre-myra-kekova.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://myvalanyatravel.com/demre-myra-kekova"/>
+  </url>
+  <url>
+    <loc>https://myvalanyatravel.com/tr/demre-myra-kekova.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://myvalanyatravel.com/demre-myra-kekova"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://myvalanyatravel.com/ru/demre-myra-kekova.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://myvalanyatravel.com/de/demre-myra-kekova.html"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://myvalanyatravel.com/tr/demre-myra-kekova.html"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://myvalanyatravel.com/uk/demre-myra-kekova.html"/>
+    <xhtml:link rel="alternate" hreflang="sr" href="https://myvalanyatravel.com/sr/demre-myra-kekova.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://myvalanyatravel.com/demre-myra-kekova"/>
+  </url>
+  <url>
+    <loc>https://myvalanyatravel.com/uk/demre-myra-kekova.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://myvalanyatravel.com/demre-myra-kekova"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://myvalanyatravel.com/ru/demre-myra-kekova.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://myvalanyatravel.com/de/demre-myra-kekova.html"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://myvalanyatravel.com/tr/demre-myra-kekova.html"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://myvalanyatravel.com/uk/demre-myra-kekova.html"/>
+    <xhtml:link rel="alternate" hreflang="sr" href="https://myvalanyatravel.com/sr/demre-myra-kekova.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://myvalanyatravel.com/demre-myra-kekova"/>
+  </url>
+  <url>
+    <loc>https://myvalanyatravel.com/sr/demre-myra-kekova.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://myvalanyatravel.com/demre-myra-kekova"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://myvalanyatravel.com/ru/demre-myra-kekova.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://myvalanyatravel.com/de/demre-myra-kekova.html"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://myvalanyatravel.com/tr/demre-myra-kekova.html"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://myvalanyatravel.com/uk/demre-myra-kekova.html"/>
+    <xhtml:link rel="alternate" hreflang="sr" href="https://myvalanyatravel.com/sr/demre-myra-kekova.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://myvalanyatravel.com/demre-myra-kekova"/>
   </url>
 </urlset>

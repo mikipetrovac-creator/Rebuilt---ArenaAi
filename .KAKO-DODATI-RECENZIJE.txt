@@ -1,0 +1,104 @@
+==========================================================
+  KAKO DODATI / IZMENITI RECENZIJE  —  M.Y.V. Alanya Travel
+  (podsetnik za index.html — strana Kapadokija)
+==========================================================
+
+GDE SE NALAZE RECENZIJE
+-----------------------
+Sve recenzije su na JEDNOM mestu — u "modalu" koji se otvori klikom
+na dugme "Pogledaj sve recenzije".
+
+U fajlu index.html pritisni Ctrl+F i nađi:   reviews-masonry
+
+Ispod toga je niz blokova. Svaki blok = jedna recenzija, ovako:
+
+      <div class="review-card">
+        <div class="review-header"><div><div class="reviewer-name">IME</div></div><div class="review-date">Jun 2026</div></div>
+        <div class="stars">★★★★★</div>
+        <div class="review-text">TEKST RECENZIJE</div>
+      </div>
+
+
+1) KAKO DODATI NOVU RECENZIJU
+-----------------------------
+- Kopiraj jedan ceo blok od <div class="review-card"> do </div>.
+- Nalepi ga ODMAH ISPOD poslednjeg, ali IZNAD </div> koji zatvara
+  reviews-masonry.
+- Promeni SAMO tri stvari:
+      IME            -> ime recenzenta (npr. Murat Gürlek)
+      Jun 2026       -> mesec i godina (npr. Jul 2026)
+      TEKST RECENZIJE-> sam tekst (ostavi na originalnom jeziku)
+- Zvezdice ostavi: ★★★★★  (kopiraj ih odavde ako treba)
+- NA TEKST NE STAVLJAJ data-i18n  -> tako ostaje na svom jeziku
+  i ne pokušava da se prevodi.
+
+VAŽNO: ne diraj <div>/</div> oznake. Mora ih biti tačno koliko i u
+uzorku (svaka otvorena ima svoju zatvorenu).
+
+
+2) KOJE 3 RECENZIJE IDU NA POČETNU STRANU
+-----------------------------------------
+Na naslovnoj se prikazuju 3 recenzije — to su one koje u prvom tagu
+imaju reč  data-featured :
+
+      <div class="review-card" data-featured>
+
+- Ako želiš da neka DRUGA bude na naslovnoj: dodaj reč data-featured
+  toj kartici, a SKLONI je sa stare.
+- Uvek neka ih bude TAČNO 3 (ni manje ni više).
+- Najlepše izgledaju duže recenzije (slično dužine), jer se kartice
+  poravnaju.
+
+
+3) PROMENI UKUPAN BROJ RECENZIJA (na 3 mesta!)
+----------------------------------------------
+Kad dodaš ili obrišeš recenziju, promeni broj na SVA TRI mesta
+(Ctrl+F pa zameni stari broj novim):
+
+   data-count="12"                          (brojač u hero/vrh strane)
+   <div class="review-stat-num">12</div>    (iznad recenzija)
+   "reviewCount": "12"                       (u JSON-LD, na vrhu fajla)
+
+Primer: ako ih ima 13, sva tri broja postaju 13.
+
+
+4) AKO SE PROMENI PROSEČNA OCENA
+--------------------------------
+Ako prosek na Google-u više nije 5,0 (npr. neko da 4★), promeni
+"5.0" na tri slična mesta:
+
+   data-count="5.0"
+   <div class="review-stat-num">5.0</div>
+   "ratingValue": "5.0"
+
+(Koristi tačku, ne zarez: 5.0 — ne 5,0.)
+I toj jednoj recenziji koja nije petica smanji zvezdice
+(npr. ★★★★☆ za 4 zvezdice).
+
+
+5) OBJAVA (git)
+---------------
+Sačuvaj fajl, pa iz foldera projekta:
+
+   cd ~/Desktop/Rebuilt\ -\ ArenaAi
+   git status          <- prvo proveri da promena POSTOJI
+   git add index.html
+   git commit -m "Dodate nove recenzije; broj azuriran"
+   git push
+
+Ako "git commit" kaže "nothing to commit" -> fajl nije sačuvan ili
+nije u PRAVOM folderu (mora ~/Desktop/Rebuilt - ArenaAi/).
+
+
+6) PROVERA POSLE OBJAVE
+-----------------------
+- Sačekaj par sekundi da Netlify objavi (Deploys -> Published).
+- Otvori sajt u INCOGNITO prozoru (bez keša).
+- U normalnom browseru osveži sa Ctrl+Shift+R.
+
+
+==========================================================
+  Napomena: ovaj fajl je samo podsetnik za tebe. Ako ne želiš
+  da bude javan na sajtu, jednostavno ga NE dodaj u git
+  (ne kucaj "git add" za njega).
+==========================================================
