@@ -121,4 +121,64 @@
     <xhtml:link rel="alternate" hreflang="sr" href="https://myvalanyatravel.com/sr/demre-myra-kekova.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://myvalanyatravel.com/demre-myra-kekova"/>
   </url>
+  <url>
+    <loc>https://myvalanyatravel.com/pamukkale</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://myvalanyatravel.com/pamukkale"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://myvalanyatravel.com/ru/pamukkale.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://myvalanyatravel.com/de/pamukkale.html"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://myvalanyatravel.com/tr/pamukkale.html"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://myvalanyatravel.com/uk/pamukkale.html"/>
+    <xhtml:link rel="alternate" hreflang="sr" href="https://myvalanyatravel.com/sr/pamukkale.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://myvalanyatravel.com/pamukkale"/>
+  </url>
+  <url>
+    <loc>https://myvalanyatravel.com/ru/pamukkale.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://myvalanyatravel.com/pamukkale"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://myvalanyatravel.com/ru/pamukkale.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://myvalanyatravel.com/de/pamukkale.html"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://myvalanyatravel.com/tr/pamukkale.html"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://myvalanyatravel.com/uk/pamukkale.html"/>
+    <xhtml:link rel="alternate" hreflang="sr" href="https://myvalanyatravel.com/sr/pamukkale.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://myvalanyatravel.com/pamukkale"/>
+  </url>
+  <url>
+    <loc>https://myvalanyatravel.com/de/pamukkale.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://myvalanyatravel.com/pamukkale"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://myvalanyatravel.com/ru/pamukkale.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://myvalanyatravel.com/de/pamukkale.html"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://myvalanyatravel.com/tr/pamukkale.html"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://myvalanyatravel.com/uk/pamukkale.html"/>
+    <xhtml:link rel="alternate" hreflang="sr" href="https://myvalanyatravel.com/sr/pamukkale.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://myvalanyatravel.com/pamukkale"/>
+  </url>
+  <url>
+    <loc>https://myvalanyatravel.com/tr/pamukkale.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://myvalanyatravel.com/pamukkale"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://myvalanyatravel.com/ru/pamukkale.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://myvalanyatravel.com/de/pamukkale.html"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://myvalanyatravel.com/tr/pamukkale.html"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://myvalanyatravel.com/uk/pamukkale.html"/>
+    <xhtml:link rel="alternate" hreflang="sr" href="https://myvalanyatravel.com/sr/pamukkale.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://myvalanyatravel.com/pamukkale"/>
+  </url>
+  <url>
+    <loc>https://myvalanyatravel.com/uk/pamukkale.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://myvalanyatravel.com/pamukkale"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://myvalanyatravel.com/ru/pamukkale.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://myvalanyatravel.com/de/pamukkale.html"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://myvalanyatravel.com/tr/pamukkale.html"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://myvalanyatravel.com/uk/pamukkale.html"/>
+    <xhtml:link rel="alternate" hreflang="sr" href="https://myvalanyatravel.com/sr/pamukkale.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://myvalanyatravel.com/pamukkale"/>
+  </url>
+  <url>
+    <loc>https://myvalanyatravel.com/sr/pamukkale.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://myvalanyatravel.com/pamukkale"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://myvalanyatravel.com/ru/pamukkale.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://myvalanyatravel.com/de/pamukkale.html"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://myvalanyatravel.com/tr/pamukkale.html"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://myvalanyatravel.com/uk/pamukkale.html"/>
+    <xhtml:link rel="alternate" hreflang="sr" href="https://myvalanyatravel.com/sr/pamukkale.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://myvalanyatravel.com/pamukkale"/>
+  </url>
 </urlset>

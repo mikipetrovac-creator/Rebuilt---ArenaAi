@@ -24,6 +24,7 @@ OG_LOCALE = {"en":"en_US","ru":"ru_RU","de":"de_DE","tr":"tr_TR","uk":"uk_UA","s
 PAGES = [
     {"file":"index.html",             "key":"index", "url_en":"/",                  "url_lang":"/{lang}/"},
     {"file":"demre-myra-kekova.html", "key":"demre", "url_en":"/demre-myra-kekova", "url_lang":"/{lang}/demre-myra-kekova.html"},
+    {"file":"pamukkale.html",         "key":"pamukkale", "url_en":"/pamukkale",        "url_lang":"/{lang}/pamukkale.html"},
 ]
 
 # Prevedeni <title> i opis (en ostaje kako je u fajlu)
@@ -51,6 +52,18 @@ META = {
          "Одноденний тур Демре, Міра і Кекова з Аланьї та Сіде — церква Святого Миколая, лікійські гробниці та круїз над затонулим містом Кекова. Бронювання онлайн, оплата при зустрічі."),
   "sr": ("Tura Demre · Mira · Kekova iz Alanje | M.Y.V. Travel",
          "Celodnevna tura Demre, Mira i Kekova iz Alanje i Side — crkva Svetog Nikole, likijske grobnice i krstarenje nad potonulim gradom Kekova. Rezervacija onlajn, plaćanje pri preuzimanju."),
+ },
+  "pamukkale": {
+  "ru": ("Тур в Памуккале из Аланьи и Сиде | M.Y.V. Travel",
+         "Однодневный тур в Памуккале из Аланьи и Сиде — белоснежные травертиновые террасы, древний Иераполис и античный бассейн Клеопатры. Бронь онлайн, оплата при встрече."),
+  "de": ("Pamukkale-Tour ab Alanya & Side | M.Y.V. Travel",
+         "Ganztägige Pamukkale-Tour ab Alanya und Side — die weißen Sinterterrassen, das antike Hierapolis und der Antike Pool der Kleopatra. Online buchen, bei Abholung zahlen."),
+  "tr": ("Alanya & Side'den Pamukkale Turu | M.Y.V. Travel",
+         "Alanya ve Side'den tam günlük Pamukkale turu — beyaz travertenler, antik Hierapolis ve Kleopatra Antik Havuzu. Online rezervasyon; ödemeyi alışta yapın."),
+  "uk": ("Тур у Памуккале з Аланьї та Сіде | M.Y.V. Travel",
+         "Одноденний тур у Памуккале з Аланьї та Сіде — білі травертинові тераси, стародавній Ієраполіс та античний басейн Клеопатри. Бронювання онлайн, оплата при зустрічі."),
+  "sr": ("Tura u Pamukkale iz Alanje i Side | M.Y.V. Travel",
+         "Celodnevna tura u Pamukkale iz Alanje i Side — bele travertinske terase, antički Hijerapolis i Kleopatrin antički bazen. Rezervacija onlajn, plaćanje pri preuzimanju."),
  },
 }
 
