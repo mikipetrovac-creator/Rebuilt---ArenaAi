@@ -72,7 +72,7 @@
       "description": "Two-day Cappadocia tour from Alanya & Side with sunrise hot air balloons, fairy chimneys, underground cities and Göreme — hotel, meals and expert guide included.",
       "image": "https://myvalanyatravel.com/images/kapadokija-gosti-1200x630.jpg",
       "brand": {"@type": "Brand", "name": "M.Y.V. Alanya Travel"},
-      "offers": {"@type": "Offer", "price": "90", "priceCurrency": "EUR", "availability": "https://schema.org/InStock", "url": "https://myvalanyatravel.com/"}
+      "offers": {"@type": "Offer", "price": "35", "priceCurrency": "EUR", "availability": "https://schema.org/InStock", "url": "https://myvalanyatravel.com/"}
     }
   ]
 }
@@ -949,8 +949,8 @@ html{scroll-padding-top:56px}
     </div>
 
     <div class="pkg-tabs reveal">
-  <button class="pkg-tab active-premium" onclick="switchPkg('premium')" id="tab-premium">⭐ <span data-i18n="tourDetails.premiumTab">Premium</span> – €90</button>
-  <button class="pkg-tab" onclick="switchPkg('basic')" id="tab-basic">🎒 <span data-i18n="tourDetails.budgetTab">Bütçe</span> – €50</button>
+  <button class="pkg-tab" onclick="switchPkg('premium')" id="tab-premium">⭐ <span data-i18n="tourDetails.premiumTab">Premium</span> – €90</button>
+  <button class="pkg-tab active-budget" onclick="switchPkg('basic')" id="tab-basic">🎒 <span data-i18n="tourDetails.budgetTab">Bütçe</span> – €35</button>
 </div>
 
 <div class="schedule-notice reveal">
@@ -959,7 +959,7 @@ html{scroll-padding-top:56px}
 </div>
 
     <!-- PREMIUM PACKAGE -->
-    <div id="pkg-premium" class="pkg-content">
+    <div id="pkg-premium" class="pkg-content" style="display:none;">
       <div class="tour-overview">
         <div>
           <div class="pkg-badge premium">⭐ <span data-i18n="tourDetails.premiumBadge">PREMİUM PAKET</span></div>
@@ -1036,7 +1036,7 @@ html{scroll-padding-top:56px}
     </div>
 
     <!-- BUDGET PACKAGE -->
-    <div id="pkg-basic" class="pkg-content" style="display:none;">
+    <div id="pkg-basic" class="pkg-content">
       <div class="tour-overview">
         <div>
           <div class="pkg-badge budget">🎒 <span data-i18n="tourDetails.budgetBadge">BÜTÇE PAKETİ</span></div>
@@ -1088,7 +1088,7 @@ html{scroll-padding-top:56px}
         <div class="price-card" style="border-color:#3a7bd5;">
           <div class="price-card-header budget" data-i18n="tourDetails.budgetBadge">BÜTÇE PAKETİ</div>
           <div class="price-from" data-i18n="tourDetails.startingFrom">Başlayan fiyat</div>
-          <div class="price-big" style="color:#3a7bd5;">€50 <span data-i18n="tourDetails.perPerson">/ kişi</span></div>
+          <div class="price-big" style="color:#3a7bd5;">€35 <span data-i18n="tourDetails.perPerson">/ kişi</span></div>
           <div class="price-note" data-i18n="tourDetails.budgetNote">Öğle yemeği ve opsiyoneller yerinde ödenir</div>
           <ul class="price-features">
             <li><span class="feat-icon">⏱</span> <span data-i18n="tourDetails.feat1">2 Gün / 1 Gece</span></li>
@@ -1106,7 +1106,7 @@ html{scroll-padding-top:56px}
           <div class="price-breakdown">
             👶 <strong data-i18n="tourDetails.infant">Bebekler 0–3:</strong> <span data-i18n="tourDetails.infantPrice">Ücretsiz, ayrı koltuk yok.</span><br>
             🧒 <strong data-i18n="tourDetails.child">Çocuklar 4–10:</strong> €25<br>
-            👤 <strong data-i18n="tourDetails.adult">Yetişkinler 11+:</strong> €50
+            👤 <strong data-i18n="tourDetails.adult">Yetişkinler 11+:</strong> €35
           </div>
           <a href="#book-now" class="btn-terra" style="display:block;text-align:center;border-radius:10px;padding:14px;background:#3a7bd5;" onclick="selectBookingPackage('budget')" data-i18n="tourDetails.bookBudget">Bütçe Turu Rezervasyonu →</a>
         </div>
@@ -1327,19 +1327,19 @@ html{scroll-padding-top:56px}
 
 <div class="form-section-label" data-i18n="booking.selectPackage">PAKET SEÇİN</div>
       <div class="book-pkg-selector">
-        <div class="book-pkg-btn active-premium" id="book-pkg-premium" onclick="switchBookingPkg('premium')">⭐ <span data-i18n="tourDetails.premiumTab">Premium</span> – €90</div>
-        <div class="book-pkg-btn" id="book-pkg-budget" onclick="switchBookingPkg('budget')">🎒 <span data-i18n="tourDetails.budgetTab">Bütçe</span> – €50</div>
+        <div class="book-pkg-btn" id="book-pkg-premium" onclick="switchBookingPkg('premium')">⭐ <span data-i18n="tourDetails.premiumTab">Premium</span> – €90</div>
+        <div class="book-pkg-btn active-budget" id="book-pkg-budget" onclick="switchBookingPkg('budget')">🎒 <span data-i18n="tourDetails.budgetTab">Bütçe</span> – €35</div>
       </div>
 
       <div class="form-section-label" data-i18n="booking.priceCategories">FİYAT KATEGORİLERİ</div>
       <div class="price-cats" id="price-cats-display">
         <div class="price-cat">
-          <div class="price-cat-amount" id="adult-price-display">€90</div>
+          <div class="price-cat-amount" id="adult-price-display">€35</div>
           <div class="price-cat-label" data-i18n="booking.adults">Yetişkinler</div>
           <div class="price-cat-age" data-i18n="booking.adultsAge">(11+ yaş)</div>
         </div>
         <div class="price-cat">
-          <div class="price-cat-amount" id="child-price-display">€45</div>
+          <div class="price-cat-amount" id="child-price-display">€25</div>
           <div class="price-cat-label" data-i18n="booking.children">Çocuklar</div>
           <div class="price-cat-age" data-i18n="booking.childrenAge">(4–10 yaş)</div>
         </div>
@@ -4078,10 +4078,10 @@ const languageData = {
 // GLOBAL STATE
 // ============================================
 let currentLang = 'tr';
-let currentBookingPkg = 'premium';
+let currentBookingPkg = 'budget';
 const pricing = {
   premium: { adult: 90, child: 45 },
-  budget: { adult: 50, child: 25 }
+  budget: { adult: 35, child: 25 }
 };
 
 // ============================================
@@ -4126,7 +4126,9 @@ function setLanguage(lang) {
   };
   document.title = titles[lang] || titles.en;
 }
-function changeLanguage(lang){var U={en:'/',ru:'/ru/',de:'/de/',tr:'/tr/',uk:'/uk/',sr:'/sr/'};if(U[lang]){window.location.href=U[lang];}else{setLanguage(lang);}}
+function _saveLangScroll(){try{var y=window.scrollY||window.pageYOffset||0;var secs=document.querySelectorAll('section[id],header[id]');var bId='',bTop=-1;for(var i=0;i<secs.length;i++){var t=secs[i].getBoundingClientRect().top+y;if(t<=y+120&&t>bTop){bTop=t;bId=secs[i].id;}}sessionStorage.setItem('myvScrollY',String(Math.round(y)));if(bId){sessionStorage.setItem('myvScrollSec',bId);sessionStorage.setItem('myvScrollDelta',String(Math.round(y-bTop)));}else{sessionStorage.removeItem('myvScrollSec');sessionStorage.removeItem('myvScrollDelta');}}catch(e){}}
+(function(){if('scrollRestoration' in history)history.scrollRestoration='manual';var sec,yStr;try{sec=sessionStorage.getItem('myvScrollSec');yStr=sessionStorage.getItem('myvScrollY');}catch(e){return;}if(sec===null&&yStr===null)return;function restore(){var target=0,y0=window.scrollY||window.pageYOffset||0;if(sec){var el=document.getElementById(sec);if(el){var d=parseInt((sessionStorage.getItem('myvScrollDelta')||'0'),10)||0;target=el.getBoundingClientRect().top+y0+d;}else if(yStr!==null){target=parseInt(yStr,10)||0;}}else if(yStr!==null){target=parseInt(yStr,10)||0;}var e2=document.documentElement,p=e2.style.scrollBehavior;e2.style.scrollBehavior='auto';window.scrollTo(0,Math.max(0,target));e2.style.scrollBehavior=p;}function done(){try{sessionStorage.removeItem('myvScrollY');sessionStorage.removeItem('myvScrollSec');sessionStorage.removeItem('myvScrollDelta');}catch(e){}}function run(){restore();setTimeout(restore,90);setTimeout(function(){restore();done();},280);}if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',run);else run();window.addEventListener('load',restore);})();
+function changeLanguage(lang){var U={en:'/',ru:'/ru/',de:'/de/',tr:'/tr/',uk:'/uk/',sr:'/sr/'};if(U[lang]){_saveLangScroll();window.location.href=U[lang];}else{setLanguage(lang);}}
 
 // ============================================
 // MOBILE MENU — open/close + tap-outside
@@ -4264,7 +4266,7 @@ function submitBooking() {
 
   // Detect selected package
   const isPremium = document.getElementById('book-pkg-premium').classList.contains('active-premium');
-  const pkgName   = isPremium ? '⭐ PREMIUM (€90/adult)' : '🎒 BUDGET (€50/adult)';
+  const pkgName   = isPremium ? '⭐ PREMIUM (€90/adult)' : '🎒 BUDGET (€35/adult)';
 
   // Build the WhatsApp message
   const msg =

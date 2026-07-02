@@ -125,7 +125,7 @@ def match_braces(s, open_idx):
 def replace_changeLanguage(html, urlmap):
     js_map = "{" + ",".join("%s:'%s'" % (lg, urlmap[lg]) for lg in LANGS) + "}"
     newfn = ("function changeLanguage(lang){var U=%s;"
-             "if(U[lang]){window.location.href=U[lang];}else{setLanguage(lang);}}" % js_map)
+             "if(U[lang]){_saveLangScroll();window.location.href=U[lang];}else{setLanguage(lang);}}" % js_map)
     idx = html.find('function changeLanguage(lang)')
     if idx == -1: return html
     brace = html.index('{', idx)

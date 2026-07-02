@@ -1197,8 +1197,8 @@ html{scroll-padding-top:56px}
     </div>
 
     <div class="pkg-tabs reveal">
-      <button class="pkg-tab active-premium" onclick="switchPkg('premium')" id="tab-premium">⭐ <span data-i18n="tourDetails.premiumTab">Premium</span> – €70</button>
-      <button class="pkg-tab" onclick="switchPkg('basic')" id="tab-basic">🎒 <span data-i18n="tourDetails.budgetTab">Budget</span> – €40</button>
+      <button class="pkg-tab" onclick="switchPkg('premium')" id="tab-premium">⭐ <span data-i18n="tourDetails.premiumTab">Premium</span> – €70</button>
+      <button class="pkg-tab active-budget" onclick="switchPkg('basic')" id="tab-basic">🎒 <span data-i18n="tourDetails.budgetTab">Budget</span> – €40</button>
     </div>
 
     <div class="schedule-notice reveal">
@@ -1207,7 +1207,7 @@ html{scroll-padding-top:56px}
     </div>
 
     <!-- PREMIUM PACKAGE -->
-    <div id="pkg-premium" class="pkg-content">
+    <div id="pkg-premium" class="pkg-content" style="display:none;">
       <div class="tour-overview">
         <div>
           <div class="pkg-badge premium">⭐ <span data-i18n="tourDetails.premiumBadge">PREMIUM-PAKET</span></div>
@@ -1276,7 +1276,7 @@ html{scroll-padding-top:56px}
     </div>
 
     <!-- BUDGET PACKAGE -->
-    <div id="pkg-basic" class="pkg-content" style="display:none;">
+    <div id="pkg-basic" class="pkg-content">
       <div class="tour-overview">
         <div>
           <div class="pkg-badge budget">🎒 <span data-i18n="tourDetails.budgetBadge">BUDGET-PAKET</span></div>
@@ -1595,19 +1595,19 @@ html{scroll-padding-top:56px}
       <div class="form-section-label" data-i18n="booking.selectPackage">PAKET WÄHLEN</div>
       <div style="background:#fff3cd;border:1.5px solid #f0c040;border-radius:8px;padding:10px 14px;font-size:13px;font-weight:700;color:#7a6000;margin-bottom:16px;text-align:center;" data-i18n="booking.tourDays">📅 Touren dienstags, donnerstags &amp; sonntags</div>
       <div class="book-pkg-selector">
-        <div class="book-pkg-btn active-premium" id="book-pkg-premium" onclick="switchBookingPkg('premium')">⭐ <span data-i18n="tourDetails.premiumTab">Premium</span> – €70</div>
-        <div class="book-pkg-btn" id="book-pkg-budget" onclick="switchBookingPkg('budget')">🎒 <span data-i18n="tourDetails.budgetTab">Budget</span> – €40</div>
+        <div class="book-pkg-btn" id="book-pkg-premium" onclick="switchBookingPkg('premium')">⭐ <span data-i18n="tourDetails.premiumTab">Premium</span> – €70</div>
+        <div class="book-pkg-btn active-budget" id="book-pkg-budget" onclick="switchBookingPkg('budget')">🎒 <span data-i18n="tourDetails.budgetTab">Budget</span> – €40</div>
       </div>
 
       <div class="form-section-label" data-i18n="booking.priceCategories">PREISKATEGORIEN</div>
       <div class="price-cats">
         <div class="price-cat">
-          <div class="price-cat-amount" id="adult-price-display">€70</div>
+          <div class="price-cat-amount" id="adult-price-display">€40</div>
           <div class="price-cat-label" data-i18n="booking.adults">Erwachsene</div>
           <div class="price-cat-age" data-i18n="booking.adultsAge">(ab 8 Jahren)</div>
         </div>
         <div class="price-cat">
-          <div class="price-cat-amount" id="child-price-display">€40</div>
+          <div class="price-cat-amount" id="child-price-display">€25</div>
           <div class="price-cat-label" data-i18n="booking.children">Kinder</div>
           <div class="price-cat-age" data-i18n="booking.childrenAge">(4–7 Jahre)</div>
         </div>
@@ -2054,7 +2054,9 @@ function calcTotal() {
 // ============================================
 let currentLang = 'de';
 
-function changeLanguage(lang){var U={en:'/pamukkale',ru:'/ru/pamukkale.html',de:'/de/pamukkale.html',tr:'/tr/pamukkale.html',uk:'/uk/pamukkale.html',sr:'/sr/pamukkale.html'};if(U[lang]){window.location.href=U[lang];}else{setLanguage(lang);}}
+function _saveLangScroll(){try{var y=window.scrollY||window.pageYOffset||0;var secs=document.querySelectorAll('section[id],header[id]');var bId='',bTop=-1;for(var i=0;i<secs.length;i++){var t=secs[i].getBoundingClientRect().top+y;if(t<=y+120&&t>bTop){bTop=t;bId=secs[i].id;}}sessionStorage.setItem('myvScrollY',String(Math.round(y)));if(bId){sessionStorage.setItem('myvScrollSec',bId);sessionStorage.setItem('myvScrollDelta',String(Math.round(y-bTop)));}else{sessionStorage.removeItem('myvScrollSec');sessionStorage.removeItem('myvScrollDelta');}}catch(e){}}
+(function(){if('scrollRestoration' in history)history.scrollRestoration='manual';var sec,yStr;try{sec=sessionStorage.getItem('myvScrollSec');yStr=sessionStorage.getItem('myvScrollY');}catch(e){return;}if(sec===null&&yStr===null)return;function restore(){var target=0,y0=window.scrollY||window.pageYOffset||0;if(sec){var el=document.getElementById(sec);if(el){var d=parseInt((sessionStorage.getItem('myvScrollDelta')||'0'),10)||0;target=el.getBoundingClientRect().top+y0+d;}else if(yStr!==null){target=parseInt(yStr,10)||0;}}else if(yStr!==null){target=parseInt(yStr,10)||0;}var e2=document.documentElement,p=e2.style.scrollBehavior;e2.style.scrollBehavior='auto';window.scrollTo(0,Math.max(0,target));e2.style.scrollBehavior=p;}function done(){try{sessionStorage.removeItem('myvScrollY');sessionStorage.removeItem('myvScrollSec');sessionStorage.removeItem('myvScrollDelta');}catch(e){}}function run(){restore();setTimeout(restore,90);setTimeout(function(){restore();done();},280);}if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',run);else run();window.addEventListener('load',restore);})();
+function changeLanguage(lang){var U={en:'/pamukkale',ru:'/ru/pamukkale.html',de:'/de/pamukkale.html',tr:'/tr/pamukkale.html',uk:'/uk/pamukkale.html',sr:'/sr/pamukkale.html'};if(U[lang]){_saveLangScroll();window.location.href=U[lang];}else{setLanguage(lang);}}
 
 function setLanguage(lang) {
   const t = translations[lang] || translations['en'];
@@ -2168,7 +2170,7 @@ document.addEventListener('DOMContentLoaded',function(){
   const d=document.getElementById('form-date');
   if(d){const t=new Date;t.setDate(t.getDate()+1);d.min=t.toISOString().split('T')[0]}
   setLanguage(currentLang);
-  switchPkg('premium');
+  switchPkg('basic');
   calcTotal();
 });
 
