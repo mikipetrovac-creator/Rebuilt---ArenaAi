@@ -182,6 +182,66 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://myvalanyatravel.com/pamukkale"/>
   </url>
   <url>
+    <loc>https://myvalanyatravel.com/blog.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://myvalanyatravel.com/blog.html"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://myvalanyatravel.com/ru/blog.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://myvalanyatravel.com/de/blog.html"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://myvalanyatravel.com/tr/blog.html"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://myvalanyatravel.com/uk/blog.html"/>
+    <xhtml:link rel="alternate" hreflang="sr" href="https://myvalanyatravel.com/sr/blog.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://myvalanyatravel.com/blog.html"/>
+  </url>
+  <url>
+    <loc>https://myvalanyatravel.com/ru/blog.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://myvalanyatravel.com/blog.html"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://myvalanyatravel.com/ru/blog.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://myvalanyatravel.com/de/blog.html"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://myvalanyatravel.com/tr/blog.html"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://myvalanyatravel.com/uk/blog.html"/>
+    <xhtml:link rel="alternate" hreflang="sr" href="https://myvalanyatravel.com/sr/blog.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://myvalanyatravel.com/blog.html"/>
+  </url>
+  <url>
+    <loc>https://myvalanyatravel.com/de/blog.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://myvalanyatravel.com/blog.html"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://myvalanyatravel.com/ru/blog.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://myvalanyatravel.com/de/blog.html"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://myvalanyatravel.com/tr/blog.html"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://myvalanyatravel.com/uk/blog.html"/>
+    <xhtml:link rel="alternate" hreflang="sr" href="https://myvalanyatravel.com/sr/blog.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://myvalanyatravel.com/blog.html"/>
+  </url>
+  <url>
+    <loc>https://myvalanyatravel.com/tr/blog.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://myvalanyatravel.com/blog.html"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://myvalanyatravel.com/ru/blog.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://myvalanyatravel.com/de/blog.html"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://myvalanyatravel.com/tr/blog.html"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://myvalanyatravel.com/uk/blog.html"/>
+    <xhtml:link rel="alternate" hreflang="sr" href="https://myvalanyatravel.com/sr/blog.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://myvalanyatravel.com/blog.html"/>
+  </url>
+  <url>
+    <loc>https://myvalanyatravel.com/uk/blog.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://myvalanyatravel.com/blog.html"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://myvalanyatravel.com/ru/blog.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://myvalanyatravel.com/de/blog.html"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://myvalanyatravel.com/tr/blog.html"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://myvalanyatravel.com/uk/blog.html"/>
+    <xhtml:link rel="alternate" hreflang="sr" href="https://myvalanyatravel.com/sr/blog.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://myvalanyatravel.com/blog.html"/>
+  </url>
+  <url>
+    <loc>https://myvalanyatravel.com/sr/blog.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://myvalanyatravel.com/blog.html"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://myvalanyatravel.com/ru/blog.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://myvalanyatravel.com/de/blog.html"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://myvalanyatravel.com/tr/blog.html"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://myvalanyatravel.com/uk/blog.html"/>
+    <xhtml:link rel="alternate" hreflang="sr" href="https://myvalanyatravel.com/sr/blog.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://myvalanyatravel.com/blog.html"/>
+  </url>
+  <url>
     <loc>https://myvalanyatravel.com/blog-cappadocia-balloon.html</loc>
     <xhtml:link rel="alternate" hreflang="en" href="https://myvalanyatravel.com/blog-cappadocia-balloon.html"/>
     <xhtml:link rel="alternate" hreflang="ru" href="https://myvalanyatravel.com/ru/blog-cappadocia-balloon.html"/>
