@@ -25,6 +25,18 @@ PAGES = [
     {"file":"index.html",             "key":"index", "url_en":"/",                  "url_lang":"/{lang}/"},
     {"file":"demre-myra-kekova.html", "key":"demre", "url_en":"/demre-myra-kekova", "url_lang":"/{lang}/demre-myra-kekova.html"},
     {"file":"pamukkale.html",         "key":"pamukkale", "url_en":"/pamukkale",        "url_lang":"/{lang}/pamukkale.html"},
+    {"file":"green-canyon.html",      "key":"greencanyon", "url_en":"/green-canyon",   "url_lang":"/{lang}/green-canyon.html"},
+]
+
+# Blog stranice: NISU visejezicne kroz "translations" (statične su, prevedene rucno u /ru/ /de/...),
+# pa se NE generisu ovde — ali IDU u sitemap. Zato ih drzimo odvojeno i samo za sitemap.
+# Blog koristi .html i za engleski (nema pretty URL), pa je url_en = "/blog.html".
+BLOG_PAGES = [
+    {"url_en":"/blog.html",                     "url_lang":"/{lang}/blog.html"},
+    {"url_en":"/blog-cappadocia-balloon.html",  "url_lang":"/{lang}/blog-cappadocia-balloon.html"},
+    {"url_en":"/blog-cappadocia-journey.html",  "url_lang":"/{lang}/blog-cappadocia-journey.html"},
+    {"url_en":"/blog-pamukkale-guide.html",     "url_lang":"/{lang}/blog-pamukkale-guide.html"},
+    {"url_en":"/blog-demre-santa-kekova.html",  "url_lang":"/{lang}/blog-demre-santa-kekova.html"},
 ]
 
 # Prevedeni <title> i opis (en ostaje kako je u fajlu)
@@ -64,6 +76,18 @@ META = {
          "Одноденний тур у Памуккале з Аланьї та Сіде — білі травертинові тераси, стародавній Ієраполіс та античний басейн Клеопатри. Бронювання онлайн, оплата при зустрічі."),
   "sr": ("Tura u Pamukkale iz Alanje i Side | M.Y.V. Travel",
          "Celodnevna tura u Pamukkale iz Alanje i Side — bele travertinske terase, antički Hijerapolis i Kleopatrin antički bazen. Rezervacija onlajn, plaćanje pri preuzimanju."),
+ },
+ "greencanyon": {
+  "ru": ("Тур в Грин-Каньон из Аланьи и Сиде | M.Y.V. Travel",
+         "Однодневный тур в Грин-Каньон из Аланьи и Сиде — прогулка на яхте по озеру Оймапынар, Большой каньон, купание и обед у Грин-Лейк. Бронь онлайн, оплата при встрече."),
+  "de": ("Green-Canyon-Tour ab Alanya & Side | M.Y.V. Travel",
+         "Tagestour zum Green Canyon ab Alanya und Side — Bootsfahrt auf dem Oymapınar-See, Großer Canyon, Badepause und Mittagessen am Green Lake. Online buchen, bei Abholung zahlen."),
+  "tr": ("Alanya & Side'den Green Canyon Turu | M.Y.V. Travel",
+         "Alanya ve Side'den günlük Green Canyon turu — Oymapınar Gölü'nde tekne turu, Büyük Kanyon, yüzme molası ve Green Lake'te öğle yemeği. Online rezervasyon; ödemeyi alışta yapın."),
+  "uk": ("Тур у Грін-Каньйон з Аланьї та Сіде | M.Y.V. Travel",
+         "Одноденний тур у Грін-Каньйон з Аланьї та Сіде — прогулянка на яхті озером Оймапинар, Великий каньйон, купання та обід біля Грін-Лейк. Бронювання онлайн, оплата при зустрічі."),
+  "sr": ("Tura u Grin kanjon iz Alanje i Side | M.Y.V. Travel",
+         "Jednodnevna tura u Grin kanjon iz Alanje i Side — krstarenje brodom po jezeru Ojmapinar, Veliki kanjon, kupanje i ručak na Grin jezeru. Rezervacija onlajn, plaćanje pri preuzimanju."),
  },
 }
 
@@ -169,13 +193,23 @@ def transform(master, page, lang, translations):
         h = bake_body(h, translations[lang])
     return h
 
+def _blog_url(page, lang):
+    return SITE + (page["url_en"] if lang == "en" else page["url_lang"].format(lang=lang))
+
 def write_sitemap():
     items = []
+    # 1) glavne (visejezicne) tur-stranice
     for page in PAGES:
         for lang in LANGS:
             alts = "".join('\n    <xhtml:link rel="alternate" hreflang="%s" href="%s"/>' % (lg, page_url(page, lg)) for lg in LANGS)
             alts += '\n    <xhtml:link rel="alternate" hreflang="x-default" href="%s"/>' % page_url(page, "en")
             items.append("  <url>\n    <loc>%s</loc>%s\n  </url>" % (page_url(page, lang), alts))
+    # 2) blog stranice (staticne, prevedene rucno) — samo u sitemap, isti hreflang format
+    for page in BLOG_PAGES:
+        for lang in LANGS:
+            alts = "".join('\n    <xhtml:link rel="alternate" hreflang="%s" href="%s"/>' % (lg, _blog_url(page, lg)) for lg in LANGS)
+            alts += '\n    <xhtml:link rel="alternate" hreflang="x-default" href="%s"/>' % _blog_url(page, "en")
+            items.append("  <url>\n    <loc>%s</loc>%s\n  </url>" % (_blog_url(page, lang), alts))
     xml = ('<?xml version="1.0" encoding="UTF-8"?>\n'
            '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"\n'
            '        xmlns:xhtml="http://www.w3.org/1999/xhtml">\n' + "\n".join(items) + "\n</urlset>\n")

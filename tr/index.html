@@ -110,7 +110,7 @@ body{font-family:'DM Sans',sans-serif;color:var(--text);background:var(--cream);
 .header-right-group a{color:#fff !important;text-decoration:none;font-weight:500;font-family:'DM Sans',sans-serif;font-size:1rem;white-space:nowrap;transition:color .3s ease;text-shadow:0 1px 4px rgba(0,0,0,.25)}
 .tour-switcher{display:flex;gap:20px;border-left:1px solid rgba(255,255,255,.3);border-right:1px solid rgba(255,255,255,.3);padding:0 20px}
 .header-right-group a:hover,.header-left .logo:hover{color:var(--gold) !important}
-.site-header.cappadocia-page #nav-cappadocia,.site-header.demre-page #nav-demre{color:var(--gold) !important;border-bottom:2px solid var(--gold);padding-bottom:4px}
+.site-header.cappadocia-page #nav-cappadocia,.site-header.demre-page #nav-demre,.site-header.greencanyon-page #nav-greencanyon{color:var(--gold) !important;border-bottom:2px solid var(--gold);padding-bottom:4px}
 
 .language-selector select{background:rgba(255,255,255,.1);color:#fff;border:1px solid rgba(255,255,255,.2);padding:5px 10px;border-radius:4px;font-family:'DM Sans',sans-serif;font-size:13px;cursor:pointer;outline:none}
 .language-selector select option{background:var(--dark);color:#fff}
@@ -827,6 +827,7 @@ html{scroll-padding-top:56px}
       <a href="index.html" id="nav-cappadocia" data-i18n="nav.cappadocia">Kapadokya Turu</a>
       <a href="demre-myra-kekova.html" id="nav-demre" data-i18n="nav.demre">Demre - Myra - Kekova</a>
       <a href="pamukkale.html" id="nav-pamukkale" data-i18n="nav.pamukkale">Pamukkale</a>
+      <a href="green-canyon.html" id="nav-greencanyon" data-i18n="nav.greencanyon">Green Canyon</a>
     </div>
 
     <!-- Desktop-only language selector -->
@@ -1577,6 +1578,7 @@ html{scroll-padding-top:56px}
         <li><a href="#about">→ <span data-i18n="nav.about">Hakkımızda</span></a></li>
         <li><a href="demre-myra-kekova.html">→ <span data-i18n="nav.demre">Demre - Myra - Kekova</span></a></li>
         <li><a href="pamukkale.html">→ <span data-i18n="nav.pamukkale">Pamukkale</span></a></li>
+        <li><a href="green-canyon.html">→ <span data-i18n="nav.greencanyon">Green Canyon</span></a></li>
       </ul>
     </div>
     <div>
@@ -2433,7 +2435,7 @@ const translations = {
     
     // Header Links
     "nav.cappadocia": "Cappadocia Tour",
-    "nav.demre": "Demre - Myra - Kekova", "nav.pamukkale": "Pamukkale",
+    "nav.demre": "Demre - Myra - Kekova", "nav.pamukkale": "Pamukkale","nav.greencanyon":"Green Canyon",
     "nav.contact": "Contact",
     "nav.book": "Book Now",
     "nav.packages": "Tour Packages",
@@ -2761,7 +2763,7 @@ const translations = {
     "faq.q3": "Утомительна ли долгая поездка из Аланьи или Сиде?",
     "faq.a3": "Хотя Каппадокия находится примерно в 500 км, мы делаем путешествие очень комфортным благодаря использованию современных, роскошных, полностью кондиционированных туристических автобусов. Мы планируем регулярные расслабляющие остановки вдоль живописных Таврских гор и Анатолийских равнин, благодаря чему сама поездка становится приятной частью вашего турецкого приключения.",
     "nav.cappadocia": "Каппадокия",
-    "nav.demre": "Демре-Мира-Кекова", "nav.pamukkale": "Памуккале",
+    "nav.demre": "Демре-Мира-Кекова", "nav.pamukkale": "Памуккале","nav.greencanyon":"Грин-Каньон",
     "nav.contact": "Контакты",
     "nav.book": "Забронировать",
     "nav.packages": "Туры",
@@ -3089,7 +3091,7 @@ const translations = {
     "faq.q3": "Alanya veya Side'den uzun yolculuk yorucu mu?",
     "faq.a3": "Kapadokya yaklaşık 500 km uzakta olsa da, modern, lüks, tam klimalı tur otobüsleri kullanarak yolculuğu son derece konforlu hale getiriyoruz. Manzaralı Toros Dağları ve Anadolu ovaları boyunca düzenli, dinlendirici mola istasyonları planlıyoruz, böylece yolculuğun kendisi Türk maceranızın keyifli bir parçası gibi hissettiriyor.",
     "nav.cappadocia": "Kapadokya Turu",
-    "nav.demre": "Demre - Myra - Kekova", "nav.pamukkale": "Pamukkale",
+    "nav.demre": "Demre - Myra - Kekova", "nav.pamukkale": "Pamukkale","nav.greencanyon":"Green Canyon",
     "nav.contact": "İletişim",
     "nav.book": "Rezervasyon",
     "nav.packages": "Tur Paketleri",
@@ -3417,7 +3419,7 @@ const translations = {
     "faq.q3": "Чи виснажлива довга поїздка з Аланії або Сіде?",
     "faq.a3": "Хоча Каппадокія знаходиться приблизно за 500 км, ми робимо подорож дуже комфортною завдяки використанню сучасних, розкішних, повністю кондиціонованих туристичних автобусів. Ми плануємо регулярні розслаблюючі зупинки вздовж мальовничих Таврських гір та Анатолійських рівнин, щоб сама поїздка відчувалася як приємна частина вашої турецької пригоди.",
     "nav.cappadocia": "Тур Каппадокією",
-    "nav.demre": "Демре - Міра - Кекова", "nav.pamukkale": "Памуккале",
+    "nav.demre": "Демре - Міра - Кекова", "nav.pamukkale": "Памуккале","nav.greencanyon":"Грін-Каньйон",
     "nav.contact": "Контакти",
     "nav.book": "Забронювати",
     "nav.packages": "Тури",
@@ -3745,7 +3747,7 @@ const translations = {
     "faq.q3": "Ist die lange Fahrt von Alanya oder Side ermüdend?",
     "faq.a3": "Obwohl Kappadokien etwa 500 km entfernt ist, gestalten wir die Reise sehr komfortabel mit modernen, luxuriösen, voll klimatisierten Tourbussen. Wir planen regelmäßige, erholsame Rastpausen entlang des malerischen Taurus-Gebirges und der anatolischen Ebenen, sodass sich die Reise selbst wie ein angenehmer Teil Ihres türkischen Abenteuers anfühlt.",
     "nav.cappadocia": "Kappadokien Tour",
-    "nav.demre": "Demre - Myra - Kekova", "nav.pamukkale": "Pamukkale",
+    "nav.demre": "Demre - Myra - Kekova", "nav.pamukkale": "Pamukkale","nav.greencanyon":"Green Canyon",
     "nav.contact": "Kontakt",
     "nav.book": "Jetzt buchen",
     "nav.packages": "Tourpakete",
@@ -4073,7 +4075,7 @@ const translations = {
     "faq.q3": "Da li je duga vožnja iz Alanje ili Side-a iscrpljujuća?",
     "faq.a3": "Iako je Kapadokija udaljena oko 500 km, putovanje činimo izuzetno udobnim koristeći moderne, luksuzne, potpuno klimatizovane turističke autobuse. Planiramo redovne, opuštajuće pauze duž slikovitih planina Taurus i Anadolskih ravnica, čineći da samo putovanje deluje kao prijatan deo vaše Turske avanture.",
     "nav.cappadocia": "Kapadokija Tura",
-    "nav.demre": "Demre - Myra - Kekova", "nav.pamukkale": "Pamukkale",
+    "nav.demre": "Demre - Myra - Kekova", "nav.pamukkale": "Pamukkale","nav.greencanyon":"Green Canyon",
     "nav.contact": "Kontakt",
     "nav.book": "Rezerviši",
     "nav.packages": "Turistički paketi",
