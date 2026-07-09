@@ -213,7 +213,8 @@ body{font-family:'DM Sans',sans-serif;color:var(--text);background:var(--cream);
 #home .hero-badge{margin-top:-60px}
 .hero-bg{position:absolute;inset:0;z-index:-1;overflow:hidden}
 .hero-bg::before{content:'';position:absolute;inset:0;background:linear-gradient(to bottom,rgba(26,15,8,.3) 0%,rgba(26,15,8,.5) 100%);z-index:1}
-.hero-bg-img{width:100%;height:100%;object-fit:cover;animation:heroKenBurns 30s ease-in-out infinite alternate;will-change:transform}
+.hero-bg-img{width:100%;height:100%;object-fit:cover;object-position:center 40%;animation:heroKenBurns 30s ease-in-out infinite alternate;will-change:transform}
+@media(min-width:901px){.hero-bg-img{object-position:right 35%}}
 @keyframes heroKenBurns{0%{transform:scale(1) translate(0,0)}100%{transform:scale(1.15) translate(-1.5%,-1%)}}
 @media(max-width:900px){.hero-bg-img{animation:heroKenBurns 25s ease-in-out infinite alternate}}
 .hero-badge{background:rgba(255,255,255,.15);backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);border:1px solid rgba(255,255,255,.3);color:#fff;font-size:13px;font-weight:500;padding:8px 20px;border-radius:50px;margin-bottom:28px;letter-spacing:.5px}
@@ -853,7 +854,7 @@ html{scroll-padding-top:56px}
 ================================ -->
 <section id="home">
   <div class="hero-bg">
-    <img fetchpriority="high" decoding="async" class="hero-bg-img" src="https://myvalanyatravel.com/images/cappadocia-hero-B-1920.jpg" style="object-position:center 40%;" alt="Our guest in a red dress with Cappadocia hot air balloons at sunrise">
+    <img fetchpriority="high" decoding="async" class="hero-bg-img" src="https://myvalanyatravel.com/images/cappadocia-hero-B-1920.jpg" alt="Our guest in a red dress with Cappadocia hot air balloons at sunrise">
   </div>
   <div class="hero-badge" data-i18n="hero.badge">✦ Iz Alanje i Side-a do Kapadokije</div>
   <h1 class="hero-title">
