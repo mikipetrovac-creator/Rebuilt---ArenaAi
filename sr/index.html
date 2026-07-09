@@ -209,8 +209,16 @@ body{font-family:'DM Sans',sans-serif;color:var(--text);background:var(--cream);
 /* ================================
    HERO
 ================================ */
-#home{min-height:100vh;min-height:100dvh;display:flex;flex-direction:column;align-items:center;justify-content:flex-start;text-align:center;padding:120px 20px 100px;position:relative;overflow:hidden;gap:18px}
-#home .hero-badge{margin-top:0;flex-shrink:0;max-width:90%;line-height:1.4;white-space:normal}
+#home{min-height:100vh;min-height:100dvh;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:80px 20px 140px;position:relative;overflow:hidden}
+#home .hero-trust{display:flex;flex-wrap:wrap;gap:10px;justify-content:center;margin-top:26px;padding:0 12px;max-width:640px;animation:fadeUp .6s .55s ease both}
+.hero-trust .tp{display:inline-flex;align-items:center;gap:7px;background:rgba(255,255,255,.14);backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);border:1px solid rgba(255,255,255,.28);color:#fff;font-size:13px;font-weight:600;padding:8px 15px;border-radius:50px;line-height:1;white-space:nowrap}
+.hero-trust .tp .ic{font-size:15px}
+.hero-scroll{position:absolute;bottom:120px;left:50%;transform:translateX(-50%);display:flex;flex-direction:column;align-items:center;gap:6px;color:rgba(255,255,255,.85);font-size:12px;font-weight:600;letter-spacing:1px;text-transform:uppercase;cursor:pointer;z-index:3;animation:fadeUp .6s .8s ease both}
+.hero-scroll .arrow{width:24px;height:24px;border:2px solid rgba(255,255,255,.7);border-radius:50%;display:flex;align-items:center;justify-content:center;animation:scrollBob 1.8s ease-in-out infinite}
+.hero-scroll .arrow svg{width:12px;height:12px;stroke:#fff}
+@keyframes scrollBob{0%,100%{transform:translateY(0)}50%{transform:translateY(5px)}}
+@media(max-width:768px){.hero-trust{gap:8px;margin-top:20px}.hero-trust .tp{font-size:12px;padding:7px 12px}.hero-scroll{display:none}}
+.hero-badge{margin-top:-60px}
 .hero-bg{position:absolute;inset:0;z-index:-1;overflow:hidden}
 .hero-bg::before{content:'';position:absolute;inset:0;background:linear-gradient(to bottom,rgba(26,15,8,.3) 0%,rgba(26,15,8,.5) 100%);z-index:1}
 .hero-bg-img{width:100%;height:100%;object-fit:cover;object-position:center 50%;animation:heroKenBurns 30s ease-in-out infinite alternate;will-change:transform}
@@ -614,8 +622,8 @@ footer{background:var(--dark);color:rgba(255,255,255,.7);padding:60px 40px 30px}
 }
 @media(max-width:900px){
   section{padding:60px 16px}
-  
-  
+  #home{padding:80px 16px 60px;min-height:100vh;min-height:100dvh}
+  #home .hero-badge{margin-top:-30px}
   .hero-stats{display:none}
   .hero-btns{flex-direction:column;width:100%;max-width:280px}
   .btn-primary,.btn-outline{width:100%;justify-content:center;padding:14px 20px}
@@ -866,6 +874,14 @@ html{scroll-padding-top:56px}
     <a href="#book-now" class="btn-primary" data-i18n="hero.btnBook">Rezervišite avanturu →</a>
     <a href="#tour-details" class="btn-outline" data-i18n="hero.btnDetails">Detalji ture</a>
   </div>
+  <div class="hero-trust">
+    <span class="tp"><span class="ic">🏨</span> <span data-i18n="trust.pickup">Preuzimanje iz hotela</span></span>
+    <span class="tp"><span class="ic">🎫</span> <span data-i18n="trust.guide">Licencirani vodič</span></span>
+    <span class="tp"><span class="ic">📅</span> <span data-i18n="trust.reserve">Rezervacija onlajn</span></span>
+    <span class="tp"><span class="ic">💳</span> <span data-i18n="trust.pay">Plaćanje pri dolasku</span></span>
+    <span class="tp"><span class="ic">🗣</span> <span data-i18n="trust.langs">EN / RU / TUR</span></span>
+  </div>
+
   <div class="hero-stats">
     <div class="hero-stat">
       <div class="hero-stat-num" data-count="25">0</div>
@@ -880,6 +896,10 @@ html{scroll-padding-top:56px}
       <div class="hero-stat-label" data-i18n="about.statYears">Godina iskustva</div>
     </div>
   </div>
+  <a href="#video" class="hero-scroll" aria-label="Scroll down">
+    <span data-i18n="hero.scroll">Skrolujte za više</span>
+    <span class="arrow"><svg viewBox="0 0 24 24" fill="none" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg></span>
+  </a>
 </section>
 
 <!-- ================================
@@ -2075,7 +2095,7 @@ const translations = {
     "nav.bookTour": "🗓 Book Tour",
     
     // Hero
-    "hero.badge": "✦ From Alanya & Side to Cappadocia",
+    "hero.badge": "✦ From Alanya & Side to Cappadocia","trust.pickup":"Hotel pickup","trust.guide":"Licensed guide","trust.reserve":"Online reservation","trust.pay":"Pay on arrival","trust.langs":"EN / RU / TUR","hero.scroll":"Scroll to explore",
     "hero.titleLine1": "Discover the Magic of",
     "hero.titleLine2": "Cappadocia",
     "hero.subtitle": "Float among the clouds in a hot air balloon, wander through ancient fairy chimneys, and explore underground cities on an unforgettable 2-day guided tour.",
@@ -2457,7 +2477,7 @@ const translations = {
     "nav.reviews": "Отзывы",
     "nav.about": "О нас",
     "nav.bookTour": "🗓 Забронировать",
-    "hero.badge": "✦ Из Аланьи и Сиде в Каппадокию",
+    "hero.badge": "✦ Из Аланьи и Сиде в Каппадокию","trust.pickup":"Трансфер от отеля","trust.guide":"Лицензированный гид","trust.reserve":"Бронь онлайн","trust.pay":"Оплата на месте","trust.langs":"EN / RU / TUR","hero.scroll":"Листайте вниз",
     "hero.titleLine1": "Откройте магию",
     "hero.titleLine2": "Каппадокии",
     "hero.subtitle": "Парите среди облаков на воздушном шаре, бродите среди древних скальных образований и исследуйте подземные города во время незабываемого 2-дневного тура.",
@@ -2785,7 +2805,7 @@ const translations = {
     "nav.reviews": "Yorumlar",
     "nav.about": "Hakkımızda",
     "nav.bookTour": "🗓 Tur Rezervasyonu",
-    "hero.badge": "✦ Alanya ve Side'den Kapadokya'ya",
+    "hero.badge": "✦ Alanya ve Side'den Kapadokya'ya","trust.pickup":"Otelden alış","trust.guide":"Lisanslı rehber","trust.reserve":"Online rezervasyon","trust.pay":"Ödeme yerinde","trust.langs":"EN / RU / TUR","hero.scroll":"Keşfetmek için kaydırın",
     "hero.titleLine1": "Kapadokya'nın",
     "hero.titleLine2": "Büyüsünü Keşfedin",
     "hero.subtitle": "Sıcak hava balonuyla bulutlar arasında süzülün, antik peri bacalarında dolaşın ve unutulmaz 2 günlük rehberli turda yeraltı şehirlerini keşfedin.",
@@ -3113,7 +3133,7 @@ const translations = {
     "nav.reviews": "Відгуки",
     "nav.about": "Про нас",
     "nav.bookTour": "🗓 Забронювати",
-    "hero.badge": "✦ З Аланії та Сіде до Каппадокії",
+    "hero.badge": "✦ З Аланії та Сіде до Каппадокії","trust.pickup":"Трансфер від готелю","trust.guide":"Ліцензований гід","trust.reserve":"Бронювання онлайн","trust.pay":"Оплата на місці","trust.langs":"EN / RU / TUR","hero.scroll":"Гортайте вниз",
     "hero.titleLine1": "Відкрийте магію",
     "hero.titleLine2": "Каппадокії",
     "hero.subtitle": "Ширяйте серед хмар на повітряній кулі, блукайте серед стародавніх скельних утворень та досліджуйте підземні міста під час незабутнього 2-денного туру.",
@@ -3441,7 +3461,7 @@ const translations = {
     "nav.reviews": "Bewertungen",
     "nav.about": "Über uns",
     "nav.bookTour": "🗓 Tour buchen",
-    "hero.badge": "✦ Von Alanya & Side nach Kappadokien",
+    "hero.badge": "✦ Von Alanya & Side nach Kappadokien","trust.pickup":"Hotelabholung","trust.guide":"Lizenzierter Guide","trust.reserve":"Online-Buchung","trust.pay":"Zahlung vor Ort","trust.langs":"EN / RU / TUR","hero.scroll":"Nach unten scrollen",
     "hero.titleLine1": "Entdecken Sie die Magie von",
     "hero.titleLine2": "Kappadokien",
     "hero.subtitle": "Schweben Sie in einem Heißluftballon durch die Wolken, wandern Sie durch antike Feenkamine und erkunden Sie unterirdische Städte auf einer unvergesslichen 2-tägigen geführten Tour.",
@@ -3769,7 +3789,7 @@ const translations = {
     "nav.reviews": "Recenzije",
     "nav.about": "O nama",
     "nav.bookTour": "🗓 Rezerviši turu",
-    "hero.badge": "✦ Iz Alanje i Side-a do Kapadokije",
+    "hero.badge": "✦ Iz Alanje i Side-a do Kapadokije","trust.pickup":"Preuzimanje iz hotela","trust.guide":"Licencirani vodič","trust.reserve":"Rezervacija onlajn","trust.pay":"Plaćanje pri dolasku","trust.langs":"EN / RU / TUR","hero.scroll":"Skrolujte za više",
     "hero.titleLine1": "Otkrijte magiju",
     "hero.titleLine2": "Kapadokije",
     "hero.subtitle": "Letite iznad čarobnih dolina Kapadokije, otkrijte drevne podzemne gradove i istražite jedinstvene vilinske dimnjake na nezaboravnoj dvodnevnoj turi.",
