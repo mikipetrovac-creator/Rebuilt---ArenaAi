@@ -37,6 +37,7 @@ BLOG_PAGES = [
     {"url_en":"/blog-cappadocia-journey.html",  "url_lang":"/{lang}/blog-cappadocia-journey.html"},
     {"url_en":"/blog-pamukkale-guide.html",     "url_lang":"/{lang}/blog-pamukkale-guide.html"},
     {"url_en":"/blog-demre-santa-kekova.html",  "url_lang":"/{lang}/blog-demre-santa-kekova.html"},
+    {"url_en":"/blog-green-canyon-guide.html",  "url_lang":"/{lang}/blog-green-canyon-guide.html"},
 ]
 
 # Prevedeni <title> i opis (en ostaje kako je u fajlu)
