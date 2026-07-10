@@ -217,7 +217,14 @@ body{font-family:'DM Sans',sans-serif;color:var(--text);background:var(--cream);
 .hero-scroll .arrow{width:24px;height:24px;border:2px solid rgba(255,255,255,.7);border-radius:50%;display:flex;align-items:center;justify-content:center;animation:scrollBob 1.8s ease-in-out infinite}
 .hero-scroll .arrow svg{width:12px;height:12px;stroke:#fff}
 @keyframes scrollBob{0%,100%{transform:translateY(0)}50%{transform:translateY(5px)}}
-@media(max-width:768px){.hero-trust{gap:8px;margin-top:20px}.hero-trust .tp{font-size:12px;padding:7px 12px}.hero-scroll{display:none}}
+@media(max-width:768px){.hero-trust{gap:8px;margin-top:18px}.hero-trust .tp{font-size:12px;padding:7px 12px}.hero-scroll{display:none}#home{min-height:auto;padding:100px 18px 70px;justify-content:center;gap:14px}.hero-stats{position:static;transform:none;margin-top:24px}}
+.book-channels{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin:22px 0 6px}
+.book-ch{display:flex;align-items:center;justify-content:center;gap:9px;padding:14px 12px;border-radius:12px;font-weight:700;font-size:15px;color:#fff;border:none;cursor:pointer;transition:transform .15s,box-shadow .15s;text-decoration:none}
+.book-ch:hover{transform:translateY(-2px);box-shadow:0 8px 20px rgba(0,0,0,.18)}
+.book-ch svg{width:20px;height:20px;fill:#fff;flex-shrink:0}
+.book-ch.wa{background:#25D366}.book-ch.vb{background:#7360F2}.book-ch.tg{background:#2AABEE}.book-ch.mx{background:#3A7BD5}
+.book-ch-hint{font-size:13px;color:var(--muted);text-align:center;margin-top:4px}
+@media(max-width:480px){.book-channels{grid-template-columns:1fr}}
 .hero-badge{margin-top:-60px}
 .hero-bg{position:absolute;inset:0;z-index:-1;overflow:hidden}
 .hero-bg::before{content:'';position:absolute;inset:0;background:linear-gradient(to bottom,rgba(26,15,8,.3) 0%,rgba(26,15,8,.5) 100%);z-index:1}
@@ -1457,6 +1464,22 @@ html{scroll-padding-top:56px}
   </div>
 </div>
 
+<div class="modal-overlay" id="bookChannelModal" onclick="closeModalOutside(event,'bookChannelModal')">
+  <div class="modal-box">
+    <div class="modal-icon">📩</div>
+    <div class="modal-title" data-i18n="book.chTitle">Buchung senden</div>
+    <div class="modal-text" data-i18n="book.chText">Wählen Sie, wie Sie Ihre Buchung senden möchten. Ihre Daten sind bereit — wählen Sie einfach eine App.</div>
+    <div class="book-channels">
+      <a class="book-ch wa" id="bch-wa" target="_blank" rel="noopener noreferrer"><svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.626.712.226 1.36.194 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413Z"/></svg> WhatsApp</a>
+      <a class="book-ch vb" id="bch-vb" target="_blank" rel="noopener noreferrer"><svg viewBox="0 0 24 24"><path d="M12 1C5.93 1 1 5.93 1 12c0 1.94.5 3.76 1.39 5.35L1 23l5.79-1.36C8.31 22.5 10.11 23 12 23c6.07 0 11-4.93 11-11S18.07 1 12 1zm5.32 14.4c-.22.62-1.27 1.25-1.78 1.32-.45.06-1.03.09-1.67-.11-.39-.12-.88-.29-1.51-.56-2.66-1.15-4.4-3.83-4.54-4-.13-.18-1.08-1.44-1.08-2.74 0-1.31.68-1.95.93-2.22.24-.27.53-.34.71-.34.18 0 .35 0 .51.01.16.01.38-.06.59.45.22.52.74 1.79.81 1.92.07.13.11.28.02.46-.09.18-.13.29-.27.45-.13.15-.28.34-.4.45-.13.13-.27.28-.12.55.15.27.67 1.1 1.43 1.79.99.88 1.82 1.16 2.09 1.29.27.13.42.11.58-.07.16-.18.67-.78.85-1.05.18-.27.36-.22.6-.13.25.09 1.55.73 1.82.86.27.13.45.2.51.31.07.11.07.62-.15 1.23z"/></svg> Viber</a>
+      <a class="book-ch tg" id="bch-tg" target="_blank" rel="noopener noreferrer"><svg viewBox="0 0 24 24"><path d="M9.78 18.65l.28-4.23 7.68-6.92c.34-.31-.07-.46-.52-.19L7.74 13.3 3.64 12c-.88-.25-.89-.86.2-1.3l15.97-6.16c.73-.33 1.43.18 1.15 1.3l-2.72 12.81c-.19.91-.74 1.13-1.5.71L12.6 16.3l-1.99 1.93c-.23.23-.42.42-.83.42z"/></svg> Telegram</a>
+      <a class="book-ch mx" id="bch-mx" target="_blank" rel="noopener noreferrer"><svg viewBox="0 0 24 24"><path d="M20 2H4c-1.1 0-2 .9-2 2v18l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm-2 12H6v-2h12v2zm0-3H6V9h12v2zm0-3H6V6h12v2z"/></svg> MAX</a>
+    </div>
+    <div class="book-ch-hint" data-i18n="book.chHint">Wir antworten innerhalb von ~2 Stunden.</div>
+    <button class="modal-close" onclick="closeModalById('bookChannelModal')" data-i18n="book.chClose" style="margin-top:16px;">Schließen</button>
+  </div>
+</div>
+
 <div class="modal-overlay" id="reviewSuccessModal">
   <div class="modal-box">
     <div class="modal-icon">&#11088;</div>
@@ -2286,7 +2309,7 @@ const translations = {
     // Modal
     "modal.successTitle": "Booking Request Sent!",
     "modal.successText": "Thank you for your interest in our Cappadocia tour. We've received your details and will confirm your booking via WhatsApp within 2 hours.",
-    "modal.successBtn": "Got it, thanks!",
+    "modal.successBtn": "Got it, thanks!","book.chTitle":"Send your booking","book.chText":"Choose how you'd like to send your booking. Your details are ready — just pick an app.","book.chHint":"We reply within ~2 hours.","book.chClose":"Close",
     
     // Privacy
     "privacy.title": "Privacy Policy",
@@ -2648,7 +2671,7 @@ const translations = {
     "booking.formNote": "Вы получите подтверждение через WhatsApp в течение 2 часов.",
     "modal.successTitle": "Заявка отправлена!",
     "modal.successText": "Спасибо за интерес к нашему туру в Каппадокию. Мы получили ваши данные и подтвердим бронирование через WhatsApp в течение 2 часов.",
-    "modal.successBtn": "Понятно, спасибо!",
+    "modal.successBtn": "Понятно, спасибо!","book.chTitle":"Отправьте бронирование","book.chText":"Выберите, как отправить бронирование. Данные уже готовы — просто выберите приложение.","book.chHint":"Отвечаем в течение ~2 часов.","book.chClose":"Закрыть",
     "privacy.title": "Политика конфиденциальности",
     "privacy.updated": "Последнее обновление: Январь 2026",
     "privacy.section1Title": "1. Информация, которую мы собираем",
@@ -2976,7 +2999,7 @@ const translations = {
     "booking.formNote": "2 saat içinde WhatsApp ile onay alacaksınız.",
     "modal.successTitle": "Rezervasyon Talebi Gönderildi!",
     "modal.successText": "Kapadokya turumuzla ilgilendiğiniz için teşekkürler. Bilgilerinizi aldık ve 2 saat içinde WhatsApp ile rezervasyonunuzu onaylayacağız.",
-    "modal.successBtn": "Anladım, teşekkürler!",
+    "modal.successBtn": "Anladım, teşekkürler!","book.chTitle":"Rezervasyonu gönderin","book.chText":"Rezervasyonunuzu nasıl göndereceğinizi seçin. Bilgileriniz hazır — sadece bir uygulama seçin.","book.chHint":"~2 saat içinde yanıt veriyoruz.","book.chClose":"Kapat",
     "privacy.title": "Gizlilik Politikası",
     "privacy.updated": "Son güncelleme: Ocak 2026",
     "privacy.section1Title": "1. Topladığımız Bilgiler",
@@ -3304,7 +3327,7 @@ const translations = {
     "booking.formNote": "Ви отримаєте підтвердження через WhatsApp протягом 2 годин.",
     "modal.successTitle": "Заявку надіслано!",
     "modal.successText": "Дякуємо за інтерес до нашого туру до Каппадокії. Ми отримали ваші дані та підтвердимо бронювання через WhatsApp протягом 2 годин.",
-    "modal.successBtn": "Зрозуміло, дякую!",
+    "modal.successBtn": "Зрозуміло, дякую!","book.chTitle":"Надішліть бронювання","book.chText":"Виберіть, як надіслати бронювання. Дані вже готові — просто виберіть застосунок.","book.chHint":"Відповідаємо протягом ~2 годин.","book.chClose":"Закрити",
     "privacy.title": "Політика конфіденційності",
     "privacy.updated": "Останнє оновлення: Січень 2026",
     "privacy.section1Title": "1. Інформація, яку ми збираємо",
@@ -3632,7 +3655,7 @@ const translations = {
     "booking.formNote": "Sie erhalten innerhalb von 2 Stunden eine Bestätigung per WhatsApp.",
     "modal.successTitle": "Buchungsanfrage gesendet!",
     "modal.successText": "Vielen Dank für Ihr Interesse an unserer Kappadokien-Tour. Wir haben Ihre Daten erhalten und werden Ihre Buchung innerhalb von 2 Stunden per WhatsApp bestätigen.",
-    "modal.successBtn": "Verstanden, danke!",
+    "modal.successBtn": "Verstanden, danke!","book.chTitle":"Buchung senden","book.chText":"Wählen Sie, wie Sie Ihre Buchung senden möchten. Ihre Daten sind bereit — wählen Sie einfach eine App.","book.chHint":"Wir antworten innerhalb von ~2 Stunden.","book.chClose":"Schließen",
     "privacy.title": "Datenschutzrichtlinie",
     "privacy.updated": "Zuletzt aktualisiert: Januar 2026",
     "privacy.section1Title": "1. Informationen, die wir sammeln",
@@ -3960,7 +3983,7 @@ const translations = {
     "booking.formNote": "Dobićete potvrdu putem WhatsApp-a u roku od 2 sata.",
     "modal.successTitle": "Zahtev za rezervaciju poslat!",
     "modal.successText": "Hvala vam na interesovanju za našu Kapadokija turu. Primili smo vaše podatke i potvrdićemo vašu rezervaciju putem WhatsApp-a u roku od 2 sata.",
-    "modal.successBtn": "Razumem, hvala!",
+    "modal.successBtn": "Razumem, hvala!","book.chTitle":"Pošaljite rezervaciju","book.chText":"Izaberite kako želite da pošaljete rezervaciju. Podaci su spremni — samo izaberite aplikaciju.","book.chHint":"Odgovaramo u roku od ~2 sata.","book.chClose":"Zatvori",
     "privacy.title": "Politika privatnosti",
     "privacy.updated": "Poslednje ažuriranje: Januar 2026",
     "privacy.section1Title": "1. Informacije koje prikupljamo",
@@ -4267,6 +4290,19 @@ function calcTotal() {
 // ============================================
 // FORM SUBMISSION → WhatsApp
 // ============================================
+
+function openBookChannels(msg) {
+  var num = '905331429037';
+  var enc = encodeURIComponent(msg);
+  document.getElementById('bch-wa').href = 'https://wa.me/' + num + '?text=' + enc;
+  document.getElementById('bch-vb').href = 'viber://chat?number=%2B' + num;
+  document.getElementById('bch-tg').href = 'https://t.me/+' + num;
+  document.getElementById('bch-mx').href = 'https://max.ru/u/f9LHodD0cOK3zZiSLmyd54PgwQQOLnBmWDpF7i7oB3IuIMBnS3nAFyCkP84';
+  try { navigator.clipboard && navigator.clipboard.writeText(msg); } catch(e){}
+  var m = document.getElementById('bookChannelModal');
+  m.classList.add('open'); document.body.style.overflow = 'hidden';
+}
+
 function submitBooking() {
   const WHATSAPP_NUMBER = '905331429037'; // +90 533 142 90 37
 
@@ -4338,12 +4374,7 @@ ${notes || '(none)'}
 Sent from myvalanyatravel.com`;
 
   // Open WhatsApp with pre-filled message
-  const url = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(msg)}`;
-  window.open(url, '_blank');
-
-  // Show success modal
-  document.getElementById('successModal').classList.add('open');
-  document.body.style.overflow = 'hidden';
+  openBookChannels(msg);
 }
 
 // ============================================
