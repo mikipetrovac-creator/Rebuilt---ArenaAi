@@ -1060,6 +1060,13 @@ html{scroll-padding-top:56px}
 <meta name="theme-color" content="#A8501F">
 </head>
 <body>
+<form name="booking-green-canyon" data-netlify="true" data-netlify-honeypot="bot-field" hidden>
+<input type="text" name="tour"><input type="text" name="name"><input type="text" name="phone">
+<input type="text" name="date"><input type="text" name="pickup"><input type="text" name="hotel">
+<input type="text" name="adults"><input type="text" name="children"><input type="text" name="infants">
+<input type="text" name="total"><textarea name="notes"></textarea><input type="text" name="bot-field">
+</form>
+
 
 <!-- ================================
      SITE HEADER (matches Cappadocia layout)
@@ -2035,6 +2042,10 @@ function openBookChannels(encText) {
   m.classList.add('open'); document.body.style.overflow = 'hidden';
 }
 
+function sendBookingEmail(d) {
+  var body = new URLSearchParams(Object.assign({'form-name':'booking-green-canyon'}, d)).toString();
+  return fetch('/', { method:'POST', headers:{'Content-Type':'application/x-www-form-urlencoded'}, body: body }).catch(function(e){});
+}
 function submitBooking(){
   const name = document.getElementById('form-name').value.trim();
   const phone = document.getElementById('form-phone').value.trim();
@@ -2062,6 +2073,12 @@ function submitBooking(){
     `*Estimated Total:* ${total}%0A` +
     (notes ? `%0A*Notes:* ${encodeURIComponent(notes)}` : '');
 
+
+  // Sacuvaj lead PRE otvaranja WhatsApp/Viber/Telegram — da se ne izgubi ako korisnik ne posalje poruku
+  sendBookingEmail({
+    tour:'Green Canyon', name:name, phone:phone, date:date, pickup:pickup, hotel:hotel,
+    adults:adults, children:children, infants:infants, total:total, notes:notes||''
+  });
   openBookChannels(text);
 }
 
