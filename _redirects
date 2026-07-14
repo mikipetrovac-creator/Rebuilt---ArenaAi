@@ -39,3 +39,7 @@
 /2018/*             /410.html   410
 /xmlrpc.php         /410.html   410
 /.env               /410.html   410
+
+# --- Hub stranica: ekskurzije i cene ---
+/excursions-from-alanya.html        /excursions-from-alanya        301!
+/:lang/excursions-from-alanya.html  /:lang/excursions-from-alanya  301!
