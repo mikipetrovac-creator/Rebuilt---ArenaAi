@@ -1,2 +1,41 @@
-/demre        /demre-myra-kekova   301
-/demre.html   /demre-myra-kekova   301
+# ============================================
+#  M.Y.V. Alanya Travel — Netlify redirects
+# ============================================
+
+# --- Skracenice ---
+/demre                  /demre-myra-kekova      301
+/demre.html             /demre-myra-kekova      301
+
+# --- .html -> cist URL (sprecava duplirani sadrzaj u Google-u) ---
+/index.html             /                       301!
+/demre-myra-kekova.html /demre-myra-kekova      301!
+/pamukkale.html         /pamukkale              301!
+/green-canyon.html      /green-canyon           301!
+/blog.html              /blog                   301!
+
+# --- Jezicke verzije: .html -> cist URL ---
+/:lang/index.html             /:lang/                       301!
+/:lang/demre-myra-kekova.html /:lang/demre-myra-kekova      301!
+/:lang/pamukkale.html         /:lang/pamukkale              301!
+/:lang/green-canyon.html      /:lang/green-canyon           301!
+
+# --- Blog clanci: .html -> cist URL ---
+/blog-cappadocia-balloon.html   /blog-cappadocia-balloon    301!
+/blog-cappadocia-journey.html   /blog-cappadocia-journey    301!
+/blog-demre-santa-kekova.html   /blog-demre-santa-kekova    301!
+/blog-green-canyon-guide.html   /blog-green-canyon-guide    301!
+/blog-pamukkale-guide.html      /blog-pamukkale-guide       301!
+
+# --- Bot smece (WordPress skeneri) -> 410 Gone, prestaju da pokusavaju ---
+/wp-admin/*         /410.html   410
+/wp-login.php       /410.html   410
+/wp-includes/*      /410.html   410
+/wordpress/*        /410.html   410
+/wp/*               /410.html   410
+/wp2/*              /410.html   410
+/cms/*              /410.html   410
+/shop/*             /410.html   410
+/test/*             /410.html   410
+/2018/*             /410.html   410
+/xmlrpc.php         /410.html   410
+/.env               /410.html   410
