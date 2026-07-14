@@ -225,7 +225,7 @@ body{font-family:'DM Sans',sans-serif;color:var(--text);background:var(--cream);
 .book-ch.wa{background:#25D366}.book-ch.vb{background:#7360F2}.book-ch.tg{background:#2AABEE}.book-ch.mx{background:#3A7BD5}
 .book-ch-hint{font-size:13px;color:var(--muted);text-align:center;margin-top:4px}
 @media(max-width:480px){.book-channels{grid-template-columns:1fr}}
-.hero-badge{margin-top:-60px}
+.hero-badge{margin-top:0;flex-shrink:0;max-width:90%;line-height:1.4;white-space:normal}
 .hero-bg{position:absolute;inset:0;z-index:-1;overflow:hidden}
 .hero-bg::before{content:'';position:absolute;inset:0;background:linear-gradient(to bottom,rgba(26,15,8,.3) 0%,rgba(26,15,8,.5) 100%);z-index:1}
 .hero-bg-img{width:100%;height:100%;object-fit:cover;object-position:center 50%;animation:heroKenBurns 30s ease-in-out infinite alternate;will-change:transform}
@@ -631,7 +631,7 @@ footer{background:var(--dark);color:rgba(255,255,255,.7);padding:60px 40px 30px}
 @media(max-width:900px){
   section{padding:60px 16px}
   #home{padding:80px 16px 60px;min-height:100vh;min-height:100dvh}
-  #home .hero-badge{margin-top:-30px}
+  #home .hero-badge{margin-top:0}
   .hero-stats{display:none}
   .hero-btns{flex-direction:column;width:100%;max-width:280px}
   .btn-primary,.btn-outline{width:100%;justify-content:center;padding:14px 20px}
@@ -912,7 +912,7 @@ html{scroll-padding-top:56px}
 
   <div class="hero-stats">
     <div class="hero-stat">
-      <div class="hero-stat-num" data-count="25">0</div>
+      <div class="hero-stat-num" data-count="29">0</div>
       <div class="hero-stat-label" data-i18n="reviews.statReviews">Google recenzije</div>
     </div>
     <div class="hero-stat">
@@ -921,7 +921,7 @@ html{scroll-padding-top:56px}
     </div>
     <div class="hero-stat">
       <div class="hero-stat-num" data-count="17" data-suffix="+">0</div>
-      <div class="hero-stat-label" data-i18n="about.statYears">Godina iskustva</div>
+      <div class="hero-stat-label" data-i18n="about.statYears">Godina u turizmu</div>
     </div>
   </div>
   <a href="#video" class="hero-scroll" aria-label="Scroll down">
@@ -1233,10 +1233,10 @@ html{scroll-padding-top:56px}
       <p class="about-text" data-i18n="about.text1">Sa sedištem u srcu Alanje, M.Y.V. Alanya Travel već 6 godina stvara pouzdane i nezaboravne izlete u Kapadokiju za goste iz celog sveta. Porodična smo lokalna turistička agencija sa dubokim korenima u regionu i iskrenom željom da svakom putniku približimo najčarobnije pejzaže Turske.</p>
       <p class="about-text" data-i18n="about.text2">Naše ture vode licencirani i sertifikovani vodiči sa 17 godina iskustva. Brinemo o svakom detalju — od preuzimanja u hotelu u Alanji ili Side-u do vašeg bezbednog povratka. Ture realizujemo u punom partnerstvu i saglasnosti sa licenciranom agencijom AXIGEL TURİZM (TÜRSAB Belge No: 2484).</p>
       <div class="about-stats">
-        <div><div class="about-stat-num">17+</div><div class="about-stat-label" data-i18n="about.statYears">Godina iskustva</div></div>
-        <div><div class="about-stat-num">5.0</div><div class="about-stat-label" data-i18n="reviews.statRating">Prosečna ocena</div></div>
-        <div><div class="about-stat-num">100%</div><div class="about-stat-label" data-i18n="about.statSafety">Bezbednost</div></div>
-      </div>
+<div><div class="about-stat-num">17+</div><div class="about-stat-label" data-i18n="about.statYears">Godina u turizmu</div></div>
+<div><div class="about-stat-num">6</div><div class="about-stat-label" data-i18n="about.statAgency">Godina svoja agencija</div></div>
+<div><div class="about-stat-num">300+</div><div class="about-stat-label" data-i18n="about.statTours">Vođenih tura</div></div>
+</div>
       <a href="#book-now" class="btn-terra" style="display:inline-block;margin-top:24px;border-radius:50px;padding:12px 28px;" data-i18n="about.btn">Pridružite nam se na sledećoj avanturi →</a>
     </div>
   </div>
@@ -1297,7 +1297,7 @@ html{scroll-padding-top:56px}
     <div class="review-stats reveal">
       <div><div class="review-stat-num">5.0</div><div class="review-stat-label" data-i18n="reviews.statRating">Prosečna ocena</div></div>
       <div><div class="review-stat-num">29</div><div class="review-stat-label" data-i18n="reviews.statReviews">Google recenzije</div></div>
-      <div><div class="review-stat-num">17+</div><div class="review-stat-label" data-i18n="about.statYears">Godina iskustva</div></div>
+      <div><div class="review-stat-num">17+</div><div class="review-stat-label" data-i18n="about.statYears">Godina u turizmu</div></div>
     </div>
     <div class="reviews-grid" id="featuredReviews"></div>
 
@@ -2142,8 +2142,7 @@ html{scroll-padding-top:56px}
 // The structure is identical, no keys changed.
 // ============================================
 const translations = {
-  en: {
-    "faq.subtitle": "Everything you need to know before joining us on your Cappadocia adventure.",
+  en: {"about.statYears": "Years in Tourism", "about.statAgency": "Years Own Agency", "about.statTours": "Guided Tours", "faq.subtitle": "Everything you need to know before joining us on your Cappadocia adventure.",
     "writeReview.title": "Share Your Experience", "writeReview.subtitle": "Have you traveled with us? We'd love to hear about it \u2014 your review helps fellow travelers.", "writeReview.namePh": "Your name", "writeReview.countryPh": "Your country (optional)", "writeReview.ratingLabel": "Your rating:", "writeReview.textPh": "Tell us about your experience...", "writeReview.submitBtn": "Review us on Google →", "writeReview.note": "Opens Google in a new tab, where you can leave your review.", "modal.reviewTitle": "Thank You for Your Review!", "modal.reviewText": "We truly appreciate you sharing your experience. Your review has been sent to us via WhatsApp and helps future travelers choose with confidence.", "modal.reviewBtn": "You're welcome!",
     "ask.tag":"CONTACT","ask.title":"Still Have Questions?","ask.subtitle":"Our team is happy to help. Reach out with any question about the Cappadocia tour — pickup, languages, special requests, anything.",
     "ask.formTitle":"Ask Us a Question","ask.formSubtitle":"Have a question about the tour? We'll reply via WhatsApp or email within a few hours.",
@@ -2282,8 +2281,6 @@ const translations = {
     "about.subtitle": "Your trusted local experts in Alanya for Cappadocia excursions",
     "about.text1": "Based in the heart of Alanya, M.Y.V. Alanya Travel has been operating for the last 6 years, creating reliable and memorable Cappadocia excursions for guests from around the world. We are a family-run local travel agency with deep roots in the region and a genuine passion for sharing Turkey's most magical landscapes.",
     "about.text2": "Our tours are led by licensed/certified guides with 17 years of experience. We handle every detail — from your hotel pick-up in Alanya or Side to the moment we drop you back. Our tours are operated in full partnership and compliance with the licensed travel agency AXIGEL TURİZM (TÜRSAB Belge No: 2484).",
-    "about.statYears": "Years Experience",
-    "about.statTours": "Tours Completed",
     "about.statSafety": "Safety Record",
     "about.btn": "Meet Us on Your Next Adventure →",
     
@@ -2527,8 +2524,7 @@ const translations = {
     "nav.program": "Tour Program",
     "nav.faq": "FAQ", "nav.blog": "Blog"
   },
-  ru: {
-    "faq.subtitle": "Всё, что нужно знать перед поездкой с нами в Каппадокию.",
+  ru: {"about.statYears": "Лет в туризме", "about.statAgency": "Лет своё агентство", "about.statTours": "Проведённых туров", "faq.subtitle": "Всё, что нужно знать перед поездкой с нами в Каппадокию.",
     "writeReview.title": "\u041f\u043e\u0434\u0435\u043b\u0438\u0442\u0435\u0441\u044c \u0432\u043f\u0435\u0447\u0430\u0442\u043b\u0435\u043d\u0438\u044f\u043c\u0438", "writeReview.subtitle": "\u041f\u0443\u0442\u0435\u0448\u0435\u0441\u0442\u0432\u043e\u0432\u0430\u043b\u0438 \u0441 \u043d\u0430\u043c\u0438? \u0411\u0443\u0434\u0435\u043c \u0440\u0430\u0434\u044b \u0443\u0441\u043b\u044b\u0448\u0430\u0442\u044c \u0432\u0430\u0448 \u043e\u0442\u0437\u044b\u0432 \u2014 \u043e\u043d \u043f\u043e\u043c\u043e\u0436\u0435\u0442 \u0434\u0440\u0443\u0433\u0438\u043c \u043f\u0443\u0442\u0435\u0448\u0435\u0441\u0442\u0432\u0435\u043d\u043d\u0438\u043a\u0430\u043c.", "writeReview.namePh": "\u0412\u0430\u0448\u0435 \u0438\u043c\u044f", "writeReview.countryPh": "\u0412\u0430\u0448\u0430 \u0441\u0442\u0440\u0430\u043d\u0430 (\u043d\u0435\u043e\u0431\u044f\u0437\u0430\u0442\u0435\u043b\u044c\u043d\u043e)", "writeReview.ratingLabel": "\u0412\u0430\u0448\u0430 \u043e\u0446\u0435\u043d\u043a\u0430:", "writeReview.textPh": "\u0420\u0430\u0441\u0441\u043a\u0430\u0436\u0438\u0442\u0435 \u043e \u0432\u0430\u0448\u0438\u0445 \u0432\u043f\u0435\u0447\u0430\u0442\u043b\u0435\u043d\u0438\u044f\u0445...", "writeReview.submitBtn": "Оставьте отзыв в Google →", "writeReview.note": "Откроется Google в новой вкладке, где вы сможете оставить отзыв.", "modal.reviewTitle": "\u0421\u043f\u0430\u0441\u0438\u0431\u043e \u0437\u0430 \u0432\u0430\u0448 \u043e\u0442\u0437\u044b\u0432!", "modal.reviewText": "\u041c\u044b \u0438\u0441\u043a\u0440\u0435\u043d\u043d\u0435 \u0431\u043b\u0430\u0433\u043e\u0434\u0430\u0440\u043d\u044b \u0437\u0430 \u0442\u043e, \u0447\u0442\u043e \u0432\u044b \u043f\u043e\u0434\u0435\u043b\u0438\u043b\u0438\u0441\u044c \u0432\u043f\u0435\u0447\u0430\u0442\u043b\u0435\u043d\u0438\u044f\u043c\u0438. \u0412\u0430\u0448 \u043e\u0442\u0437\u044b\u0432 \u043e\u0442\u043f\u0440\u0430\u0432\u043b\u0435\u043d \u043d\u0430\u043c \u0447\u0435\u0440\u0435\u0437 WhatsApp \u0438 \u043f\u043e\u043c\u043e\u0436\u0435\u0442 \u0431\u0443\u0434\u0443\u0449\u0438\u043c \u043f\u0443\u0442\u0435\u0448\u0435\u0441\u0442\u0432\u0435\u043d\u043d\u0438\u043a\u0430\u043c \u0441\u0434\u0435\u043b\u0430\u0442\u044c \u0432\u044b\u0431\u043e\u0440.", "modal.reviewBtn": "\u041f\u043e\u0436\u0430\u043b\u0443\u0439\u0441\u0442\u0430!",
     "ask.tag":"КОНТАКТ","ask.title":"Остались вопросы?","ask.subtitle":"Наша команда с радостью поможет. Обращайтесь с любыми вопросами о туре по Каппадокии — трансфер, языки, особые пожелания, что угодно.",
     "ask.formTitle":"Задайте нам вопрос","ask.formSubtitle":"Есть вопрос о туре? Мы ответим через WhatsApp или email в течение нескольких часов.",
@@ -2652,8 +2648,6 @@ const translations = {
     "about.subtitle": "Ваши надёжные местные эксперты в Аланье по турам в Каппадокию",
     "about.text1": "Расположенное в самом сердце Аланьи, агентство M.Y.V. Alanya Travel работает уже 6 лет, создавая надёжные и незабываемые туры в Каппадокию для гостей со всего мира. Мы — семейное местное туристическое агентство с глубокими корнями в регионе и искренней страстью делиться самыми волшебными пейзажами Турции.",
     "about.text2": "Наши туры проводят лицензированные гиды с 17-летним опытом. Мы заботимся о каждой детали — от встречи в вашем отеле в Аланье или Сиде до момента возвращения. Наши туры проводятся в полном партнёрстве и соответствии с лицензированным туристическим агентством AXIGEL TURİZM (TÜRSAB Belge No: 2484).",
-    "about.statYears": "Лет опыта",
-    "about.statTours": "Проведённых туров",
     "about.statSafety": "Безопасность",
     "about.btn": "Присоединяйтесь к нам →",
     "gallery.tag": "ГАЛЕРЕЯ",
@@ -2855,8 +2849,7 @@ const translations = {
     "nav.program": "Программа тура",
     "nav.faq": "Вопросы", "nav.blog": "Блог"
   },
-  tr: {
-    "faq.subtitle": "Kapadokya maceranıza katılmadan önce bilmeniz gereken her şey.",
+  tr: {"about.statYears": "Yıl Turizmde", "about.statAgency": "Yıl Kendi Acentesi", "about.statTours": "Rehberli Tur", "faq.subtitle": "Kapadokya maceranıza katılmadan önce bilmeniz gereken her şey.",
     "writeReview.title": "Deneyiminizi Payla\u015f\u0131n", "writeReview.subtitle": "Bizimle seyahat ettiniz mi? Yorumunuzu duymak isteriz \u2014 di\u011fer gezginlere yard\u0131mc\u0131 olur.", "writeReview.namePh": "Ad\u0131n\u0131z", "writeReview.countryPh": "\u00dclkeniz (iste\u011fe ba\u011fl\u0131)", "writeReview.ratingLabel": "Puan\u0131n\u0131z:", "writeReview.textPh": "Deneyiminizi bizimle payla\u015f\u0131n...", "writeReview.submitBtn": "Google'da bizi değerlendirin →", "writeReview.note": "Yeni sekmede Google açılır, yorumunuzu orada bırakabilirsiniz.", "modal.reviewTitle": "Yorumunuz \u0130\u00e7in Te\u015fekk\u00fcrler!", "modal.reviewText": "Deneyiminizi payla\u015ft\u0131\u011f\u0131n\u0131z i\u00e7in i\u00e7tenlikle te\u015fekk\u00fcr ederiz. Yorumunuz WhatsApp \u00fczerinden bize ula\u015ft\u0131 ve gelecekteki gezginlerin g\u00fcvenle se\u00e7im yapmas\u0131na yard\u0131mc\u0131 olur.", "modal.reviewBtn": "Rica ederiz!",
     "ask.tag":"İLETİŞİM","ask.title":"Hâlâ Sorularınız mı Var?","ask.subtitle":"Ekibimiz yardımcı olmaktan mutluluk duyar. Kapadokya turu hakkında herhangi bir sorunuz için bize ulaşın — alış noktası, diller, özel istekler, her şey.",
     "ask.formTitle":"Bize Bir Soru Sorun","ask.formSubtitle":"Tur hakkında sorunuz mu var? WhatsApp veya e-posta yoluyla birkaç saat içinde yanıt vereceğiz.",
@@ -2980,8 +2973,6 @@ const translations = {
     "about.subtitle": "Kapadokya gezileri için Alanya'daki güvenilir yerel uzmanlarınız",
     "about.text1": "Alanya'nın kalbinde yer alan M.Y.V. Alanya Travel, 6 yıldır faaliyet göstererek dünyanın dört bir yanından gelen misafirler için güvenilir ve unutulmaz Kapadokya gezileri oluşturmaktadır. Bölgede derin kökleri olan ve Türkiye'nin en büyülü manzaralarını paylaşma tutkusu taşıyan aile işletmesi bir yerel seyahat acentesiyiz.",
     "about.text2": "Turlarımız 17 yıllık deneyime sahip lisanslı/sertifikalı rehberler tarafından yönetilmektedir. Her detayı biz hallediyoruz — Alanya veya Side'deki otelinizden alışınızdan sizi geri bıraktığımız ana kadar. Turlarımız, lisanslı seyahat acentesi AXIGEL TURİZM (TÜRSAB Belge No: 2484) ile tam ortaklık ve uyum içinde gerçekleştirilmektedir.",
-    "about.statYears": "Yıllık Deneyim",
-    "about.statTours": "Tamamlanan Tur",
     "about.statSafety": "Güvenlik Kaydı",
     "about.btn": "Bir Sonraki Maceranızda Bize Katılın →",
     "gallery.tag": "GALERİ",
@@ -3183,7 +3174,7 @@ const translations = {
     "nav.program": "Tur Programı",
     "nav.faq": "SSS", "nav.blog": "Blog"
   },
-  uk: {
+  uk: {"about.statYears": "Років у туризмі", "about.statAgency": "Років власна агенція", "about.statTours": "Проведених турів", 
     "faq.subtitle": "Усе, що потрібно знати перед подорожжю з нами до Каппадокії.",
     "writeReview.title": "\u041f\u043e\u0434\u0456\u043b\u0456\u0442\u044c\u0441\u044f \u0432\u0440\u0430\u0436\u0435\u043d\u043d\u044f\u043c\u0438", "writeReview.subtitle": "\u041f\u043e\u0434\u043e\u0440\u043e\u0436\u0443\u0432\u0430\u043b\u0438 \u0437 \u043d\u0430\u043c\u0438? \u0411\u0443\u0434\u0435\u043c\u043e \u0440\u0430\u0434\u0456 \u043f\u043e\u0447\u0443\u0442\u0438 \u0432\u0430\u0448 \u0432\u0456\u0434\u0433\u0443\u043a \u2014 \u0432\u0456\u043d \u0434\u043e\u043f\u043e\u043c\u043e\u0436\u0435 \u0456\u043d\u0448\u0438\u043c \u043c\u0430\u043d\u0434\u0440\u0456\u0432\u043d\u0438\u043a\u0430\u043c.", "writeReview.namePh": "\u0412\u0430\u0448\u0435 \u0456\u043c\u02bc\u044f", "writeReview.countryPh": "\u0412\u0430\u0448\u0430 \u043a\u0440\u0430\u0457\u043d\u0430 (\u043d\u0435\u043e\u0431\u043e\u0432\u02bc\u044f\u0437\u043a\u043e\u0432\u043e)", "writeReview.ratingLabel": "\u0412\u0430\u0448\u0430 \u043e\u0446\u0456\u043d\u043a\u0430:", "writeReview.textPh": "\u0420\u043e\u0437\u043a\u0430\u0436\u0456\u0442\u044c \u043f\u0440\u043e \u0432\u0430\u0448\u0456 \u0432\u0440\u0430\u0436\u0435\u043d\u043d\u044f...", "writeReview.submitBtn": "Залишіть відгук у Google →", "writeReview.note": "Відкриється Google у новій вкладці, де ви зможете залишити відгук.", "modal.reviewTitle": "\u0414\u044f\u043a\u0443\u0454\u043c\u043e \u0437\u0430 \u0432\u0430\u0448 \u0432\u0456\u0434\u0433\u0443\u043a!", "modal.reviewText": "\u041c\u0438 \u0449\u0438\u0440\u043e \u0432\u0434\u044f\u0447\u043d\u0456, \u0449\u043e \u0432\u0438 \u043f\u043e\u0434\u0456\u043b\u0438\u043b\u0438\u0441\u044f \u0432\u0440\u0430\u0436\u0435\u043d\u043d\u044f\u043c\u0438. \u0412\u0430\u0448 \u0432\u0456\u0434\u0433\u0443\u043a \u043d\u0430\u0434\u0456\u0441\u043b\u0430\u043d\u043e \u043d\u0430\u043c \u0447\u0435\u0440\u0435\u0437 WhatsApp \u0456 \u0434\u043e\u043f\u043e\u043c\u043e\u0436\u0435 \u043c\u0430\u0439\u0431\u0443\u0442\u043d\u0456\u043c \u043c\u0430\u043d\u0434\u0440\u0456\u0432\u043d\u0438\u043a\u0430\u043c \u0437\u0440\u043e\u0431\u0438\u0442\u0438 \u0432\u0438\u0431\u0456\u0440.", "modal.reviewBtn": "\u0411\u0443\u0434\u044c \u043b\u0430\u0441\u043a\u0430!",
     "ask.tag":"КОНТАКТ","ask.title":"Залишилися питання?","ask.subtitle":"Наша команда з радістю допоможе. Звертайтеся з будь-якими питаннями про тур до Каппадокії — трансфер, мови, особливі побажання, що завгодно.",
@@ -3308,8 +3299,6 @@ const translations = {
     "about.subtitle": "Ваші надійні місцеві експерти в Аланії з турів до Каппадокії",
     "about.text1": "Розташоване в самому серці Аланії, агентство M.Y.V. Alanya Travel працює вже 6 років, створюючи надійні та незабутні тури до Каппадокії для гостей з усього світу. Ми — сімейне місцеве туристичне агентство з глибоким корінням у регіоні та щирою пристрастю ділитися найчарівнішими пейзажами Туреччини.",
     "about.text2": "Наші тури проводять ліцензовані гіди з 17-річним досвідом. Ми дбаємо про кожну деталь — від зустрічі у вашому готелі в Аланії або Сіде до моменту повернення. Наші тури проводяться в повному партнерстві та відповідності з ліцензованим туристичним агентством AXIGEL TURİZM (TÜRSAB Belge No: 2484).",
-    "about.statYears": "Років досвіду",
-    "about.statTours": "Проведених турів",
     "about.statSafety": "Безпека",
     "about.btn": "Приєднуйтесь до нас →",
     "gallery.tag": "ГАЛЕРЕЯ",
@@ -3511,8 +3500,7 @@ const translations = {
     "nav.program": "Програма туру",
     "nav.faq": "Питання", "nav.blog": "Блог"
   },
-  de: {
-    "faq.subtitle": "Alles, was Sie wissen müssen, bevor Sie uns auf Ihrem Kappadokien-Abenteuer begleiten.",
+  de: {"about.statYears": "Jahre im Tourismus", "about.statAgency": "Jahre eigene Agentur", "about.statTours": "Geführte Touren", "faq.subtitle": "Alles, was Sie wissen müssen, bevor Sie uns auf Ihrem Kappadokien-Abenteuer begleiten.",
     "writeReview.title": "Teilen Sie Ihre Erfahrung", "writeReview.subtitle": "Sind Sie mit uns gereist? Wir w\u00fcrden uns \u00fcber Ihre Bewertung freuen \u2014 sie hilft anderen Reisenden.", "writeReview.namePh": "Ihr Name", "writeReview.countryPh": "Ihr Land (optional)", "writeReview.ratingLabel": "Ihre Bewertung:", "writeReview.textPh": "Erz\u00e4hlen Sie uns von Ihrer Erfahrung...", "writeReview.submitBtn": "Bewerten Sie uns auf Google →", "writeReview.note": "Öffnet Google in einem neuen Tab, wo Sie Ihre Bewertung hinterlassen können.", "modal.reviewTitle": "Vielen Dank f\u00fcr Ihre Bewertung!", "modal.reviewText": "Wir sch\u00e4tzen es sehr, dass Sie Ihre Erfahrung teilen. Ihre Bewertung wurde uns per WhatsApp gesendet und hilft zuk\u00fcnftigen Reisenden bei der Entscheidung.", "modal.reviewBtn": "Gern geschehen!",
     "ask.tag":"KONTAKT","ask.title":"Noch Fragen?","ask.subtitle":"Unser Team hilft Ihnen gerne. Stellen Sie uns jede Frage zur Kappadokien-Tour — Abholung, Sprachen, besondere Wünsche, alles.",
     "ask.formTitle":"Stellen Sie uns eine Frage","ask.formSubtitle":"Haben Sie eine Frage zur Tour? Wir antworten innerhalb weniger Stunden über WhatsApp oder E-Mail.",
@@ -3636,8 +3624,6 @@ const translations = {
     "about.subtitle": "Ihre vertrauenswürdigen lokalen Experten in Alanya für Kappadokien-Ausflüge",
     "about.text1": "M.Y.V. Alanya Travel mit Sitz im Herzen von Alanya ist seit 6 Jahren tätig und kreiert zuverlässige und unvergessliche Kappadokien-Ausflüge für Gäste aus aller Welt. Wir sind ein familiengeführtes lokales Reisebüro mit tiefen Wurzeln in der Region und einer echten Leidenschaft, die magischsten Landschaften der Türkei zu teilen.",
     "about.text2": "Unsere Touren werden von lizenzierten/zertifizierten Reiseführern mit 17 Jahren Erfahrung geleitet. Wir kümmern uns um jedes Detail — von der Hotelabholung in Alanya oder Side bis zum Moment, an dem wir Sie zurückbringen. Unsere Touren werden in voller Partnerschaft und Übereinstimmung mit dem lizenzierten Reisebüro AXIGEL TURİZM (TÜRSAB Belge No: 2484) durchgeführt.",
-    "about.statYears": "Jahre Erfahrung",
-    "about.statTours": "Durchgeführte Touren",
     "about.statSafety": "Sicherheitsbilanz",
     "about.btn": "Treffen Sie uns bei Ihrem nächsten Abenteuer →",
     "gallery.tag": "GALERIE",
@@ -3839,8 +3825,7 @@ const translations = {
     "nav.program": "Tourprogramm",
     "nav.faq": "FAQ", "nav.blog": "Blog"
   },
-  sr: {
-    "faq.subtitle": "Sve što treba da znate pre nego što nam se pridružite na avanturi u Kapadokiji.",
+  sr: {"about.statYears": "Godina u turizmu", "about.statAgency": "Godina svoja agencija", "about.statTours": "Vođenih tura", "faq.subtitle": "Sve što treba da znate pre nego što nam se pridružite na avanturi u Kapadokiji.",
     "writeReview.title": "Podelite svoj utisak", "writeReview.subtitle": "Putovali ste sa nama? Voleli bismo da \u010dujemo va\u0161 utisak \u2014 va\u0161a recenzija poma\u017ee drugim putnicima.", "writeReview.namePh": "Va\u0161e ime", "writeReview.countryPh": "Va\u0161a dr\u017eava (opciono)", "writeReview.ratingLabel": "Va\u0161a ocena:", "writeReview.textPh": "Ispri\u010dajte nam o svom iskustvu...", "writeReview.submitBtn": "Ocenite nas na Google-u →", "writeReview.note": "Otvara Google u novom tabu, gde možete da ostavite recenziju.", "modal.reviewTitle": "Hvala na va\u0161oj recenziji!", "modal.reviewText": "Iskreno cenimo \u0161to ste podelili svoj utisak. Va\u0161a recenzija nam je poslata preko WhatsApp-a i poma\u017ee budu\u0107im putnicima da se sa sigurno\u0161\u0107u odlu\u010de.", "modal.reviewBtn": "Nema na \u010demu!",
     "ask.tag":"KONTAKT","ask.title":"Imate još pitanja?","ask.subtitle":"Naš tim će vam rado pomoći. Obratite nam se sa bilo kojim pitanjem o turi po Kapadokiji — preuzimanje, jezici, posebni zahtevi, bilo šta.",
     "ask.formTitle":"Postavite nam pitanje","ask.formSubtitle":"Imate pitanje o turi? Odgovorićemo putem WhatsApp-a ili email-a u roku od nekoliko sati.",
@@ -3964,8 +3949,6 @@ const translations = {
     "about.subtitle": "Vaši pouzdani lokalni stručnjaci u Alanji za izlete u Kapadokiju",
     "about.text1": "Sa sedištem u srcu Alanje, M.Y.V. Alanya Travel već 6 godina stvara pouzdane i nezaboravne izlete u Kapadokiju za goste iz celog sveta. Porodična smo lokalna turistička agencija sa dubokim korenima u regionu i iskrenom željom da svakom putniku približimo najčarobnije pejzaže Turske.",
     "about.text2": "Naše ture vode licencirani i sertifikovani vodiči sa 17 godina iskustva. Brinemo o svakom detalju — od preuzimanja u hotelu u Alanji ili Side-u do vašeg bezbednog povratka. Ture realizujemo u punom partnerstvu i saglasnosti sa licenciranom agencijom AXIGEL TURİZM (TÜRSAB Belge No: 2484).",
-    "about.statYears": "Godina iskustva",
-    "about.statTours": "Završenih tura",
     "about.statSafety": "Bezbednost",
     "about.btn": "Pridružite nam se na sledećoj avanturi →",
     "gallery.tag": "GALERIJA",
