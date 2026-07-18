@@ -32,7 +32,7 @@ a{color:var(--terra);text-decoration:none}
 .wrap{max-width:760px;margin:0 auto;padding:0 22px}
 header.top{position:sticky;top:0;z-index:50;background:rgba(250,246,240,.92);backdrop-filter:blur(10px);border-bottom:1px solid rgba(168,80,31,.12)}
 .top-in{max-width:1080px;margin:0 auto;padding:14px 22px;display:flex;align-items:center;justify-content:space-between;gap:16px}
-.logo{font-family:'Playfair Display',serif;font-weight:700;font-size:17px;color:var(--dark);display:flex;align-items:center;gap:8px}
+.logo{font-family:'Playfair Display',serif;font-weight:700;font-size:17px;color:var(--dark);display:flex;align-items:center;gap:8px}.logo-ico{width:30px;height:30px;border-radius:50%;object-fit:cover;flex-shrink:0}
 .top-nav{display:flex;align-items:center;gap:16px;font-size:14px;font-weight:600}
 .top-nav a{color:var(--text)}
 .lang-sel{border:1px solid rgba(168,80,31,.3);border-radius:8px;padding:6px 10px;font-family:inherit;font-size:13px;color:var(--text);background:#fff;cursor:pointer}
@@ -69,7 +69,7 @@ footer a{color:var(--gold)}
 </head>
 <body>
 <header class="top"><div class="top-in">
-  <a class="logo" href="/de/"><span>🧭</span> M.Y.V. Alanya Travel</a>
+  <a class="logo" href="/de/"><img src="/images/logo-mark.svg" class="logo-ico" alt="M.Y.V. Alanya Travel logo" width="30" height="30"> M.Y.V. Alanya Travel</a>
   <nav class="top-nav">
     <a class="hide-sm" href="/de/">Touren</a>
     <select class="lang-sel" onchange="location.href=this.value" aria-label="Language">

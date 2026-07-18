@@ -100,7 +100,7 @@ body{font-family:'DM Sans',sans-serif;color:var(--text);background:var(--cream);
 .header-left{flex:1 1 auto;min-width:0}
 .header-left .logo{color:#fff !important;font-size:1.4rem;font-weight:700;text-decoration:none;font-family:'Playfair Display',serif;white-space:nowrap;text-shadow:0 1px 6px rgba(0,0,0,.35);display:flex;align-items:center;gap:10px;overflow:hidden}
 .logo-text{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
-.logo-badge{width:36px;height:36px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:16px;flex-shrink:0;box-shadow:0 2px 8px rgba(0,0,0,.25);transition:transform .3s ease}
+.logo-badge{width:36px;height:36px;border-radius:50%;object-fit:cover;flex-shrink:0;box-shadow:0 2px 8px rgba(0,0,0,.25);transition:transform .3s ease;background:#FAF8F4}
 .header-left .logo:hover .logo-badge{transform:scale(1.1)}
 .cappadocia-page .logo-badge{background:var(--terra)}
 .demre-page .logo-badge{background:#008094}
@@ -849,7 +849,7 @@ html{scroll-padding-top:56px}
 ================================ -->
 <header class="site-header cappadocia-page">
   <div class="header-left">
-    <a href="/uk/" class="logo"><span class="logo-badge">🧭</span> <span class="logo-text">M.Y.V. Alanya Travel</span></a>
+    <a href="/uk/" class="logo"><img src="/images/logo-mark.svg" class="logo-badge" alt="M.Y.V. Alanya Travel logo" width="36" height="36"> <span class="logo-text">M.Y.V. Alanya Travel</span></a>
   </div>
 
   <!-- Mobile/Tablet controls: language + hamburger -->
