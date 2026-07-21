@@ -1,5 +1,22 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
+# ############################################################################
+# !!! PAZNJA — OVA SKRIPTA JE ZASTARELA I NE SME DA SE POKRECE !!!
+#
+# Jezicke verzije (/ru/ /de/ /tr/ /uk/ /sr/) su posle poslednjeg pokretanja
+# dodatno rucno dorajivane. Skripta te izmene NE zna da reprodukuje.
+# Ako je pokrenes, pokvarices sledece (provereno, 56 linija po fajlu):
+#
+#   1. JSON-LD FAQ seme se vracaju na engleski u svih 5 jezika
+#   2. Interni linkovi gube prefiks jezika: /ru/pamukkale -> /pamukkale
+#      (ruski posetilac zavrsi na engleskoj stranici)
+#   3. Sekcija "Ostale ture" se vraca na engleski
+#   4. sitemap.xml gubi excursions-from-alanya i excursions-from-side
+#      i vraca .html nastavke umesto cistih URL-ova
+#
+# Dok se skripta ne popravi, jezicke fajlove menjaj DIREKTNO.
+# Guard ispod sprecava slucajno pokretanje.
+# ############################################################################
 """
 generate-languages.py  (v2)  —  M.Y.V. Alanya Travel
 ----------------------------------------------------
@@ -233,6 +250,13 @@ def build():
     return written
 
 if __name__ == "__main__":
+    import sys
+    if "--zaista-hocu" not in sys.argv:
+        print(__doc__ if False else "")
+        print("ZAUSTAVLJENO: skripta je zastarela i pokvarila bi jezicke verzije.")
+        print("Detalji su u komentaru na vrhu fajla.")
+        print("Ako stvarno znas sta radis: python3 generate-languages.py --zaista-hocu")
+        sys.exit(1)
     files = build()
     print("Generisano %d HTML + sitemap.xml:" % len(files))
     for f in files: print("  ", f)

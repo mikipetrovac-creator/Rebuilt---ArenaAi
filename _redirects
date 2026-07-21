@@ -26,6 +26,13 @@
 /blog-green-canyon-guide.html   /blog-green-canyon-guide    301!
 /blog-pamukkale-guide.html      /blog-pamukkale-guide       301!
 
+
+# --- Hub stranice: .html -> cist URL ---
+/excursions-from-alanya.html        /excursions-from-alanya   301!
+/excursions-from-side.html          /excursions-from-side     301!
+/:lang/excursions-from-alanya.html  /:lang/excursions-from-alanya  301!
+/:lang/excursions-from-side.html    /:lang/excursions-from-side    301!
+
 # --- Bot smece (WordPress skeneri) -> 410 Gone, prestaju da pokusavaju ---
 /wp-admin/*         /410.html   410
 /wp-login.php       /410.html   410
