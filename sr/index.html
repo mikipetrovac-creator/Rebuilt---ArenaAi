@@ -230,7 +230,43 @@ body{font-family:'DM Sans',sans-serif;color:var(--text);background:var(--cream);
 .hero-bg-img{width:100%;height:100%;object-fit:cover;object-position:center 50%;animation:heroKenBurns 30s ease-in-out infinite alternate;will-change:transform}
 @media(min-width:901px){.hero-bg-img{object-position:center 45%}}
 @keyframes heroKenBurns{0%{transform:scale(1) translate(0,0)}100%{transform:scale(1.15) translate(-1.5%,-1%)}}
-@media(max-width:900px){.hero-bg-img{animation:heroKenBurns 25s ease-in-out infinite alternate}}
+@media(max-width:900px){
+#home{
+  padding:90px 24px 40px !important;
+  min-height:100vh !important;
+  min-height:100dvh !important;
+  justify-content:flex-start !important;
+  gap:18px;
+}
+#home .hero-badge{
+  font-size:12px !important;
+  padding:7px 16px !important;
+  line-height:1.5;
+  max-width:88% !important;
+  width:auto !important;
+  margin:0 auto !important;
+}
+#home .hero-title{
+  font-size:clamp(24px,7vw,34px) !important;
+  line-height:1.2 !important;
+  max-width:88% !important;
+  margin:0 auto !important;
+}
+#home .hero-title span:last-child{
+  font-size:clamp(15px,4vw,20px) !important;
+  line-height:1.3 !important;
+  margin-top:8px;
+  display:block;
+}
+#home .hero-sub{
+  font-size:14px !important;
+  line-height:1.6 !important;
+  max-width:540px !important;
+  width:88% !important;
+  padding:0 !important;
+  margin:0 auto !important;
+}
+.hero-bg-img{animation:heroKenBurns 25s ease-in-out infinite alternate}}
 .hero-badge{background:rgba(255,255,255,.15);backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);border:1px solid rgba(255,255,255,.3);color:#fff;font-size:13px;font-weight:500;padding:8px 20px;border-radius:50px;margin-bottom:28px;letter-spacing:.5px}
 .hero-title{font-family:'Playfair Display',serif;font-size:clamp(36px,8vw,80px);color:#fff;line-height:1.1;margin-bottom:16px}
 .hero-title span{color:var(--gold-light);font-style:italic;display:block}
@@ -933,7 +969,7 @@ html{scroll-padding-top:56px}
 
   <div class="hero-stats">
     <div class="hero-stat">
-      <div class="hero-stat-num" data-count="32">0</div>
+      <div class="hero-stat-num" data-count="35">0</div>
       <div class="hero-stat-label" data-i18n="reviews.statReviews">Google recenzije</div>
     </div>
     <div class="hero-stat">
