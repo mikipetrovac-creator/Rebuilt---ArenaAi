@@ -131,7 +131,7 @@ body{font-family:'DM Sans',sans-serif;color:var(--text);background:var(--cream);
 .menu-backdrop{display:none;position:fixed;inset:0;background:rgba(0,0,0,.45);z-index:999;opacity:0;transition:opacity .3s ease}
 .menu-backdrop.active{display:block;opacity:1}
 
-@media(max-width:1200px){
+@media(max-width:1024px){
   .site-header{padding:8px 20px}
   .menu-toggle{display:block}
   .header-mobile-controls{display:flex}
@@ -173,6 +173,7 @@ body{font-family:'DM Sans',sans-serif;color:var(--text);background:var(--cream);
 .book-ch svg{width:20px;height:20px;fill:#fff;flex-shrink:0}
 .book-ch.wa{background:#25D366}.book-ch.vb{background:#7360F2}.book-ch.tg{background:#2AABEE}.book-ch.mx{background:#3A7BD5}
 .book-ch-hint{font-size:13px;color:var(--muted);text-align:center;margin-top:4px}
+.book-ch-paste{font-size:12px;color:var(--muted,#8a8a8a);margin-top:12px;opacity:.85}
 @media(max-width:480px){.book-channels{grid-template-columns:1fr}}
 .hero-badge{margin-top:0;flex-shrink:0;max-width:90%;line-height:1.4;white-space:normal}
 #home .hero-title{margin-bottom:0;word-wrap:break-word;overflow-wrap:break-word;hyphens:auto}
@@ -1017,7 +1018,7 @@ footer{background:var(--dark);color:rgba(255,255,255,.7);padding:60px 40px 30px}
 #reviews .review-stats{justify-content:center}
 
 html{scroll-padding-top:56px}
-.site-header.scrolled{background:rgba(250,246,240,.62);-webkit-backdrop-filter:blur(12px);backdrop-filter:blur(12px);box-shadow:0 1px 0 rgba(0,0,0,.06),0 6px 18px rgba(0,0,0,.05)}.site-header.scrolled .logo,.site-header.scrolled .logo-text{color:var(--dark)!important;text-shadow:none}.site-header.scrolled .menu-toggle{color:var(--dark);text-shadow:none}@media(min-width:1201px){.site-header.scrolled .header-right-group a{color:var(--dark)!important;text-shadow:none}.site-header.scrolled .tour-switcher{border-left-color:rgba(0,0,0,.18);border-right-color:rgba(0,0,0,.18)}.site-header.scrolled.demre-page #nav-demre,.site-header.scrolled.pamukkale-page #nav-pamukkale{color:var(--terra)!important;border-bottom-color:var(--terra)!important}}
+.site-header.scrolled{background:rgba(250,246,240,.62);-webkit-backdrop-filter:blur(12px);backdrop-filter:blur(12px);box-shadow:0 1px 0 rgba(0,0,0,.06),0 6px 18px rgba(0,0,0,.05)}.site-header.scrolled .logo,.site-header.scrolled .logo-text{color:var(--dark)!important;text-shadow:none}.site-header.scrolled .menu-toggle{color:var(--dark);text-shadow:none}@media(min-width:1025px){.site-header.scrolled .header-right-group a{color:var(--dark)!important;text-shadow:none}.site-header.scrolled .tour-switcher{border-left-color:rgba(0,0,0,.18);border-right-color:rgba(0,0,0,.18)}.site-header.scrolled.demre-page #nav-demre,.site-header.scrolled.pamukkale-page #nav-pamukkale{color:var(--terra)!important;border-bottom-color:var(--terra)!important}}
 .site-header.scrolled .language-selector select{color:var(--dark);border-color:rgba(0,0,0,.28);background:rgba(0,0,0,.05)}#tour-details .included-box{background:#eef6f7;border-radius:12px;padding:18px 20px;border-left:4px solid var(--terra);box-sizing:border-box}#tour-details .bring-box{grid-column:1/-1}.history-block{margin-top:26px;text-align:center}
 .history-toggle{display:inline-flex;align-items:center;gap:9px;background:rgba(0,151,173,.08);border:1px solid rgba(0,151,173,.28);color:var(--terra);font-family:'DM Sans',sans-serif;font-weight:600;font-size:15px;padding:12px 24px;border-radius:50px;cursor:pointer;transition:background .25s}
 .history-toggle:hover{background:rgba(0,151,173,.16)}
@@ -1814,6 +1815,7 @@ html{scroll-padding-top:56px}
       <a class="book-ch tg" id="bch-tg" target="_blank" rel="noopener noreferrer"><svg viewBox="0 0 24 24"><path d="M9.78 18.65l.28-4.23 7.68-6.92c.34-.31-.07-.46-.52-.19L7.74 13.3 3.64 12c-.88-.25-.89-.86.2-1.3l15.97-6.16c.73-.33 1.43.18 1.15 1.3l-2.72 12.81c-.19.91-.74 1.13-1.5.71L12.6 16.3l-1.99 1.93c-.23.23-.42.42-.83.42z"/></svg> Telegram</a>
       <a class="book-ch mx" id="bch-mx" target="_blank" rel="noopener noreferrer"><svg viewBox="0 0 24 24"><path d="M20 2H4c-1.1 0-2 .9-2 2v18l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm-2 12H6v-2h12v2zm0-3H6V9h12v2zm0-3H6V6h12v2z"/></svg> MAX</a>
     </div>
+    <div class="book-ch-paste" data-i18n="book.chPaste">Nachricht kopiert — einfach in die App einfügen.</div>
     <div class="book-ch-hint" data-i18n="book.chHint">Wir antworten innerhalb von ~2 Stunden.</div>
     <button class="modal-close" onclick="closeModalById('bookChannelModal')" data-i18n="book.chClose" style="margin-top:16px;">Schließen</button>
   </div>
@@ -2197,7 +2199,8 @@ const translations = {
     "modal.cleopatra.title": "Cleopatra's Antique Pool",
     "modal.cleopatra.text": "A natural thermal pool scattered with ancient marble columns toppled by an earthquake. You can swim here in warm, mineral-rich water among genuine Roman ruins — an optional experience (€15 on-site).",
     "nav.blog": "Blog",
-    "modal.alsoSend": "Also send via WhatsApp / Viber (optional)"
+    "modal.alsoSend": "Also send via WhatsApp / Viber (optional)",
+    "book.chPaste": "Message copied — just paste it into the app."
   },
   "ru": {
     "faq.q5": "Можно ли купаться в бассейне Клеопатры в Памуккале?",
@@ -2429,7 +2432,8 @@ const translations = {
     "modal.cleopatra.title": "Античный бассейн Клеопатры",
     "modal.cleopatra.text": "Природный термальный бассейн с античными мраморными колоннами, обрушенными землетрясением. Здесь можно искупаться в тёплой минеральной воде среди настоящих римских руин — по желанию (€15 на месте).",
     "nav.blog": "Блог",
-    "modal.alsoSend": "Также отправить через WhatsApp / Viber (по желанию)"
+    "modal.alsoSend": "Также отправить через WhatsApp / Viber (по желанию)",
+    "book.chPaste": "Сообщение скопировано — просто вставьте его в приложение."
   },
   "tr": {
     "faq.q5": "Pamukkale'de Kleopatra Havuzu'nda yüzülür mü?",
@@ -2661,7 +2665,8 @@ const translations = {
     "modal.cleopatra.title": "Kleopatra Antik Havuzu",
     "modal.cleopatra.text": "Bir depremle devrilen antik mermer sütunlarla dolu doğal termal havuz. Gerçek Roma kalıntıları arasında ılık, mineralce zengin suda yüzebilirsiniz — isteğe bağlı (yerinde €15).",
     "nav.blog": "Blog",
-    "modal.alsoSend": "WhatsApp / Viber ile de gönder (isteğe bağlı)"
+    "modal.alsoSend": "WhatsApp / Viber ile de gönder (isteğe bağlı)",
+    "book.chPaste": "Mesaj kopyalandı — uygulamaya yapıştırmanız yeterli."
   },
   "uk": {
     "faq.q5": "Чи можна купатися в басейні Клеопатри в Памуккале?",
@@ -2893,7 +2898,8 @@ const translations = {
     "modal.cleopatra.title": "Античний басейн Клеопатри",
     "modal.cleopatra.text": "Природний термальний басейн з античними мармуровими колонами, поваленими землетрусом. Тут можна скупатися в теплій мінеральній воді серед справжніх римських руїн — за бажанням (€15 на місці).",
     "nav.blog": "Блог",
-    "modal.alsoSend": "Також надіслати через WhatsApp / Viber (за бажанням)"
+    "modal.alsoSend": "Також надіслати через WhatsApp / Viber (за бажанням)",
+    "book.chPaste": "Повідомлення скопійовано — просто вставте його в застосунок."
   },
   "de": {
     "faq.q5": "Kann man im Kleopatra-Pool in Pamukkale schwimmen?",
@@ -3125,7 +3131,8 @@ const translations = {
     "modal.cleopatra.title": "Antiker Pool der Kleopatra",
     "modal.cleopatra.text": "Ein natürliches Thermalbecken mit antiken Marmorsäulen, die ein Erdbeben umstürzte. Sie können hier in warmem, mineralreichem Wasser zwischen echten römischen Ruinen schwimmen — optional (€15 vor Ort).",
     "nav.blog": "Blog",
-    "modal.alsoSend": "Auch per WhatsApp / Viber senden (optional)"
+    "modal.alsoSend": "Auch per WhatsApp / Viber senden (optional)",
+    "book.chPaste": "Nachricht kopiert — einfach in die App einfügen."
   },
   "sr": {
     "faq.q5": "Da li se može plivati u Kleopatrinom bazenu u Pamukkaleu?",
@@ -3357,7 +3364,8 @@ const translations = {
     "modal.cleopatra.title": "Kleopatrin antički bazen",
     "modal.cleopatra.text": "Prirodni termalni bazen posut antičkim mermernim stubovima koje je oborio zemljotres. Ovde možete plivati u toploj vodi bogatoj mineralima među pravim rimskim ruševinama — opciono (€15 na licu mesta).",
     "nav.blog": "Blog",
-    "modal.alsoSend": "Pošalji i preko WhatsApp / Viber (opciono)"
+    "modal.alsoSend": "Pošalji i preko WhatsApp / Viber (opciono)",
+    "book.chPaste": "Poruka je kopirana — samo je nalepite u aplikaciju."
   }
 };
 

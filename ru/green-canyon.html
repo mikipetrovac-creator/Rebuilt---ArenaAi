@@ -132,7 +132,7 @@ body{font-family:'DM Sans',sans-serif;color:var(--text);background:var(--cream);
 .menu-backdrop{display:none;position:fixed;inset:0;background:rgba(0,0,0,.45);z-index:999;opacity:0;transition:opacity .3s ease}
 .menu-backdrop.active{display:block;opacity:1}
 
-@media(max-width:1200px){
+@media(max-width:1024px){
   .site-header{padding:8px 20px}
   .menu-toggle{display:block}
   .header-mobile-controls{display:flex}
@@ -174,6 +174,7 @@ body{font-family:'DM Sans',sans-serif;color:var(--text);background:var(--cream);
 .book-ch svg{width:20px;height:20px;fill:#fff;flex-shrink:0}
 .book-ch.wa{background:#25D366}.book-ch.vb{background:#7360F2}.book-ch.tg{background:#2AABEE}.book-ch.mx{background:#3A7BD5}
 .book-ch-hint{font-size:13px;color:var(--muted);text-align:center;margin-top:4px}
+.book-ch-paste{font-size:12px;color:var(--muted,#8a8a8a);margin-top:12px;opacity:.85}
 @media(max-width:480px){.book-channels{grid-template-columns:1fr}}
 .hero-badge{margin-top:0;flex-shrink:0;max-width:90%;line-height:1.4;white-space:normal}
 #home .hero-title{margin-bottom:0;word-wrap:break-word;overflow-wrap:break-word;hyphens:auto}
@@ -1018,7 +1019,7 @@ footer{background:var(--dark);color:rgba(255,255,255,.7);padding:60px 40px 30px}
 #reviews .review-stats{justify-content:center}
 
 html{scroll-padding-top:56px}
-.site-header.scrolled{background:rgba(250,246,240,.62);-webkit-backdrop-filter:blur(12px);backdrop-filter:blur(12px);box-shadow:0 1px 0 rgba(0,0,0,.06),0 6px 18px rgba(0,0,0,.05)}.site-header.scrolled .logo,.site-header.scrolled .logo-text{color:var(--dark)!important;text-shadow:none}.site-header.scrolled .menu-toggle{color:var(--dark);text-shadow:none}@media(min-width:1201px){.site-header.scrolled .header-right-group a{color:var(--dark)!important;text-shadow:none}.site-header.scrolled .tour-switcher{border-left-color:rgba(0,0,0,.18);border-right-color:rgba(0,0,0,.18)}.site-header.scrolled.demre-page #nav-demre,.site-header.scrolled.pamukkale-page #nav-pamukkale{color:var(--terra)!important;border-bottom-color:var(--terra)!important}}
+.site-header.scrolled{background:rgba(250,246,240,.62);-webkit-backdrop-filter:blur(12px);backdrop-filter:blur(12px);box-shadow:0 1px 0 rgba(0,0,0,.06),0 6px 18px rgba(0,0,0,.05)}.site-header.scrolled .logo,.site-header.scrolled .logo-text{color:var(--dark)!important;text-shadow:none}.site-header.scrolled .menu-toggle{color:var(--dark);text-shadow:none}@media(min-width:1025px){.site-header.scrolled .header-right-group a{color:var(--dark)!important;text-shadow:none}.site-header.scrolled .tour-switcher{border-left-color:rgba(0,0,0,.18);border-right-color:rgba(0,0,0,.18)}.site-header.scrolled.demre-page #nav-demre,.site-header.scrolled.pamukkale-page #nav-pamukkale{color:var(--terra)!important;border-bottom-color:var(--terra)!important}}
 .site-header.scrolled .language-selector select{color:var(--dark);border-color:rgba(0,0,0,.28);background:rgba(0,0,0,.05)}#tour-details .included-box{background:#eef6f7;border-radius:12px;padding:18px 20px;border-left:4px solid var(--terra);box-sizing:border-box}#tour-details .bring-box{grid-column:1/-1}.history-block{margin-top:26px;text-align:center}
 .history-toggle{display:inline-flex;align-items:center;gap:9px;background:rgba(18,128,92,.08);border:1px solid rgba(18,128,92,.28);color:var(--terra);font-family:'DM Sans',sans-serif;font-weight:600;font-size:15px;padding:12px 24px;border-radius:50px;cursor:pointer;transition:background .25s}
 .history-toggle:hover{background:rgba(18,128,92,.16)}
@@ -1738,6 +1739,7 @@ html{scroll-padding-top:56px}
       <a class="book-ch tg" id="bch-tg" target="_blank" rel="noopener noreferrer"><svg viewBox="0 0 24 24"><path d="M9.78 18.65l.28-4.23 7.68-6.92c.34-.31-.07-.46-.52-.19L7.74 13.3 3.64 12c-.88-.25-.89-.86.2-1.3l15.97-6.16c.73-.33 1.43.18 1.15 1.3l-2.72 12.81c-.19.91-.74 1.13-1.5.71L12.6 16.3l-1.99 1.93c-.23.23-.42.42-.83.42z"/></svg> Telegram</a>
       <a class="book-ch mx" id="bch-mx" target="_blank" rel="noopener noreferrer"><svg viewBox="0 0 24 24"><path d="M20 2H4c-1.1 0-2 .9-2 2v18l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm-2 12H6v-2h12v2zm0-3H6V9h12v2zm0-3H6V6h12v2z"/></svg> MAX</a>
     </div>
+    <div class="book-ch-paste" data-i18n="book.chPaste">Сообщение скопировано — просто вставьте его в приложение.</div>
     <div class="book-ch-hint" data-i18n="book.chHint">Отвечаем в течение ~2 часов.</div>
     <button class="modal-close" onclick="closeModalById('bookChannelModal')" data-i18n="book.chClose" style="margin-top:16px;">Закрыть</button>
   </div>
@@ -2111,7 +2113,8 @@ const translations = {
     "modal.dam.text": "A giant arch dam on the Manavgat River — about 185 metres high and one of the tallest in Turkey. It holds back the emerald lake you cruise on. On the way back we stop by the dam for a panoramic photo break.",
     "modal.greenlake.title": "Lunch at Green Lake",
     "modal.greenlake.text": "After the cruise we drive to a lakeside restaurant at Green Lake for lunch. Afterwards you have free time to swim in the cool, clear water or try your hand at fishing before we head back towards the coast.",
-    "modal.alsoSend": "Also send via WhatsApp / Viber (optional)"
+    "modal.alsoSend": "Also send via WhatsApp / Viber (optional)",
+    "book.chPaste": "Message copied — just paste it into the app."
   },
   "ru": {
     "faq.q5": "Что такое Зелёный каньон и почему вода такая зелёная?",
@@ -2333,7 +2336,8 @@ const translations = {
     "modal.dam.text": "Гигантская арочная плотина на реке Манавгат — около 185 метров высотой, одна из самых высоких в Турции. Именно она удерживает изумрудное озеро, по которому вы плывёте. На обратном пути мы останавливаемся у плотины для панорамной фотопаузы.",
     "modal.greenlake.title": "Обед на Грин-Лейк",
     "modal.greenlake.text": "После прогулки на яхте мы едем в ресторан на берегу Грин-Лейк на обед. Затем — свободное время: можно искупаться в прохладной прозрачной воде или попробовать порыбачить, прежде чем мы отправимся обратно к побережью.",
-    "modal.alsoSend": "Также отправить через WhatsApp / Viber (по желанию)"
+    "modal.alsoSend": "Также отправить через WhatsApp / Viber (по желанию)",
+    "book.chPaste": "Сообщение скопировано — просто вставьте его в приложение."
   },
   "de": {
     "faq.q5": "Was ist der Green Canyon und warum ist das Wasser so grün?",
@@ -2555,7 +2559,8 @@ const translations = {
     "modal.dam.text": "Eine gewaltige Bogenstaumauer am Fluss Manavgat — rund 185 Meter hoch und eine der höchsten der Türkei. Sie staut den smaragdgrünen See, auf dem Sie fahren. Auf dem Rückweg halten wir an der Talsperre für eine Panorama-Fotopause.",
     "modal.greenlake.title": "Mittagessen am Green Lake",
     "modal.greenlake.text": "Nach der Bootsfahrt fahren wir zu einem Restaurant am Ufer des Green Lake zum Mittagessen. Danach haben Sie Freizeit — schwimmen Sie im kühlen, klaren Wasser oder versuchen Sie sich beim Angeln, bevor es zurück zur Küste geht.",
-    "modal.alsoSend": "Auch per WhatsApp / Viber senden (optional)"
+    "modal.alsoSend": "Auch per WhatsApp / Viber senden (optional)",
+    "book.chPaste": "Nachricht kopiert — einfach in die App einfügen."
   },
   "tr": {
     "faq.q5": "Green Canyon nedir ve su neden bu kadar yeşil?",
@@ -2777,7 +2782,8 @@ const translations = {
     "modal.dam.text": "Manavgat Nehri üzerinde dev bir kemer baraj — yaklaşık 185 metre yüksekliğiyle Türkiye'nin en yükseklerinden biri. Üzerinde gezindiğiniz zümrüt gölü işte bu baraj tutar. Dönüş yolunda panoramik fotoğraf molası için barajın yanında dururuz.",
     "modal.greenlake.title": "Green Lake'te Öğle Yemeği",
     "modal.greenlake.text": "Tekne turundan sonra öğle yemeği için Green Lake kıyısındaki restorana gideriz. Ardından serbest zaman: kıyıya dönmeden önce serin ve berrak suda yüzebilir ya da balık tutmayı deneyebilirsiniz.",
-    "modal.alsoSend": "WhatsApp / Viber ile de gönder (isteğe bağlı)"
+    "modal.alsoSend": "WhatsApp / Viber ile de gönder (isteğe bağlı)",
+    "book.chPaste": "Mesaj kopyalandı — uygulamaya yapıştırmanız yeterli."
   },
   "uk": {
     "faq.q5": "Що таке Зелений каньйон і чому вода така зелена?",
@@ -2999,7 +3005,8 @@ const translations = {
     "modal.dam.text": "Гігантська аркова гребля на річці Манавгат — заввишки близько 185 метрів, одна з найвищих у Туреччині. Саме вона утримує смарагдове озеро, яким ви пливете. Дорогою назад ми зупиняємося біля греблі для панорамної фотопаузи.",
     "modal.greenlake.title": "Обід на Грін-Лейк",
     "modal.greenlake.text": "Після прогулянки на яхті ми їдемо до ресторану на березі Грін-Лейк на обід. Потім — вільний час: можна скупатися в прохолодній прозорій воді або спробувати порибалити, перш ніж ми вирушимо назад до узбережжя.",
-    "modal.alsoSend": "Також надіслати через WhatsApp / Viber (за бажанням)"
+    "modal.alsoSend": "Також надіслати через WhatsApp / Viber (за бажанням)",
+    "book.chPaste": "Повідомлення скопійовано — просто вставте його в застосунок."
   },
   "sr": {
     "faq.q5": "Šta je Zeleni kanjon i zašto je voda tako zelena?",
@@ -3221,7 +3228,8 @@ const translations = {
     "modal.dam.text": "Džinovska lučna brana na reci Manavgat — visoka oko 185 metara, jedna od najviših u Turskoj. Upravo ona zadržava smaragdno jezero kojim plovite. Na povratku se zaustavljamo kod brane radi panoramske foto-pauze.",
     "modal.greenlake.title": "Ručak na Zelenom jezeru",
     "modal.greenlake.text": "Posle krstarenja vozimo se do restorana na obali Zelenog jezera na ručak. Zatim sledi slobodno vreme — možete plivati u hladnoj, bistroj vodi ili okušati sreću u pecanju pre povratka ka obali.",
-    "modal.alsoSend": "Pošalji i preko WhatsApp / Viber (opciono)"
+    "modal.alsoSend": "Pošalji i preko WhatsApp / Viber (opciono)",
+    "book.chPaste": "Poruka je kopirana — samo je nalepite u aplikaciju."
   }
 };
 // ============================================
