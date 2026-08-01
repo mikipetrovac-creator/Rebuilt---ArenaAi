@@ -1,34 +1,36 @@
-# Meni breakpoint fix — hamburger se pojavljuje ranije
+# Tri izmene odjednom — meta opisi + meni + Viber napomena
 
-## Šta je promenjeno
-Glavni meni se do sada gužvao na uskim laptopovima (~1280px).
-Sada se hamburger meni pojavljuje već ispod 1200px umesto ispod 1024px.
-Na širim ekranima (1200px+) ostaje pun desktop meni kao pre.
+Primenjeno na AKTUELNU verziju sajta (iz provere), pa se lepo poklapa
+sa onim što je već online (recenzija Fiery Phoenix, hero slike — netaknuti).
 
-Promenjeno je TAČNO dvoje po fajlu (CSS breakpoint):
-- @media(max-width:1024px) -> 1200px   (kad se pojavi hamburger)
-- @media(min-width:1025px) -> 1201px    (desktop scrolled stilovi)
+## Šta je unutra (24 fajla: 4 ture x 6 jezika)
 
-JS i HTML menija su NETAKNUTI — hamburger radi isto kao i pre,
-samo se pojavljuje na široj tački.
+1. META OPISI (Pamukale, Demre, Green Canyon) — prepravljeni da odgovaraju
+   na prave upite iz Search Console:
+   - Pamukale: "Yes, you can swim in Cleopatra's pool (~15 EUR)"
+   - Demre: Kekova / Sunken City / St Nicholas
+   - Green Canyon: emerald Green Lake
+   OVO je najvažnije — resava Demre 102 prikaza / 3 klika problem.
 
-## Fajlovi (24)
-index (Kapadokija), demre-myra-kekova, green-canyon, pamukkale — svaki x 6 jezika.
-Blogovi i hub stranice imaju drugačiji header i NISU dirani.
+2. MENI breakpoint 1024 -> 1200
+   Hamburger se sada pojavljuje ranije (ispod 1200px), meni se vise
+   ne guzva na uskim laptopovima (~1280px).
 
-## Kako da raspakuješ
-Iz korena repoa, raspakuj tako da se folderi poklope (Merge, ne Replace).
-Fajlovi prebrisuju postojeće istoimene.
+3. VIBER napomena u booking modalu
+   "Poruka je kopirana — samo je nalepite u aplikaciju." (6 jezika)
+   Resava zbunjenost kod Vibera koji ne prima gotov tekst.
 
-## Pregled pre push-a
-1. Raspakuj u repo
-2. netlify dev (ili lokalni server)
-3. Smanji prozor browsera na ~1280px — meni sada treba da bude hamburger
-4. Proširi na 1400px — pun desktop meni
-5. Klikni hamburger — otvara sve stavke kao i pre
-6. Zadovoljan -> git add -A && git commit -m "Menu: hamburger breakpoint 1024->1200" && git push
+## Kako
+1. Raspakuj u koren repoa (Merge, ne Replace) — prebrisuje 24 fajla
+2. netlify dev -> proveri:
+   - meni na 1280px = hamburger
+   - booking modal ima Viber napomenu
+   - (meta opisi se ne vide u browseru, ali su u kodu)
+3. git add -A && git commit -m "Meta descriptions + menu breakpoint + Viber hint" && git push
+4. Posle push-a: u Search Console -> URL Inspection -> zatrazi reindeksiranje
+   za /pamukkale, /demre-myra-kekova, /green-canyon (da Google brze pokupi nove opise)
 
-## Napomena
-Ovo je "Opcija A" — samo pomeranje tačke prelaska.
-Padajući "Tours" meni i proređivanje stavki (Opcija B) je veći posao,
-ostavljen za kasnije ako budeš hteo.
+## Sto NIJE dirano (vec online, netaknuto)
+- Recenzija Fiery Phoenix + broj 36
+- Hero slike Demre i Green Canyon
+- Chat meni (WhatsApp/Viber/Telegram/VK/MAX)
