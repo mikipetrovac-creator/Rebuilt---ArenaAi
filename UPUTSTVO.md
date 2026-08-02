@@ -1,36 +1,20 @@
-# Tri izmene odjednom — meta opisi + meni + Viber napomena
+# Header bug fix — blog-green-canyon-guide (SR + DE)
 
-Primenjeno na AKTUELNU verziju sajta (iz provere), pa se lepo poklapa
-sa onim što je već online (recenzija Fiery Phoenix, hero slike — netaknuti).
+## Sta je bilo pogresno
+U ova dva fajla, header (logo + "nazad" link) je greskom ostao
+kopiran iz EN verzije umesto lokalizovan:
+  - logo je vodio na "/" umesto na "/sr/" odn. "/de/"
+  - "nazad" dugme je pisalo "Tours" umesto "Ture" (sr) / "Touren" (de)
 
-## Šta je unutra (24 fajla: 4 ture x 6 jezika)
+Svi OSTALI blogovi u ta dva jezika su vec bili ispravni — ovo je bio
+izolovan copy-paste propust u jednom fajlu po jeziku.
 
-1. META OPISI (Pamukale, Demre, Green Canyon) — prepravljeni da odgovaraju
-   na prave upite iz Search Console:
-   - Pamukale: "Yes, you can swim in Cleopatra's pool (~15 EUR)"
-   - Demre: Kekova / Sunken City / St Nicholas
-   - Green Canyon: emerald Green Lake
-   OVO je najvažnije — resava Demre 102 prikaza / 3 klika problem.
+## Sta je ispravljeno (2 fajla, po 2 linije svaki)
+- sr/blog-green-canyon-guide.html: href="/sr/", tekst "← Ture"
+- de/blog-green-canyon-guide.html: href="/de/", tekst "← Touren"
 
-2. MENI breakpoint 1024 -> 1200
-   Hamburger se sada pojavljuje ranije (ispod 1200px), meni se vise
-   ne guzva na uskim laptopovima (~1280px).
-
-3. VIBER napomena u booking modalu
-   "Poruka je kopirana — samo je nalepite u aplikaciju." (6 jezika)
-   Resava zbunjenost kod Vibera koji ne prima gotov tekst.
+Nista drugo u fajlovima nije dirano.
 
 ## Kako
-1. Raspakuj u koren repoa (Merge, ne Replace) — prebrisuje 24 fajla
-2. netlify dev -> proveri:
-   - meni na 1280px = hamburger
-   - booking modal ima Viber napomenu
-   - (meta opisi se ne vide u browseru, ali su u kodu)
-3. git add -A && git commit -m "Meta descriptions + menu breakpoint + Viber hint" && git push
-4. Posle push-a: u Search Console -> URL Inspection -> zatrazi reindeksiranje
-   za /pamukkale, /demre-myra-kekova, /green-canyon (da Google brze pokupi nove opise)
-
-## Sto NIJE dirano (vec online, netaknuto)
-- Recenzija Fiery Phoenix + broj 36
-- Hero slike Demre i Green Canyon
-- Chat meni (WhatsApp/Viber/Telegram/VK/MAX)
+Raspakuj u koren repoa (Merge), prebrisuje ta 2 fajla.
+git add -A && git commit -m "Fix header locale bug in green-canyon blog (SR, DE)" && git push
