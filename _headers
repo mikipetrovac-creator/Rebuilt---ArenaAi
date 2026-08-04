@@ -9,3 +9,6 @@
 /favicon.svg
   Content-Type: image/svg+xml
   Cache-Control: public, max-age=604800
+
+/images/*
+  Cache-Control: public, max-age=2592000, immutable

@@ -1,4 +1,5 @@
 User-agent: *
 Allow: /
+Disallow: /mnt/
 
 Sitemap: https://myvalanyatravel.com/sitemap.xml
