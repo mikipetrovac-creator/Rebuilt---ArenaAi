@@ -1,22 +1,24 @@
-# "Ne zaboravite" — tacnija formulacija (6 fajlova)
+# Balon — "samo preko vodica" napomena (6 fajlova)
 
-Stavka "Nesto dodatnog novca za rucak i pice" u "Ne zaboravite" listi
-(Kapadokija, oba paketa - Premium i Budzet) je bila netacna za Premium
-paket, koji vec ima "Svi obroci ukljuceni".
+Ranije je "book via guide on day 1" info postojala SAMO u FAQ.
+Gost koji ne otvori FAQ nije znao KAKO da kupi let balonom, niti
+da mora iskljucivo preko vodica (zastita od ulicnih prevaranata
+u Kapadokiji koji nude "jeftinije" balone).
 
-Promenjeno na generalniju, tacniju formulaciju za oba paketa:
+## Sta je dodato, dva mesta:
 
-SR: Nešto dodatnog novca za piće i vaše lične troškove
-EN: Some extra money for drinks and personal expenses
-RU: Немного дополнительных денег на напитки и личные расходы
-DE: Etwas zusätzliches Geld für Getränke und persönliche Ausgaben
-TR: İçecekler ve kişisel harcamalarınız için ekstra para
-UK: Додаткові гроші на напої та особисті витрати
+1. Price card napomena (Premium paket, odmah pored cene):
+   PRE: "Hot air balloon ride sold separately"
+   SAD: "Hot air balloon ride sold separately — book only through your guide on day 1"
 
-Primenjeno u svih 6 kopija index.html (root + 5 jezika), jer svaka
-kopija nosi kompletan set od 6 prevoda unutar sebe (tako radi
-prekidac jezika na sajtu).
+2. Itinerar, dan 2, stavka o balonu:
+   PRE: "Optional: Hot air balloon ride at sunrise"
+   SAD: "Optional: Hot air balloon ride at sunrise (book only through your guide)"
+
+Prevedeno na svih 6 jezika (EN/RU/DE/TR/UK/SR), primenjeno u svih 6
+kopija index.html (root + 5 jezika), jer svaka nosi kompletan set
+prevoda unutar sebe.
 
 ## Kako
-Raspakuj u koren repoa (Merge/Replace za index.html fajlove).
-git add -A && git commit -m "Fix 'don't forget' note wording (accurate for Premium package)" && git push
+Raspakuj u koren repoa (Replace za index.html fajlove).
+git add -A && git commit -m "Balloon: clarify guide-only booking outside FAQ" && git push
