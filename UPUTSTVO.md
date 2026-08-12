@@ -1,37 +1,37 @@
-# Nove cene Kapadokije — Budget 50€, Premium 100€ (6 fajlova)
+# Nove recenzije + brojac 42 (12 fajlova)
 
-## Nove cene
-- Budget: odrasli 35 -> 50 EUR, dete NEPROMENJENO (25 EUR)
-- Premium: odrasli 90 -> 100 EUR, dete 45 -> 50 EUR
-- Infant (0-3): i dalje besplatno (0 EUR)
+Google profil se u medjuvremenu osvezio i sada pokazuje 42 recenzije
+(bilo je 36), pa je sve uskladjeno sa stvarnim stanjem.
 
-## Sta je azurirano, 12 mesta po fajlu:
-1. JS "pricing" objekat — IZVOR ISTINE za kalkulator, email i WhatsApp poruku
-2. WhatsApp/email poruka template (PREMIUM/BUDGET oznaka sa cenom)
-3. Tab dugmad (Premium/Budget) x2 svaka
-4. "Starting from" price-big prikaz (oba paketa)
-5. "Children"/"Adults" cene u oba paket bloka
-6. Default prikaz cene pre klika (adult-price-display)
-7. "Estimated Total" placeholder
-8. JSON-LD Product schema price (za Google rich snippets)
-9. Meta description + og:description + twitter:description (sve 3 taga)
+## KAPADOKIJA (index.html x 6 jezika)
+Dodate 4 nove recenzije (sve 5 zvezdica):
+1. Merli Kalbus (EN, Estonija) — hvali Yelenu; balon rezervisan PREKO VODICA
+   (direktna potvrda da poruka koju smo dodali na sajt radi)
+2. Ирина Овчинникова (RU)
+3. Dmitry (RU)
+4. Elnara Zakiroglu (RU)
 
-## Sta NIJE dirano (namerno):
-- "Balloon panorama – €35" — OPCIONA aktivnost, slucajno ista cifra kao
-  stara Budget cena. Ovo je zaseban trosak (let balonom + panorama tacka),
-  ne cena ture. Proveril sam da je ostalo netaknuto na svih 6 jezika.
-- "Jeep safari – €50" — isto, opciona aktivnost, slucajno ista cifra kao
-  nova Budget cena. Netaknuto.
-- Ostale opcione aktivnosti (Red Valley €15, Turkish Night €40) — netaknute.
-- Cena za decu na Budget paketu (25 EUR) — po tvom uputstvu, nepromenjena.
+Ukupno 40 citljivih kartica u "Read all" modalu.
+
+### Brojevi
+- Brojac na stranici: 42 (tacan Google broj)
+- Schema reviewCount: 42 (odgovara Google-u — bezbedno za rich snippets)
+- Labela: "Google Reviews" (tacna, jer se broj poklapa)
+
+Napomena: kartica ima 40 a brojac 42 jer 2 recenzije na Google-u
+nemaju napisan tekst (samo zvezdice), pa se ne prikazuju kao kartice.
+
+## PAMUKALE (pamukkale.html x 6 jezika)
+Dodata recenzija Zemfire Valiyeve — ona pise BAS o Pamukkale turi,
+pa pripada toj stranici. Modal recenzija na Pamukkale je do sada bio prazan.
 
 ## Provera
-- Simulacija stvarnog JS kalkulatora potvrdila tacne iznose:
-  Budget 2 odrasla = €100, Budget 2 odrasla+1 dete = €125,
-  Premium 2 odrasla = €200, Premium 2 odrasla+2 dece = €300
-- Svih 6 fajlova: tagovi/JSON-LD validni, prevodi parsiraju
-- Vizuelno provereno oba taba (Budget/Premium) u browseru
+- Kapadokija: 40 kartica, brojac/schema 42, svih 6 jezika
+- Pamukkale: Zemfira dodata, svih 6 jezika
+- Tagovi balansirani, JSON-LD validan u svih 12 fajlova
 
 ## Kako
-Raspakuj u koren repoa (Replace za index.html fajlove).
-git add -A && git commit -m "Update Cappadocia prices: Budget 50 EUR, Premium 100 EUR" && git push
+Raspakuj u koren repoa (Replace).
+git add -A
+git commit -m "Add new reviews, update count to 42"
+git push
