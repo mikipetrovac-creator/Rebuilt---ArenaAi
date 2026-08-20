@@ -4,6 +4,8 @@ exports.handler = async (event) => {
   // Netlify pokreće ovu funkciju za svaku uspešnu formu
   const payload = JSON.parse(event.body).payload;
   const data = payload.data; // Ovde su svi podaci iz forme
+  const formName = payload.form_name; // Netlify-jev identitet forme: 'booking-cappadocia' ili 'ask-question'
+  const isAskQuestion = formName === 'ask-question';
 
   // Tvoja email adresa na koju želiš da stižu rezervacije
   const toEmail = "info@myvalanyatravel.com"; 
@@ -41,7 +43,7 @@ exports.handler = async (event) => {
   const emailHtml = `
     <html>
       <body style="font-family: Arial, sans-serif; color: #333; line-height: 1.4; padding: 20px;">
-        <h2 style="color: #8b0000; margin-bottom: 15px; border-bottom: 2px solid #8b0000; padding-bottom: 5px;">Nova rezervacija sa sajta 🌍</h2>
+        <h2 style="color: #8b0000; margin-bottom: 15px; border-bottom: 2px solid #8b0000; padding-bottom: 5px;">${isAskQuestion ? 'Novo pitanje sa sajta ❓' : 'Nova rezervacija sa sajta 🌍'}</h2>
         <table style="width: 100%; max-width: 600px; border-collapse: collapse; margin-bottom: 20px;">
           ${tableRows}
         </table>
@@ -61,7 +63,9 @@ exports.handler = async (event) => {
       body: JSON.stringify({
         from: "M.Y.V. Booking <system@myvalanyatravel.com>",
         to: [toEmail],
-        subject: `Nova rezervacija: ${data.tour || 'Novi izlet'} - ${data.name || ''}`,
+        subject: isAskQuestion
+          ? `Novo pitanje sa sajta - ${data.name || ''}`
+          : `Nova rezervacija: ${data.tour || 'Novi izlet'} - ${data.name || ''}`,
         html: emailHtml
       })
     });
