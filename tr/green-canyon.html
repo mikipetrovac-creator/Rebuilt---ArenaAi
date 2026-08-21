@@ -1774,8 +1774,14 @@ html{scroll-padding-top:56px}
   <div class="modal-box">
     <div class="modal-icon">💬</div>
     <div class="modal-title" data-i18n="modal.askSuccessTitle">Sorunuz Gönderildi!</div>
-    <div class="modal-text" data-i18n="modal.askSuccessText">Teşekkürler — sorunuzu e-posta yoluyla aldık ve birkaç saat içinde WhatsApp veya e-posta ile yanıt vereceğiz.</div>
-    <button class="modal-close" onclick="closeModalById('askSuccessModal')" data-i18n="modal.askSuccessBtn">Anladım, teşekkürler!</button>
+    <div class="modal-text" data-i18n="modal.askSuccessText">Teşekkürler — sorunuzu e-posta yoluyla aldık ve birkaç saat içinde yanıt vereceğiz.</div>
+    <button class="modal-close" onclick="closeModalById('askSuccessModal')" data-i18n="modal.askSuccessBtn" style="display:block;width:100%;margin:0 0 14px;">Anladım, teşekkürler!</button>
+    <div class="ask-success-channel-prompt" data-i18n="modal.askSuccessChannelPrompt" style="font-size:12px;color:var(--muted);margin:0 0 8px;">Başka bir kanaldan devam etmek ister misiniz?</div>
+    <div style="display:flex;flex-wrap:wrap;gap:8px;justify-content:center;">
+      <button onclick="closeModalById('askSuccessModal'); window.open(window.__pendingAskWaLink||'https://wa.me/905331429037','_blank');" data-i18n="modal.askSuccessWaBtn" style="flex:1;min-width:100px;padding:9px 8px;border:none;border-radius:8px;background:#25d366;color:#fff;font-weight:600;font-size:11px;cursor:pointer;">WhatsApp'tan devam et</button>
+      <button onclick="closeModalById('askSuccessModal'); window.open('viber://chat?number=%2B905331429037','_blank');" data-i18n="modal.askSuccessVbBtn" style="flex:1;min-width:100px;padding:9px 8px;border:none;border-radius:8px;background:#7360F2;color:#fff;font-weight:600;font-size:11px;cursor:pointer;">Viber'dan devam et</button>
+      <button onclick="closeModalById('askSuccessModal'); window.open('https://t.me/+905331429037','_blank');" data-i18n="modal.askSuccessTgBtn" style="flex:1;min-width:100px;padding:9px 8px;border:none;border-radius:8px;background:#26A5E4;color:#fff;font-weight:600;font-size:11px;cursor:pointer;">Telegram'dan devam et</button>
+    </div>
   </div>
 </div>
 
@@ -2148,6 +2154,10 @@ const translations = {
     "modal.greenlake.title": "Lunch at Green Lake",
     "modal.greenlake.text": "After the cruise we drive to a lakeside restaurant at Green Lake for lunch. Afterwards you have free time to swim in the cool, clear water or try your hand at fishing before we head back towards the coast.",
     "modal.alsoSend": "Also send via WhatsApp / Viber (optional)",
+    "modal.askSuccessChannelPrompt": "Prefer to continue elsewhere?",
+    "modal.askSuccessWaBtn": "Continue on WhatsApp",
+    "modal.askSuccessVbBtn": "Continue on Viber",
+    "modal.askSuccessTgBtn": "Continue on Telegram",
     "modal.bookingErrorTitle": "We Couldn't Send Your Booking",
     "modal.bookingErrorText": "Something went wrong and your request wasn't submitted online. Nothing is lost — your details are still here. Please send them to us directly so we don't miss your booking.",
     "modal.bookingErrorWaBtn": "Send via WhatsApp Now",
@@ -2155,7 +2165,7 @@ const translations = {
     "modal.askErrorText": "Something went wrong and your question wasn't submitted online. Nothing is lost — please send it to us directly via WhatsApp instead.",
     "modal.askErrorWaBtn": "Send via WhatsApp Now",
     "modal.askSuccessTitle": "Your Question Has Been Sent!",
-    "modal.askSuccessText": "Thank you — we've received your question by email and will reply via WhatsApp or email within a few hours.",
+    "modal.askSuccessText": "Thank you — we've received your question by email and will reply within a few hours.",
     "modal.askSuccessBtn": "Got it, thanks!",
     "book.chPaste": "Message copied — just paste it into the app."
   },
@@ -2380,6 +2390,10 @@ const translations = {
     "modal.greenlake.title": "Обед на Грин-Лейк",
     "modal.greenlake.text": "После прогулки на яхте мы едем в ресторан на берегу Грин-Лейк на обед. Затем — свободное время: можно искупаться в прохладной прозрачной воде или попробовать порыбачить, прежде чем мы отправимся обратно к побережью.",
     "modal.alsoSend": "Также отправить через WhatsApp / Viber (по желанию)",
+    "modal.askSuccessChannelPrompt": "Хотите продолжить в другом канале?",
+    "modal.askSuccessWaBtn": "Продолжить в WhatsApp",
+    "modal.askSuccessVbBtn": "Продолжить в Viber",
+    "modal.askSuccessTgBtn": "Продолжить в Telegram",
     "modal.bookingErrorTitle": "Не удалось отправить бронирование",
     "modal.bookingErrorText": "Что-то пошло не так, и заявка не была отправлена онлайн. Ничего не потеряно — ваши данные сохранены. Пожалуйста, отправьте их нам напрямую, чтобы мы не пропустили бронирование.",
     "modal.bookingErrorWaBtn": "Отправить через WhatsApp",
@@ -2387,7 +2401,7 @@ const translations = {
     "modal.askErrorText": "Что-то пошло не так, и вопрос не был отправлен онлайн. Ничего не потеряно — пожалуйста, отправьте его нам напрямую через WhatsApp.",
     "modal.askErrorWaBtn": "Отправить через WhatsApp",
     "modal.askSuccessTitle": "Ваш вопрос отправлен!",
-    "modal.askSuccessText": "Спасибо — мы получили ваш вопрос по email и ответим через WhatsApp или email в течение нескольких часов.",
+    "modal.askSuccessText": "Спасибо — мы получили ваш вопрос по email и ответим в течение нескольких часов.",
     "modal.askSuccessBtn": "Понятно, спасибо!",
     "book.chPaste": "Сообщение скопировано — просто вставьте его в приложение."
   },
@@ -2612,6 +2626,10 @@ const translations = {
     "modal.greenlake.title": "Mittagessen am Green Lake",
     "modal.greenlake.text": "Nach der Bootsfahrt fahren wir zu einem Restaurant am Ufer des Green Lake zum Mittagessen. Danach haben Sie Freizeit — schwimmen Sie im kühlen, klaren Wasser oder versuchen Sie sich beim Angeln, bevor es zurück zur Küste geht.",
     "modal.alsoSend": "Auch per WhatsApp / Viber senden (optional)",
+    "modal.askSuccessChannelPrompt": "Lieber anderswo fortfahren?",
+    "modal.askSuccessWaBtn": "Weiter mit WhatsApp",
+    "modal.askSuccessVbBtn": "Weiter mit Viber",
+    "modal.askSuccessTgBtn": "Weiter mit Telegram",
     "modal.bookingErrorTitle": "Buchung konnte nicht gesendet werden",
     "modal.bookingErrorText": "Etwas ist schiefgelaufen und Ihre Anfrage wurde nicht online übermittelt. Nichts ist verloren — Ihre Daten sind noch vorhanden. Bitte senden Sie sie uns direkt, damit wir Ihre Buchung nicht verpassen.",
     "modal.bookingErrorWaBtn": "Jetzt per WhatsApp senden",
@@ -2619,7 +2637,7 @@ const translations = {
     "modal.askErrorText": "Etwas ist schiefgelaufen und Ihre Frage wurde nicht online übermittelt. Nichts ist verloren — bitte senden Sie sie uns stattdessen direkt per WhatsApp.",
     "modal.askErrorWaBtn": "Jetzt per WhatsApp senden",
     "modal.askSuccessTitle": "Ihre Frage wurde gesendet!",
-    "modal.askSuccessText": "Vielen Dank — wir haben Ihre Frage per E-Mail erhalten und antworten innerhalb weniger Stunden per WhatsApp oder E-Mail.",
+    "modal.askSuccessText": "Vielen Dank — wir haben Ihre Frage per E-Mail erhalten und antworten innerhalb weniger Stunden.",
     "modal.askSuccessBtn": "Alles klar, danke!",
     "book.chPaste": "Nachricht kopiert — einfach in die App einfügen."
   },
@@ -2844,6 +2862,10 @@ const translations = {
     "modal.greenlake.title": "Green Lake'te Öğle Yemeği",
     "modal.greenlake.text": "Tekne turundan sonra öğle yemeği için Green Lake kıyısındaki restorana gideriz. Ardından serbest zaman: kıyıya dönmeden önce serin ve berrak suda yüzebilir ya da balık tutmayı deneyebilirsiniz.",
     "modal.alsoSend": "WhatsApp / Viber ile de gönder (isteğe bağlı)",
+    "modal.askSuccessChannelPrompt": "Başka bir kanaldan devam etmek ister misiniz?",
+    "modal.askSuccessWaBtn": "WhatsApp'tan devam et",
+    "modal.askSuccessVbBtn": "Viber'dan devam et",
+    "modal.askSuccessTgBtn": "Telegram'dan devam et",
     "modal.bookingErrorTitle": "Rezervasyonunuz Gönderilemedi",
     "modal.bookingErrorText": "Bir şeyler ters gitti ve talebiniz online olarak gönderilemedi. Hiçbir şey kaybolmadı — bilgileriniz hâlâ burada. Rezervasyonunuzu kaçırmamamız için lütfen bize doğrudan gönderin.",
     "modal.bookingErrorWaBtn": "Şimdi WhatsApp ile Gönder",
@@ -2851,7 +2873,7 @@ const translations = {
     "modal.askErrorText": "Bir şeyler ters gitti ve sorunuz online olarak gönderilemedi. Hiçbir şey kaybolmadı — lütfen bunun yerine doğrudan WhatsApp üzerinden gönderin.",
     "modal.askErrorWaBtn": "Şimdi WhatsApp ile Gönder",
     "modal.askSuccessTitle": "Sorunuz Gönderildi!",
-    "modal.askSuccessText": "Teşekkürler — sorunuzu e-posta yoluyla aldık ve birkaç saat içinde WhatsApp veya e-posta ile yanıt vereceğiz.",
+    "modal.askSuccessText": "Teşekkürler — sorunuzu e-posta yoluyla aldık ve birkaç saat içinde yanıt vereceğiz.",
     "modal.askSuccessBtn": "Anladım, teşekkürler!",
     "book.chPaste": "Mesaj kopyalandı — uygulamaya yapıştırmanız yeterli."
   },
@@ -3076,6 +3098,10 @@ const translations = {
     "modal.greenlake.title": "Обід на Грін-Лейк",
     "modal.greenlake.text": "Після прогулянки на яхті ми їдемо до ресторану на березі Грін-Лейк на обід. Потім — вільний час: можна скупатися в прохолодній прозорій воді або спробувати порибалити, перш ніж ми вирушимо назад до узбережжя.",
     "modal.alsoSend": "Також надіслати через WhatsApp / Viber (за бажанням)",
+    "modal.askSuccessChannelPrompt": "Бажаєте продовжити в іншому каналі?",
+    "modal.askSuccessWaBtn": "Продовжити у WhatsApp",
+    "modal.askSuccessVbBtn": "Продовжити у Viber",
+    "modal.askSuccessTgBtn": "Продовжити у Telegram",
     "modal.bookingErrorTitle": "Не вдалося надіслати бронювання",
     "modal.bookingErrorText": "Щось пішло не так, і заявку не було надіслано онлайн. Нічого не втрачено — ваші дані збережені. Будь ласка, надішліть їх нам напряму, щоб ми не пропустили бронювання.",
     "modal.bookingErrorWaBtn": "Надіслати через WhatsApp",
@@ -3083,7 +3109,7 @@ const translations = {
     "modal.askErrorText": "Щось пішло не так, і запитання не було надіслано онлайн. Нічого не втрачено — будь ласка, надішліть його нам напряму через WhatsApp.",
     "modal.askErrorWaBtn": "Надіслати через WhatsApp",
     "modal.askSuccessTitle": "Ваше запитання надіслано!",
-    "modal.askSuccessText": "Дякуємо — ми отримали ваше запитання електронною поштою і відповімо через WhatsApp або email протягом кількох годин.",
+    "modal.askSuccessText": "Дякуємо — ми отримали ваше запитання електронною поштою і відповімо протягом кількох годин.",
     "modal.askSuccessBtn": "Зрозуміло, дякую!",
     "book.chPaste": "Повідомлення скопійовано — просто вставте його в застосунок."
   },
@@ -3308,6 +3334,10 @@ const translations = {
     "modal.greenlake.title": "Ručak na Zelenom jezeru",
     "modal.greenlake.text": "Posle krstarenja vozimo se do restorana na obali Zelenog jezera na ručak. Zatim sledi slobodno vreme — možete plivati u hladnoj, bistroj vodi ili okušati sreću u pecanju pre povratka ka obali.",
     "modal.alsoSend": "Pošalji i preko WhatsApp / Viber (opciono)",
+    "modal.askSuccessChannelPrompt": "Želite da nastavite na drugom kanalu?",
+    "modal.askSuccessWaBtn": "Nastavi na WhatsApp-u",
+    "modal.askSuccessVbBtn": "Nastavi na Viber-u",
+    "modal.askSuccessTgBtn": "Nastavi na Telegram-u",
     "modal.bookingErrorTitle": "Rezervacija nije poslata",
     "modal.bookingErrorText": "Nešto je pošlo po zlu i vaš zahtev nije poslat onlajn. Ništa nije izgubljeno — vaši podaci su i dalje tu. Molimo pošaljite ih direktno nama kako ne bismo propustili vašu rezervaciju.",
     "modal.bookingErrorWaBtn": "Pošalji preko WhatsApp-a odmah",
@@ -3315,7 +3345,7 @@ const translations = {
     "modal.askErrorText": "Nešto je pošlo po zlu i vaše pitanje nije poslato onlajn. Ništa nije izgubljeno — molimo pošaljite ga direktno preko WhatsApp-a.",
     "modal.askErrorWaBtn": "Pošalji preko WhatsApp-a odmah",
     "modal.askSuccessTitle": "Vaše pitanje je poslato!",
-    "modal.askSuccessText": "Hvala — primili smo vaše pitanje putem email-a i odgovorićemo preko WhatsApp-a ili email-a u roku od nekoliko sati.",
+    "modal.askSuccessText": "Hvala — primili smo vaše pitanje putem email-a i odgovorićemo u roku od nekoliko sati.",
     "modal.askSuccessBtn": "Razumem, hvala!",
     "book.chPaste": "Poruka je kopirana — samo je nalepite u aplikaciju."
   }
@@ -3412,7 +3442,6 @@ function submitAskForm() {
 
   sendAskEmail({ tour: 'Green Canyon - Question', name: name, email: email, phone: phone || '', notes: message })
     .then(function () {
-      window.open(window.__pendingAskWaLink, '_blank');
       const modal = document.getElementById('askSuccessModal');
       if (modal) { modal.classList.add('open'); document.body.style.overflow = 'hidden'; }
       document.getElementById('ask-name').value = '';
