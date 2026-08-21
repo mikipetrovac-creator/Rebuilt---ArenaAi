@@ -4,8 +4,8 @@ exports.handler = async (event) => {
   // Netlify pokreće ovu funkciju za svaku uspešnu formu
   const payload = JSON.parse(event.body).payload;
   const data = payload.data; // Ovde su svi podaci iz forme
-  const formName = payload.form_name; // Netlify-jev identitet forme: 'booking-cappadocia' ili 'ask-question'
-  const isAskQuestion = formName === 'ask-question';
+  const formName = payload.form_name; // Netlify-jev identitet forme: 'booking-*' ili 'ask-*'
+  const isAskQuestion = typeof formName === 'string' && formName.startsWith('ask-');
 
   // Tvoja email adresa na koju želiš da stižu rezervacije
   const toEmail = "info@myvalanyatravel.com"; 

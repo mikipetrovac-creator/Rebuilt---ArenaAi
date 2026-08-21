@@ -1082,6 +1082,11 @@ html{scroll-padding-top:56px}
 <input type="text" name="adults"><input type="text" name="children"><input type="text" name="infants">
 <input type="text" name="total"><textarea name="notes"></textarea><input type="text" name="bot-field">
 </form>
+<form name="ask-green-canyon" data-netlify="true" data-netlify-honeypot="bot-field-ask" hidden>
+  <input type="text" name="tour"><input type="text" name="name"><input type="email" name="email">
+  <input type="text" name="phone"><textarea name="notes"></textarea>
+  <input type="text" name="bot-field-ask">
+</form>
 
 
 <!-- ================================
@@ -1723,7 +1728,7 @@ html{scroll-padding-top:56px}
     <div class="modal-icon">🎉</div>
     <div class="modal-title" data-i18n="modal.successTitle">Zahtev poslat!</div>
     <div class="modal-text" data-i18n="modal.successText">Primili smo vaše podatke i potvrdićemo putem WhatsApp-a u roku od 2 sata.</div>
-    <button class="modal-also-wa" onclick="openBookChannels(window.__lastBooking||'');" data-i18n="modal.alsoSend" style="display:block;width:100%;margin:0 0 10px;padding:12px;border:none;border-radius:10px;background:#25d366;color:#fff;font-weight:700;font-size:15px;cursor:pointer">Pošalji i preko WhatsApp / Viber (opciono)</button>
+    <button class="modal-also-wa" onclick="closeModalById('successModal'); openBookChannels(window.__lastBooking||'');" data-i18n="modal.alsoSend" style="display:block;width:100%;margin:0 0 10px;padding:12px;border:none;border-radius:10px;background:#25d366;color:#fff;font-weight:700;font-size:15px;cursor:pointer">Pošalji i preko WhatsApp / Viber (opciono)</button>
     <button class="modal-close" onclick="document.getElementById('successModal').classList.remove('open');document.body.style.overflow=''" data-i18n="modal.successBtn">Razumem, hvala!</button>
   </div>
 </div>
@@ -1742,6 +1747,35 @@ html{scroll-padding-top:56px}
     <div class="book-ch-paste" data-i18n="book.chPaste">Poruka je kopirana — samo je nalepite u aplikaciju.</div>
     <div class="book-ch-hint" data-i18n="book.chHint">Odgovaramo u roku od ~2 sata.</div>
     <button class="modal-close" onclick="closeModalById('bookChannelModal')" data-i18n="book.chClose" style="margin-top:16px;">Zatvori</button>
+  </div>
+</div>
+
+<div class="modal-overlay" id="bookingErrorModal">
+  <div class="modal-box">
+    <div class="modal-icon">⚠️</div>
+    <div class="modal-title" data-i18n="modal.bookingErrorTitle">Rezervacija nije poslata</div>
+    <div class="modal-text" data-i18n="modal.bookingErrorText">Nešto je pošlo po zlu i vaš zahtev nije poslat onlajn. Ništa nije izgubljeno — vaši podaci su i dalje tu. Molimo pošaljite ih direktno nama kako ne bismo propustili vašu rezervaciju.</div>
+    <button class="modal-also-wa" onclick="closeModalById('bookingErrorModal'); openBookChannels(window.__lastBooking||'');" data-i18n="modal.bookingErrorWaBtn" style="display:block;width:100%;margin:0 0 10px;padding:12px;border:none;border-radius:10px;background:#25d366;color:#fff;font-weight:700;font-size:15px;cursor:pointer">Pošalji preko WhatsApp-a odmah</button>
+    <button class="modal-close" onclick="closeModalById('bookingErrorModal')" data-i18n="book.chClose">Zatvori</button>
+  </div>
+</div>
+
+<div class="modal-overlay" id="askErrorModal">
+  <div class="modal-box">
+    <div class="modal-icon">⚠️</div>
+    <div class="modal-title" data-i18n="modal.askErrorTitle">Pitanje nije poslato</div>
+    <div class="modal-text" data-i18n="modal.askErrorText">Nešto je pošlo po zlu i vaše pitanje nije poslato onlajn. Ništa nije izgubljeno — molimo pošaljite ga direktno preko WhatsApp-a.</div>
+    <button class="modal-also-wa" onclick="closeModalById('askErrorModal'); window.open(window.__pendingAskWaLink||'https://wa.me/905331429037','_blank');" data-i18n="modal.askErrorWaBtn" style="display:block;width:100%;margin:0 0 10px;padding:12px;border:none;border-radius:10px;background:#25d366;color:#fff;font-weight:700;font-size:15px;cursor:pointer">Pošalji preko WhatsApp-a odmah</button>
+    <button class="modal-close" onclick="closeModalById('askErrorModal')" data-i18n="book.chClose">Zatvori</button>
+  </div>
+</div>
+
+<div class="modal-overlay" id="askSuccessModal">
+  <div class="modal-box">
+    <div class="modal-icon">💬</div>
+    <div class="modal-title" data-i18n="modal.askSuccessTitle">Vaše pitanje je poslato!</div>
+    <div class="modal-text" data-i18n="modal.askSuccessText">Hvala — primili smo vaše pitanje putem email-a i odgovorićemo preko WhatsApp-a ili email-a u roku od nekoliko sati.</div>
+    <button class="modal-close" onclick="closeModalById('askSuccessModal')" data-i18n="modal.askSuccessBtn">Razumem, hvala!</button>
   </div>
 </div>
 
@@ -2114,6 +2148,15 @@ const translations = {
     "modal.greenlake.title": "Lunch at Green Lake",
     "modal.greenlake.text": "After the cruise we drive to a lakeside restaurant at Green Lake for lunch. Afterwards you have free time to swim in the cool, clear water or try your hand at fishing before we head back towards the coast.",
     "modal.alsoSend": "Also send via WhatsApp / Viber (optional)",
+    "modal.bookingErrorTitle": "We Couldn't Send Your Booking",
+    "modal.bookingErrorText": "Something went wrong and your request wasn't submitted online. Nothing is lost — your details are still here. Please send them to us directly so we don't miss your booking.",
+    "modal.bookingErrorWaBtn": "Send via WhatsApp Now",
+    "modal.askErrorTitle": "We Couldn't Send Your Question",
+    "modal.askErrorText": "Something went wrong and your question wasn't submitted online. Nothing is lost — please send it to us directly via WhatsApp instead.",
+    "modal.askErrorWaBtn": "Send via WhatsApp Now",
+    "modal.askSuccessTitle": "Your Question Has Been Sent!",
+    "modal.askSuccessText": "Thank you — we've received your question by email and will reply via WhatsApp or email within a few hours.",
+    "modal.askSuccessBtn": "Got it, thanks!",
     "book.chPaste": "Message copied — just paste it into the app."
   },
   "ru": {
@@ -2337,6 +2380,15 @@ const translations = {
     "modal.greenlake.title": "Обед на Грин-Лейк",
     "modal.greenlake.text": "После прогулки на яхте мы едем в ресторан на берегу Грин-Лейк на обед. Затем — свободное время: можно искупаться в прохладной прозрачной воде или попробовать порыбачить, прежде чем мы отправимся обратно к побережью.",
     "modal.alsoSend": "Также отправить через WhatsApp / Viber (по желанию)",
+    "modal.bookingErrorTitle": "Не удалось отправить бронирование",
+    "modal.bookingErrorText": "Что-то пошло не так, и заявка не была отправлена онлайн. Ничего не потеряно — ваши данные сохранены. Пожалуйста, отправьте их нам напрямую, чтобы мы не пропустили бронирование.",
+    "modal.bookingErrorWaBtn": "Отправить через WhatsApp",
+    "modal.askErrorTitle": "Не удалось отправить вопрос",
+    "modal.askErrorText": "Что-то пошло не так, и вопрос не был отправлен онлайн. Ничего не потеряно — пожалуйста, отправьте его нам напрямую через WhatsApp.",
+    "modal.askErrorWaBtn": "Отправить через WhatsApp",
+    "modal.askSuccessTitle": "Ваш вопрос отправлен!",
+    "modal.askSuccessText": "Спасибо — мы получили ваш вопрос по email и ответим через WhatsApp или email в течение нескольких часов.",
+    "modal.askSuccessBtn": "Понятно, спасибо!",
     "book.chPaste": "Сообщение скопировано — просто вставьте его в приложение."
   },
   "de": {
@@ -2560,6 +2612,15 @@ const translations = {
     "modal.greenlake.title": "Mittagessen am Green Lake",
     "modal.greenlake.text": "Nach der Bootsfahrt fahren wir zu einem Restaurant am Ufer des Green Lake zum Mittagessen. Danach haben Sie Freizeit — schwimmen Sie im kühlen, klaren Wasser oder versuchen Sie sich beim Angeln, bevor es zurück zur Küste geht.",
     "modal.alsoSend": "Auch per WhatsApp / Viber senden (optional)",
+    "modal.bookingErrorTitle": "Buchung konnte nicht gesendet werden",
+    "modal.bookingErrorText": "Etwas ist schiefgelaufen und Ihre Anfrage wurde nicht online übermittelt. Nichts ist verloren — Ihre Daten sind noch vorhanden. Bitte senden Sie sie uns direkt, damit wir Ihre Buchung nicht verpassen.",
+    "modal.bookingErrorWaBtn": "Jetzt per WhatsApp senden",
+    "modal.askErrorTitle": "Frage konnte nicht gesendet werden",
+    "modal.askErrorText": "Etwas ist schiefgelaufen und Ihre Frage wurde nicht online übermittelt. Nichts ist verloren — bitte senden Sie sie uns stattdessen direkt per WhatsApp.",
+    "modal.askErrorWaBtn": "Jetzt per WhatsApp senden",
+    "modal.askSuccessTitle": "Ihre Frage wurde gesendet!",
+    "modal.askSuccessText": "Vielen Dank — wir haben Ihre Frage per E-Mail erhalten und antworten innerhalb weniger Stunden per WhatsApp oder E-Mail.",
+    "modal.askSuccessBtn": "Alles klar, danke!",
     "book.chPaste": "Nachricht kopiert — einfach in die App einfügen."
   },
   "tr": {
@@ -2783,6 +2844,15 @@ const translations = {
     "modal.greenlake.title": "Green Lake'te Öğle Yemeği",
     "modal.greenlake.text": "Tekne turundan sonra öğle yemeği için Green Lake kıyısındaki restorana gideriz. Ardından serbest zaman: kıyıya dönmeden önce serin ve berrak suda yüzebilir ya da balık tutmayı deneyebilirsiniz.",
     "modal.alsoSend": "WhatsApp / Viber ile de gönder (isteğe bağlı)",
+    "modal.bookingErrorTitle": "Rezervasyonunuz Gönderilemedi",
+    "modal.bookingErrorText": "Bir şeyler ters gitti ve talebiniz online olarak gönderilemedi. Hiçbir şey kaybolmadı — bilgileriniz hâlâ burada. Rezervasyonunuzu kaçırmamamız için lütfen bize doğrudan gönderin.",
+    "modal.bookingErrorWaBtn": "Şimdi WhatsApp ile Gönder",
+    "modal.askErrorTitle": "Sorunuz Gönderilemedi",
+    "modal.askErrorText": "Bir şeyler ters gitti ve sorunuz online olarak gönderilemedi. Hiçbir şey kaybolmadı — lütfen bunun yerine doğrudan WhatsApp üzerinden gönderin.",
+    "modal.askErrorWaBtn": "Şimdi WhatsApp ile Gönder",
+    "modal.askSuccessTitle": "Sorunuz Gönderildi!",
+    "modal.askSuccessText": "Teşekkürler — sorunuzu e-posta yoluyla aldık ve birkaç saat içinde WhatsApp veya e-posta ile yanıt vereceğiz.",
+    "modal.askSuccessBtn": "Anladım, teşekkürler!",
     "book.chPaste": "Mesaj kopyalandı — uygulamaya yapıştırmanız yeterli."
   },
   "uk": {
@@ -3006,6 +3076,15 @@ const translations = {
     "modal.greenlake.title": "Обід на Грін-Лейк",
     "modal.greenlake.text": "Після прогулянки на яхті ми їдемо до ресторану на березі Грін-Лейк на обід. Потім — вільний час: можна скупатися в прохолодній прозорій воді або спробувати порибалити, перш ніж ми вирушимо назад до узбережжя.",
     "modal.alsoSend": "Також надіслати через WhatsApp / Viber (за бажанням)",
+    "modal.bookingErrorTitle": "Не вдалося надіслати бронювання",
+    "modal.bookingErrorText": "Щось пішло не так, і заявку не було надіслано онлайн. Нічого не втрачено — ваші дані збережені. Будь ласка, надішліть їх нам напряму, щоб ми не пропустили бронювання.",
+    "modal.bookingErrorWaBtn": "Надіслати через WhatsApp",
+    "modal.askErrorTitle": "Не вдалося надіслати запитання",
+    "modal.askErrorText": "Щось пішло не так, і запитання не було надіслано онлайн. Нічого не втрачено — будь ласка, надішліть його нам напряму через WhatsApp.",
+    "modal.askErrorWaBtn": "Надіслати через WhatsApp",
+    "modal.askSuccessTitle": "Ваше запитання надіслано!",
+    "modal.askSuccessText": "Дякуємо — ми отримали ваше запитання електронною поштою і відповімо через WhatsApp або email протягом кількох годин.",
+    "modal.askSuccessBtn": "Зрозуміло, дякую!",
     "book.chPaste": "Повідомлення скопійовано — просто вставте його в застосунок."
   },
   "sr": {
@@ -3229,6 +3308,15 @@ const translations = {
     "modal.greenlake.title": "Ručak na Zelenom jezeru",
     "modal.greenlake.text": "Posle krstarenja vozimo se do restorana na obali Zelenog jezera na ručak. Zatim sledi slobodno vreme — možete plivati u hladnoj, bistroj vodi ili okušati sreću u pecanju pre povratka ka obali.",
     "modal.alsoSend": "Pošalji i preko WhatsApp / Viber (opciono)",
+    "modal.bookingErrorTitle": "Rezervacija nije poslata",
+    "modal.bookingErrorText": "Nešto je pošlo po zlu i vaš zahtev nije poslat onlajn. Ništa nije izgubljeno — vaši podaci su i dalje tu. Molimo pošaljite ih direktno nama kako ne bismo propustili vašu rezervaciju.",
+    "modal.bookingErrorWaBtn": "Pošalji preko WhatsApp-a odmah",
+    "modal.askErrorTitle": "Pitanje nije poslato",
+    "modal.askErrorText": "Nešto je pošlo po zlu i vaše pitanje nije poslato onlajn. Ništa nije izgubljeno — molimo pošaljite ga direktno preko WhatsApp-a.",
+    "modal.askErrorWaBtn": "Pošalji preko WhatsApp-a odmah",
+    "modal.askSuccessTitle": "Vaše pitanje je poslato!",
+    "modal.askSuccessText": "Hvala — primili smo vaše pitanje putem email-a i odgovorićemo preko WhatsApp-a ili email-a u roku od nekoliko sati.",
+    "modal.askSuccessBtn": "Razumem, hvala!",
     "book.chPaste": "Poruka je kopirana — samo je nalepite u aplikaciju."
   }
 };
@@ -3294,6 +3382,15 @@ function closeModalOutside(event, modalId) {
   }
 }
 
+function sendAskEmail(d) {
+  var body = new URLSearchParams(Object.assign({'form-name':'ask-green-canyon'}, d)).toString();
+  return fetch('/', { method:'POST', headers:{'Content-Type':'application/x-www-form-urlencoded'}, body: body })
+    .then(function(response) {
+      if (!response.ok) { throw new Error('Ask form submission failed with status ' + response.status); }
+      return response;
+    });
+}
+
 function submitAskForm() {
   const name = document.getElementById('ask-name').value.trim();
   const email = document.getElementById('ask-email').value.trim();
@@ -3311,18 +3408,23 @@ function submitAskForm() {
                (phone ? `*Phone:* ${encodeURIComponent(phone)}%0A` : '') +
                `%0A*Question:*%0A${encodeURIComponent(message)}`;
 
-  window.open(`https://wa.me/905331429037?text=${text}`, '_blank');
+  window.__pendingAskWaLink = `https://wa.me/905331429037?text=${text}`;
 
-  const modal = document.getElementById('successModal');
-  if (modal) {
-    modal.classList.add('open');
-    document.body.style.overflow = 'hidden';
-  }
-
-  document.getElementById('ask-name').value = '';
-  document.getElementById('ask-email').value = '';
-  document.getElementById('ask-phone').value = '';
-  document.getElementById('ask-message').value = '';
+  sendAskEmail({ tour: 'Green Canyon - Question', name: name, email: email, phone: phone || '', notes: message })
+    .then(function () {
+      window.open(window.__pendingAskWaLink, '_blank');
+      const modal = document.getElementById('askSuccessModal');
+      if (modal) { modal.classList.add('open'); document.body.style.overflow = 'hidden'; }
+      document.getElementById('ask-name').value = '';
+      document.getElementById('ask-email').value = '';
+      document.getElementById('ask-phone').value = '';
+      document.getElementById('ask-message').value = '';
+    })
+    .catch(function (err) {
+      console.error('Ask form submission failed:', err);
+      const errModal = document.getElementById('askErrorModal');
+      if (errModal) { errModal.classList.add('open'); document.body.style.overflow = 'hidden'; }
+    });
 }
 
 function toggleFaq(btn) {
@@ -3427,7 +3529,11 @@ function openBookChannels(encText) {
 
 function sendBookingEmail(d) {
   var body = new URLSearchParams(Object.assign({'form-name':'booking-green-canyon'}, d)).toString();
-  return fetch('/', { method:'POST', headers:{'Content-Type':'application/x-www-form-urlencoded'}, body: body }).catch(function(e){});
+  return fetch('/', { method:'POST', headers:{'Content-Type':'application/x-www-form-urlencoded'}, body: body })
+    .then(function(response) {
+      if (!response.ok) { throw new Error('Booking submission failed with status ' + response.status); }
+      return response;
+    });
 }
 function submitBooking(){
   const name = document.getElementById('form-name').value.trim();
@@ -3457,12 +3563,19 @@ function submitBooking(){
     (notes ? `%0A*Notes:* ${encodeURIComponent(notes)}` : '');
 
 
-  // Sacuvaj lead PRE otvaranja WhatsApp/Viber/Telegram — da se ne izgubi ako korisnik ne posalje poruku
+  window.__lastBooking = text;
+
   sendBookingEmail({
     tour:'Green Canyon', name:name, phone:phone, date:date, pickup:pickup, hotel:hotel,
     adults:adults, children:children, infants:infants, total:total, notes:notes||''
+  }).then(function () {
+    const modal = document.getElementById('successModal');
+    if (modal) { modal.classList.add('open'); document.body.style.overflow = 'hidden'; }
+  }).catch(function (err) {
+    console.error('Booking submission failed:', err);
+    const errModal = document.getElementById('bookingErrorModal');
+    if (errModal) { errModal.classList.add('open'); document.body.style.overflow = 'hidden'; }
   });
-  window.__lastBooking = text;
 }
 
 // ============================================
