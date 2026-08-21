@@ -14,6 +14,7 @@ exports.handler = async (event) => {
   let tableRows = "";
   const fields = [
     { label: "Tour/Package", key: "tour" },
+    { label: "Package", key: "package" },
     { label: "Client Name", key: "name" },
     { label: "Phone", key: "phone" },
     { label: "Date", key: "date" },
