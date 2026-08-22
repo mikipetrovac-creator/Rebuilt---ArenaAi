@@ -823,12 +823,6 @@ footer{background:var(--dark);color:rgba(255,255,255,.7);padding:60px 40px 30px}
 .write-review-title{font-size:23px;font-weight:800;color:var(--dark);margin-bottom:8px}
 .write-review-sub{color:var(--muted);font-size:15px;margin-bottom:24px;line-height:1.55}
 .write-review .form-group{text-align:left}
-.rf-rating{display:flex;align-items:center;justify-content:center;gap:12px;margin:4px 0 16px;flex-wrap:wrap}
-.rf-rating-label{font-weight:700;color:var(--dark)}
-.star-pick{display:inline-flex;gap:5px;font-size:32px;line-height:1;cursor:pointer;color:#dcdcdc;user-select:none}
-.star-pick span{transition:transform .1s ease,color .15s ease}
-.star-pick span:hover{transform:scale(1.15)}
-.star-pick span.active{color:var(--gold)}
 
 /* Centrirani naslovi sekcija (sve sirine) */
 #tour-details > .container > .section-tag,#tour-details > .container > .section-title,#tour-details > .container > .section-sub,#itinerary > .container > .section-tag,#itinerary > .container > .section-title,#itinerary > .container > .section-sub,#gallery > .container > .section-tag,#gallery > .container > .section-title,#reviews > .container > .section-tag,#reviews > .container > .section-title,#faq > .container > .section-tag,#faq > .container > .section-title,#faq > .container > .section-sub{text-align:center;margin-left:auto;margin-right:auto}
@@ -1628,14 +1622,6 @@ html{scroll-padding-top:56px}
   </div>
 </div>
 
-<div class="modal-overlay" id="reviewSuccessModal">
-  <div class="modal-box">
-    <div class="modal-icon">&#11088;</div>
-    <div class="modal-title" data-i18n="modal.reviewTitle">Дякуємо за ваш відгук!</div>
-    <div class="modal-text" data-i18n="modal.reviewText">Ми щиро вдячні, що ви поділилися враженнями. Ваш відгук надіслано нам через WhatsApp і допоможе майбутнім мандрівникам зробити вибір.</div>
-    <button class="modal-close" onclick="closeReviewSuccess()" data-i18n="modal.reviewBtn">Будь ласка!</button>
-  </div>
-</div>
 
 
 <!-- ================================
@@ -2395,9 +2381,6 @@ const translations = {
     "writeReview.textPh": "Tell us about your experience...",
     "writeReview.submitBtn": "Review us on Google →",
     "writeReview.note": "Opens Google in a new tab, where you can leave your review.",
-    "modal.reviewTitle": "Thank You for Your Review!",
-    "modal.reviewText": "We truly appreciate you sharing your experience. Your review has been sent to us via WhatsApp and helps future travelers choose with confidence.",
-    "modal.reviewBtn": "You're welcome!",
     "ask.tag": "CONTACT",
     "ask.title": "Still Have Questions?",
     "ask.subtitle": "Our team is happy to help. Reach out with any question about the Cappadocia tour — pickup, languages, special requests, anything.",
@@ -2776,9 +2759,6 @@ const translations = {
     "writeReview.textPh": "Расскажите о ваших впечатлениях...",
     "writeReview.submitBtn": "Оставьте отзыв в Google →",
     "writeReview.note": "Откроется Google в новой вкладке, где вы сможете оставить отзыв.",
-    "modal.reviewTitle": "Спасибо за ваш отзыв!",
-    "modal.reviewText": "Мы искренне благодарны за то, что вы поделились впечатлениями. Ваш отзыв отправлен нам через WhatsApp и поможет будущим путешественникам сделать выбор.",
-    "modal.reviewBtn": "Пожалуйста!",
     "ask.tag": "КОНТАКТ",
     "ask.title": "Остались вопросы?",
     "ask.subtitle": "Наша команда с радостью поможет. Обращайтесь с любыми вопросами о туре по Каппадокии — трансфер, языки, особые пожелания, что угодно.",
@@ -3157,9 +3137,6 @@ const translations = {
     "writeReview.textPh": "Deneyiminizi bizimle paylaşın...",
     "writeReview.submitBtn": "Google'da bizi değerlendirin →",
     "writeReview.note": "Yeni sekmede Google açılır, yorumunuzu orada bırakabilirsiniz.",
-    "modal.reviewTitle": "Yorumunuz İçin Teşekkürler!",
-    "modal.reviewText": "Deneyiminizi paylaştığınız için içtenlikle teşekkür ederiz. Yorumunuz WhatsApp üzerinden bize ulaştı ve gelecekteki gezginlerin güvenle seçim yapmasına yardımcı olur.",
-    "modal.reviewBtn": "Rica ederiz!",
     "ask.tag": "İLETİŞİM",
     "ask.title": "Hâlâ Sorularınız mı Var?",
     "ask.subtitle": "Ekibimiz yardımcı olmaktan mutluluk duyar. Kapadokya turu hakkında herhangi bir sorunuz için bize ulaşın — alış noktası, diller, özel istekler, her şey.",
@@ -3538,9 +3515,6 @@ const translations = {
     "writeReview.textPh": "Розкажіть про ваші враження...",
     "writeReview.submitBtn": "Залишіть відгук у Google →",
     "writeReview.note": "Відкриється Google у новій вкладці, де ви зможете залишити відгук.",
-    "modal.reviewTitle": "Дякуємо за ваш відгук!",
-    "modal.reviewText": "Ми щиро вдячні, що ви поділилися враженнями. Ваш відгук надіслано нам через WhatsApp і допоможе майбутнім мандрівникам зробити вибір.",
-    "modal.reviewBtn": "Будь ласка!",
     "ask.tag": "КОНТАКТ",
     "ask.title": "Залишилися питання?",
     "ask.subtitle": "Наша команда з радістю допоможе. Звертайтеся з будь-якими питаннями про тур до Каппадокії — трансфер, мови, особливі побажання, що завгодно.",
@@ -3919,9 +3893,6 @@ const translations = {
     "writeReview.textPh": "Erzählen Sie uns von Ihrer Erfahrung...",
     "writeReview.submitBtn": "Bewerten Sie uns auf Google →",
     "writeReview.note": "Öffnet Google in einem neuen Tab, wo Sie Ihre Bewertung hinterlassen können.",
-    "modal.reviewTitle": "Vielen Dank für Ihre Bewertung!",
-    "modal.reviewText": "Wir schätzen es sehr, dass Sie Ihre Erfahrung teilen. Ihre Bewertung wurde uns per WhatsApp gesendet und hilft zukünftigen Reisenden bei der Entscheidung.",
-    "modal.reviewBtn": "Gern geschehen!",
     "ask.tag": "KONTAKT",
     "ask.title": "Noch Fragen?",
     "ask.subtitle": "Unser Team hilft Ihnen gerne. Stellen Sie uns jede Frage zur Kappadokien-Tour — Abholung, Sprachen, besondere Wünsche, alles.",
@@ -4300,9 +4271,6 @@ const translations = {
     "writeReview.textPh": "Ispričajte nam o svom iskustvu...",
     "writeReview.submitBtn": "Ocenite nas na Google-u →",
     "writeReview.note": "Otvara Google u novom tabu, gde možete da ostavite recenziju.",
-    "modal.reviewTitle": "Hvala na vašoj recenziji!",
-    "modal.reviewText": "Iskreno cenimo što ste podelili svoj utisak. Vaša recenzija nam je poslata preko WhatsApp-a i pomaže budućim putnicima da se sa sigurnošću odluče.",
-    "modal.reviewBtn": "Nema na čemu!",
     "ask.tag": "KONTAKT",
     "ask.title": "Imate još pitanja?",
     "ask.subtitle": "Naš tim će vam rado pomoći. Obratite nam se sa bilo kojim pitanjem o turi po Kapadokiji — preuzimanje, jezici, posebni zahtevi, bilo šta.",
@@ -5149,32 +5117,6 @@ document.addEventListener('DOMContentLoaded', function() {
   calcTotal();
 });
 
-/* ===== WRITE A REVIEW ===== */
-let revStars = 0;
-function setStars(n){
-  revStars = n;
-  document.querySelectorAll('#starPick span').forEach(function(s,i){ s.classList.toggle('active', i < n); });
-}
-function submitReview(){
-  var name = document.getElementById('rev-name').value.trim();
-  var country = document.getElementById('rev-country').value.trim();
-  var text = document.getElementById('rev-text').value.trim();
-  if(!name || !text || revStars === 0){ alert('Please add your name, a star rating, and your review.'); return; }
-  var stars = '\u2605'.repeat(revStars) + '\u2606'.repeat(5-revStars);
-  var msg = 'New traveler review!%0A%0A' +
-            '*Name:* ' + encodeURIComponent(name) + '%0A' +
-            (country ? '*Country:* ' + encodeURIComponent(country) + '%0A' : '') +
-            '*Rating:* ' + encodeURIComponent(stars) + ' (' + revStars + '/5)%0A%0A' +
-            '*Review:*%0A' + encodeURIComponent(text);
-  window.open('https://wa.me/905331429037?text=' + msg, '_blank');
-  var m = document.getElementById('reviewSuccessModal');
-  if(m){ m.classList.add('open'); document.body.style.overflow = 'hidden'; }
-  document.getElementById('rev-name').value = '';
-  document.getElementById('rev-country').value = '';
-  document.getElementById('rev-text').value = '';
-  setStars(0);
-}
-function closeReviewSuccess(){ var m = document.getElementById('reviewSuccessModal'); if(m){ m.classList.remove('open'); document.body.style.overflow = ''; } }
 
 (function(){
   var h=document.querySelector('.site-header');
