@@ -1,0 +1,58 @@
+============================================================
+  VISEJEZICNE STRANE — uputstvo (M.Y.V. Alanya Travel)
+============================================================
+
+STA JE URADJENO
+---------------
+Sajt ima posebne adrese po jeziku:
+   Engleski (podrazumevano):  https://myvalanyatravel.com/
+                              https://myvalanyatravel.com/demre-myra-kekova
+   Ruski:    /ru/      Nemacki: /de/     Turski: /tr/
+   Ukrajinski: /uk/    Srpski:  /sr/
+   (i isto za demre stranu u svakom folderu)
+
+Svaka jezicka strana ima:
+  - <html lang="..">, preveden <title> i opis
+  - canonical na sebe + "hreflang" mrezu (govori Google-u koja je
+    verzija za koji jezik)
+  - SADRZAJ JE PREVEDEN DIREKTNO U HTML ("ispecen") — ne zavisi od JS-a,
+    pa ga vide i slabiji pretrazivaci (npr. Yandex)
+  - prebacivac jezika (zastavica) VODI na tu jezicku adresu
+
+ZLATNO PRAVILO
+--------------
+Ti urediS SAMO dva engleska fajla u korenu:
+      index.html              (Kapadokija)
+      demre-myra-kekova.html  (Demre)
+Tu menjas i tekst i "translations" objekat (prevode za sve jezike).
+
+NIKAD ne diraj rucno foldere /ru/ /de/ /tr/ /uk/ /sr/ — prave se
+automatski i sledece pokretanje skripte ih prebrise.
+
+KAKO DA OBJAVIS PROMENU
+-----------------------
+1) Uredi index.html ili demre-myra-kekova.html (engleski original).
+   Ako menjas prevodljiv tekst, izmeni ga i u "translations" za sve jezike.
+2) Pokreni generator iz foldera projekta:
+      python3 generate-languages.py
+   -> ponovo napravi sve /ru/ /de/... foldere + osvezi sitemap.xml
+3) Objavi:
+      git add -A
+      git commit -m "Opis promene"
+      git push
+   (OBAVEZNO "git add -A" da uhvati i jezicke foldere i sitemap.)
+4) Proveri u INCOGNITO: /ru/, /de/ ... — sadrzaj na tom jeziku,
+   naslov u tabu preveden, klik na zastavicu vodi na /xx/ adresu.
+
+AKO MENJAS PREVOD NASLOVA/OPISA (meta) ili DODAJES NOVI JEZIK
+------------------------------------------------------------
+Otvori generate-languages.py i u delu "META" izmeni/dopuni preveden
+naslov i opis. Pa pokreni skriptu ponovo.
+
+VAZNO
+-----
+- Skripta je bezbedna za ponovno pokretanje (ne duplira nista).
+- Posle objave: prijavi sitemap.xml u Google Search Console I Yandex
+  Webmaster (Yandex je vazan za rusku publiku).
+- Zahtev: na racunaru treba Python 3 (vec ga imas ako radi komanda).
+============================================================

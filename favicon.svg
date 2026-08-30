@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" width="120" height="120" role="img" aria-label="M.Y.V. Alanya Travel">
+  <defs>
+    <clipPath id="c">
+      <circle cx="60" cy="60" r="60"/>
+    </clipPath>
+  </defs>
+  <g clip-path="url(#c)">
+    <rect width="120" height="120" fill="#A8501F"/>
+    <g fill="#FAF6F0">
+      <path d="M27 88 L31.5 46.5 Q31.5 43 35 43 Q38.5 43 38.5 46.5 L43 88 Z"/>
+      <ellipse cx="35" cy="42" rx="10.5" ry="7.5"/>
+      <path d="M50 88 L55.5 32 Q55.5 27.5 60 27.5 Q64.5 27.5 64.5 32 L70 88 Z"/>
+      <ellipse cx="60" cy="31" rx="13" ry="9"/>
+      <path d="M77 88 L81 52 Q81 49 84 49 Q87 49 87 52 L91 88 Z"/>
+      <ellipse cx="84" cy="48.5" rx="9" ry="6.5"/>
+      <path d="M0 88 Q15 82 30 87 Q45 92 60 86 Q75 80 90 86 Q105 92 120 87 L120 120 L0 120 Z"/>
+    </g>
+  </g>
+  <circle cx="60" cy="60" r="55.5" fill="none" stroke="#D4A017" stroke-width="9"/>
+</svg>
