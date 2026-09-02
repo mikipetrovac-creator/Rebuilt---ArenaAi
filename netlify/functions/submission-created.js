@@ -6,6 +6,20 @@ exports.handler = async (event) => {
   const data = payload.data; // Ovde su svi podaci iz forme
   const formName = payload.form_name; // Netlify-jev identitet forme: 'booking-*' ili 'ask-*'
   const isAskQuestion = typeof formName === 'string' && formName.startsWith('ask-');
+  const isBooking = typeof formName === 'string' && formName.startsWith('booking-');
+
+  // Server-side guard: booking phone numbers must include an international country code.
+  // This protects against direct POSTs that bypass browser validation.
+  if (isBooking) {
+    const phone = String(data.phone || '').trim();
+    const normalizedPhone = phone.replace(/\D/g, '');
+    const validPhone = phone.startsWith('+') && normalizedPhone.length >= 8 && normalizedPhone.length <= 15;
+
+    if (!validPhone) {
+      console.warn('Invalid booking phone rejected:', phone);
+      return { statusCode: 200, body: 'Booking ignored: invalid phone format' };
+    }
+  }
 
   // Tvoja email adresa na koju želiš da stižu rezervacije
   const toEmail = "info@myvalanyatravel.com"; 

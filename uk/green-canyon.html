@@ -1171,7 +1171,7 @@ html{scroll-padding-top:56px}
   </div>
 
   <div class="hero-stats">
-    <div class="hero-stat"><div class="hero-stat-num">49</div><div class="hero-stat-label" data-i18n="hero.statTravelers">Відгуки на Google</div></div>
+    <div class="hero-stat"><div class="hero-stat-num">52</div><div class="hero-stat-label" data-i18n="hero.statTravelers">Відгуки на Google</div></div>
     <div class="hero-stat"><div class="hero-stat-num">5.0</div><div class="hero-stat-label" data-i18n="hero.statRating">Рейтинг Google</div></div>
     <div class="hero-stat"><div class="hero-stat-num">1 Day</div><div class="hero-stat-label" data-i18n="hero.statDuration">Спокійний одноденний тур</div></div>
   </div>
@@ -1598,7 +1598,7 @@ html{scroll-padding-top:56px}
         </div>
         <div class="form-group">
           <label for="form-phone" data-i18n="booking.phone">Телефон <span>*</span></label>
-          <input type="tel" id="form-phone" placeholder="+90 551 006 68 57" required>
+          <input type="tel" id="form-phone" placeholder="+90 551 006 68 57" autocomplete="tel" inputmode="tel" pattern="\+[1-9][0-9 ()-]{7,20}" title="Please enter your phone number with country code, e.g. +90 551 006 68 57" required>
         </div>
       </div>
       <div class="form-row">
@@ -3533,6 +3533,15 @@ function sendBookingEmail(d) {
       return response;
     });
 }
+function validateBookingPhone(phone) {
+  // Booking phone numbers must include an international country code.
+  // Spaces, hyphens and parentheses are allowed for readability.
+  const value = String(phone || '').trim();
+  if (!value.startsWith('+')) return false;
+  const digits = value.replace(/\D/g, '');
+  return digits.length >= 8 && digits.length <= 15;
+}
+
 function submitBooking(){
   const name = document.getElementById('form-name').value.trim();
   const phone = document.getElementById('form-phone').value.trim();
@@ -3547,6 +3556,17 @@ function submitBooking(){
 
   if(!name || !phone || !date || !hotel){
     alert('Please fill in name, phone, date and hotel.');
+    return;
+  }
+
+  if (!validateBookingPhone(phone)) {
+    const phoneEl = document.getElementById('form-phone');
+    phoneEl.style.borderColor = '#e74c3c';
+    phoneEl.style.boxShadow = '0 0 0 3px rgba(231,76,60,.15)';
+    phoneEl.setCustomValidity('Please enter your phone number with country code, e.g. +90 551 006 68 57.');
+    phoneEl.reportValidity();
+    setTimeout(() => { phoneEl.style.borderColor = '#e0d6cc'; phoneEl.style.boxShadow = 'none'; phoneEl.setCustomValidity(''); }, 3000);
+    phoneEl.focus();
     return;
   }
 

@@ -969,7 +969,7 @@ html{scroll-padding-top:56px}
 
   <div class="hero-stats">
     <div class="hero-stat">
-      <div class="hero-stat-num" data-count="51">51</div>
+      <div class="hero-stat-num" data-count="52">52</div>
       <div class="hero-stat-label" data-i18n="reviews.statReviews">Google Yorumları</div>
     </div>
     <div class="hero-stat">
@@ -1355,7 +1355,7 @@ html{scroll-padding-top:56px}
     <h2 class="section-title reveal" data-i18n="reviews.title">Gerçek Gezginlerden Gerçek Hikayeler</h2>
     <div class="review-stats reveal">
       <div><div class="review-stat-num">5.0</div><div class="review-stat-label" data-i18n="reviews.statRating">Ortalama Puan</div></div>
-      <div><div class="review-stat-num">51</div><div class="review-stat-label" data-i18n="reviews.statReviews">Google Yorumları</div></div>
+      <div><div class="review-stat-num">52</div><div class="review-stat-label" data-i18n="reviews.statReviews">Google Yorumları</div></div>
       <div><div class="review-stat-num">17+</div><div class="review-stat-label" data-i18n="about.statYears">Yıl Turizmde</div></div>
     </div>
     <div class="reviews-grid" id="featuredReviews"></div>
@@ -1495,7 +1495,7 @@ html{scroll-padding-top:56px}
         </div>
         <div class="form-group">
           <label for="form-phone" data-i18n="booking.phone">Telefon Numarası <span>*</span></label>
-          <input type="tel" id="form-phone" placeholder="+90 551 006 68 57" required>
+          <input type="tel" id="form-phone" placeholder="+90 551 006 68 57" autocomplete="tel" inputmode="tel" pattern="\+[1-9][0-9 ()-]{7,20}" title="Please enter your phone number with country code, e.g. +90 551 006 68 57" required>
         </div>
       </div>
       <div class="form-row">
@@ -2115,6 +2115,13 @@ html{scroll-padding-top:56px}
     <div class="modal-badge" data-i18n="reviews.tag">YORUMLAR</div>
     <h3 class="modal-title" id="reviewsModalTitle" data-i18n="reviews.title">Gerçek Gezginlerden Gerçek Hikayeler</h3>
     <div class="reviews-masonry">
+<div class="review-card">
+<div class="review-header"><div><div class="reviewer-name">Nadzeya Sheuchyk</div></div><div class="review-date">Aug 2026</div></div>
+<div class="stars">★★★★★</div>
+<div class="review-text">Хочу сказать вам спасибо за организацию такого насыщенного на эмоции и впечатления тура! Дегустации и фотосеты от гида Елены - это отдельная любовь! Я не знаю другого такого человека, кто бы так терпеливо и увлекательно рассказывал все на трех языках интернациональной группе, при этом одной рукой фотографировал каждого, другой - наливал вино, одной ногой искал, где нам обменять деньги и второй - решал ещё кучу вопросов параллельно. При этом все тактично, ненавязчиво и с юмором. Поездка в 500 км в каждую сторону прошла легко и весело!
+Спасибо огромное за незабываемые впечатления на всю жизнь! Тур в Каппадокию стал лучшим воспоминанием о нашей поездке в Турцию. И сколько бы раз мы ни видели фото и видео из Каппадокии до поездки, передать всю красоту и грандиозность происходящего просто невозможно. Нужно ехать и смотреть глазами. Конечно, порекомендую не жалеть денег на полет на шаре, встретить рассвет на высоте в 1 км с видом на вулкан, инопланетные пейзажи на 360 градусов и загорающиеся лампочки-шары, которые только готовятся взлететь. Эта картинка живет со мной вот уже две недели с момента поездки. Но это уже, конечно, вам решать, смотрите по возможностям.
+Мы заказывали тур в Анталии в агентстве Karmet travel. Считаю, что нам повезло встретить Махмута, который отправил нас в тур именно с вами, и сделал наш отпуск незабываемым.</div>
+</div>
 <div class="review-card">
 <div class="review-header"><div><div class="reviewer-name">Amangul Purliyeva</div></div><div class="review-date">Aug 2026</div></div>
 <div class="stars">★★★★★</div>
@@ -4825,6 +4832,15 @@ function sendBookingEmail(d) {
     });
 }
 
+function validateBookingPhone(phone) {
+  // Booking phone numbers must include an international country code.
+  // Spaces, hyphens and parentheses are allowed for readability.
+  const value = String(phone || '').trim();
+  if (!value.startsWith('+')) return false;
+  const digits = value.replace(/\D/g, '');
+  return digits.length >= 8 && digits.length <= 15;
+}
+
 function submitBooking() {
   const WHATSAPP_NUMBER = '905331429037'; // +90 533 142 90 37
 
@@ -4847,6 +4863,17 @@ function submitBooking() {
   });
   if (err) {
     for (const f of fields) { if (!f.v) { document.getElementById(f.id).focus(); break; } }
+    return;
+  }
+
+  if (!validateBookingPhone(phone)) {
+    const phoneEl = document.getElementById('form-phone');
+    phoneEl.style.borderColor = '#e74c3c';
+    phoneEl.style.boxShadow = '0 0 0 3px rgba(231,76,60,.15)';
+    phoneEl.setCustomValidity('Please enter your phone number with country code, e.g. +90 551 006 68 57.');
+    phoneEl.reportValidity();
+    setTimeout(() => { phoneEl.style.borderColor = '#e0d6cc'; phoneEl.style.boxShadow = 'none'; phoneEl.setCustomValidity(''); }, 3000);
+    phoneEl.focus();
     return;
   }
 
