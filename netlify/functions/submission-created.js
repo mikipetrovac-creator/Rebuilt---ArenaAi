@@ -11,9 +11,12 @@ exports.handler = async (event) => {
   // Server-side guard: booking phone numbers must include an international country code.
   // This protects against direct POSTs that bypass browser validation.
   if (isBooking) {
-    const phone = String(data.phone || '').trim();
-    const normalizedPhone = phone.replace(/\D/g, '');
-    const validPhone = phone.startsWith('+') && normalizedPhone.length >= 8 && normalizedPhone.length <= 15;
+    const raw = String(data.phone || '').trim();
+    // Mirrors the client-side rule: strip readability chars, accept 00 as
+    // international prefix, require a country code and 10-15 digits (E.164).
+    let phone = /[A-Za-z]/.test(raw) ? '' : raw.replace(/[\s()\-.]/g, '');
+    if (phone.startsWith('00')) phone = '+' + phone.slice(2);
+    const validPhone = /^\+[1-9][0-9]{9,14}$/.test(phone);
 
     if (!validPhone) {
       console.warn('Invalid booking phone rejected:', phone);

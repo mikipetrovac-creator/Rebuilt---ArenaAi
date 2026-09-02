@@ -1673,7 +1673,7 @@ html{scroll-padding-top:56px}
         </div>
         <div class="form-group">
           <label for="form-phone" data-i18n="booking.phone">Telefon <span>*</span></label>
-          <input type="tel" id="form-phone" placeholder="+90 551 006 68 57" autocomplete="tel" inputmode="tel" pattern="\+[1-9][0-9 ()-]{7,20}" title="Please enter your phone number with country code, e.g. +90 551 006 68 57" required>
+          <input type="tel" id="form-phone" placeholder="+90 551 006 68 57" autocomplete="tel" inputmode="tel" required>
         </div>
       </div>
       <div class="form-row">
@@ -1907,7 +1907,7 @@ html{scroll-padding-top:56px}
   <div class="footer-bottom">
     <div>
       <div data-i18n="footer.copyright">© 2026 M.Y.V. Alanya Travel. Tüm hakları saklıdır.</div>
-      <div style="font-size:11px;opacity:.7;margin-top:6px;" data-i18n="footer.tursab">M.Y.V. Alanya Travel, AXIGEL TURİZM'in yetkili alt acentesidir (TÜRSAB Belge No: 2484)</div>
+      <div style="font-size:11px;opacity:.7;margin-top:6px;" data-i18n="footer.tursab">M.Y.V. Alanya Travel, AXIGEL TURİZM'nin (TÜRSAB Belge No: 2484) resmi ve yetkili çevrim içi satış ortağıdır</div>
     </div>
 <div style="display:flex;gap:16px;flex-wrap:wrap;">
   <a href="#faq" data-i18n="footer.faqLink">SSS</a>
@@ -2200,7 +2200,7 @@ const translations = {
     "footer.contactUs": "Contact Us",
     "footer.copyright": "© 2026 M.Y.V. Alanya Travel. All rights reserved.",
     "footer.faqLink": "FAQ",
-    "footer.tursab": "M.Y.V. Alanya Travel is an authorized sub-agent of AXIGEL TURİZM (TÜRSAB Belge No: 2484)",
+    "footer.tursab": "M.Y.V. Alanya Travel is an official and authorized online sales partner of AXIGEL TURİZM (TÜRSAB Belge No: 2484)",
     "nav.pamukkale": "Pamukkale",
     "nav.greencanyon": "Green Canyon",
     "tourDetails.adult": "Adults 8+:",
@@ -2443,7 +2443,7 @@ const translations = {
     "footer.contactUs": "Контакты",
     "footer.copyright": "© 2026 M.Y.V. Alanya Travel. Все права защищены.",
     "footer.faqLink": "FAQ",
-    "footer.tursab": "M.Y.V. Alanya Travel — авторизованный субагент AXIGEL TURİZM (TÜRSAB Belge No: 2484)",
+    "footer.tursab": "M.Y.V. Alanya Travel является официальным и уполномоченным онлайн-партнёром по продажам AXIGEL TURİZM (TÜRSAB Belge No: 2484)",
     "nav.pamukkale": "Памуккале",
     "nav.greencanyon": "Грин-Каньон",
     "tourDetails.adult": "Взрослые 8+:",
@@ -2686,7 +2686,7 @@ const translations = {
     "footer.contactUs": "Bize Ulaşın",
     "footer.copyright": "© 2026 M.Y.V. Alanya Travel. Tüm hakları saklıdır.",
     "footer.faqLink": "SSS",
-    "footer.tursab": "M.Y.V. Alanya Travel, AXIGEL TURİZM'in yetkili alt acentesidir (TÜRSAB Belge No: 2484)",
+    "footer.tursab": "M.Y.V. Alanya Travel, AXIGEL TURİZM'nin (TÜRSAB Belge No: 2484) resmi ve yetkili çevrim içi satış ortağıdır",
     "nav.pamukkale": "Pamukkale",
     "nav.greencanyon": "Green Canyon",
     "tourDetails.adult": "Yetişkinler 8+:",
@@ -2929,7 +2929,7 @@ const translations = {
     "footer.contactUs": "Контакти",
     "footer.copyright": "© 2026 M.Y.V. Alanya Travel. Усі права захищені.",
     "footer.faqLink": "FAQ",
-    "footer.tursab": "M.Y.V. Alanya Travel — авторизований субагент AXIGEL TURİZM (TÜRSAB Belge No: 2484)",
+    "footer.tursab": "M.Y.V. Alanya Travel є офіційним та уповноваженим онлайн-партнером з продажу послуг AXIGEL TURİZM (TÜRSAB Belge No: 2484)",
     "nav.pamukkale": "Памуккале",
     "nav.greencanyon": "Грін-Каньйон",
     "tourDetails.adult": "Дорослі 8+:",
@@ -3172,7 +3172,7 @@ const translations = {
     "footer.contactUs": "Kontakt",
     "footer.copyright": "© 2026 M.Y.V. Alanya Travel. Alle Rechte vorbehalten.",
     "footer.faqLink": "FAQ",
-    "footer.tursab": "M.Y.V. Alanya Travel ist ein autorisierter Subagent von AXIGEL TURİZM (TÜRSAB Belge No: 2484)",
+    "footer.tursab": "M.Y.V. Alanya Travel ist ein offizieller und autorisierter Online-Vertriebspartner von AXIGEL TURİZM (TÜRSAB Belge No: 2484)",
     "nav.pamukkale": "Pamukkale",
     "nav.greencanyon": "Green Canyon",
     "tourDetails.adult": "Erwachsene 8+:",
@@ -3415,7 +3415,7 @@ const translations = {
     "footer.contactUs": "Kontakt",
     "footer.copyright": "© 2026 M.Y.V. Alanya Travel. Sva prava zadržana.",
     "footer.faqLink": "ČP",
-    "footer.tursab": "M.Y.V. Alanya Travel je ovlašćeni podagent AXIGEL TURİZM (TÜRSAB Belge No: 2484)",
+    "footer.tursab": "M.Y.V. Alanya Travel je zvanični i ovlašćeni online prodajni partner agencije AXIGEL TURİZM (TÜRSAB Belge No: 2484)",
     "nav.pamukkale": "Pamukkale",
     "nav.greencanyon": "Green Canyon",
     "tourDetails.adult": "Odrasli 8+:",
@@ -3713,13 +3713,26 @@ function sendBookingEmail(d) {
     });
 }
 
+function normalizeBookingPhone(phone) {
+  // Accepts spaces, hyphens and parentheses for readability.
+  // Accepts 00 as an international prefix and normalizes it to +.
+  // Returns E.164-style '+<digits>' or '' when the input is not usable.
+  let value = String(phone || '').trim();
+  if (!value) return '';
+  if (/[A-Za-z]/.test(value)) return '';            // reject letters
+  value = value.replace(/[\s()\-.]/g, '');           // strip readability chars
+  if (value.startsWith('00')) value = '+' + value.slice(2);
+  if (!value.startsWith('+')) return '';            // country code required
+  if (!/^\+[1-9][0-9]+$/.test(value)) return '';    // no +0, digits only
+  return value;
+}
+
 function validateBookingPhone(phone) {
-  // Booking phone numbers must include an international country code.
-  // Spaces, hyphens and parentheses are allowed for readability.
-  const value = String(phone || '').trim();
-  if (!value.startsWith('+')) return false;
-  const digits = value.replace(/\D/g, '');
-  return digits.length >= 8 && digits.length <= 15;
+  const normalized = normalizeBookingPhone(phone);
+  if (!normalized) return false;
+  const digits = normalized.slice(1);
+  // E.164 allows max 15 digits. A real number incl. country code is >= 10.
+  return digits.length >= 10 && digits.length <= 15;
 }
 
 function submitBooking(){
@@ -3745,7 +3758,7 @@ function submitBooking(){
     const phoneEl = document.getElementById('form-phone');
     phoneEl.style.borderColor = '#e74c3c';
     phoneEl.style.boxShadow = '0 0 0 3px rgba(231,76,60,.15)';
-    phoneEl.setCustomValidity('Please enter your phone number with country code, e.g. +90 551 006 68 57.');
+    phoneEl.setCustomValidity('Lütfen ülke kodu dahil geçerli bir uluslararası telefon numarası girin. Örnek: +90 551 006 68 57');
     phoneEl.reportValidity();
     setTimeout(() => { phoneEl.style.borderColor = '#e0d6cc'; phoneEl.style.boxShadow = 'none'; phoneEl.setCustomValidity(''); }, 3000);
     phoneEl.focus();
