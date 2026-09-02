@@ -4879,6 +4879,10 @@ function submitBooking() {
     return;
   }
 
+  // Collect all values
+  const fullName = document.getElementById('form-name').value.trim();
+  const phone    = document.getElementById('form-phone').value.trim();
+
   if (!validateBookingPhone(phone)) {
     const phoneEl = document.getElementById('form-phone');
     phoneEl.style.borderColor = '#e74c3c';
@@ -4889,10 +4893,6 @@ function submitBooking() {
     phoneEl.focus();
     return;
   }
-
-  // Collect all values
-  const fullName = document.getElementById('form-name').value.trim();
-  const phone    = document.getElementById('form-phone').value.trim();
   const tourDate = document.getElementById('form-date').value;
   const pickup   = document.getElementById('form-pickup').value.trim();
   const hotel    = document.getElementById('form-hotel').value.trim();
