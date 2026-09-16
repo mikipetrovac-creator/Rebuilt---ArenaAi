@@ -3798,6 +3798,13 @@ function submitBooking(){
     tour:'Pamukkale', package:pkg, name:name, phone:phone, date:date, pickup:pickup, hotel:hotel,
     adults:adults, children:children, infants:infants, total:total, notes:notes||''
   }).then(function () {
+    if (typeof gtag === 'function') {
+      gtag('event', 'booking_success', {
+      tour_name: 'Pamukkale',
+      package_name: pkg,
+      booking_language: document.documentElement.lang || 'en'
+      });
+    }
     const modal = document.getElementById('successModal');
     if (modal) { modal.classList.add('open'); document.body.style.overflow = 'hidden'; }
   }).catch(function (err) {

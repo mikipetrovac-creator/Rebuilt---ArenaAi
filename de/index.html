@@ -4981,6 +4981,13 @@ Sent from myvalanyatravel.com`;
     tour:'Cappadocia', package:pkgName, name:fullName, phone:phone, date:tourDate, pickup:pickup,
     hotel:hotel, adults:adults, children:children, infants:infants, total:total, notes:notes||''
   }).then(function () {
+    if (typeof gtag === 'function') {
+      gtag('event', 'booking_success', {
+      tour_name: 'Cappadocia',
+      package_name: pkgName,
+      booking_language: document.documentElement.lang || 'en'
+      });
+    }
     document.getElementById('successModal').classList.add('open');
     document.body.style.overflow = 'hidden';
   }).catch(function (err) {
