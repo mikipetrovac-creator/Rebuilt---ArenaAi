@@ -27,6 +27,15 @@
 /blog-pamukkale-guide.html      /blog-pamukkale-guide       301!
 
 
+
+# --- Jezicke blog stranice: .html -> cist URL ---
+/:lang/blog.html                      /:lang/blog                       301!
+/:lang/blog-cappadocia-balloon.html   /:lang/blog-cappadocia-balloon    301!
+/:lang/blog-cappadocia-journey.html   /:lang/blog-cappadocia-journey    301!
+/:lang/blog-demre-santa-kekova.html   /:lang/blog-demre-santa-kekova    301!
+/:lang/blog-green-canyon-guide.html   /:lang/blog-green-canyon-guide    301!
+/:lang/blog-pamukkale-guide.html      /:lang/blog-pamukkale-guide       301!
+
 # --- Hub stranice: .html -> cist URL ---
 /excursions-from-alanya.html        /excursions-from-alanya   301!
 /excursions-from-side.html          /excursions-from-side     301!
@@ -48,5 +57,3 @@
 /.env               /410.html   410
 
 # --- Hub stranica: ekskurzije i cene ---
-/excursions-from-alanya.html        /excursions-from-alanya        301!
-/:lang/excursions-from-alanya.html  /:lang/excursions-from-alanya  301!
