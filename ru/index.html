@@ -837,7 +837,7 @@ html{scroll-padding-top:56px}
 <script defer src="/scripts/tours.js?v=2.0.0"></script>
 <script defer src="/scripts/myv2.js?v=2.0.0"></script>
 </head>
-<body data-tour-id="cappadocia">
+<body data-tour-id="cappadocia" class="myv2-detail">
 <form name="booking-cappadocia" data-netlify="true" data-netlify-honeypot="bot-field" hidden>
   <input type="text" name="tour"><input type="text" name="package"><input type="text" name="name">
   <input type="text" name="phone"><input type="text" name="date"><input type="text" name="pickup">
@@ -881,7 +881,7 @@ html{scroll-padding-top:56px}
 
     <a href="#about-cap" data-i18n="nav.about">О нас</a>
     <a href="#contact" data-i18n="nav.contact">Контакты</a>
-    <a href="#tour-details" data-i18n="nav.packages">Туры</a>
+    <a href="?view=details#tour-details" data-myv2-details data-i18n="nav.packages">Туры</a>
     <a href="#itinerary" data-i18n="nav.program">Программа тура</a>
     <a href="#reviews" data-i18n="nav.reviews">Отзывы</a>
     <a href="#faq" data-i18n="nav.faq">Вопросы</a>
@@ -928,7 +928,7 @@ html{scroll-padding-top:56px}
   <p class="hero-sub" data-i18n="hero.subtitle">Парите среди облаков на воздушном шаре, бродите среди древних скальных образований и исследуйте подземные города во время незабываемого 2-дневного тура.</p>
   <div class="hero-btns">
     <a href="#book-now" class="btn-primary" data-i18n="hero.btnBook">Забронировать тур →</a>
-    <a href="#tour-details" class="btn-outline" data-i18n="hero.btnDetails">Подробнее о туре</a>
+    <a href="?view=details#tour-details" data-myv2-details class="btn-outline" data-i18n="hero.btnDetails">Подробнее о туре</a>
   </div>
   <div class="hero-trust">
     <span class="tp"><span class="ic">🏨</span> <span data-i18n="trust.pickup">Трансфер от отеля</span></span>
@@ -991,7 +991,7 @@ html{scroll-padding-top:56px}
     <p data-i18n="aboutCap.p3">За захватывающими дух пейзажами скрывается богатая история, охватывающая тысячелетия. В регионе жили многочисленные цивилизации, включая хеттов, персов, римлян и ранних христиан, которые создали подземные города, высеченные в скалах церкви и скрытые поселения, которые можно исследовать и сегодня.</p>
     <p data-i18n="aboutCap.p4">Сегодня Каппадокия — одно из самых посещаемых направлений Турции и место из списка желаний путешественников со всего мира. Очарованы ли вы историей, покорены природой или мечтаете о незабываемом полёте на воздушном шаре — Каппадокия дарит воспоминания на всю жизнь. Наш тщательно разработанный 2-дневный тур по Каппадокии проведёт вас через самые знаковые достопримечательности региона, захватывающие смотровые площадки и исторические сокровища, предлагая незабываемое путешествие по одному из самых необычных мест Турции.</p>
     <div class="about-btns">
-      <a href="#tour-details" class="btn-ghost" data-i18n="aboutCap.btnDetails">Подробнее о туре</a>
+      <a href="?view=details#tour-details" data-myv2-details class="btn-ghost" data-i18n="aboutCap.btnDetails">Подробнее о туре</a>
       <a href="#book-now" class="btn-terra" data-i18n="aboutCap.btnReserve">Забронировать место</a>
     </div>
   </div>
@@ -1735,7 +1735,7 @@ html{scroll-padding-top:56px}
 <li><a href="/ru/excursions-from-side">→ <span>Экскурсии из Сиде</span></a></li>
 
         <li><a href="#home">→ <span data-i18n="nav.home">Главная</span></a></li>
-        <li><a href="#tour-details">→ <span data-i18n="nav.tourDetails">О туре</span></a></li>
+        <li><a href="?view=details#tour-details" data-myv2-details>→ <span data-i18n="nav.tourDetails">О туре</span></a></li>
         <li><a href="#itinerary">→ <span data-i18n="nav.itinerary">Маршрут</span></a></li>
         <li><a href="#book-now">→ <span data-i18n="nav.bookNow">Бронировать</span></a></li>
         <li><a href="#reviews">→ <span data-i18n="nav.reviews">Отзывы</span></a></li>
