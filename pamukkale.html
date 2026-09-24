@@ -1037,7 +1037,7 @@ html{scroll-padding-top:56px}
 </style>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "How do I book, and when will I receive confirmation?", "acceptedAnswer": {"@type": "Answer", "text": "Simply fill in the booking form on this page with your name, phone number, hotel and preferred date. We'll contact you via WhatsApp within 2 hours to confirm. No upfront online payment is required — you pay on the day of the tour."}}, {"@type": "Question", "name": "Where and when will I be picked up?", "acceptedAnswer": {"@type": "Answer", "text": "We offer free hotel pickup from Alanya and Side (and nearby resorts). Because Pamukkale is a few hours away, pickup is early — typically between 02:00 and 04:00, depending on your hotel. Your exact time is confirmed via WhatsApp the evening before."}}, {"@type": "Question", "name": "What should I bring on the tour?", "acceptedAnswer": {"@type": "Answer", "text": "Please bring your passport or ID card, comfortable walking shoes, sunscreen, a hat and water. Bring swimwear and a towel if you'd like to swim in Cleopatra's Antique Pool (optional, €15 on-site). A camera or smartphone is a must — the scenery is unforgettable!"}}, {"@type": "Question", "name": "Are children and infants welcome on the tour?", "acceptedAnswer": {"@type": "Answer", "text": "Yes, absolutely. Children aged 4–7 receive a discounted price. Infants aged 0–3 travel completely free of charge. Please note that free infant places do not include a separate seat on the bus — the child must be held on a parent's or guardian's lap throughout the journey."}}, {"@type": "Question", "name": "Can you swim in Cleopatra's Pool at Pamukkale?", "acceptedAnswer": {"@type": "Answer", "text": "Yes — swimming in Cleopatra's Antique Pool is possible. It's an optional extra with an entrance fee paid on-site (currently around €15 per person), separate from the tour price. Bring a swimsuit and towel. The pool is warm thermal water with ancient marble columns on the bottom."}}, {"@type": "Question", "name": "Do you really walk barefoot on the travertines?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. To protect the white travertine terraces, shoes are not allowed on them — everyone walks barefoot in the warm mineral water. It's part of the experience and completely safe. You carry your shoes and put them back on afterwards."}}]}</script>
 <link rel="stylesheet" href="/assets/myv2.css?v=2.0.0">\n<script defer src="/scripts/tours.js?v=2.0.0"></script>\n<script defer src="/scripts/myv2.js?v=2.0.0"></script>\n</head>
-<body data-tour-id="pamukkale">
+<body data-tour-id="pamukkale" class="myv2-detail">
 <form name="booking-pamukkale" data-netlify="true" data-netlify-honeypot="bot-field" hidden>
   <input type="text" name="tour"><input type="text" name="package"><input type="text" name="name"><input type="text" name="phone">
   <input type="text" name="date"><input type="text" name="pickup"><input type="text" name="hotel">
@@ -1080,7 +1080,7 @@ html{scroll-padding-top:56px}
 
     <a href="#about" data-i18n="nav.about">About</a>
     <a href="#contact" data-i18n="nav.contact">Contact</a>
-    <a href="#tour-details" data-i18n="nav.packages">Tour Packages</a>
+    <a href="?view=details#tour-details" data-myv2-details data-i18n="nav.packages">Tour Packages</a>
     <a href="#itinerary" data-i18n="nav.program">Tour Program</a>
     <a href="#reviews" data-i18n="nav.reviews">Reviews</a>
     <a href="#faq" data-i18n="nav.faq">FAQ</a>
@@ -1127,7 +1127,7 @@ html{scroll-padding-top:56px}
   <p class="hero-sub" data-i18n="hero.subtitle">Walk barefoot across dazzling white travertine terraces filled with turquoise thermal water, explore the ancient city of Hierapolis, and discover Cleopatra's Antique Pool — on a full-day guided tour from Alanya & Side.</p>
   <div class="hero-btns">
     <a href="#book-now" class="btn-primary" data-i18n="hero.btnBook">Book Your Adventure →</a>
-    <a href="#tour-details" class="btn-outline" data-i18n="hero.btnDetails">View Tour Details</a>
+    <a href="?view=details#tour-details" data-myv2-details class="btn-outline" data-i18n="hero.btnDetails">View Tour Details</a>
   </div>
   <div class="hero-trust">
     <span class="tp"><span class="ic">🏨</span> <span data-i18n="trust.pickup">Hotel pickup</span></span>
@@ -1184,7 +1184,7 @@ html{scroll-padding-top:56px}
         </div>
       </div>
       <div class="about-btns" style="margin-top:28px;justify-content:center;">
-        <a href="#tour-details" class="btn-ghost" data-i18n="aboutDest.btnDetails">View Tour Details</a>
+        <a href="?view=details#tour-details" data-myv2-details class="btn-ghost" data-i18n="aboutDest.btnDetails">View Tour Details</a>
         <a href="#book-now" class="btn-terra" data-i18n="aboutDest.btnReserve">Reserve Your Spot</a>
       </div>
     </div>
@@ -1859,7 +1859,7 @@ html{scroll-padding-top:56px}
 <li><a href="/excursions-from-alanya">→ <span>Excursions & prices</span></a></li>
 
         <li><a href="#home">→ <span data-i18n="nav.home">Home</span></a></li>
-        <li><a href="#tour-details">→ <span data-i18n="nav.tourDetails">Tour Details</span></a></li>
+        <li><a href="?view=details#tour-details" data-myv2-details>→ <span data-i18n="nav.tourDetails">Tour Details</span></a></li>
         <li><a href="#itinerary">→ <span data-i18n="nav.itinerary">Itinerary</span></a></li>
         <li><a href="#book-now">→ <span data-i18n="nav.bookNow">Book Now</span></a></li>
         <li><a href="#reviews">→ <span data-i18n="nav.reviews">Reviews</span></a></li>
