@@ -1021,7 +1021,7 @@ html{scroll-padding-top:56px}
 <script defer src="/scripts/tours.js?v=2.0.0"></script>
 <script defer src="/scripts/myv2.js?v=2.0.0"></script>
 </head>
-<body data-tour-id="demre">
+<body data-tour-id="demre" class="myv2-detail">
 <form name="booking-demre" data-netlify="true" data-netlify-honeypot="bot-field" hidden>
   <input type="text" name="tour"><input type="text" name="package"><input type="text" name="name"><input type="text" name="phone">
   <input type="text" name="date"><input type="text" name="pickup"><input type="text" name="hotel">
@@ -1064,7 +1064,7 @@ html{scroll-padding-top:56px}
 
     <a href="#about" data-i18n="nav.about">О нас</a>
     <a href="#contact" data-i18n="nav.contact">Контакты</a>
-    <a href="#tour-details" data-i18n="nav.packages">Пакеты туров</a>
+    <a href="?view=details#tour-details" data-myv2-details data-i18n="nav.packages">Пакеты туров</a>
     <a href="#itinerary" data-i18n="nav.program">Программа тура</a>
     <a href="#reviews" data-i18n="nav.reviews">Отзывы</a>
     <a href="#faq" data-i18n="nav.faq">Вопросы</a>
@@ -1111,7 +1111,7 @@ html{scroll-padding-top:56px}
   <p class="hero-sub" data-i18n="hero.subtitle">Круиз над Затонувшим городом Кекова, ликийские скальные гробницы и римский театр в Мире, церковь Святого Николая — настоящего Санта-Клауса — в однодневном туре.</p>
   <div class="hero-btns">
     <a href="#book-now" class="btn-primary" data-i18n="hero.btnBook">Забронировать тур →</a>
-    <a href="#tour-details" class="btn-outline" data-i18n="hero.btnDetails">Подробнее о туре</a>
+    <a href="?view=details#tour-details" data-myv2-details class="btn-outline" data-i18n="hero.btnDetails">Подробнее о туре</a>
   </div>
   <div class="hero-trust">
     <span class="tp"><span class="ic">🏨</span> <span data-i18n="trust.pickup">Трансфер от отеля</span></span>
@@ -1165,7 +1165,7 @@ html{scroll-padding-top:56px}
       <p class="about-dest-full" data-i18n="aboutDest.p3">За захватывающими прибрежными пейзажами скрывается богатое наследие ликийской цивилизации — одной из самых влиятельных культур древнего мира. Впечатляющие скальные гробницы, высеченные в отвесных скалах, великолепно сохранившиеся римские сооружения и многовековые церкви дают удивительное представление о замечательном прошлом региона.</p>
       <p class="about-dest-full" data-i18n="aboutDest.p4">Сегодня Демре, Мира и Кекова остаются одними из самых увлекательных культурных направлений Турции. Наш тщательно продуманный однодневный тур из Аланьи и Сиде проведёт вас через захватывающие горные пейзажи и живописные прибрежные дороги к этим удивительным достопримечательностям. Круиз над Затонувшим городом, изучение древних руин, посещение церкви Святого Николая или купание в бирюзовых водах залива Кекова — это незабываемое путешествие сочетает историю, культуру, природу и приключения в поистине уникальном средиземноморском опыте. <a href="/ru/blog-demre-santa-kekova">Подробнее о настоящем Святом Николае, ликийских гробницах и Затонувшем городе</a>.</p>
       <div class="about-btns" style="margin-top:28px;justify-content:center;">
-        <a href="#tour-details" class="btn-ghost" data-i18n="aboutDest.btnDetails">Подробнее о туре</a>
+        <a href="?view=details#tour-details" data-myv2-details class="btn-ghost" data-i18n="aboutDest.btnDetails">Подробнее о туре</a>
         <a href="#book-now" class="btn-terra" data-i18n="aboutDest.btnReserve">Забронировать место</a>
       </div>
     </div>
@@ -1851,7 +1851,7 @@ html{scroll-padding-top:56px}
 <li><a href="/ru/excursions-from-alanya">→ <span>Экскурсии и цены</span></a></li>
 
         <li><a href="#home">→ <span data-i18n="nav.home">Главная</span></a></li>
-        <li><a href="#tour-details">→ <span data-i18n="nav.tourDetails">О туре</span></a></li>
+        <li><a href="?view=details#tour-details" data-myv2-details>→ <span data-i18n="nav.tourDetails">О туре</span></a></li>
         <li><a href="#itinerary">→ <span data-i18n="nav.itinerary">Маршрут</span></a></li>
         <li><a href="#book-now">→ <span data-i18n="nav.bookNow">Бронировать</span></a></li>
         <li><a href="#reviews">→ <span data-i18n="nav.reviews">Отзывы</span></a></li>
