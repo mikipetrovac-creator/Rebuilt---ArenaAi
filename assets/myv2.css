@@ -73,3 +73,21 @@ body.myv2-modal-open{overflow:hidden!important}
  .hero-trust .tp{font-size:11px!important;padding:7px 10px!important}
  .myv2-modal{padding:8px}.myv2-modal-card{border-radius:18px;padding:8px}
 }
+
+/* v2.0.1 visual correction: imagery first, lighter premium surfaces */
+:root{--myv2-bg:#f5f1e8;--myv2-panel:#fffdf8;--myv2-panel2:#eee7da;--myv2-ink:#1b211c;--myv2-muted:#687168;--myv2-line:rgba(111,88,43,.18)}
+body{background:var(--myv2-bg)!important;color:var(--myv2-ink)!important}
+section:not(#home){background:var(--myv2-bg)!important;color:var(--myv2-ink)!important}
+.section-title,h2,h3{color:var(--myv2-ink)!important}
+.package-card,.price-card,.review-card,.faq-item,.book-form,.history-block,.contact-card,.stat-card{background:var(--myv2-panel)!important}
+.price-cat,.total-row{background:var(--myv2-panel2)!important}
+#home{background:#efe9dd!important}
+#home>.hero-bg{z-index:0!important}
+#home>.hero-bg:after{background:linear-gradient(180deg,rgba(0,0,0,.04),rgba(0,0,0,.22))!important}
+#home>.hero-badge,#home>.hero-title,#home>.hero-sub,#home>.hero-btns,#home>.hero-trust,#home>.hero-stats{z-index:2!important}
+#home>.hero-title{color:var(--myv2-ink)!important}
+#home>.hero-title span:nth-child(2){color:var(--myv2-ink)!important}
+#home>.hero-sub{color:var(--myv2-muted)!important}
+.hero-trust .tp{background:#fffaf0!important;color:#5f625d!important}
+.btn-outline{color:var(--myv2-ink)!important;background:#fffaf0!important}
+input,select,textarea{background:#fff!important;color:#1b211c!important}
