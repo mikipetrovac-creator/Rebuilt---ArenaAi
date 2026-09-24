@@ -1,6 +1,8 @@
 (()=>{"use strict";
 const $=(s,r=document)=>r.querySelector(s), $$=(s,r=document)=>[...r.querySelectorAll(s)];
-const lang=(document.documentElement.lang||"en").slice(0,2);\nconst detailsOpen=new URLSearchParams(location.search).get("view")==="details"; if(detailsOpen)document.body.classList.add("myv2-details-open");\n$("[data-myv2-details], a[href=\"#tour-details\"]").forEach(a=>a.addEventListener("click",e=>{e.preventDefault();document.body.classList.add("myv2-details-open");history.replaceState(null,"",location.pathname+"?view=details#tour-details");scrollTo({top:0,behavior:"smooth"});}));
+const lang=(document.documentElement.lang||"en").slice(0,2);
+const detailsOpen=new URLSearchParams(location.search).get("view")==="details"; if(detailsOpen)document.body.classList.add("myv2-details-open");
+$("[data-myv2-details], a[href=\"#tour-details\"]").forEach(a=>a.addEventListener("click",e=>{e.preventDefault();document.body.classList.add("myv2-details-open");history.replaceState(null,"",location.pathname+"?view=details#tour-details");scrollTo({top:0,behavior:"smooth"});}));
 const copy={en:"Book Now",ru:"Забронировать",de:"Jetzt buchen",tr:"Rezervasyon",uk:"Забронювати",sr:"Rezerviši"};
 const label=copy[lang]||copy.en;
 const book=$("#book-now"), form=book&&$(".book-form",book);
