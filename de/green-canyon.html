@@ -1039,7 +1039,7 @@ html{scroll-padding-top:56px}
 </style>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Wie buche ich und wann erhalte ich die Bestätigung?", "acceptedAnswer": {"@type": "Answer", "text": "Füllen Sie einfach das Buchungsformular auf dieser Seite mit Name, Telefonnummer, Hotel und Wunschtermin aus. Wir bestätigen innerhalb von 2 Stunden per WhatsApp. Keine Online-Vorauszahlung — Sie zahlen am Tag der Tour."}}, {"@type": "Question", "name": "Wo und wann werde ich abgeholt?", "acceptedAnswer": {"@type": "Answer", "text": "Wir bieten kostenlose Hotelabholung in Alanya und Side (und den umliegenden Ferienorten). Der Green Canyon liegt deutlich näher als die meisten Tagesausflüge, daher erfolgt die Abholung zu einer angenehmen Morgenstunde — wir gehen zwischen 10:00 und 10:30 Uhr an Bord. Ihre genaue Zeit wird am Vorabend per WhatsApp bestätigt."}}, {"@type": "Question", "name": "Was soll ich zur Tour mitbringen?", "acceptedAnswer": {"@type": "Answer", "text": "Bringen Sie Badesachen und ein Handtuch mit, wenn Sie während der Pause oder am Green Lake schwimmen möchten, dazu Sonnencreme, Hut, Sonnenbrille und Wasser. Das quellgespeiste Bergwasser bleibt auch im Sommer erfrischend kühl. Kamera oder Smartphone sind ein Muss — die Landschaft ist unvergesslich!"}}, {"@type": "Question", "name": "Sind Kinder und Kleinkinder willkommen?", "acceptedAnswer": {"@type": "Answer", "text": "Ja, auf jeden Fall. Kinder von 4–7 Jahren erhalten einen ermäßigten Preis. Kleinkinder von 0–3 Jahren reisen kostenlos. Bitte beachten Sie: Der kostenlose Platz beinhaltet keinen eigenen Sitz im Bus — das Kind muss während der Fahrt auf dem Schoß gehalten werden."}}, {"@type": "Question", "name": "Was ist der Green Canyon und warum ist das Wasser so grün?", "acceptedAnswer": {"@type": "Answer", "text": "Der Green Canyon ist ein atemberaubender Stausee am Oymapınar-Damm bei Alanya, umgeben von kiefernbewachsenen Bergen. Die tiefe smaragdgrüne Farbe entsteht durch das mineralreiche Wasser und die Spiegelung des umliegenden Waldes. Sie erkunden ihn bei einer entspannten Bootsfahrt mit Badestopps im ruhigen, kühlen Wasser."}}, {"@type": "Question", "name": "Ist der Green Canyon für einen entspannten Familientag geeignet?", "acceptedAnswer": {"@type": "Answer", "text": "Ja — es ist eine der ruhigsten und entspannendsten Touren ab Alanya. Das Boot ist stabil, das Wasser ruhig, und es bleibt Zeit zum Schwimmen, Fotografieren und für ein Mittagessen an Bord. Geeignet für Familien, Paare und alle, die schöne Landschaften ohne anstrengenden Tag möchten."}}]}</script>
 <link rel="stylesheet" href="/assets/myv2.css?v=2.0.0">\n<script defer src="/scripts/tours.js?v=2.0.0"></script>\n<script defer src="/scripts/myv2.js?v=2.0.0"></script>\n</head>
-<body data-tour-id="green-canyon">
+<body data-tour-id="green-canyon" class="myv2-detail">
 <form name="booking-green-canyon" data-netlify="true" data-netlify-honeypot="bot-field" hidden>
 <input type="text" name="tour"><input type="text" name="name"><input type="text" name="phone">
 <input type="text" name="date"><input type="text" name="pickup"><input type="text" name="hotel">
@@ -1082,7 +1082,7 @@ html{scroll-padding-top:56px}
 
     <a href="#about" data-i18n="nav.about">Über uns</a>
     <a href="#contact" data-i18n="nav.contact">Kontakt</a>
-    <a href="#tour-details" data-i18n="nav.packages">Tourpakete</a>
+    <a href="?view=details#tour-details" data-myv2-details data-i18n="nav.packages">Tourpakete</a>
     <a href="#itinerary" data-i18n="nav.program">Tourprogramm</a>
     <a href="#reviews" data-i18n="nav.reviews">Bewertungen</a>
     <a href="#faq" data-i18n="nav.faq">FAQ</a>
@@ -1129,7 +1129,7 @@ html{scroll-padding-top:56px}
   <p class="hero-sub" data-i18n="hero.subtitle">Gleiten Sie über das smaragdgrüne Wasser des Oymapınar-Sees, fahren Sie zwischen den steilen Felswänden des Großen Canyons hindurch, schwimmen Sie im kristallklaren Bergwasser und genießen Sie das Mittagessen am Green Lake — eine entspannte Tagestour ab Alanya & Side.</p>
   <div class="hero-btns">
     <a href="#book-now" class="btn-primary" data-i18n="hero.btnBook">Buchen Sie Ihr Abenteuer →</a>
-    <a href="#tour-details" class="btn-outline" data-i18n="hero.btnDetails">Tourdetails ansehen</a>
+    <a href="?view=details#tour-details" data-myv2-details class="btn-outline" data-i18n="hero.btnDetails">Tourdetails ansehen</a>
   </div>
   <div class="hero-trust">
     <span class="tp"><span class="ic">🏨</span> <span data-i18n="trust.pickup">Hotelabholung</span></span>
@@ -1186,7 +1186,7 @@ html{scroll-padding-top:56px}
         </div>
       </div>
       <div class="about-btns" style="margin-top:28px;justify-content:center;">
-        <a href="#tour-details" class="btn-ghost" data-i18n="aboutDest.btnDetails">Tour-Details</a>
+        <a href="?view=details#tour-details" data-myv2-details class="btn-ghost" data-i18n="aboutDest.btnDetails">Tour-Details</a>
         <a href="#book-now" class="btn-terra" data-i18n="aboutDest.btnReserve">Platz reservieren</a>
       </div>
     </div>
@@ -1777,7 +1777,7 @@ html{scroll-padding-top:56px}
 <li><a href="/de/excursions-from-alanya">→ <span>Ausflüge & Preise</span></a></li>
 
         <li><a href="#home">→ <span data-i18n="nav.home">Startseite</span></a></li>
-        <li><a href="#tour-details">→ <span data-i18n="nav.tourDetails">Tourdetails</span></a></li>
+        <li><a href="?view=details#tour-details" data-myv2-details>→ <span data-i18n="nav.tourDetails">Tourdetails</span></a></li>
         <li><a href="#itinerary">→ <span data-i18n="nav.itinerary">Reiseroute</span></a></li>
         <li><a href="#book-now">→ <span data-i18n="nav.bookNow">Jetzt buchen</span></a></li>
         <li><a href="#reviews">→ <span data-i18n="nav.reviews">Bewertungen</span></a></li>
