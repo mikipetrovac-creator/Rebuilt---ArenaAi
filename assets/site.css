@@ -533,3 +533,16 @@ form{margin-top:24px;display:flex;flex-direction:column;gap:16px}
   .bar .bt .bp{display:block;margin-top:3px;font-size:15px}
   .bar .bt .bp::before{content:none}
 }
+/* home page: bigger agency name and logo on phones and tablets */
+@media (max-width:1060px){
+  body.home{--hdr:66px}
+  body.home .brand{gap:10px}
+  body.home .brand img{width:48px;height:48px}
+  body.home .brand span{font-size:23px}
+}
+@media (max-width:420px){
+  body.home .brand img{width:44px;height:44px}
+  body.home .brand span{font-size:20px}
+  body.home .hdr-in{gap:8px}
+}
+@media (max-width:359px){body.home .brand span{font-size:17px}}

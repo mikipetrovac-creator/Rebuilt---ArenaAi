@@ -238,7 +238,7 @@ def header(lang, page, kind):
     home = rel(lang)
     hub = rel(lang, 'excursions-from-alanya')
     on = '' if kind == 'home' else ' on'
-    return f'''<body class="{'has-bar' if kind == 'tour' else ''}">
+    return f'''<body class="{'has-bar' if kind == 'tour' else ('home' if kind == 'home' else '')}">
 <a class="skip" href="#main">{u('skip')}</a>
 <header class="hdr{on}" id="hdr">
   <div class="hdr-in">
