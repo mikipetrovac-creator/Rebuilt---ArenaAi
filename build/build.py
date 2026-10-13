@@ -250,7 +250,7 @@ def header(lang, page, kind):
       <button class="btn btn-gold" type="button" data-book="">{u('nav.book')}</button>
     </nav>
     <div class="hdr-mob">
-      <button class="btn btn-gold mob-book" type="button" data-book="">{u('nav.book')}</button>
+      <div class="langsw mob-lang"><button type="button" aria-expanded="false" aria-label="{u('lang.label')}">{lang} {IC_CHEV}</button><ul hidden>{langs}</ul></div>
       <button class="burger" type="button" id="burger" aria-label="{u('nav.menu')}" aria-expanded="false" aria-controls="sheet">{IC_BURGER}</button>
     </div>
   </div>
