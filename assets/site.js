@@ -12,7 +12,7 @@
   var hero = document.querySelector('.hero');
   function fitHero() {
     if (!hero) return;
-    var s = 1, max = window.innerHeight + 1;
+    var s = 1, max = window.innerHeight + 2;
     hero.style.setProperty('--hs', '1');
     while (hero.offsetHeight > max && s > 0.6) { s -= 0.03; hero.style.setProperty('--hs', s.toFixed(2)); }
   }

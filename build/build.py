@@ -505,17 +505,16 @@ def build_home(lang):
   <section class="hero">
     <img src="/images/v2/alanya-hero.jpg" srcset="{HERO_SRCSET}" sizes="100vw" alt="{e(x('heroAlt', lang))}" fetchpriority="high" width="1600" height="1067">
     <div class="hero-in">
-      <span class="pill"><b>★ {ST['rating']}</b> · {pill}</span>
-      <h1>{u('hero.h1a')} <span>{u('hero.h1b')}</span></h1>
+      <h1 class="h1-first">{u('hero.h1a')} <span>{u('hero.h1b')}</span></h1>
       <p class="lead">{u('hero.lead')}</p>
       <div class="hero-ctas">
         <button class="btn btn-gold" type="button" data-book="">{u('hero.book')}</button>
         <a class="btn btn-white" href="{hub}">{u('hero.tours')}</a>
       </div>
-      <button class="film" type="button" data-film="{cap['video']['yt']}" data-tour="cappadocia" data-title="{e(vt.get('title', ''))}">
-        <span class="dot">{PLAY()}</span>
-        <span class="ft"><small>{u('hero.filmSmall')}</small><em>{e(vt.get('title', ''))}</em></span>
-      </button>
+      <a class="film agency" href="#about">
+        <span class="dot"><img src="/images/logo-mark.svg" alt="" width="34" height="34"></span>
+        <span class="ft"><small>{u('about.eyebrow')}</small><em>{u('about.h2a')} {u('about.h2b')}</em></span>
+      </a>
     </div>
     <div class="hstats">
       <div><b>{ST['rating']}</b><span>{u('stat.rating')}</span></div>

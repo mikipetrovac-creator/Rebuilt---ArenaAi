@@ -507,3 +507,14 @@ form{margin-top:24px;display:flex;flex-direction:column;gap:16px}
 .hubcta .chs{display:flex;flex-wrap:wrap;justify-content:center;gap:10px;margin-top:18px}
 .hubcta .chs a{min-height:46px;padding:0 20px;display:inline-flex;align-items:center;border-radius:50px;color:#fff;text-decoration:none;font-size:15px;font-weight:500}
 .hubcta .chs a:hover{filter:brightness(1.08);color:#fff}
+/* hero without the rating pill; agency widget instead of the Cappadocia film */
+.hero h1.h1-first{margin-top:0}
+.film.agency{text-decoration:none;color:#fff}
+.film.agency .dot img{width:64%;height:64%}
+.film.agency em{font-style:italic}
+/* smaller language button on phones */
+.mob-lang>button{min-height:34px;padding:0 10px;font-size:13px;gap:2px}
+/* tour pages on phones/tablets: photo fills the screen under the header */
+@media (max-width:1023px){
+  .media{aspect-ratio:auto;height:calc(var(--fullh,100svh) - var(--hdr) - env(safe-area-inset-top,0px))}
+}
