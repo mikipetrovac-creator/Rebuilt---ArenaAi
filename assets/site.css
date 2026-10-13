@@ -546,3 +546,14 @@ form{margin-top:24px;display:flex;flex-direction:column;gap:16px}
   body.home .hdr-in{gap:8px}
 }
 @media (max-width:359px){body.home .brand span{font-size:17px}}
+/* booking button always bigger than its neighbour */
+.cta-pair{align-items:center}
+.cta-pair .btn-gold{min-height:58px;font-size:17px;padding:0 40px;box-shadow:0 10px 26px rgba(212,160,23,.35)}
+.cta-pair .btn:not(.btn-gold){min-height:50px;font-size:15px}
+.cta-pair.stack{flex-direction:column;flex-wrap:nowrap}
+@media (max-width:640px){
+  .hero-ctas.cta-pair .btn-gold{min-height:calc(var(--hs,1) * 56px);font-size:16px;padding:0 26px}
+  .hero-ctas.cta-pair .btn:not(.btn-gold){min-height:calc(var(--hs,1) * 46px);padding:0 20px}
+}
+/* top-right book button on desktop: a little bigger */
+@media (min-width:1061px){.nav .btn-gold{min-height:46px;padding:0 30px;font-size:15.5px;box-shadow:0 6px 18px rgba(212,160,23,.3)}}

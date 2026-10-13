@@ -10,7 +10,19 @@
 
   /* ---------- full-height hero ---------- */
   var hero = document.querySelector('.hero');
+  /* the booking button is always a bit bigger than the button next to it (any language, any screen) */
+  function sizeCtas() {
+    Array.prototype.forEach.call(document.querySelectorAll('.cta-pair'), function (c) {
+      var bk = c.querySelector('.btn-gold'), other = c.querySelector('.btn:not(.btn-gold)');
+      if (!bk || !other) return;
+      c.classList.remove('stack'); bk.style.minWidth = ''; other.style.minWidth = '';
+      bk.style.minWidth = Math.ceil(other.offsetWidth * 1.15) + 'px';
+      var a = bk.getBoundingClientRect(), o = other.getBoundingClientRect();
+      if (o.top >= a.bottom - 1 || a.top >= o.bottom - 1) c.classList.add('stack');
+    });
+  }
   function fitHero() {
+    sizeCtas();
     if (!hero) return;
     var s = 1, max = window.innerHeight + 2;
     hero.style.setProperty('--hs', '1');

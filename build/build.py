@@ -510,7 +510,7 @@ def build_home(lang):
     <div class="hero-in">
       <h1 class="h1-first">{u('hero.h1a')} <span>{u('hero.h1b')}</span></h1>
       <p class="lead">{u('hero.lead')}</p>
-      <div class="hero-ctas">
+      <div class="hero-ctas cta-pair">
         <button class="btn btn-gold" type="button" data-book="">{u('hero.book')}</button>
         <a class="btn btn-white" href="{hub}">{u('hero.tours')}</a>
       </div>
@@ -547,7 +547,7 @@ def build_home(lang):
       <h2>{u('banner.h2a')} <span>{u('banner.h2b')}</span></h2>
       <p>{u('banner.p')}</p>
       <div class="chips"><span>WhatsApp</span><span>Viber</span><span>Telegram</span><span>MAX</span></div>
-      <div class="ctas"><button class="btn btn-gold" type="button" data-book="">{u('hero.book')}</button><a class="btn btn-white" href="{hub}">{u('banner.tours')}</a></div>
+      <div class="ctas cta-pair"><button class="btn btn-gold" type="button" data-book="">{u('hero.book')}</button><a class="btn btn-white" href="{hub}">{u('banner.tours')}</a></div>
     </div></div>
   </section>
 </main>
