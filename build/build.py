@@ -129,7 +129,10 @@ IC_BACK = svg('<path d="M19 12H5M11 6l-6 6 6 6"/>', 16)
 IC_CHEV = svg('<path d="M6 9l6 6 6-6"/>', 12, sw='2.2', extra=' class="chev"')
 IC_BURGER = svg('<path d="M4 7h16M4 12h16M4 17h16"/>', 26)
 PLAY = lambda size=20, fill='#A8501F': '<svg width="%s" height="%s" viewBox="0 0 24 24" fill="%s" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg>' % (size, size, fill)
-BRAND_INNER = '<img src="/images/logo-mark.svg" alt="" width="34" height="34"><span>M.Y.V. <i>Alanya Travel</i></span>'
+def brand_inner(kind):
+    # home page: new Alanya badge (castle + sail); all other pages keep the original fairy-chimney mark
+    src = '/images/logo-myv-badge.svg' if kind == 'home' else '/images/logo-mark.svg'
+    return '<img src="%s" alt="" width="34" height="34"><span>M.Y.V. <i>Alanya Travel</i></span>' % src
 
 
 # ------------------------------------------------------------------ head
@@ -239,7 +242,7 @@ def header(lang, page, kind):
 <a class="skip" href="#main">{u('skip')}</a>
 <header class="hdr{on}" id="hdr">
   <div class="hdr-in">
-    <a class="brand" href="{home}">{BRAND_INNER}</a>
+    <a class="brand" href="{home}">{brand_inner(kind)}</a>
     <nav class="nav" aria-label="Menu">
       <a href="{home}"{home_cur}>{u('nav.home')}</a>
       <button class="nl{tours_cur}" type="button" id="megaBtn" aria-expanded="false" aria-controls="mega">{u('nav.tours')} {IC_CHEV}</button>
@@ -265,7 +268,7 @@ def header(lang, page, kind):
 </div>
 <div class="sheet" id="sheet" hidden>
   <div class="sheet-top">
-    <a class="brand" href="{home}">{BRAND_INNER}</a>
+    <a class="brand" href="{home}">{brand_inner(kind)}</a>
     <button class="burger" type="button" id="sheetClose" aria-label="{u('nav.close')}">{svg('<path d="M6 6l12 12M18 6L6 18"/>', 24)}</button>
   </div>
   <div class="sheet-sec"><span class="eyebrow">{u('nav.tours')}</span><div>{mega_items(lang)}</div></div>
@@ -292,7 +295,7 @@ def footer(lang, kind):
     return f'''<footer id="contact">
   <div class="fgrid">
     <div class="fcol">
-      <div class="flogo">{BRAND_INNER}</div>
+      <div class="flogo">{brand_inner(kind)}</div>
       <p style="margin-top:18px">{u('foot.desc')}</p>
       <p class="rate">★ {ST['rating']} · {e(revn)}</p>
     </div>
@@ -511,10 +514,10 @@ def build_home(lang):
         <button class="btn btn-gold" type="button" data-book="">{u('hero.book')}</button>
         <a class="btn btn-white" href="{hub}">{u('hero.tours')}</a>
       </div>
-      <a class="film agency" href="#about">
-        <span class="dot"><img src="/images/logo-mark.svg" alt="" width="34" height="34"></span>
-        <span class="ft"><small>{u('about.eyebrow')}</small><em>{u('about.h2a')} {u('about.h2b')}</em></span>
-      </a>
+      <button class="film" type="button" data-film="{cap['video']['yt']}" data-tour="cappadocia" data-title="{e(vt.get('title', ''))}">
+        <span class="dot">{PLAY()}</span>
+        <span class="ft"><small>{u('hero.filmSmall')}</small><em>{e(vt.get('title', ''))}</em></span>
+      </button>
     </div>
     <div class="hstats">
       <div><b>{ST['rating']}</b><span>{u('stat.rating')}</span></div>
@@ -718,7 +721,7 @@ def build_tour(lang, tid):
 </main>
 '''
     bar = f'''<div class="bar" id="bar" aria-hidden="true">
-  <span class="bt">{e(d['name'])} <span>· {from_txt(lang, eur(t['fromPrice']))}</span></span>
+  <span class="bt"><span class="bn">{e(d['name'])}</span> <span class="bp">{from_txt(lang, eur(t['fromPrice']))}</span></span>
   <button class="btn btn-gold" type="button" data-book="{tid}" tabindex="-1">{u('nav.book')}</button>
 </div>
 '''

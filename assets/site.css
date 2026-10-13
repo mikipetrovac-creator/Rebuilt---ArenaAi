@@ -518,3 +518,18 @@ form{margin-top:24px;display:flex;flex-direction:column;gap:16px}
 @media (max-width:1023px){
   .media{aspect-ratio:auto;height:calc(var(--fullh,100svh) - var(--hdr) - env(safe-area-inset-top,0px))}
 }
+/* booking bar: easier to read (tour name + price), especially on phones */
+.bar{height:62px;background:rgba(255,252,247,.94);box-shadow:0 10px 34px rgba(26,15,8,.22);border:1px solid rgba(168,80,31,.18)}
+.bar .bt{font-size:clamp(20px,1.7vw,24px);color:var(--dark)}
+.bar .bt span{font-family:var(--sans);font-size:.78em;font-weight:500;color:var(--terra)}
+.bar .btn{min-height:44px;font-size:15px}
+@media (max-width:600px){.bar{height:60px;padding-left:18px}.bar .bt{font-size:20px}.bar .btn{padding:0 16px;font-size:15px}}
+.bar .bt .bn{color:var(--dark)}
+.bar .bt .bp::before{content:"· "}
+@media (max-width:600px){
+  .bar{height:64px}
+  .bar .bt{display:flex;flex-direction:column;justify-content:center;line-height:1.1;white-space:normal}
+  .bar .bt .bn{display:block;font-size:20px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+  .bar .bt .bp{display:block;margin-top:3px;font-size:15px}
+  .bar .bt .bp::before{content:none}
+}
