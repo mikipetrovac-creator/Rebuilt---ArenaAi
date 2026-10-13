@@ -40,6 +40,8 @@ exports.handler = async (event) => {
     { label: "Adults", key: "adults" },
     { label: "Children", key: "children" },
     { label: "Infants", key: "infants" },
+    { label: "Time slot", key: "slot" },
+    { label: "People", key: "people" },
     { label: "Total Price", key: "total" },
     { label: "Notes", key: "notes" },
     { label: "Language", key: "lang" },

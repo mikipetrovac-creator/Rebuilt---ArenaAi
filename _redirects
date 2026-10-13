@@ -3,6 +3,9 @@
 # ============================================
 
 # --- Skracenice ---
+/kapadokija             /cappadocia             301
+/boat                   /private-boat-alanya    301
+/pirate                 /pirate-ship-alanya     301
 /demre                  /demre-myra-kekova      301
 /demre.html             /demre-myra-kekova      301
 
@@ -11,6 +14,9 @@
 /demre-myra-kekova.html /demre-myra-kekova      301!
 /pamukkale.html         /pamukkale              301!
 /green-canyon.html      /green-canyon           301!
+/cappadocia.html        /cappadocia             301!
+/private-boat-alanya.html /private-boat-alanya   301!
+/pirate-ship-alanya.html  /pirate-ship-alanya    301!
 /blog.html              /blog                   301!
 
 # --- Jezicke verzije: .html -> cist URL ---
@@ -18,6 +24,9 @@
 /:lang/demre-myra-kekova.html /:lang/demre-myra-kekova      301!
 /:lang/pamukkale.html         /:lang/pamukkale              301!
 /:lang/green-canyon.html      /:lang/green-canyon           301!
+/:lang/cappadocia.html        /:lang/cappadocia             301!
+/:lang/private-boat-alanya.html /:lang/private-boat-alanya  301!
+/:lang/pirate-ship-alanya.html  /:lang/pirate-ship-alanya   301!
 
 # --- Blog clanci: .html -> cist URL ---
 /blog-cappadocia-balloon.html   /blog-cappadocia-balloon    301!

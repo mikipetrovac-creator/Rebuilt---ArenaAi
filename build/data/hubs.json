@@ -1,0 +1,1848 @@
+{
+ "alanya": {
+  "en": {
+   "meta": {
+    "title": "Excursions from Alanya & Side — Prices 2026 | M.Y.V. Alanya Travel",
+    "desc": "All our tours from Alanya and Side with 2026 prices: Cappadocia from €50, Pamukkale from €40, Demre-Myra-Kekova from €55, Green Canyon from €30. Hotel pickup, licensed guide, pay on arrival.",
+    "ogTitle": "Excursions from Alanya & Side — Prices 2026 | M.Y.V. Alanya Travel",
+    "ogDesc": "All our tours from Alanya and Side with 2026 prices: Cappadocia from €50, Pamukkale from €40, Demre-Myra-Kekova from €55, Green Canyon from €30. Hotel pickup, licensed guide, pay on arrival."
+   },
+   "jsonld": [
+    "{\"@context\": \"https://schema.org\", \"@type\": \"FAQPage\", \"mainEntity\": [{\"@type\": \"Question\", \"name\": \"How much do excursions from Alanya cost in 2026?\", \"acceptedAnswer\": {\"@type\": \"Answer\", \"text\": \"Our day tours start at €30 per adult for Green Canyon, €40 for Pamukkale and €55 for Demre-Myra-Kekova. The 2-day Cappadocia tour starts at €50 per adult in the budget package. Children pay less and infants under 3 travel free.\"}}, {\"@type\": \"Question\", \"name\": \"Do you pick up from Side as well as Alanya?\", \"acceptedAnswer\": {\"@type\": \"Answer\", \"text\": \"Yes. All our tours include free hotel pickup from Alanya, Side and the resorts in between, including Konaklı, Avsallar, Okurcalar, Mahmutlar and Kestel.\"}}, {\"@type\": \"Question\", \"name\": \"Do I have to pay online in advance?\", \"acceptedAnswer\": {\"@type\": \"Answer\", \"text\": \"No. You send a booking request through the site, we confirm availability and your pickup time on WhatsApp, and you pay on the day of the tour.\"}}, {\"@type\": \"Question\", \"name\": \"Which excursion is best if I only have one day?\", \"acceptedAnswer\": {\"@type\": \"Answer\", \"text\": \"Pamukkale and Demre-Myra-Kekova are the two classic full-day trips. Green Canyon is a more relaxed day on the water. Cappadocia needs two days because of the distance.\"}}]}",
+    "{\"@context\": \"https://schema.org\", \"@type\": \"ItemList\", \"itemListElement\": [{\"@type\": \"ListItem\", \"position\": 1, \"name\": \"Cappadocia (2 days)\", \"url\": \"https://myvalanyatravel.com/\"}, {\"@type\": \"ListItem\", \"position\": 2, \"name\": \"Pamukkale\", \"url\": \"https://myvalanyatravel.com/pamukkale\"}, {\"@type\": \"ListItem\", \"position\": 3, \"name\": \"Demre · Myra · Kekova\", \"url\": \"https://myvalanyatravel.com/demre-myra-kekova\"}, {\"@type\": \"ListItem\", \"position\": 4, \"name\": \"Green Canyon\", \"url\": \"https://myvalanyatravel.com/green-canyon\"}]}"
+   ],
+   "h1": "Excursions from Alanya & Side",
+   "sub": "All our tours with honest 2026 prices. Hotel pickup included, licensed guides, and you pay on the day — no online prepayment.",
+   "upd": "Updated: July 2026",
+   "switch": [
+    {
+     "href": "/excursions-from-alanya",
+     "label": "From Alanya",
+     "on": true
+    },
+    {
+     "href": "/excursions-from-side",
+     "label": "From Side",
+     "on": false
+    }
+   ],
+   "th": [
+    "Tour",
+    "Duration",
+    "Tour days",
+    "From (adult)",
+    "Premium",
+    ""
+   ],
+   "rows": [
+    {
+     "cells": [
+      "Cappadocia (2 days)",
+      "2 days / 1 night",
+      "Mon, Thu, Sat",
+      "€50 From",
+      "€100",
+      "View tour →"
+     ],
+     "href": "https://myvalanyatravel.com/",
+     "tour": "cappadocia"
+    },
+    {
+     "cells": [
+      "Pamukkale",
+      "Full day",
+      "Every day",
+      "€40 From",
+      "€70",
+      "View tour →"
+     ],
+     "href": "https://myvalanyatravel.com/pamukkale",
+     "tour": "pamukkale"
+    },
+    {
+     "cells": [
+      "Demre · Myra · Kekova",
+      "Full day",
+      "Wed, Sun",
+      "€55 From",
+      "€80",
+      "View tour →"
+     ],
+     "href": "https://myvalanyatravel.com/demre-myra-kekova",
+     "tour": "demre"
+    },
+    {
+     "cells": [
+      "Green Canyon",
+      "Relaxed day",
+      "Every day",
+      "€30 From",
+      "One package",
+      "View tour →"
+     ],
+     "href": "https://myvalanyatravel.com/green-canyon",
+     "tour": "greencanyon"
+    },
+    {
+     "cells": [
+      "Private boat",
+      "4 hours",
+      "Every day",
+      "€350 From",
+      "One package",
+      "View tour →"
+     ],
+     "tour": "boat"
+    },
+    {
+     "cells": [
+      "Pirate ship",
+      "4 hours on board",
+      "On board 10:00–14:00",
+      "€20 From",
+      "One package",
+      "View tour →"
+     ],
+     "tour": "pirate"
+    }
+   ],
+   "faqTitle": "FAQ",
+   "faq": [
+    {
+     "q": "How much do excursions from Alanya cost in 2026?",
+     "a": "Our day tours start at €30 per adult for Green Canyon, €40 for Pamukkale and €55 for Demre-Myra-Kekova. The 2-day Cappadocia tour starts at €50 per adult in the budget package. Children pay less and infants under 3 travel free."
+    },
+    {
+     "q": "Do you pick up from Side as well as Alanya?",
+     "a": "Yes. All our tours include free hotel pickup from Alanya, Side and the resorts in between, including Konaklı, Avsallar, Okurcalar, Mahmutlar and Kestel."
+    },
+    {
+     "q": "Do I have to pay online in advance?",
+     "a": "No. You send a booking request through the site, we confirm availability and your pickup time on WhatsApp, and you pay on the day of the tour."
+    },
+    {
+     "q": "Which excursion is best if I only have one day?",
+     "a": "Pamukkale and Demre-Myra-Kekova are the two classic full-day trips. Green Canyon is a more relaxed day on the water. Cappadocia needs two days because of the distance."
+    }
+   ],
+   "sections": [
+    {
+     "h": "What's included in every tour",
+     "p": "",
+     "li": [
+      "Hotel pickup and drop-off in Alanya, Side and nearby resorts",
+      "Air-conditioned transport",
+      "Licensed professional guide (EN / RU / TR)",
+      "Meals as listed on each tour page",
+      "Travel insurance"
+     ]
+    },
+    {
+     "h": "Children & infants",
+     "p": "Infants 0–3 travel free (on a parent's lap, no separate seat). Children pay a reduced price — see each tour page for exact rates.",
+     "li": []
+    },
+    {
+     "h": "How payment works",
+     "p": "No online prepayment. You send a booking request, we confirm your hotel pickup on WhatsApp, and you pay on the day of the tour. Prices are per person in euros.",
+     "li": []
+    }
+   ],
+   "cta": {
+    "h": "Not sure which tour to pick?",
+    "p": "Write to us on WhatsApp and we'll help you choose based on how many days you have and who is travelling with you.",
+    "btn": "Ask us on WhatsApp",
+    "href": "https://wa.me/905331429037?text=Hello!%20I'd%20like%20to%20ask%20about%20your%20excursions%20from%20Alanya."
+   }
+  },
+  "ru": {
+   "meta": {
+    "title": "Экскурсии из Аланьи и Сиде — цены 2026 | M.Y.V. Alanya Travel",
+    "desc": "Все наши туры из Аланьи и Сиде с ценами на 2026: Каппадокия от €50, Памуккале от €40, Демре-Мира-Кекова от €55, Зелёный каньон от €30. Трансфер от отеля, лицензированный гид, оплата на месте.",
+    "ogTitle": "Экскурсии из Аланьи и Сиде — цены 2026 | M.Y.V. Alanya Travel",
+    "ogDesc": "Все наши туры из Аланьи и Сиде с ценами на 2026: Каппадокия от €50, Памуккале от €40, Демре-Мира-Кекова от €55, Зелёный каньон от €30. Трансфер от отеля, лицензированный гид, оплата на месте."
+   },
+   "jsonld": [
+    "{\"@context\": \"https://schema.org\", \"@type\": \"FAQPage\", \"mainEntity\": [{\"@type\": \"Question\", \"name\": \"Сколько стоят экскурсии из Аланьи в 2026 году?\", \"acceptedAnswer\": {\"@type\": \"Answer\", \"text\": \"Однодневные туры начинаются от €30 за взрослого на Зелёный каньон, €40 на Памуккале и €55 на Демре-Мира-Кекова. Двухдневный тур в Каппадокию — от €50 за взрослого в бюджетном пакете. Дети платят меньше, малыши до 3 лет — бесплатно.\"}}, {\"@type\": \"Question\", \"name\": \"Забираете ли вы из Сиде, а не только из Аланьи?\", \"acceptedAnswer\": {\"@type\": \"Answer\", \"text\": \"Да. Все туры включают бесплатный трансфер от отеля в Аланье, Сиде и посёлках между ними: Конаклы, Авсаллар, Окурджалар, Махмутлар, Кестель.\"}}, {\"@type\": \"Question\", \"name\": \"Нужно ли платить онлайн заранее?\", \"acceptedAnswer\": {\"@type\": \"Answer\", \"text\": \"Нет. Вы отправляете заявку через сайт, мы подтверждаем наличие мест и время трансфера в WhatsApp, оплата — в день экскурсии.\"}}, {\"@type\": \"Question\", \"name\": \"Какую экскурсию выбрать, если есть только один день?\", \"acceptedAnswer\": {\"@type\": \"Answer\", \"text\": \"Памуккале и Демре-Мира-Кекова — две классические однодневные поездки. Зелёный каньон — более спокойный день на воде. Для Каппадокии нужны два дня из-за расстояния.\"}}]}",
+    "{\"@context\": \"https://schema.org\", \"@type\": \"ItemList\", \"itemListElement\": [{\"@type\": \"ListItem\", \"position\": 1, \"name\": \"Каппадокия (2 дня)\", \"url\": \"https://myvalanyatravel.com/ru/\"}, {\"@type\": \"ListItem\", \"position\": 2, \"name\": \"Памуккале\", \"url\": \"https://myvalanyatravel.com/ru/pamukkale\"}, {\"@type\": \"ListItem\", \"position\": 3, \"name\": \"Демре · Мира · Кекова\", \"url\": \"https://myvalanyatravel.com/ru/demre-myra-kekova\"}, {\"@type\": \"ListItem\", \"position\": 4, \"name\": \"Зелёный каньон\", \"url\": \"https://myvalanyatravel.com/ru/green-canyon\"}]}"
+   ],
+   "h1": "Экскурсии из Аланьи и Сиде",
+   "sub": "Все наши туры с честными ценами на 2026 год. Трансфер от отеля включён, гиды лицензированы, а оплата — в день экскурсии, без предоплаты онлайн.",
+   "upd": "Обновлено: июль 2026 г.",
+   "switch": [
+    {
+     "href": "/ru/excursions-from-alanya",
+     "label": "Из Аланьи",
+     "on": true
+    },
+    {
+     "href": "/ru/excursions-from-side",
+     "label": "Из Сиде",
+     "on": false
+    }
+   ],
+   "th": [
+    "Тур",
+    "Длительность",
+    "Дни",
+    "От (взрослый)",
+    "Премиум",
+    ""
+   ],
+   "rows": [
+    {
+     "cells": [
+      "Каппадокия (2 дня)",
+      "2 дня / 1 ночь",
+      "Пн, чт, сб",
+      "€50 От",
+      "€100",
+      "Смотреть тур →"
+     ],
+     "href": "https://myvalanyatravel.com/ru/",
+     "tour": "cappadocia"
+    },
+    {
+     "cells": [
+      "Памуккале",
+      "Весь день",
+      "Каждый день",
+      "€40 От",
+      "€70",
+      "Смотреть тур →"
+     ],
+     "href": "https://myvalanyatravel.com/ru/pamukkale",
+     "tour": "pamukkale"
+    },
+    {
+     "cells": [
+      "Демре · Мира · Кекова",
+      "Весь день",
+      "Ср, вс",
+      "€55 От",
+      "€80",
+      "Смотреть тур →"
+     ],
+     "href": "https://myvalanyatravel.com/ru/demre-myra-kekova",
+     "tour": "demre"
+    },
+    {
+     "cells": [
+      "Зелёный каньон",
+      "Спокойный день",
+      "Каждый день",
+      "€30 От",
+      "Один пакет",
+      "Смотреть тур →"
+     ],
+     "href": "https://myvalanyatravel.com/ru/green-canyon",
+     "tour": "greencanyon"
+    },
+    {
+     "cells": [
+      "Частная яхта",
+      "4 часа",
+      "Каждый день",
+      "€350 От",
+      "Один пакет",
+      "Смотреть тур →"
+     ],
+     "tour": "boat"
+    },
+    {
+     "cells": [
+      "Пиратский корабль",
+      "4 часа на борту",
+      "На борту 10:00–14:00",
+      "€20 От",
+      "Один пакет",
+      "Смотреть тур →"
+     ],
+     "tour": "pirate"
+    }
+   ],
+   "faqTitle": "FAQ",
+   "faq": [
+    {
+     "q": "Сколько стоят экскурсии из Аланьи в 2026 году?",
+     "a": "Однодневные туры начинаются от €30 за взрослого на Зелёный каньон, €40 на Памуккале и €55 на Демре-Мира-Кекова. Двухдневный тур в Каппадокию — от €50 за взрослого в бюджетном пакете. Дети платят меньше, малыши до 3 лет — бесплатно."
+    },
+    {
+     "q": "Забираете ли вы из Сиде, а не только из Аланьи?",
+     "a": "Да. Все туры включают бесплатный трансфер от отеля в Аланье, Сиде и посёлках между ними: Конаклы, Авсаллар, Окурджалар, Махмутлар, Кестель."
+    },
+    {
+     "q": "Нужно ли платить онлайн заранее?",
+     "a": "Нет. Вы отправляете заявку через сайт, мы подтверждаем наличие мест и время трансфера в WhatsApp, оплата — в день экскурсии."
+    },
+    {
+     "q": "Какую экскурсию выбрать, если есть только один день?",
+     "a": "Памуккале и Демре-Мира-Кекова — две классические однодневные поездки. Зелёный каньон — более спокойный день на воде. Для Каппадокии нужны два дня из-за расстояния."
+    }
+   ],
+   "sections": [
+    {
+     "h": "Что входит в каждый тур",
+     "p": "",
+     "li": [
+      "Трансфер от отеля и обратно в Аланье, Сиде и окрестных курортах",
+      "Транспорт с кондиционером",
+      "Лицензированный профессиональный гид (EN / RU / TR)",
+      "Питание, указанное на странице тура",
+      "Страховка"
+     ]
+    },
+    {
+     "h": "Дети и малыши",
+     "p": "Дети 0–3 лет — бесплатно (на руках у родителей, без отдельного места). Дети постарше платят по сниженной цене — точные цены указаны на странице каждого тура.",
+     "li": []
+    },
+    {
+     "h": "Как происходит оплата",
+     "p": "Предоплата онлайн не требуется. Вы отправляете заявку, мы подтверждаем трансфер от отеля в WhatsApp, и вы оплачиваете в день экскурсии. Цены указаны за человека в евро.",
+     "li": []
+    }
+   ],
+   "cta": {
+    "h": "Не знаете, какой тур выбрать?",
+    "p": "Напишите нам в WhatsApp — поможем выбрать, исходя из того, сколько у вас дней и с кем вы путешествуете.",
+    "btn": "Спросить в WhatsApp",
+    "href": "https://wa.me/905331429037?text=Здравствуйте!%20Хочу%20узнать%20про%20ваши%20экскурсии%20из%20Аланьи."
+   }
+  },
+  "de": {
+   "meta": {
+    "title": "Ausflüge ab Alanya & Side — Preise 2026 | M.Y.V. Alanya Travel",
+    "desc": "Alle unsere Touren ab Alanya und Side mit Preisen für 2026: Kappadokien ab 50 €, Pamukkale ab 40 €, Demre-Myra-Kekova ab 55 €, Green Canyon ab 30 €. Hotelabholung, lizenzierter Guide, Zahlung vor Ort.",
+    "ogTitle": "Ausflüge ab Alanya & Side — Preise 2026 | M.Y.V. Alanya Travel",
+    "ogDesc": "Alle unsere Touren ab Alanya und Side mit Preisen für 2026: Kappadokien ab 50 €, Pamukkale ab 40 €, Demre-Myra-Kekova ab 55 €, Green Canyon ab 30 €. Hotelabholung, lizenzierter Guide, Zahlung vor Ort."
+   },
+   "jsonld": [
+    "{\"@context\": \"https://schema.org\", \"@type\": \"FAQPage\", \"mainEntity\": [{\"@type\": \"Question\", \"name\": \"Was kosten Ausflüge ab Alanya im Jahr 2026?\", \"acceptedAnswer\": {\"@type\": \"Answer\", \"text\": \"Unsere Tagestouren beginnen bei 30 € pro Erwachsenem für Green Canyon, 40 € für Pamukkale und 55 € für Demre-Myra-Kekova. Die 2-Tages-Tour nach Kappadokien beginnt bei 50 € pro Erwachsenem im Budget-Paket. Kinder zahlen weniger, Kleinkinder unter 3 Jahren reisen kostenlos.\"}}, {\"@type\": \"Question\", \"name\": \"Holen Sie auch in Side ab, nicht nur in Alanya?\", \"acceptedAnswer\": {\"@type\": \"Answer\", \"text\": \"Ja. Alle Touren beinhalten die kostenlose Hotelabholung in Alanya, Side und den Orten dazwischen, darunter Konaklı, Avsallar, Okurcalar, Mahmutlar und Kestel.\"}}, {\"@type\": \"Question\", \"name\": \"Muss ich online im Voraus bezahlen?\", \"acceptedAnswer\": {\"@type\": \"Answer\", \"text\": \"Nein. Sie senden eine Anfrage über die Website, wir bestätigen Verfügbarkeit und Abholzeit per WhatsApp, und Sie zahlen am Tag der Tour.\"}}, {\"@type\": \"Question\", \"name\": \"Welcher Ausflug lohnt sich, wenn ich nur einen Tag habe?\", \"acceptedAnswer\": {\"@type\": \"Answer\", \"text\": \"Pamukkale und Demre-Myra-Kekova sind die beiden klassischen Ganztagestouren. Green Canyon ist ein entspannter Tag auf dem Wasser. Kappadokien benötigt wegen der Entfernung zwei Tage.\"}}]}",
+    "{\"@context\": \"https://schema.org\", \"@type\": \"ItemList\", \"itemListElement\": [{\"@type\": \"ListItem\", \"position\": 1, \"name\": \"Kappadokien (2 Tage)\", \"url\": \"https://myvalanyatravel.com/de/\"}, {\"@type\": \"ListItem\", \"position\": 2, \"name\": \"Pamukkale\", \"url\": \"https://myvalanyatravel.com/de/pamukkale\"}, {\"@type\": \"ListItem\", \"position\": 3, \"name\": \"Demre · Myra · Kekova\", \"url\": \"https://myvalanyatravel.com/de/demre-myra-kekova\"}, {\"@type\": \"ListItem\", \"position\": 4, \"name\": \"Green Canyon\", \"url\": \"https://myvalanyatravel.com/de/green-canyon\"}]}"
+   ],
+   "h1": "Ausflüge ab Alanya & Side",
+   "sub": "Alle unsere Touren mit ehrlichen Preisen für 2026. Hotelabholung inklusive, lizenzierte Guides, und Sie zahlen am Tag der Tour — keine Online-Vorauszahlung.",
+   "upd": "Aktualisiert: Juli 2026",
+   "switch": [
+    {
+     "href": "/de/excursions-from-alanya",
+     "label": "Ab Alanya",
+     "on": true
+    },
+    {
+     "href": "/de/excursions-from-side",
+     "label": "Ab Side",
+     "on": false
+    }
+   ],
+   "th": [
+    "Tour",
+    "Dauer",
+    "Tourtage",
+    "Ab (Erwachsener)",
+    "Premium",
+    ""
+   ],
+   "rows": [
+    {
+     "cells": [
+      "Kappadokien (2 Tage)",
+      "2 Tage / 1 Nacht",
+      "Mo, Do, Sa",
+      "€50 Ab",
+      "€100",
+      "Zur Tour →"
+     ],
+     "href": "https://myvalanyatravel.com/de/",
+     "tour": "cappadocia"
+    },
+    {
+     "cells": [
+      "Pamukkale",
+      "Ganztags",
+      "Täglich",
+      "€40 Ab",
+      "€70",
+      "Zur Tour →"
+     ],
+     "href": "https://myvalanyatravel.com/de/pamukkale",
+     "tour": "pamukkale"
+    },
+    {
+     "cells": [
+      "Demre · Myra · Kekova",
+      "Ganztags",
+      "Mi, So",
+      "€55 Ab",
+      "€80",
+      "Zur Tour →"
+     ],
+     "href": "https://myvalanyatravel.com/de/demre-myra-kekova",
+     "tour": "demre"
+    },
+    {
+     "cells": [
+      "Green Canyon",
+      "Entspannter Tag",
+      "Täglich",
+      "€30 Ab",
+      "Ein Paket",
+      "Zur Tour →"
+     ],
+     "href": "https://myvalanyatravel.com/de/green-canyon",
+     "tour": "greencanyon"
+    },
+    {
+     "cells": [
+      "Privatboot",
+      "4 Stunden",
+      "Täglich",
+      "€350 Ab",
+      "Ein Paket",
+      "Zur Tour →"
+     ],
+     "tour": "boat"
+    },
+    {
+     "cells": [
+      "Piratenschiff",
+      "4 Stunden an Bord",
+      "An Bord 10:00–14:00",
+      "€20 Ab",
+      "Ein Paket",
+      "Zur Tour →"
+     ],
+     "tour": "pirate"
+    }
+   ],
+   "faqTitle": "FAQ",
+   "faq": [
+    {
+     "q": "Was kosten Ausflüge ab Alanya im Jahr 2026?",
+     "a": "Unsere Tagestouren beginnen bei 30 € pro Erwachsenem für Green Canyon, 40 € für Pamukkale und 55 € für Demre-Myra-Kekova. Die 2-Tages-Tour nach Kappadokien beginnt bei 50 € pro Erwachsenem im Budget-Paket. Kinder zahlen weniger, Kleinkinder unter 3 Jahren reisen kostenlos."
+    },
+    {
+     "q": "Holen Sie auch in Side ab, nicht nur in Alanya?",
+     "a": "Ja. Alle Touren beinhalten die kostenlose Hotelabholung in Alanya, Side und den Orten dazwischen, darunter Konaklı, Avsallar, Okurcalar, Mahmutlar und Kestel."
+    },
+    {
+     "q": "Muss ich online im Voraus bezahlen?",
+     "a": "Nein. Sie senden eine Anfrage über die Website, wir bestätigen Verfügbarkeit und Abholzeit per WhatsApp, und Sie zahlen am Tag der Tour."
+    },
+    {
+     "q": "Welcher Ausflug lohnt sich, wenn ich nur einen Tag habe?",
+     "a": "Pamukkale und Demre-Myra-Kekova sind die beiden klassischen Ganztagestouren. Green Canyon ist ein entspannter Tag auf dem Wasser. Kappadokien benötigt wegen der Entfernung zwei Tage."
+    }
+   ],
+   "sections": [
+    {
+     "h": "In jeder Tour enthalten",
+     "p": "",
+     "li": [
+      "Hotelabholung und -rückfahrt in Alanya, Side und den umliegenden Orten",
+      "Klimatisierter Transport",
+      "Lizenzierter professioneller Guide (EN / RU / TR)",
+      "Mahlzeiten laut Tourseite",
+      "Reiseversicherung"
+     ]
+    },
+    {
+     "h": "Kinder und Kleinkinder",
+     "p": "Kleinkinder von 0–3 Jahren reisen kostenlos (auf dem Schoß der Eltern, ohne eigenen Sitzplatz). Kinder zahlen einen ermäßigten Preis — genaue Preise finden Sie auf der jeweiligen Tourseite.",
+     "li": []
+    },
+    {
+     "h": "So funktioniert die Zahlung",
+     "p": "Keine Online-Vorauszahlung. Sie senden eine Buchungsanfrage, wir bestätigen Ihre Hotelabholung per WhatsApp, und Sie zahlen am Tag der Tour. Preise gelten pro Person in Euro.",
+     "li": []
+    }
+   ],
+   "cta": {
+    "h": "Unsicher, welche Tour die richtige ist?",
+    "p": "Schreiben Sie uns auf WhatsApp — wir helfen Ihnen bei der Auswahl, je nachdem, wie viele Tage Sie haben und mit wem Sie reisen.",
+    "btn": "Auf WhatsApp fragen",
+    "href": "https://wa.me/905331429037?text=Hallo!%20Ich%20möchte%20mich%20über%20Ihre%20Ausflüge%20ab%20Alanya%20informieren."
+   }
+  },
+  "tr": {
+   "meta": {
+    "title": "Alanya ve Side'den Turlar — 2026 Fiyatları | M.Y.V. Alanya Travel",
+    "desc": "Alanya ve Side'den tüm turlarımız ve 2026 fiyatları: Kapadokya €50'den, Pamukkale €40'tan, Demre-Myra-Kekova €55'ten, Green Canyon €30'dan. Otelden alış, lisanslı rehber, turda ödeme.",
+    "ogTitle": "Alanya ve Side'den Turlar — 2026 Fiyatları | M.Y.V. Alanya Travel",
+    "ogDesc": "Alanya ve Side'den tüm turlarımız ve 2026 fiyatları: Kapadokya €50'den, Pamukkale €40'tan, Demre-Myra-Kekova €55'ten, Green Canyon €30'dan. Otelden alış, lisanslı rehber, turda ödeme."
+   },
+   "jsonld": [
+    "{\"@context\": \"https://schema.org\", \"@type\": \"FAQPage\", \"mainEntity\": [{\"@type\": \"Question\", \"name\": \"2026'da Alanya'dan turlar ne kadar?\", \"acceptedAnswer\": {\"@type\": \"Answer\", \"text\": \"Günlük turlarımız Green Canyon için yetişkin başına €30, Pamukkale için €40 ve Demre-Myra-Kekova için €55'ten başlar. 2 günlük Kapadokya turu bütçe paketinde yetişkin başına €50'den başlar. Çocuklar daha az öder, 3 yaş altı bebekler ücretsizdir.\"}}, {\"@type\": \"Question\", \"name\": \"Sadece Alanya'dan değil, Side'den de alış yapıyor musunuz?\", \"acceptedAnswer\": {\"@type\": \"Answer\", \"text\": \"Evet. Tüm turlarımız Alanya, Side ve aradaki beldelerden (Konaklı, Avsallar, Okurcalar, Mahmutlar, Kestel) ücretsiz otelden alış içerir.\"}}, {\"@type\": \"Question\", \"name\": \"Önceden online ödeme yapmam gerekiyor mu?\", \"acceptedAnswer\": {\"@type\": \"Answer\", \"text\": \"Hayır. Site üzerinden talep gönderirsiniz, müsaitliği ve alış saatinizi WhatsApp'tan onaylarız, ödemeyi tur günü yaparsınız.\"}}, {\"@type\": \"Question\", \"name\": \"Sadece bir günüm varsa hangi tur en iyisi?\", \"acceptedAnswer\": {\"@type\": \"Answer\", \"text\": \"Pamukkale ve Demre-Myra-Kekova iki klasik tam gün turdur. Green Canyon suda daha sakin bir gündür. Kapadokya mesafe nedeniyle iki gün gerektirir.\"}}]}",
+    "{\"@context\": \"https://schema.org\", \"@type\": \"ItemList\", \"itemListElement\": [{\"@type\": \"ListItem\", \"position\": 1, \"name\": \"Kapadokya (2 gün)\", \"url\": \"https://myvalanyatravel.com/tr/\"}, {\"@type\": \"ListItem\", \"position\": 2, \"name\": \"Pamukkale\", \"url\": \"https://myvalanyatravel.com/tr/pamukkale\"}, {\"@type\": \"ListItem\", \"position\": 3, \"name\": \"Demre · Myra · Kekova\", \"url\": \"https://myvalanyatravel.com/tr/demre-myra-kekova\"}, {\"@type\": \"ListItem\", \"position\": 4, \"name\": \"Green Canyon\", \"url\": \"https://myvalanyatravel.com/tr/green-canyon\"}]}"
+   ],
+   "h1": "Alanya ve Side'den Turlar",
+   "sub": "Tüm turlarımız ve dürüst 2026 fiyatları. Otelden alış dahil, rehberlerimiz lisanslı ve ödemeyi tur günü yapıyorsunuz — online ön ödeme yok.",
+   "upd": "Güncellendi: Temmuz 2026",
+   "switch": [
+    {
+     "href": "/tr/excursions-from-alanya",
+     "label": "Alanya'dan",
+     "on": true
+    },
+    {
+     "href": "/tr/excursions-from-side",
+     "label": "Side'den",
+     "on": false
+    }
+   ],
+   "th": [
+    "Tur",
+    "Süre",
+    "Tur günleri",
+    "Başlangıç (yetişkin)",
+    "Premium",
+    ""
+   ],
+   "rows": [
+    {
+     "cells": [
+      "Kapadokya (2 gün)",
+      "2 gün / 1 gece",
+      "Pzt, Per, Cmt",
+      "€50 Başlangıç",
+      "€100",
+      "Turu görüntüle →"
+     ],
+     "href": "https://myvalanyatravel.com/tr/",
+     "tour": "cappadocia"
+    },
+    {
+     "cells": [
+      "Pamukkale",
+      "Tam gün",
+      "Her gün",
+      "€40 Başlangıç",
+      "€70",
+      "Turu görüntüle →"
+     ],
+     "href": "https://myvalanyatravel.com/tr/pamukkale",
+     "tour": "pamukkale"
+    },
+    {
+     "cells": [
+      "Demre · Myra · Kekova",
+      "Tam gün",
+      "Çar, Paz",
+      "€55 Başlangıç",
+      "€80",
+      "Turu görüntüle →"
+     ],
+     "href": "https://myvalanyatravel.com/tr/demre-myra-kekova",
+     "tour": "demre"
+    },
+    {
+     "cells": [
+      "Green Canyon",
+      "Sakin gün",
+      "Her gün",
+      "€30 Başlangıç",
+      "Tek paket",
+      "Turu görüntüle →"
+     ],
+     "href": "https://myvalanyatravel.com/tr/green-canyon",
+     "tour": "greencanyon"
+    },
+    {
+     "cells": [
+      "Özel tekne",
+      "4 saat",
+      "Her gün",
+      "€350 Başlangıç",
+      "Tek paket",
+      "Turu görüntüle →"
+     ],
+     "tour": "boat"
+    },
+    {
+     "cells": [
+      "Korsan gemisi",
+      "Teknede 4 saat",
+      "Teknede 10:00–14:00",
+      "€20 Başlangıç",
+      "Tek paket",
+      "Turu görüntüle →"
+     ],
+     "tour": "pirate"
+    }
+   ],
+   "faqTitle": "FAQ",
+   "faq": [
+    {
+     "q": "2026'da Alanya'dan turlar ne kadar?",
+     "a": "Günlük turlarımız Green Canyon için yetişkin başına €30, Pamukkale için €40 ve Demre-Myra-Kekova için €55'ten başlar. 2 günlük Kapadokya turu bütçe paketinde yetişkin başına €50'den başlar. Çocuklar daha az öder, 3 yaş altı bebekler ücretsizdir."
+    },
+    {
+     "q": "Sadece Alanya'dan değil, Side'den de alış yapıyor musunuz?",
+     "a": "Evet. Tüm turlarımız Alanya, Side ve aradaki beldelerden (Konaklı, Avsallar, Okurcalar, Mahmutlar, Kestel) ücretsiz otelden alış içerir."
+    },
+    {
+     "q": "Önceden online ödeme yapmam gerekiyor mu?",
+     "a": "Hayır. Site üzerinden talep gönderirsiniz, müsaitliği ve alış saatinizi WhatsApp'tan onaylarız, ödemeyi tur günü yaparsınız."
+    },
+    {
+     "q": "Sadece bir günüm varsa hangi tur en iyisi?",
+     "a": "Pamukkale ve Demre-Myra-Kekova iki klasik tam gün turdur. Green Canyon suda daha sakin bir gündür. Kapadokya mesafe nedeniyle iki gün gerektirir."
+    }
+   ],
+   "sections": [
+    {
+     "h": "Her tura dahil olanlar",
+     "p": "",
+     "li": [
+      "Alanya, Side ve çevre tatil beldelerinde otelden alış ve bırakış",
+      "Klimalı ulaşım",
+      "Lisanslı profesyonel rehber (EN / RU / TR)",
+      "Tur sayfasında belirtilen öğünler",
+      "Seyahat sigortası"
+     ]
+    },
+    {
+     "h": "Çocuklar ve bebekler",
+     "p": "0–3 yaş bebekler ücretsiz seyahat eder (ebeveyn kucağında, ayrı koltuk yok). Çocuklar indirimli öder — kesin fiyatlar her turun sayfasındadır.",
+     "li": []
+    },
+    {
+     "h": "Ödeme nasıl yapılır",
+     "p": "Online ön ödeme yok. Rezervasyon talebi gönderirsiniz, otelden alış saatinizi WhatsApp'tan onaylarız ve tur günü ödersiniz. Fiyatlar kişi başı, euro cinsindendir.",
+     "li": []
+    }
+   ],
+   "cta": {
+    "h": "Hangi turu seçeceğinizden emin değil misiniz?",
+    "p": "WhatsApp'tan yazın; kaç gününüz olduğuna ve kiminle seyahat ettiğinize göre seçmenize yardımcı olalım.",
+    "btn": "WhatsApp'tan sorun",
+    "href": "https://wa.me/905331429037?text=Merhaba!%20Alanya'dan%20turlarınız%20hakkında%20bilgi%20almak%20istiyorum."
+   }
+  },
+  "uk": {
+   "meta": {
+    "title": "Екскурсії з Аланії та Сіде — ціни 2026 | M.Y.V. Alanya Travel",
+    "desc": "Усі наші тури з Аланії та Сіде з цінами на 2026: Каппадокія від €50, Памуккале від €40, Демре-Міра-Кекова від €55, Зелений каньйон від €30. Трансфер від готелю, ліцензований гід, оплата на місці.",
+    "ogTitle": "Екскурсії з Аланії та Сіде — ціни 2026 | M.Y.V. Alanya Travel",
+    "ogDesc": "Усі наші тури з Аланії та Сіде з цінами на 2026: Каппадокія від €50, Памуккале від €40, Демре-Міра-Кекова від €55, Зелений каньйон від €30. Трансфер від готелю, ліцензований гід, оплата на місці."
+   },
+   "jsonld": [
+    "{\"@context\": \"https://schema.org\", \"@type\": \"FAQPage\", \"mainEntity\": [{\"@type\": \"Question\", \"name\": \"Скільки коштують екскурсії з Аланії у 2026 році?\", \"acceptedAnswer\": {\"@type\": \"Answer\", \"text\": \"Одноденні тури починаються від €30 за дорослого на Зелений каньйон, €40 на Памуккале та €55 на Демре-Міра-Кекова. Дводенний тур до Каппадокії — від €50 за дорослого в бюджетному пакеті. Діти платять менше, немовлята до 3 років — безкоштовно.\"}}, {\"@type\": \"Question\", \"name\": \"Чи забираєте ви з Сіде, а не лише з Аланії?\", \"acceptedAnswer\": {\"@type\": \"Answer\", \"text\": \"Так. Усі тури включають безкоштовний трансфер від готелю в Аланії, Сіде та селищах між ними: Конакли, Авсаллар, Окурджалар, Махмутлар, Кестель.\"}}, {\"@type\": \"Question\", \"name\": \"Чи потрібно платити онлайн заздалегідь?\", \"acceptedAnswer\": {\"@type\": \"Answer\", \"text\": \"Ні. Ви надсилаєте заявку через сайт, ми підтверджуємо наявність місць і час трансферу у WhatsApp, оплата — у день екскурсії.\"}}, {\"@type\": \"Question\", \"name\": \"Яку екскурсію обрати, якщо є лише один день?\", \"acceptedAnswer\": {\"@type\": \"Answer\", \"text\": \"Памуккале та Демре-Міра-Кекова — дві класичні одноденні поїздки. Зелений каньйон — спокійніший день на воді. Для Каппадокії потрібні два дні через відстань.\"}}]}",
+    "{\"@context\": \"https://schema.org\", \"@type\": \"ItemList\", \"itemListElement\": [{\"@type\": \"ListItem\", \"position\": 1, \"name\": \"Каппадокія (2 дні)\", \"url\": \"https://myvalanyatravel.com/uk/\"}, {\"@type\": \"ListItem\", \"position\": 2, \"name\": \"Памуккале\", \"url\": \"https://myvalanyatravel.com/uk/pamukkale\"}, {\"@type\": \"ListItem\", \"position\": 3, \"name\": \"Демре · Міра · Кекова\", \"url\": \"https://myvalanyatravel.com/uk/demre-myra-kekova\"}, {\"@type\": \"ListItem\", \"position\": 4, \"name\": \"Зелений каньйон\", \"url\": \"https://myvalanyatravel.com/uk/green-canyon\"}]}"
+   ],
+   "h1": "Екскурсії з Аланії та Сіде",
+   "sub": "Усі наші тури з чесними цінами на 2026 рік. Трансфер від готелю включено, гіди ліцензовані, а оплата — у день екскурсії, без передоплати онлайн.",
+   "upd": "Оновлено: липень 2026 р.",
+   "switch": [
+    {
+     "href": "/uk/excursions-from-alanya",
+     "label": "З Аланії",
+     "on": true
+    },
+    {
+     "href": "/uk/excursions-from-side",
+     "label": "Із Сіде",
+     "on": false
+    }
+   ],
+   "th": [
+    "Тур",
+    "Тривалість",
+    "Дні",
+    "Від (дорослий)",
+    "Преміум",
+    ""
+   ],
+   "rows": [
+    {
+     "cells": [
+      "Каппадокія (2 дні)",
+      "2 дні / 1 ніч",
+      "Пн, чт, сб",
+      "€50 Від",
+      "€100",
+      "Дивитися тур →"
+     ],
+     "href": "https://myvalanyatravel.com/uk/",
+     "tour": "cappadocia"
+    },
+    {
+     "cells": [
+      "Памуккале",
+      "Цілий день",
+      "Щодня",
+      "€40 Від",
+      "€70",
+      "Дивитися тур →"
+     ],
+     "href": "https://myvalanyatravel.com/uk/pamukkale",
+     "tour": "pamukkale"
+    },
+    {
+     "cells": [
+      "Демре · Міра · Кекова",
+      "Цілий день",
+      "Ср, нд",
+      "€55 Від",
+      "€80",
+      "Дивитися тур →"
+     ],
+     "href": "https://myvalanyatravel.com/uk/demre-myra-kekova",
+     "tour": "demre"
+    },
+    {
+     "cells": [
+      "Зелений каньйон",
+      "Спокійний день",
+      "Щодня",
+      "€30 Від",
+      "Один пакет",
+      "Дивитися тур →"
+     ],
+     "href": "https://myvalanyatravel.com/uk/green-canyon",
+     "tour": "greencanyon"
+    },
+    {
+     "cells": [
+      "Приватна яхта",
+      "4 години",
+      "Щодня",
+      "€350 Від",
+      "Один пакет",
+      "Дивитися тур →"
+     ],
+     "tour": "boat"
+    },
+    {
+     "cells": [
+      "Піратський корабель",
+      "4 години на борту",
+      "На борту 10:00–14:00",
+      "€20 Від",
+      "Один пакет",
+      "Дивитися тур →"
+     ],
+     "tour": "pirate"
+    }
+   ],
+   "faqTitle": "FAQ",
+   "faq": [
+    {
+     "q": "Скільки коштують екскурсії з Аланії у 2026 році?",
+     "a": "Одноденні тури починаються від €30 за дорослого на Зелений каньйон, €40 на Памуккале та €55 на Демре-Міра-Кекова. Дводенний тур до Каппадокії — від €50 за дорослого в бюджетному пакеті. Діти платять менше, немовлята до 3 років — безкоштовно."
+    },
+    {
+     "q": "Чи забираєте ви з Сіде, а не лише з Аланії?",
+     "a": "Так. Усі тури включають безкоштовний трансфер від готелю в Аланії, Сіде та селищах між ними: Конакли, Авсаллар, Окурджалар, Махмутлар, Кестель."
+    },
+    {
+     "q": "Чи потрібно платити онлайн заздалегідь?",
+     "a": "Ні. Ви надсилаєте заявку через сайт, ми підтверджуємо наявність місць і час трансферу у WhatsApp, оплата — у день екскурсії."
+    },
+    {
+     "q": "Яку екскурсію обрати, якщо є лише один день?",
+     "a": "Памуккале та Демре-Міра-Кекова — дві класичні одноденні поїздки. Зелений каньйон — спокійніший день на воді. Для Каппадокії потрібні два дні через відстань."
+    }
+   ],
+   "sections": [
+    {
+     "h": "Що входить у кожен тур",
+     "p": "",
+     "li": [
+      "Трансфер від готелю та назад в Аланії, Сіде й довколишніх курортах",
+      "Транспорт із кондиціонером",
+      "Ліцензований професійний гід (EN / RU / TR)",
+      "Харчування, зазначене на сторінці туру",
+      "Страхування"
+     ]
+    },
+    {
+     "h": "Діти та немовлята",
+     "p": "Немовлята 0–3 років подорожують безкоштовно (на руках у батьків, без окремого місця). Діти платять за зниженою ціною — точні ціни на сторінці кожного туру.",
+     "li": []
+    },
+    {
+     "h": "Як відбувається оплата",
+     "p": "Передоплата онлайн не потрібна. Ви надсилаєте заявку, ми підтверджуємо трансфер від готелю у WhatsApp, і ви оплачуєте в день екскурсії. Ціни за особу, у євро.",
+     "li": []
+    }
+   ],
+   "cta": {
+    "h": "Не знаєте, який тур обрати?",
+    "p": "Напишіть нам у WhatsApp — допоможемо обрати, зважаючи на те, скільки у вас днів і з ким ви подорожуєте.",
+    "btn": "Запитати у WhatsApp",
+    "href": "https://wa.me/905331429037?text=Вітаю!%20Хочу%20дізнатися%20про%20ваші%20екскурсії%20з%20Аланії."
+   }
+  },
+  "sr": {
+   "meta": {
+    "title": "Izleti iz Alanje i Sidea — cene 2026 | M.Y.V. Alanya Travel",
+    "desc": "Sve naše ture iz Alanje i Sidea sa cenama za 2026: Kapadokija od €50, Pamukkale od €40, Demre-Mira-Kekova od €55, Zeleni kanjon od €30. Preuzimanje iz hotela, licencirani vodič, plaćanje na licu mesta.",
+    "ogTitle": "Izleti iz Alanje i Sidea — cene 2026 | M.Y.V. Alanya Travel",
+    "ogDesc": "Sve naše ture iz Alanje i Sidea sa cenama za 2026: Kapadokija od €50, Pamukkale od €40, Demre-Mira-Kekova od €55, Zeleni kanjon od €30. Preuzimanje iz hotela, licencirani vodič, plaćanje na licu mesta."
+   },
+   "jsonld": [
+    "{\"@context\": \"https://schema.org\", \"@type\": \"FAQPage\", \"mainEntity\": [{\"@type\": \"Question\", \"name\": \"Koliko koštaju izleti iz Alanje u 2026?\", \"acceptedAnswer\": {\"@type\": \"Answer\", \"text\": \"Naše jednodnevne ture počinju od €30 po odrasloj osobi za Zeleni kanjon, €40 za Pamukkale i €55 za Demre-Mira-Kekova. Dvodnevna tura u Kapadokiju počinje od €50 po odrasloj osobi u budžet paketu. Deca plaćaju manje, a bebe do 3 godine putuju besplatno.\"}}, {\"@type\": \"Question\", \"name\": \"Da li preuzimate goste i iz Sidea, a ne samo iz Alanje?\", \"acceptedAnswer\": {\"@type\": \"Answer\", \"text\": \"Da. Sve naše ture uključuju besplatno preuzimanje iz hotela u Alanji, Sideu i mestima između, uključujući Konaklı, Avsallar, Okurcalar, Mahmutlar i Kestel.\"}}, {\"@type\": \"Question\", \"name\": \"Da li moram da platim unapred preko interneta?\", \"acceptedAnswer\": {\"@type\": \"Answer\", \"text\": \"Ne. Pošaljete zahtev preko sajta, mi potvrdimo slobodna mesta i vreme preuzimanja putem WhatsApp-a, a plaćate na dan ture.\"}}, {\"@type\": \"Question\", \"name\": \"Koji izlet je najbolji ako imam samo jedan dan?\", \"acceptedAnswer\": {\"@type\": \"Answer\", \"text\": \"Pamukkale i Demre-Mira-Kekova su dve klasične celodnevne ture. Zeleni kanjon je opušteniji dan na vodi. Za Kapadokiju su potrebna dva dana zbog udaljenosti.\"}}]}",
+    "{\"@context\": \"https://schema.org\", \"@type\": \"ItemList\", \"itemListElement\": [{\"@type\": \"ListItem\", \"position\": 1, \"name\": \"Kapadokija (2 dana)\", \"url\": \"https://myvalanyatravel.com/sr/\"}, {\"@type\": \"ListItem\", \"position\": 2, \"name\": \"Pamukkale\", \"url\": \"https://myvalanyatravel.com/sr/pamukkale\"}, {\"@type\": \"ListItem\", \"position\": 3, \"name\": \"Demre · Mira · Kekova\", \"url\": \"https://myvalanyatravel.com/sr/demre-myra-kekova\"}, {\"@type\": \"ListItem\", \"position\": 4, \"name\": \"Zeleni kanjon\", \"url\": \"https://myvalanyatravel.com/sr/green-canyon\"}]}"
+   ],
+   "h1": "Izleti iz Alanje i Sidea",
+   "sub": "Sve naše ture sa poštenim cenama za 2026. Preuzimanje iz hotela je uključeno, vodiči su licencirani, a plaćate na dan ture — bez plaćanja unapred.",
+   "upd": "Ažurirano: jul 2026.",
+   "switch": [
+    {
+     "href": "/sr/excursions-from-alanya",
+     "label": "Iz Alanje",
+     "on": true
+    },
+    {
+     "href": "/sr/excursions-from-side",
+     "label": "Iz Side",
+     "on": false
+    }
+   ],
+   "th": [
+    "Tura",
+    "Trajanje",
+    "Dani",
+    "Od (odrasli)",
+    "Premium",
+    ""
+   ],
+   "rows": [
+    {
+     "cells": [
+      "Kapadokija (2 dana)",
+      "2 dana / 1 noć",
+      "Pon, čet, sub",
+      "€50 Od",
+      "€100",
+      "Vidi turu →"
+     ],
+     "href": "https://myvalanyatravel.com/sr/",
+     "tour": "cappadocia"
+    },
+    {
+     "cells": [
+      "Pamukkale",
+      "Celodnevna",
+      "Svakog dana",
+      "€40 Od",
+      "€70",
+      "Vidi turu →"
+     ],
+     "href": "https://myvalanyatravel.com/sr/pamukkale",
+     "tour": "pamukkale"
+    },
+    {
+     "cells": [
+      "Demre · Mira · Kekova",
+      "Celodnevna",
+      "Sre, ned",
+      "€55 Od",
+      "€80",
+      "Vidi turu →"
+     ],
+     "href": "https://myvalanyatravel.com/sr/demre-myra-kekova",
+     "tour": "demre"
+    },
+    {
+     "cells": [
+      "Zeleni kanjon",
+      "Opuštena dnevna",
+      "Svakog dana",
+      "€30 Od",
+      "Jedan paket",
+      "Vidi turu →"
+     ],
+     "href": "https://myvalanyatravel.com/sr/green-canyon",
+     "tour": "greencanyon"
+    },
+    {
+     "cells": [
+      "Privatni brod",
+      "4 sata",
+      "Svakog dana",
+      "€350 Od",
+      "Jedan paket",
+      "Vidi turu →"
+     ],
+     "tour": "boat"
+    },
+    {
+     "cells": [
+      "Gusarski brod",
+      "4 sata na brodu",
+      "Na brodu 10:00–14:00",
+      "€20 Od",
+      "Jedan paket",
+      "Vidi turu →"
+     ],
+     "tour": "pirate"
+    }
+   ],
+   "faqTitle": "FAQ",
+   "faq": [
+    {
+     "q": "Koliko koštaju izleti iz Alanje u 2026?",
+     "a": "Naše jednodnevne ture počinju od €30 po odrasloj osobi za Zeleni kanjon, €40 za Pamukkale i €55 za Demre-Mira-Kekova. Dvodnevna tura u Kapadokiju počinje od €50 po odrasloj osobi u budžet paketu. Deca plaćaju manje, a bebe do 3 godine putuju besplatno."
+    },
+    {
+     "q": "Da li preuzimate goste i iz Sidea, a ne samo iz Alanje?",
+     "a": "Da. Sve naše ture uključuju besplatno preuzimanje iz hotela u Alanji, Sideu i mestima između, uključujući Konaklı, Avsallar, Okurcalar, Mahmutlar i Kestel."
+    },
+    {
+     "q": "Da li moram da platim unapred preko interneta?",
+     "a": "Ne. Pošaljete zahtev preko sajta, mi potvrdimo slobodna mesta i vreme preuzimanja putem WhatsApp-a, a plaćate na dan ture."
+    },
+    {
+     "q": "Koji izlet je najbolji ako imam samo jedan dan?",
+     "a": "Pamukkale i Demre-Mira-Kekova su dve klasične celodnevne ture. Zeleni kanjon je opušteniji dan na vodi. Za Kapadokiju su potrebna dva dana zbog udaljenosti."
+    }
+   ],
+   "sections": [
+    {
+     "h": "Šta je uključeno u svaku turu",
+     "p": "",
+     "li": [
+      "Preuzimanje i povratak do hotela u Alanji, Sideu i okolnim mestima",
+      "Klimatizovani prevoz",
+      "Licencirani profesionalni vodič (EN / RU / TR)",
+      "Obroci navedeni na stranici svake ture",
+      "Putno osiguranje"
+     ]
+    },
+    {
+     "h": "Deca i bebe",
+     "p": "Bebe 0–3 godine putuju besplatno (u krilu roditelja, bez posebnog sedišta). Deca plaćaju umanjenu cenu — tačne cene su na stranici svake ture.",
+     "li": []
+    },
+    {
+     "h": "Kako se plaća",
+     "p": "Nema plaćanja unapred preko interneta. Pošaljete zahtev za rezervaciju, mi vam potvrdimo preuzimanje iz hotela putem WhatsApp-a, a plaćate na dan ture. Cene su po osobi, u evrima.",
+     "li": []
+    }
+   ],
+   "cta": {
+    "h": "Niste sigurni koju turu da izaberete?",
+    "p": "Pišite nam na WhatsApp i pomoći ćemo vam da izaberete na osnovu toga koliko dana imate i s kim putujete.",
+    "btn": "Pitajte nas na WhatsApp-u",
+    "href": "https://wa.me/905331429037?text=Zdravo!%20Zanimaju%20me%20vaši%20izleti%20iz%20Alanje."
+   }
+  }
+ },
+ "side": {
+  "en": {
+   "meta": {
+    "title": "Excursions from Side & Manavgat — Prices 2026 | M.Y.V. Alanya Travel",
+    "desc": "Tours from Side, Manavgat and nearby resorts with free hotel pickup. 2026 prices: Green Canyon €30, Pamukkale €40, Demre-Myra-Kekova €55, Cappadocia €50.",
+    "ogTitle": "Excursions from Side & Manavgat — Prices 2026 | M.Y.V. Alanya Travel",
+    "ogDesc": "Tours from Side, Manavgat and nearby resorts with free hotel pickup. 2026 prices: Green Canyon €30, Pamukkale €40, Demre-Myra-Kekova €55, Cappadocia €50."
+   },
+   "jsonld": [
+    "{\"@context\": \"https://schema.org\", \"@type\": \"FAQPage\", \"mainEntity\": [{\"@type\": \"Question\", \"name\": \"How much do excursions from Side cost in 2026?\", \"acceptedAnswer\": {\"@type\": \"Answer\", \"text\": \"Green Canyon starts at €30 per adult, Pamukkale at €40 and Demre-Myra-Kekova at €55. The 2-day Cappadocia tour starts at €50 per adult in the budget package. Children pay a reduced rate and infants under 3 travel free.\"}}, {\"@type\": \"Question\", \"name\": \"Which resorts around Side do you pick up from?\", \"acceptedAnswer\": {\"@type\": \"Answer\", \"text\": \"Free hotel pickup covers Side centre, Manavgat, Çolaklı, Kızılağaç, Evrenseki, Kumköy, Titreyengöl, Sorgun and Gündoğdu. The exact time is confirmed on WhatsApp the evening before.\"}}, {\"@type\": \"Question\", \"name\": \"What is the best short excursion from Side?\", \"acceptedAnswer\": {\"@type\": \"Answer\", \"text\": \"Green Canyon. The Oymapınar reservoir sits just above Manavgat, roughly half an hour from Side, so pickup is late morning and you are back the same afternoon — the most relaxed day we run.\"}}, {\"@type\": \"Question\", \"name\": \"Can I join the Cappadocia tour starting from Side?\", \"acceptedAnswer\": {\"@type\": \"Answer\", \"text\": \"Yes. The 2-day Cappadocia tour picks up from Side hotels on the same schedule as Alanya — Mondays, Thursdays and Saturdays. The distance is exactly why it is a 2-day tour with an overnight stay.\"}}, {\"@type\": \"Question\", \"name\": \"Do I have to pay online in advance?\", \"acceptedAnswer\": {\"@type\": \"Answer\", \"text\": \"No. You send a booking request through the site, we confirm availability and your pickup time on WhatsApp, and you pay on the day of the tour.\"}}]}",
+    "{\"@context\": \"https://schema.org\", \"@type\": \"ItemList\", \"itemListElement\": [{\"@type\": \"ListItem\", \"position\": 1, \"name\": \"Green Canyon\", \"url\": \"https://myvalanyatravel.com/green-canyon\"}, {\"@type\": \"ListItem\", \"position\": 2, \"name\": \"Pamukkale\", \"url\": \"https://myvalanyatravel.com/pamukkale\"}, {\"@type\": \"ListItem\", \"position\": 3, \"name\": \"Demre · Myra · Kekova\", \"url\": \"https://myvalanyatravel.com/demre-myra-kekova\"}, {\"@type\": \"ListItem\", \"position\": 4, \"name\": \"Cappadocia (2 days)\", \"url\": \"https://myvalanyatravel.com/\"}]}"
+   ],
+   "h1": "Excursions from Side & Manavgat",
+   "sub": "Every tour we run picks up free of charge from Side and the resorts around it. Honest 2026 prices, licensed guides, and you pay on the day — no online prepayment.",
+   "upd": "Updated: July 2026",
+   "switch": [
+    {
+     "href": "/excursions-from-alanya",
+     "label": "From Alanya",
+     "on": false
+    },
+    {
+     "href": "/excursions-from-side",
+     "label": "From Side",
+     "on": true
+    }
+   ],
+   "th": [
+    "Tour",
+    "Duration",
+    "Tour days",
+    "Pickup from Side",
+    "From (adult)",
+    "Premium",
+    ""
+   ],
+   "rows": [
+    {
+     "cells": [
+      "Green Canyon",
+      "Relaxed day",
+      "Every day",
+      "approx. 08:30–09:00",
+      "€30 From",
+      "One package",
+      "View tour →"
+     ],
+     "href": "https://myvalanyatravel.com/green-canyon",
+     "tour": "greencanyon"
+    },
+    {
+     "cells": [
+      "Pamukkale",
+      "Full day",
+      "Every day",
+      "02:00–04:00",
+      "€40 From",
+      "€70",
+      "View tour →"
+     ],
+     "href": "https://myvalanyatravel.com/pamukkale",
+     "tour": "pamukkale"
+    },
+    {
+     "cells": [
+      "Demre · Myra · Kekova",
+      "Full day",
+      "Wed, Sun",
+      "03:00–05:00",
+      "€55 From",
+      "€80",
+      "View tour →"
+     ],
+     "href": "https://myvalanyatravel.com/demre-myra-kekova",
+     "tour": "demre"
+    },
+    {
+     "cells": [
+      "Cappadocia (2 days)",
+      "2 days / 1 night",
+      "Mon, Thu, Sat",
+      "early morning",
+      "€50 From",
+      "€100",
+      "View tour →"
+     ],
+     "href": "https://myvalanyatravel.com/",
+     "tour": "cappadocia"
+    }
+   ],
+   "faqTitle": "FAQ",
+   "faq": [
+    {
+     "q": "How much do excursions from Side cost in 2026?",
+     "a": "Green Canyon starts at €30 per adult, Pamukkale at €40 and Demre-Myra-Kekova at €55. The 2-day Cappadocia tour starts at €50 per adult in the budget package. Children pay a reduced rate and infants under 3 travel free."
+    },
+    {
+     "q": "Which resorts around Side do you pick up from?",
+     "a": "Free hotel pickup covers Side centre, Manavgat, Çolaklı, Kızılağaç, Evrenseki, Kumköy, Titreyengöl, Sorgun and Gündoğdu. The exact time is confirmed on WhatsApp the evening before."
+    },
+    {
+     "q": "What is the best short excursion from Side?",
+     "a": "Green Canyon. The Oymapınar reservoir sits just above Manavgat, roughly half an hour from Side, so pickup is late morning and you are back the same afternoon — the most relaxed day we run."
+    },
+    {
+     "q": "Can I join the Cappadocia tour starting from Side?",
+     "a": "Yes. The 2-day Cappadocia tour picks up from Side hotels on the same schedule as Alanya — Mondays, Thursdays and Saturdays. The distance is exactly why it is a 2-day tour with an overnight stay."
+    },
+    {
+     "q": "Do I have to pay online in advance?",
+     "a": "No. You send a booking request through the site, we confirm availability and your pickup time on WhatsApp, and you pay on the day of the tour."
+    }
+   ],
+   "sections": [
+    {
+     "h": "Why Side works as a base",
+     "p": "Side lies about 60 km west of Alanya, and that changes the arithmetic of a day trip. Pamukkale and the Lycian coast around Demre are noticeably closer from here, so you spend less of the day on the bus. Green Canyon is closer still — the Oymapınar reservoir sits just above Manavgat, a short drive inland. Cappadocia is the exception: it lies far to the northeast, which is why we run it over two days with an overnight stay rather than squeezing it into one.",
+     "li": []
+    },
+    {
+     "h": "Where we pick up around Side",
+     "p": "Free hotel pickup covers Side centre, Manavgat, Çolaklı, Kızılağaç, Evrenseki, Kumköy, Titreyengöl, Sorgun and Gündoğdu. Your exact pickup time is confirmed on WhatsApp the evening before the tour.",
+     "li": []
+    },
+    {
+     "h": "What's included in every tour",
+     "p": "",
+     "li": [
+      "Free hotel pickup and drop-off around Side and Manavgat",
+      "Air-conditioned transport",
+      "Licensed professional guide (EN / RU / TR)",
+      "Meals as listed on each tour page",
+      "Travel insurance"
+     ]
+    },
+    {
+     "h": "Children & infants",
+     "p": "Under-3s ride free on a parent's lap without a separate seat. Ages 4–7 get a reduced fare on every tour; the exact amount is shown on the page for that tour.",
+     "li": []
+    },
+    {
+     "h": "How payment works",
+     "p": "Nothing is charged through the website. Send the request, we reply on WhatsApp with availability and your pickup time, and the driver or guide takes payment on the morning of the tour. Euros, per person.",
+     "li": []
+    }
+   ],
+   "cta": {
+    "h": "Not sure which tour to pick?",
+    "p": "Write to us on WhatsApp and we'll help you choose based on how many days you have and who is travelling with you.",
+    "btn": "Ask us on WhatsApp",
+    "href": "https://wa.me/905331429037?text=Hello%21%20I%27d%20like%20to%20ask%20about%20your%20excursions%20from%20Side."
+   }
+  },
+  "ru": {
+   "meta": {
+    "title": "Экскурсии из Сиде и Манавгата — цены 2026 | M.Y.V. Alanya Travel",
+    "desc": "Экскурсии из Сиде, Манавгата и окрестных курортов с бесплатным трансфером. Цены 2026: Зелёный каньон €30, Памуккале €40, Демре-Мира-Кекова €55, Каппадокия €50.",
+    "ogTitle": "Экскурсии из Сиде и Манавгата — цены 2026 | M.Y.V. Alanya Travel",
+    "ogDesc": "Экскурсии из Сиде, Манавгата и окрестных курортов с бесплатным трансфером. Цены 2026: Зелёный каньон €30, Памуккале €40, Демре-Мира-Кекова €55, Каппадокия €50."
+   },
+   "jsonld": [
+    "{\"@context\": \"https://schema.org\", \"@type\": \"FAQPage\", \"mainEntity\": [{\"@type\": \"Question\", \"name\": \"Сколько стоят экскурсии из Сиде в 2026 году?\", \"acceptedAnswer\": {\"@type\": \"Answer\", \"text\": \"Зелёный каньон — от €30 со взрослого, Памуккале — от €40, Демре-Мира-Кекова — от €55. Двухдневный тур в Каппадокию — от €50 со взрослого в бюджетном пакете. Для детей действует сниженная цена, дети до 3 лет — бесплатно.\"}}, {\"@type\": \"Question\", \"name\": \"Из каких курортов рядом с Сиде вы забираете?\", \"acceptedAnswer\": {\"@type\": \"Answer\", \"text\": \"Бесплатный трансфер действует для центра Сиде, Манавгата, Чолаклы, Кызылагача, Эвренсеки, Кумкёя, Титреенгёля, Соргуна и Гюндогду. Точное время подтверждаем в WhatsApp накануне вечером.\"}}, {\"@type\": \"Question\", \"name\": \"Какая экскурсия из Сиде самая короткая?\", \"acceptedAnswer\": {\"@type\": \"Answer\", \"text\": \"Зелёный каньон. Водохранилище Оймапынар находится сразу над Манавгатом, примерно в получасе от Сиде, поэтому выезд поздний, а возвращение — во второй половине того же дня. Самый спокойный день из всех наших туров.\"}}, {\"@type\": \"Question\", \"name\": \"Можно ли поехать в Каппадокию из Сиде?\", \"acceptedAnswer\": {\"@type\": \"Answer\", \"text\": \"Да. Двухдневный тур в Каппадокию забирает из отелей Сиде по тому же расписанию, что и из Аланьи — понедельник, четверг и суббота. Именно из-за расстояния тур рассчитан на 2 дня с ночёвкой.\"}}, {\"@type\": \"Question\", \"name\": \"Нужна ли предоплата онлайн?\", \"acceptedAnswer\": {\"@type\": \"Answer\", \"text\": \"Нет. Вы оставляете заявку на сайте, мы подтверждаем наличие мест и время выезда в WhatsApp, а оплата производится в день тура.\"}}]}",
+    "{\"@context\": \"https://schema.org\", \"@type\": \"ItemList\", \"itemListElement\": [{\"@type\": \"ListItem\", \"position\": 1, \"name\": \"Зелёный каньон\", \"url\": \"https://myvalanyatravel.com/ru/green-canyon\"}, {\"@type\": \"ListItem\", \"position\": 2, \"name\": \"Памуккале\", \"url\": \"https://myvalanyatravel.com/ru/pamukkale\"}, {\"@type\": \"ListItem\", \"position\": 3, \"name\": \"Демре · Мира · Кекова\", \"url\": \"https://myvalanyatravel.com/ru/demre-myra-kekova\"}, {\"@type\": \"ListItem\", \"position\": 4, \"name\": \"Каппадокия (2 дня)\", \"url\": \"https://myvalanyatravel.com/ru/\"}]}"
+   ],
+   "h1": "Экскурсии из Сиде и Манавгата",
+   "sub": "Все наши туры включают бесплатный трансфер из отелей Сиде и окрестных курортов. Честные цены 2026 года, лицензированные гиды, оплата в день экскурсии — без предоплаты онлайн.",
+   "upd": "Обновлено: июль 2026",
+   "switch": [
+    {
+     "href": "/ru/excursions-from-alanya",
+     "label": "Из Аланьи",
+     "on": false
+    },
+    {
+     "href": "/ru/excursions-from-side",
+     "label": "Из Сиде",
+     "on": true
+    }
+   ],
+   "th": [
+    "Тур",
+    "Длительность",
+    "Дни выезда",
+    "Выезд из Сиде",
+    "От (взрослый)",
+    "Премиум",
+    ""
+   ],
+   "rows": [
+    {
+     "cells": [
+      "Зелёный каньон",
+      "Спокойный день",
+      "Ежедневно",
+      "прим. 08:30–09:00",
+      "€30 От",
+      "Один пакет",
+      "Смотреть тур →"
+     ],
+     "href": "https://myvalanyatravel.com/ru/green-canyon",
+     "tour": "greencanyon"
+    },
+    {
+     "cells": [
+      "Памуккале",
+      "Целый день",
+      "Ежедневно",
+      "02:00–04:00",
+      "€40 От",
+      "€70",
+      "Смотреть тур →"
+     ],
+     "href": "https://myvalanyatravel.com/ru/pamukkale",
+     "tour": "pamukkale"
+    },
+    {
+     "cells": [
+      "Демре · Мира · Кекова",
+      "Целый день",
+      "Ср, Вс",
+      "03:00–05:00",
+      "€55 От",
+      "€80",
+      "Смотреть тур →"
+     ],
+     "href": "https://myvalanyatravel.com/ru/demre-myra-kekova",
+     "tour": "demre"
+    },
+    {
+     "cells": [
+      "Каппадокия (2 дня)",
+      "2 дня / 1 ночь",
+      "Пн, Чт, Сб",
+      "раннее утро",
+      "€50 От",
+      "€100",
+      "Смотреть тур →"
+     ],
+     "href": "https://myvalanyatravel.com/ru/",
+     "tour": "cappadocia"
+    }
+   ],
+   "faqTitle": "Частые вопросы",
+   "faq": [
+    {
+     "q": "Сколько стоят экскурсии из Сиде в 2026 году?",
+     "a": "Зелёный каньон — от €30 со взрослого, Памуккале — от €40, Демре-Мира-Кекова — от €55. Двухдневный тур в Каппадокию — от €50 со взрослого в бюджетном пакете. Для детей действует сниженная цена, дети до 3 лет — бесплатно."
+    },
+    {
+     "q": "Из каких курортов рядом с Сиде вы забираете?",
+     "a": "Бесплатный трансфер действует для центра Сиде, Манавгата, Чолаклы, Кызылагача, Эвренсеки, Кумкёя, Титреенгёля, Соргуна и Гюндогду. Точное время подтверждаем в WhatsApp накануне вечером."
+    },
+    {
+     "q": "Какая экскурсия из Сиде самая короткая?",
+     "a": "Зелёный каньон. Водохранилище Оймапынар находится сразу над Манавгатом, примерно в получасе от Сиде, поэтому выезд поздний, а возвращение — во второй половине того же дня. Самый спокойный день из всех наших туров."
+    },
+    {
+     "q": "Можно ли поехать в Каппадокию из Сиде?",
+     "a": "Да. Двухдневный тур в Каппадокию забирает из отелей Сиде по тому же расписанию, что и из Аланьи — понедельник, четверг и суббота. Именно из-за расстояния тур рассчитан на 2 дня с ночёвкой."
+    },
+    {
+     "q": "Нужна ли предоплата онлайн?",
+     "a": "Нет. Вы оставляете заявку на сайте, мы подтверждаем наличие мест и время выезда в WhatsApp, а оплата производится в день тура."
+    }
+   ],
+   "sections": [
+    {
+     "h": "Почему Сиде — удобная база",
+     "p": "Сиде находится примерно в 60 км западнее Аланьи, и это меняет расчёт для однодневных поездок. Памуккале и ликийское побережье в районе Демре отсюда заметно ближе, поэтому в автобусе вы проводите меньше времени. Зелёный каньон ещё ближе — водохранилище Оймапынар расположено сразу над Манавгатом. Исключение — Каппадокия: она лежит далеко на северо-востоке, поэтому тур рассчитан на два дня с ночёвкой, а не втиснут в один.",
+     "li": []
+    },
+    {
+     "h": "Откуда мы забираем в районе Сиде",
+     "p": "Бесплатный трансфер действует для центра Сиде, Манавгата, Чолаклы, Кызылагача, Эвренсеки, Кумкёя, Титреенгёля, Соргуна и Гюндогду. Точное время выезда мы подтверждаем в WhatsApp накануне вечером.",
+     "li": []
+    },
+    {
+     "h": "Что входит в каждый тур",
+     "p": "",
+     "li": [
+      "Бесплатный трансфер из отеля и обратно по Сиде и Манавгату",
+      "Транспорт с кондиционером",
+      "Лицензированный профессиональный гид (EN / RU / TR)",
+      "Питание согласно программе тура",
+      "Страховка"
+     ]
+    },
+    {
+     "h": "Дети и младенцы",
+     "p": "Дети до 3 лет едут бесплатно на руках у родителя, без отдельного места. Для возраста 4–7 лет действует сниженный тариф на каждом туре; точная сумма указана на странице соответствующего тура.",
+     "li": []
+    },
+    {
+     "h": "Как происходит оплата",
+     "p": "Через сайт ничего не списывается. Вы отправляете заявку, мы отвечаем в WhatsApp с подтверждением мест и времени выезда, а оплату принимает водитель или гид утром в день тура. В евро, за человека.",
+     "li": []
+    }
+   ],
+   "cta": {
+    "h": "Не знаете, какой тур выбрать?",
+    "p": "Напишите нам в WhatsApp — поможем выбрать, исходя из того, сколько у вас дней и с кем вы путешествуете.",
+    "btn": "Написать в WhatsApp",
+    "href": "https://wa.me/905331429037?text=%D0%97%D0%B4%D1%80%D0%B0%D0%B2%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5%21%20%D0%A5%D0%BE%D1%87%D1%83%20%D1%83%D0%B7%D0%BD%D0%B0%D1%82%D1%8C%20%D0%BE%D0%B1%20%D1%8D%D0%BA%D1%81%D0%BA%D1%83%D1%80%D1%81%D0%B8%D1%8F%D1%85%20%D0%B8%D0%B7%20%D0%A1%D0%B8%D0%B4%D0%B5."
+   }
+  },
+  "de": {
+   "meta": {
+    "title": "Ausflüge ab Side & Manavgat — Preise 2026 | M.Y.V. Alanya Travel",
+    "desc": "Ausflüge ab Side, Manavgat und Umgebung mit kostenloser Hotelabholung. Preise 2026: Green Canyon 30 €, Pamukkale 40 €, Demre-Myra-Kekova 55 €, Kappadokien 50 €.",
+    "ogTitle": "Ausflüge ab Side & Manavgat — Preise 2026 | M.Y.V. Alanya Travel",
+    "ogDesc": "Ausflüge ab Side, Manavgat und Umgebung mit kostenloser Hotelabholung. Preise 2026: Green Canyon 30 €, Pamukkale 40 €, Demre-Myra-Kekova 55 €, Kappadokien 50 €."
+   },
+   "jsonld": [
+    "{\"@context\": \"https://schema.org\", \"@type\": \"FAQPage\", \"mainEntity\": [{\"@type\": \"Question\", \"name\": \"Was kosten Ausflüge ab Side im Jahr 2026?\", \"acceptedAnswer\": {\"@type\": \"Answer\", \"text\": \"Green Canyon ab 30 € pro Erwachsenem, Pamukkale ab 40 € und Demre-Myra-Kekova ab 55 €. Die 2-Tages-Tour nach Kappadokien beginnt bei 50 € pro Erwachsenem im Budget-Paket. Kinder zahlen ermäßigt, Kleinkinder unter 3 Jahren fahren kostenlos.\"}}, {\"@type\": \"Question\", \"name\": \"Aus welchen Orten rund um Side holen Sie ab?\", \"acceptedAnswer\": {\"@type\": \"Answer\", \"text\": \"Die kostenlose Abholung gilt für das Zentrum von Side, Manavgat, Çolaklı, Kızılağaç, Evrenseki, Kumköy, Titreyengöl, Sorgun und Gündoğdu. Die genaue Zeit bestätigen wir am Vorabend per WhatsApp.\"}}, {\"@type\": \"Question\", \"name\": \"Welcher Ausflug ab Side ist der kürzeste?\", \"acceptedAnswer\": {\"@type\": \"Answer\", \"text\": \"Der Green Canyon. Der Oymapınar-Stausee liegt direkt oberhalb von Manavgat, etwa eine halbe Stunde von Side entfernt — die Abholung ist spät am Vormittag und Sie sind am selben Nachmittag zurück.\"}}, {\"@type\": \"Question\", \"name\": \"Ist die Kappadokien-Tour auch ab Side möglich?\", \"acceptedAnswer\": {\"@type\": \"Answer\", \"text\": \"Ja. Die 2-Tages-Tour nach Kappadokien holt Hotels in Side nach dem gleichen Plan ab wie in Alanya — montags, donnerstags und samstags. Genau wegen der Entfernung ist es eine 2-Tages-Tour mit Übernachtung.\"}}, {\"@type\": \"Question\", \"name\": \"Muss ich online im Voraus bezahlen?\", \"acceptedAnswer\": {\"@type\": \"Answer\", \"text\": \"Nein. Sie senden eine Buchungsanfrage über die Website, wir bestätigen Verfügbarkeit und Abholzeit per WhatsApp, und Sie zahlen am Tag der Tour.\"}}]}",
+    "{\"@context\": \"https://schema.org\", \"@type\": \"ItemList\", \"itemListElement\": [{\"@type\": \"ListItem\", \"position\": 1, \"name\": \"Green Canyon\", \"url\": \"https://myvalanyatravel.com/de/green-canyon\"}, {\"@type\": \"ListItem\", \"position\": 2, \"name\": \"Pamukkale\", \"url\": \"https://myvalanyatravel.com/de/pamukkale\"}, {\"@type\": \"ListItem\", \"position\": 3, \"name\": \"Demre · Myra · Kekova\", \"url\": \"https://myvalanyatravel.com/de/demre-myra-kekova\"}, {\"@type\": \"ListItem\", \"position\": 4, \"name\": \"Kappadokien (2 Tage)\", \"url\": \"https://myvalanyatravel.com/de/\"}]}"
+   ],
+   "h1": "Ausflüge ab Side & Manavgat",
+   "sub": "Alle unsere Touren beinhalten die kostenlose Abholung in Side und den umliegenden Ferienorten. Ehrliche Preise für 2026, lizenzierte Guides, Zahlung am Tag der Tour — keine Online-Vorauszahlung.",
+   "upd": "Aktualisiert: Juli 2026",
+   "switch": [
+    {
+     "href": "/de/excursions-from-alanya",
+     "label": "Ab Alanya",
+     "on": false
+    },
+    {
+     "href": "/de/excursions-from-side",
+     "label": "Ab Side",
+     "on": true
+    }
+   ],
+   "th": [
+    "Tour",
+    "Dauer",
+    "Tourtage",
+    "Abholung ab Side",
+    "Ab (Erwachsener)",
+    "Premium",
+    ""
+   ],
+   "rows": [
+    {
+     "cells": [
+      "Green Canyon",
+      "Entspannter Tag",
+      "Täglich",
+      "ca. 08:30–09:00",
+      "30 € Ab",
+      "Ein Paket",
+      "Zur Tour →"
+     ],
+     "href": "https://myvalanyatravel.com/de/green-canyon",
+     "tour": "greencanyon"
+    },
+    {
+     "cells": [
+      "Pamukkale",
+      "Ganzer Tag",
+      "Täglich",
+      "02:00–04:00",
+      "40 € Ab",
+      "70 €",
+      "Zur Tour →"
+     ],
+     "href": "https://myvalanyatravel.com/de/pamukkale",
+     "tour": "pamukkale"
+    },
+    {
+     "cells": [
+      "Demre · Myra · Kekova",
+      "Ganzer Tag",
+      "Mi, So",
+      "03:00–05:00",
+      "55 € Ab",
+      "80 €",
+      "Zur Tour →"
+     ],
+     "href": "https://myvalanyatravel.com/de/demre-myra-kekova",
+     "tour": "demre"
+    },
+    {
+     "cells": [
+      "Kappadokien (2 Tage)",
+      "2 Tage / 1 Nacht",
+      "Mo, Do, Sa",
+      "früher Morgen",
+      "50 € Ab",
+      "100 €",
+      "Zur Tour →"
+     ],
+     "href": "https://myvalanyatravel.com/de/",
+     "tour": "cappadocia"
+    }
+   ],
+   "faqTitle": "Häufige Fragen",
+   "faq": [
+    {
+     "q": "Was kosten Ausflüge ab Side im Jahr 2026?",
+     "a": "Green Canyon ab 30 € pro Erwachsenem, Pamukkale ab 40 € und Demre-Myra-Kekova ab 55 €. Die 2-Tages-Tour nach Kappadokien beginnt bei 50 € pro Erwachsenem im Budget-Paket. Kinder zahlen ermäßigt, Kleinkinder unter 3 Jahren fahren kostenlos."
+    },
+    {
+     "q": "Aus welchen Orten rund um Side holen Sie ab?",
+     "a": "Die kostenlose Abholung gilt für das Zentrum von Side, Manavgat, Çolaklı, Kızılağaç, Evrenseki, Kumköy, Titreyengöl, Sorgun und Gündoğdu. Die genaue Zeit bestätigen wir am Vorabend per WhatsApp."
+    },
+    {
+     "q": "Welcher Ausflug ab Side ist der kürzeste?",
+     "a": "Der Green Canyon. Der Oymapınar-Stausee liegt direkt oberhalb von Manavgat, etwa eine halbe Stunde von Side entfernt — die Abholung ist spät am Vormittag und Sie sind am selben Nachmittag zurück."
+    },
+    {
+     "q": "Ist die Kappadokien-Tour auch ab Side möglich?",
+     "a": "Ja. Die 2-Tages-Tour nach Kappadokien holt Hotels in Side nach dem gleichen Plan ab wie in Alanya — montags, donnerstags und samstags. Genau wegen der Entfernung ist es eine 2-Tages-Tour mit Übernachtung."
+    },
+    {
+     "q": "Muss ich online im Voraus bezahlen?",
+     "a": "Nein. Sie senden eine Buchungsanfrage über die Website, wir bestätigen Verfügbarkeit und Abholzeit per WhatsApp, und Sie zahlen am Tag der Tour."
+    }
+   ],
+   "sections": [
+    {
+     "h": "Warum sich Side als Ausgangspunkt eignet",
+     "p": "Side liegt rund 60 km westlich von Alanya, und das verändert die Rechnung bei Tagesausflügen. Pamukkale und die lykische Küste um Demre sind von hier aus deutlich näher, Sie verbringen also weniger Zeit im Bus. Der Green Canyon liegt noch näher — der Oymapınar-Stausee befindet sich direkt oberhalb von Manavgat. Die Ausnahme ist Kappadokien: Es liegt weit im Nordosten, deshalb fahren wir dorthin über zwei Tage mit Übernachtung.",
+     "li": []
+    },
+    {
+     "h": "Wo wir rund um Side abholen",
+     "p": "Die kostenlose Hotelabholung gilt für das Zentrum von Side, Manavgat, Çolaklı, Kızılağaç, Evrenseki, Kumköy, Titreyengöl, Sorgun und Gündoğdu. Die genaue Abholzeit bestätigen wir am Vorabend per WhatsApp.",
+     "li": []
+    },
+    {
+     "h": "In jeder Tour enthalten",
+     "p": "",
+     "li": [
+      "Kostenlose Hotelabholung und Rückfahrt rund um Side und Manavgat",
+      "Klimatisierter Transport",
+      "Lizenzierter Guide (EN / RU / TR)",
+      "Mahlzeiten laut Beschreibung der jeweiligen Tour",
+      "Reiseversicherung"
+     ]
+    },
+    {
+     "h": "Kinder & Kleinkinder",
+     "p": "Kinder unter 3 Jahren fahren kostenlos auf dem Schoß mit, ohne eigenen Sitzplatz. Für 4- bis 7-Jährige gilt bei jeder Tour ein ermäßigter Tarif; den genauen Betrag finden Sie auf der Seite der jeweiligen Tour.",
+     "li": []
+    },
+    {
+     "h": "So funktioniert die Bezahlung",
+     "p": "Über die Website wird nichts abgebucht. Sie senden die Anfrage, wir antworten per WhatsApp mit Verfügbarkeit und Abholzeit, und Fahrer oder Guide nimmt die Zahlung am Morgen der Tour entgegen. In Euro, pro Person.",
+     "li": []
+    }
+   ],
+   "cta": {
+    "h": "Unsicher, welche Tour die richtige ist?",
+    "p": "Schreiben Sie uns auf WhatsApp — wir helfen Ihnen bei der Auswahl, je nachdem, wie viele Tage Sie haben und mit wem Sie reisen.",
+    "btn": "Auf WhatsApp fragen",
+    "href": "https://wa.me/905331429037?text=Hallo%21%20Ich%20m%C3%B6chte%20mich%20%C3%BCber%20Ihre%20Ausfl%C3%BCge%20ab%20Side%20informieren."
+   }
+  },
+  "tr": {
+   "meta": {
+    "title": "Side & Manavgat'tan Turlar — 2026 Fiyatları | M.Y.V. Alanya Travel",
+    "desc": "Side, Manavgat ve çevre beldelerden ücretsiz otel alışlı turlar. 2026 fiyatları: Yeşil Kanyon 30 €, Pamukkale 40 €, Demre-Myra-Kekova 55 €, Kapadokya 50 €.",
+    "ogTitle": "Side & Manavgat'tan Turlar — 2026 Fiyatları | M.Y.V. Alanya Travel",
+    "ogDesc": "Side, Manavgat ve çevre beldelerden ücretsiz otel alışlı turlar. 2026 fiyatları: Yeşil Kanyon 30 €, Pamukkale 40 €, Demre-Myra-Kekova 55 €, Kapadokya 50 €."
+   },
+   "jsonld": [
+    "{\"@context\": \"https://schema.org\", \"@type\": \"FAQPage\", \"mainEntity\": [{\"@type\": \"Question\", \"name\": \"2026'da Side'den turlar ne kadar?\", \"acceptedAnswer\": {\"@type\": \"Answer\", \"text\": \"Yeşil Kanyon yetişkin başına 30 €'dan, Pamukkale 40 €'dan ve Demre-Myra-Kekova 55 €'dan başlar. 2 günlük Kapadokya turu ekonomik pakette yetişkin başına 50 €'dan başlar. Çocuklar indirimli öder, 3 yaş altı bebekler ücretsizdir.\"}}, {\"@type\": \"Question\", \"name\": \"Side çevresinde hangi beldelerden alış yapıyorsunuz?\", \"acceptedAnswer\": {\"@type\": \"Answer\", \"text\": \"Ücretsiz otel alışı Side merkez, Manavgat, Çolaklı, Kızılağaç, Evrenseki, Kumköy, Titreyengöl, Sorgun ve Gündoğdu'yu kapsar. Kesin saat bir önceki akşam WhatsApp'tan teyit edilir.\"}}, {\"@type\": \"Question\", \"name\": \"Side'den en kısa tur hangisi?\", \"acceptedAnswer\": {\"@type\": \"Answer\", \"text\": \"Yeşil Kanyon. Oymapınar Barajı Manavgat'ın hemen yukarısında, Side'ye yaklaşık yarım saat mesafede. Alış geç sabah olur ve aynı gün öğleden sonra dönersiniz — en rahat günümüz.\"}}, {\"@type\": \"Question\", \"name\": \"Kapadokya turuna Side'den katılabilir miyim?\", \"acceptedAnswer\": {\"@type\": \"Answer\", \"text\": \"Evet. 2 günlük Kapadokya turu, Side otellerinden Alanya ile aynı programda alış yapar — pazartesi, perşembe ve cumartesi. Mesafe nedeniyle tur 2 gün ve 1 gece konaklamalıdır.\"}}, {\"@type\": \"Question\", \"name\": \"Önceden online ödeme yapmam gerekir mi?\", \"acceptedAnswer\": {\"@type\": \"Answer\", \"text\": \"Hayır. Site üzerinden rezervasyon talebi gönderirsiniz, müsaitliği ve alış saatinizi WhatsApp'tan teyit ederiz, ödemeyi tur günü yaparsınız.\"}}]}",
+    "{\"@context\": \"https://schema.org\", \"@type\": \"ItemList\", \"itemListElement\": [{\"@type\": \"ListItem\", \"position\": 1, \"name\": \"Yeşil Kanyon\", \"url\": \"https://myvalanyatravel.com/tr/green-canyon\"}, {\"@type\": \"ListItem\", \"position\": 2, \"name\": \"Pamukkale\", \"url\": \"https://myvalanyatravel.com/tr/pamukkale\"}, {\"@type\": \"ListItem\", \"position\": 3, \"name\": \"Demre · Myra · Kekova\", \"url\": \"https://myvalanyatravel.com/tr/demre-myra-kekova\"}, {\"@type\": \"ListItem\", \"position\": 4, \"name\": \"Kapadokya (2 gün)\", \"url\": \"https://myvalanyatravel.com/tr/\"}]}"
+   ],
+   "h1": "Side & Manavgat'tan Turlar",
+   "sub": "Tüm turlarımız Side ve çevresindeki tatil beldelerinden ücretsiz otel alışı içerir. Dürüst 2026 fiyatları, profesyonel rehberler ve tur günü ödeme — online ön ödeme yok.",
+   "upd": "Güncellendi: Temmuz 2026",
+   "switch": [
+    {
+     "href": "/tr/excursions-from-alanya",
+     "label": "Alanya'dan",
+     "on": false
+    },
+    {
+     "href": "/tr/excursions-from-side",
+     "label": "Side'den",
+     "on": true
+    }
+   ],
+   "th": [
+    "Tur",
+    "Süre",
+    "Tur günleri",
+    "Side'den alış",
+    "Başlangıç (yetişkin)",
+    "Premium",
+    ""
+   ],
+   "rows": [
+    {
+     "cells": [
+      "Yeşil Kanyon",
+      "Rahat bir gün",
+      "Her gün",
+      "yaklaşık 08:30–09:00",
+      "30 € Başlangıç",
+      "Tek paket",
+      "Turu görüntüle →"
+     ],
+     "href": "https://myvalanyatravel.com/tr/green-canyon",
+     "tour": "greencanyon"
+    },
+    {
+     "cells": [
+      "Pamukkale",
+      "Tam gün",
+      "Her gün",
+      "02:00–04:00",
+      "40 € Başlangıç",
+      "70 €",
+      "Turu görüntüle →"
+     ],
+     "href": "https://myvalanyatravel.com/tr/pamukkale",
+     "tour": "pamukkale"
+    },
+    {
+     "cells": [
+      "Demre · Myra · Kekova",
+      "Tam gün",
+      "Çar, Paz",
+      "03:00–05:00",
+      "55 € Başlangıç",
+      "80 €",
+      "Turu görüntüle →"
+     ],
+     "href": "https://myvalanyatravel.com/tr/demre-myra-kekova",
+     "tour": "demre"
+    },
+    {
+     "cells": [
+      "Kapadokya (2 gün)",
+      "2 gün / 1 gece",
+      "Pzt, Per, Cmt",
+      "sabah erken",
+      "50 € Başlangıç",
+      "100 €",
+      "Turu görüntüle →"
+     ],
+     "href": "https://myvalanyatravel.com/tr/",
+     "tour": "cappadocia"
+    }
+   ],
+   "faqTitle": "Sıkça sorulan sorular",
+   "faq": [
+    {
+     "q": "2026'da Side'den turlar ne kadar?",
+     "a": "Yeşil Kanyon yetişkin başına 30 €'dan, Pamukkale 40 €'dan ve Demre-Myra-Kekova 55 €'dan başlar. 2 günlük Kapadokya turu ekonomik pakette yetişkin başına 50 €'dan başlar. Çocuklar indirimli öder, 3 yaş altı bebekler ücretsizdir."
+    },
+    {
+     "q": "Side çevresinde hangi beldelerden alış yapıyorsunuz?",
+     "a": "Ücretsiz otel alışı Side merkez, Manavgat, Çolaklı, Kızılağaç, Evrenseki, Kumköy, Titreyengöl, Sorgun ve Gündoğdu'yu kapsar. Kesin saat bir önceki akşam WhatsApp'tan teyit edilir."
+    },
+    {
+     "q": "Side'den en kısa tur hangisi?",
+     "a": "Yeşil Kanyon. Oymapınar Barajı Manavgat'ın hemen yukarısında, Side'ye yaklaşık yarım saat mesafede. Alış geç sabah olur ve aynı gün öğleden sonra dönersiniz — en rahat günümüz."
+    },
+    {
+     "q": "Kapadokya turuna Side'den katılabilir miyim?",
+     "a": "Evet. 2 günlük Kapadokya turu, Side otellerinden Alanya ile aynı programda alış yapar — pazartesi, perşembe ve cumartesi. Mesafe nedeniyle tur 2 gün ve 1 gece konaklamalıdır."
+    },
+    {
+     "q": "Önceden online ödeme yapmam gerekir mi?",
+     "a": "Hayır. Site üzerinden rezervasyon talebi gönderirsiniz, müsaitliği ve alış saatinizi WhatsApp'tan teyit ederiz, ödemeyi tur günü yaparsınız."
+    }
+   ],
+   "sections": [
+    {
+     "h": "Side neden iyi bir çıkış noktası",
+     "p": "Side, Alanya'nın yaklaşık 60 km batısındadır ve bu, günübirlik turların hesabını değiştirir. Pamukkale ile Demre çevresindeki Likya kıyısı buradan belirgin biçimde daha yakındır; yani günün daha azını otobüste geçirirsiniz. Yeşil Kanyon daha da yakın — Oymapınar Barajı Manavgat'ın hemen yukarısındadır. İstisna Kapadokya'dır: kuzeydoğuda, uzakta kaldığı için turu tek güne sıkıştırmak yerine iki gün ve bir gece konaklamalı düzenliyoruz.",
+     "li": []
+    },
+    {
+     "h": "Side çevresinde alış yaptığımız yerler",
+     "p": "Ücretsiz otel alışı Side merkez, Manavgat, Çolaklı, Kızılağaç, Evrenseki, Kumköy, Titreyengöl, Sorgun ve Gündoğdu'yu kapsar. Kesin alış saatinizi bir önceki akşam WhatsApp üzerinden teyit ederiz.",
+     "li": []
+    },
+    {
+     "h": "Her tura dahil olanlar",
+     "p": "",
+     "li": [
+      "Side ve Manavgat çevresinde ücretsiz otel alış ve bırakış",
+      "Klimalı ulaşım",
+      "Lisanslı profesyonel rehber (EN / RU / TR)",
+      "Her tur sayfasında belirtilen öğünler",
+      "Seyahat sigortası"
+     ]
+    },
+    {
+     "h": "Çocuklar ve bebekler",
+     "p": "3 yaş altı çocuklar ayrı koltuk olmadan, kucakta ücretsiz seyahat eder. 4–7 yaş için her turda indirimli tarife uygulanır; kesin tutar ilgili turun sayfasında belirtilir.",
+     "li": []
+    },
+    {
+     "h": "Ödeme nasıl yapılır",
+     "p": "Web sitesi üzerinden hiçbir tahsilat yapılmaz. Talebinizi gönderirsiniz, biz WhatsApp'tan müsaitlik ve alış saatinizle yanıt veririz, ödemeyi ise tur sabahı şoför veya rehber alır. Euro cinsinden, kişi başı.",
+     "li": []
+    }
+   ],
+   "cta": {
+    "h": "Hangi turu seçeceğinizden emin değil misiniz?",
+    "p": "WhatsApp'tan bize yazın; kaç gününüz olduğuna ve kiminle seyahat ettiğinize göre seçmenize yardımcı olalım.",
+    "btn": "WhatsApp'tan sorun",
+    "href": "https://wa.me/905331429037?text=Merhaba%21%20Side%27den%20turlar%C4%B1n%C4%B1z%20hakk%C4%B1nda%20bilgi%20almak%20istiyorum."
+   }
+  },
+  "uk": {
+   "meta": {
+    "title": "Екскурсії із Сіде та Манавгата — ціни 2026 | M.Y.V. Alanya Travel",
+    "desc": "Екскурсії із Сіде, Манавгата та довколишніх курортів із безкоштовним трансфером. Ціни 2026: Зелений каньйон €30, Памуккале €40, Демре-Міра-Кекова €55, Каппадокія €50.",
+    "ogTitle": "Екскурсії із Сіде та Манавгата — ціни 2026 | M.Y.V. Alanya Travel",
+    "ogDesc": "Екскурсії із Сіде, Манавгата та довколишніх курортів із безкоштовним трансфером. Ціни 2026: Зелений каньйон €30, Памуккале €40, Демре-Міра-Кекова €55, Каппадокія €50."
+   },
+   "jsonld": [
+    "{\"@context\": \"https://schema.org\", \"@type\": \"FAQPage\", \"mainEntity\": [{\"@type\": \"Question\", \"name\": \"Скільки коштують екскурсії із Сіде у 2026 році?\", \"acceptedAnswer\": {\"@type\": \"Answer\", \"text\": \"Зелений каньйон — від €30 з дорослого, Памуккале — від €40, Демре-Міра-Кекова — від €55. Дводенний тур у Каппадокію — від €50 з дорослого в бюджетному пакеті. Для дітей діє знижена ціна, діти до 3 років — безкоштовно.\"}}, {\"@type\": \"Question\", \"name\": \"З яких курортів поблизу Сіде ви забираєте?\", \"acceptedAnswer\": {\"@type\": \"Answer\", \"text\": \"Безкоштовний трансфер діє для центру Сіде, Манавгата, Чолакли, Кизилагача, Евренсекі, Кумкея, Тітреєнгеля, Соргуна та Гюндогду. Точний час підтверджуємо у WhatsApp напередодні ввечері.\"}}, {\"@type\": \"Question\", \"name\": \"Яка екскурсія із Сіде найкоротша?\", \"acceptedAnswer\": {\"@type\": \"Answer\", \"text\": \"Зелений каньйон. Водосховище Оймапинар розташоване одразу над Манавгатом, приблизно за півгодини від Сіде, тож виїзд пізній, а повернення — того самого дня по обіді.\"}}, {\"@type\": \"Question\", \"name\": \"Чи можна поїхати в Каппадокію із Сіде?\", \"acceptedAnswer\": {\"@type\": \"Answer\", \"text\": \"Так. Дводенний тур у Каппадокію забирає з готелів Сіде за тим самим розкладом, що й з Аланії — понеділок, четвер і субота. Саме через відстань тур розрахований на 2 дні з ночівлею.\"}}, {\"@type\": \"Question\", \"name\": \"Чи потрібна передоплата онлайн?\", \"acceptedAnswer\": {\"@type\": \"Answer\", \"text\": \"Ні. Ви залишаєте заявку на сайті, ми підтверджуємо наявність місць і час виїзду у WhatsApp, а оплата здійснюється в день туру.\"}}]}",
+    "{\"@context\": \"https://schema.org\", \"@type\": \"ItemList\", \"itemListElement\": [{\"@type\": \"ListItem\", \"position\": 1, \"name\": \"Зелений каньйон\", \"url\": \"https://myvalanyatravel.com/uk/green-canyon\"}, {\"@type\": \"ListItem\", \"position\": 2, \"name\": \"Памуккале\", \"url\": \"https://myvalanyatravel.com/uk/pamukkale\"}, {\"@type\": \"ListItem\", \"position\": 3, \"name\": \"Демре · Міра · Кекова\", \"url\": \"https://myvalanyatravel.com/uk/demre-myra-kekova\"}, {\"@type\": \"ListItem\", \"position\": 4, \"name\": \"Каппадокія (2 дні)\", \"url\": \"https://myvalanyatravel.com/uk/\"}]}"
+   ],
+   "h1": "Екскурсії із Сіде та Манавгата",
+   "sub": "Усі наші тури включають безкоштовний трансфер із готелів Сіде та довколишніх курортів. Чесні ціни 2026 року, ліцензовані гіди, оплата в день екскурсії — без передоплати онлайн.",
+   "upd": "Оновлено: липень 2026",
+   "switch": [
+    {
+     "href": "/uk/excursions-from-alanya",
+     "label": "З Аланії",
+     "on": false
+    },
+    {
+     "href": "/uk/excursions-from-side",
+     "label": "Із Сіде",
+     "on": true
+    }
+   ],
+   "th": [
+    "Тур",
+    "Тривалість",
+    "Дні виїзду",
+    "Виїзд із Сіде",
+    "Від (дорослий)",
+    "Преміум",
+    ""
+   ],
+   "rows": [
+    {
+     "cells": [
+      "Зелений каньйон",
+      "Спокійний день",
+      "Щодня",
+      "прибл. 08:30–09:00",
+      "€30 Від",
+      "Один пакет",
+      "Дивитися тур →"
+     ],
+     "href": "https://myvalanyatravel.com/uk/green-canyon",
+     "tour": "greencanyon"
+    },
+    {
+     "cells": [
+      "Памуккале",
+      "Цілий день",
+      "Щодня",
+      "02:00–04:00",
+      "€40 Від",
+      "€70",
+      "Дивитися тур →"
+     ],
+     "href": "https://myvalanyatravel.com/uk/pamukkale",
+     "tour": "pamukkale"
+    },
+    {
+     "cells": [
+      "Демре · Міра · Кекова",
+      "Цілий день",
+      "Ср, Нд",
+      "03:00–05:00",
+      "€55 Від",
+      "€80",
+      "Дивитися тур →"
+     ],
+     "href": "https://myvalanyatravel.com/uk/demre-myra-kekova",
+     "tour": "demre"
+    },
+    {
+     "cells": [
+      "Каппадокія (2 дні)",
+      "2 дні / 1 ніч",
+      "Пн, Чт, Сб",
+      "рано вранці",
+      "€50 Від",
+      "€100",
+      "Дивитися тур →"
+     ],
+     "href": "https://myvalanyatravel.com/uk/",
+     "tour": "cappadocia"
+    }
+   ],
+   "faqTitle": "Часті запитання",
+   "faq": [
+    {
+     "q": "Скільки коштують екскурсії із Сіде у 2026 році?",
+     "a": "Зелений каньйон — від €30 з дорослого, Памуккале — від €40, Демре-Міра-Кекова — від €55. Дводенний тур у Каппадокію — від €50 з дорослого в бюджетному пакеті. Для дітей діє знижена ціна, діти до 3 років — безкоштовно."
+    },
+    {
+     "q": "З яких курортів поблизу Сіде ви забираєте?",
+     "a": "Безкоштовний трансфер діє для центру Сіде, Манавгата, Чолакли, Кизилагача, Евренсекі, Кумкея, Тітреєнгеля, Соргуна та Гюндогду. Точний час підтверджуємо у WhatsApp напередодні ввечері."
+    },
+    {
+     "q": "Яка екскурсія із Сіде найкоротша?",
+     "a": "Зелений каньйон. Водосховище Оймапинар розташоване одразу над Манавгатом, приблизно за півгодини від Сіде, тож виїзд пізній, а повернення — того самого дня по обіді."
+    },
+    {
+     "q": "Чи можна поїхати в Каппадокію із Сіде?",
+     "a": "Так. Дводенний тур у Каппадокію забирає з готелів Сіде за тим самим розкладом, що й з Аланії — понеділок, четвер і субота. Саме через відстань тур розрахований на 2 дні з ночівлею."
+    },
+    {
+     "q": "Чи потрібна передоплата онлайн?",
+     "a": "Ні. Ви залишаєте заявку на сайті, ми підтверджуємо наявність місць і час виїзду у WhatsApp, а оплата здійснюється в день туру."
+    }
+   ],
+   "sections": [
+    {
+     "h": "Чому Сіде — зручна база",
+     "p": "Сіде розташоване приблизно за 60 км на захід від Аланії, і це змінює розрахунок для одноденних поїздок. Памуккале та лікійське узбережжя біля Демре звідси помітно ближчі, тож в автобусі ви проводите менше часу. Зелений каньйон іще ближче — водосховище Оймапинар лежить одразу над Манавгатом. Виняток — Каппадокія: вона далеко на північному сході, тому тур розрахований на два дні з ночівлею, а не втиснутий в один.",
+     "li": []
+    },
+    {
+     "h": "Звідки ми забираємо в районі Сіде",
+     "p": "Безкоштовний трансфер діє для центру Сіде, Манавгата, Чолакли, Кизилагача, Евренсекі, Кумкея, Тітреєнгеля, Соргуна та Гюндогду. Точний час виїзду ми підтверджуємо у WhatsApp напередодні ввечері.",
+     "li": []
+    },
+    {
+     "h": "Що входить у кожен тур",
+     "p": "",
+     "li": [
+      "Безкоштовний трансфер із готелю та назад у межах Сіде й Манавгата",
+      "Транспорт із кондиціонером",
+      "Ліцензований професійний гід (EN / RU / TR)",
+      "Харчування згідно з програмою туру",
+      "Страхування"
+     ]
+    },
+    {
+     "h": "Діти та немовлята",
+     "p": "Діти до 3 років їдуть безкоштовно на руках у батьків, без окремого місця. Для віку 4–7 років діє знижений тариф на кожному турі; точна сума вказана на сторінці відповідного туру.",
+     "li": []
+    },
+    {
+     "h": "Як відбувається оплата",
+     "p": "Через сайт нічого не списується. Ви надсилаєте заявку, ми відповідаємо у WhatsApp із підтвердженням місць і часу виїзду, а оплату приймає водій або гід уранці в день туру. У євро, за особу.",
+     "li": []
+    }
+   ],
+   "cta": {
+    "h": "Не знаєте, який тур обрати?",
+    "p": "Напишіть нам у WhatsApp — допоможемо обрати, зважаючи на те, скільки у вас днів і з ким ви подорожуєте.",
+    "btn": "Написати у WhatsApp",
+    "href": "https://wa.me/905331429037?text=%D0%92%D1%96%D1%82%D0%B0%D1%8E%21%20%D0%A5%D0%BE%D1%87%D1%83%20%D0%B4%D1%96%D0%B7%D0%BD%D0%B0%D1%82%D0%B8%D1%81%D1%8F%20%D0%BF%D1%80%D0%BE%20%D0%B5%D0%BA%D1%81%D0%BA%D1%83%D1%80%D1%81%D1%96%D1%97%20%D1%96%D0%B7%20%D0%A1%D1%96%D0%B4%D0%B5."
+   }
+  },
+  "sr": {
+   "meta": {
+    "title": "Izleti iz Side & Manavgata — cene 2026 | M.Y.V. Alanya Travel",
+    "desc": "Izleti iz Side, Manavgata i okolnih mesta uz besplatno preuzimanje iz hotela. Cene 2026: Zeleni kanjon €30, Pamukale €40, Demre-Mira-Kekova €55, Kapadokija €50.",
+    "ogTitle": "Izleti iz Side & Manavgata — cene 2026 | M.Y.V. Alanya Travel",
+    "ogDesc": "Izleti iz Side, Manavgata i okolnih mesta uz besplatno preuzimanje iz hotela. Cene 2026: Zeleni kanjon €30, Pamukale €40, Demre-Mira-Kekova €55, Kapadokija €50."
+   },
+   "jsonld": [
+    "{\"@context\": \"https://schema.org\", \"@type\": \"FAQPage\", \"mainEntity\": [{\"@type\": \"Question\", \"name\": \"Koliko koštaju izleti iz Side u 2026?\", \"acceptedAnswer\": {\"@type\": \"Answer\", \"text\": \"Zeleni kanjon počinje od €30 po odrasloj osobi, Pamukale od €40, a Demre-Mira-Kekova od €55. Dvodnevna tura u Kapadokiju počinje od €50 po odrasloj osobi u budžet paketu. Deca plaćaju manje, a bebe do 3 godine putuju besplatno.\"}}, {\"@type\": \"Question\", \"name\": \"Iz kojih mesta oko Side preuzimate goste?\", \"acceptedAnswer\": {\"@type\": \"Answer\", \"text\": \"Besplatno preuzimanje pokriva centar Side, Manavgat, Čolakli, Kizilagač, Evrenseki, Kumkoj, Titrejengel, Sorgun i Gundogdu. Tačno vreme potvrđujemo preko WhatsApp-a veče ranije.\"}}, {\"@type\": \"Question\", \"name\": \"Koji je najkraći izlet iz Side?\", \"acceptedAnswer\": {\"@type\": \"Answer\", \"text\": \"Zeleni kanjon. Akumulacija Ojmapinar nalazi se odmah iznad Manavgata, oko pola sata od Side, pa je polazak kasno ujutru, a povratak istog popodneva — najopušteniji dan koji vozimo.\"}}, {\"@type\": \"Question\", \"name\": \"Mogu li na turu u Kapadokiju iz Side?\", \"acceptedAnswer\": {\"@type\": \"Answer\", \"text\": \"Da. Dvodnevna tura u Kapadokiju preuzima goste iz hotela u Sideu po istom rasporedu kao i iz Alanje — ponedeljkom, četvrtkom i subotom. Baš zbog udaljenosti tura traje 2 dana sa noćenjem.\"}}, {\"@type\": \"Question\", \"name\": \"Da li moram da platim unapred onlajn?\", \"acceptedAnswer\": {\"@type\": \"Answer\", \"text\": \"Ne. Pošaljete zahtev preko sajta, mi potvrdimo slobodna mesta i vreme polaska preko WhatsApp-a, a plaćate na dan ture.\"}}]}",
+    "{\"@context\": \"https://schema.org\", \"@type\": \"ItemList\", \"itemListElement\": [{\"@type\": \"ListItem\", \"position\": 1, \"name\": \"Zeleni kanjon\", \"url\": \"https://myvalanyatravel.com/sr/green-canyon\"}, {\"@type\": \"ListItem\", \"position\": 2, \"name\": \"Pamukale\", \"url\": \"https://myvalanyatravel.com/sr/pamukkale\"}, {\"@type\": \"ListItem\", \"position\": 3, \"name\": \"Demre · Mira · Kekova\", \"url\": \"https://myvalanyatravel.com/sr/demre-myra-kekova\"}, {\"@type\": \"ListItem\", \"position\": 4, \"name\": \"Kapadokija (2 dana)\", \"url\": \"https://myvalanyatravel.com/sr/\"}]}"
+   ],
+   "h1": "Izleti iz Side & Manavgata",
+   "sub": "Sve naše ture uključuju besplatno preuzimanje iz hotela u Sideu i okolnim mestima. Poštene cene za 2026, licencirani vodiči i plaćanje na dan izleta — bez onlajn pretplate.",
+   "upd": "Ažurirano: jul 2026.",
+   "switch": [
+    {
+     "href": "/sr/excursions-from-alanya",
+     "label": "Iz Alanje",
+     "on": false
+    },
+    {
+     "href": "/sr/excursions-from-side",
+     "label": "Iz Side",
+     "on": true
+    }
+   ],
+   "th": [
+    "Tura",
+    "Trajanje",
+    "Dani polaska",
+    "Polazak iz Side",
+    "Od (odrasli)",
+    "Premijum",
+    ""
+   ],
+   "rows": [
+    {
+     "cells": [
+      "Zeleni kanjon",
+      "Opušten dan",
+      "Svaki dan",
+      "oko 08:30–09:00",
+      "€30 Od",
+      "Jedan paket",
+      "Pogledaj turu →"
+     ],
+     "href": "https://myvalanyatravel.com/sr/green-canyon",
+     "tour": "greencanyon"
+    },
+    {
+     "cells": [
+      "Pamukale",
+      "Ceo dan",
+      "Svaki dan",
+      "02:00–04:00",
+      "€40 Od",
+      "€70",
+      "Pogledaj turu →"
+     ],
+     "href": "https://myvalanyatravel.com/sr/pamukkale",
+     "tour": "pamukkale"
+    },
+    {
+     "cells": [
+      "Demre · Mira · Kekova",
+      "Ceo dan",
+      "Sre, Ned",
+      "03:00–05:00",
+      "€55 Od",
+      "€80",
+      "Pogledaj turu →"
+     ],
+     "href": "https://myvalanyatravel.com/sr/demre-myra-kekova",
+     "tour": "demre"
+    },
+    {
+     "cells": [
+      "Kapadokija (2 dana)",
+      "2 dana / 1 noć",
+      "Pon, Čet, Sub",
+      "rano ujutru",
+      "€50 Od",
+      "€100",
+      "Pogledaj turu →"
+     ],
+     "href": "https://myvalanyatravel.com/sr/",
+     "tour": "cappadocia"
+    }
+   ],
+   "faqTitle": "Česta pitanja",
+   "faq": [
+    {
+     "q": "Koliko koštaju izleti iz Side u 2026?",
+     "a": "Zeleni kanjon počinje od €30 po odrasloj osobi, Pamukale od €40, a Demre-Mira-Kekova od €55. Dvodnevna tura u Kapadokiju počinje od €50 po odrasloj osobi u budžet paketu. Deca plaćaju manje, a bebe do 3 godine putuju besplatno."
+    },
+    {
+     "q": "Iz kojih mesta oko Side preuzimate goste?",
+     "a": "Besplatno preuzimanje pokriva centar Side, Manavgat, Čolakli, Kizilagač, Evrenseki, Kumkoj, Titrejengel, Sorgun i Gundogdu. Tačno vreme potvrđujemo preko WhatsApp-a veče ranije."
+    },
+    {
+     "q": "Koji je najkraći izlet iz Side?",
+     "a": "Zeleni kanjon. Akumulacija Ojmapinar nalazi se odmah iznad Manavgata, oko pola sata od Side, pa je polazak kasno ujutru, a povratak istog popodneva — najopušteniji dan koji vozimo."
+    },
+    {
+     "q": "Mogu li na turu u Kapadokiju iz Side?",
+     "a": "Da. Dvodnevna tura u Kapadokiju preuzima goste iz hotela u Sideu po istom rasporedu kao i iz Alanje — ponedeljkom, četvrtkom i subotom. Baš zbog udaljenosti tura traje 2 dana sa noćenjem."
+    },
+    {
+     "q": "Da li moram da platim unapred onlajn?",
+     "a": "Ne. Pošaljete zahtev preko sajta, mi potvrdimo slobodna mesta i vreme polaska preko WhatsApp-a, a plaćate na dan ture."
+    }
+   ],
+   "sections": [
+    {
+     "h": "Zašto je Side dobra baza",
+     "p": "Side je oko 60 km zapadno od Alanje, i to menja računicu za jednodnevne izlete. Pamukale i likijska obala oko Demrea odavde su primetno bliži, pa manje dana provedete u autobusu. Zeleni kanjon je još bliži — akumulacija Ojmapinar nalazi se odmah iznad Manavgata. Izuzetak je Kapadokija: leži daleko na severoistoku, zato je vozimo kao dvodnevnu turu sa noćenjem umesto da je stiskamo u jedan dan.",
+     "li": []
+    },
+    {
+     "h": "Odakle preuzimamo u okolini Side",
+     "p": "Besplatno preuzimanje pokriva centar Side, Manavgat, Čolakli, Kizilagač, Evrenseki, Kumkoj, Titrejengel, Sorgun i Gundogdu. Tačno vreme polaska potvrđujemo preko WhatsApp-a veče pre ture.",
+     "li": []
+    },
+    {
+     "h": "Šta je uključeno u svaku turu",
+     "p": "",
+     "li": [
+      "Besplatno preuzimanje i povratak do hotela u Sideu i Manavgatu",
+      "Prevoz sa klimom",
+      "Licencirani profesionalni vodič (EN / RU / TR)",
+      "Obroci navedeni na stranici svake ture",
+      "Putno osiguranje"
+     ]
+    },
+    {
+     "h": "Deca i bebe",
+     "p": "Deca do 3 godine putuju besplatno u krilu roditelja, bez zasebnog sedišta. Za uzrast 4–7 godina važi snižena tarifa na svakoj turi; tačan iznos stoji na stranici te ture.",
+     "li": []
+    },
+    {
+     "h": "Kako se plaća",
+     "p": "Preko sajta se ništa ne naplaćuje. Pošaljete zahtev, mi odgovorimo na WhatsApp-u sa slobodnim mestima i vremenom polaska, a vozač ili vodič naplaćuje ujutru na dan ture. U evrima, po osobi.",
+     "li": []
+    }
+   ],
+   "cta": {
+    "h": "Niste sigurni koju turu da izaberete?",
+    "p": "Pišite nam na WhatsApp — pomoći ćemo vam da izaberete na osnovu toga koliko dana imate i s kim putujete.",
+    "btn": "Pitajte nas na WhatsApp",
+    "href": "https://wa.me/905331429037?text=Zdravo%21%20Zanimaju%20me%20va%C5%A1i%20izleti%20iz%20Side."
+   }
+  }
+ }
+}
