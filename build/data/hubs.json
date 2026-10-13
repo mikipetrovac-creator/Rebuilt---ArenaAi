@@ -118,7 +118,7 @@
     },
     {
      "q": "Do I have to pay online in advance?",
-     "a": "No. You send a booking request through the site, we confirm availability and your pickup time on WhatsApp, and you pay on the day of the tour."
+     "a": "No. You send a booking request through the site, we confirm availability and your pickup time on WhatsApp, Viber, Telegram or MAX, and you pay on the day of the tour."
     },
     {
      "q": "Which excursion is best if I only have one day?",
@@ -144,13 +144,13 @@
     },
     {
      "h": "How payment works",
-     "p": "No online prepayment. You send a booking request, we confirm your hotel pickup on WhatsApp, and you pay on the day of the tour. Prices are per person in euros.",
+     "p": "No online prepayment. You send a booking request, we confirm your hotel pickup on WhatsApp, Viber, Telegram or MAX, and you pay on the day of the tour. Prices are per person in euros.",
      "li": []
     }
    ],
    "cta": {
     "h": "Not sure which tour to pick?",
-    "p": "Write to us on WhatsApp and we'll help you choose based on how many days you have and who is travelling with you.",
+    "p": "Write to us on WhatsApp, Viber, Telegram or MAX and we'll help you choose based on how many days you have and who is travelling with you.",
     "btn": "Ask us on WhatsApp",
     "href": "https://wa.me/905331429037?text=Hello!%20I'd%20like%20to%20ask%20about%20your%20excursions%20from%20Alanya."
    }
@@ -273,7 +273,7 @@
     },
     {
      "q": "Нужно ли платить онлайн заранее?",
-     "a": "Нет. Вы отправляете заявку через сайт, мы подтверждаем наличие мест и время трансфера в WhatsApp, оплата — в день экскурсии."
+     "a": "Нет. Вы отправляете заявку через сайт, мы подтверждаем наличие мест и время трансфера в WhatsApp, Viber, Telegram или MAX, оплата — в день экскурсии."
     },
     {
      "q": "Какую экскурсию выбрать, если есть только один день?",
@@ -299,13 +299,13 @@
     },
     {
      "h": "Как происходит оплата",
-     "p": "Предоплата онлайн не требуется. Вы отправляете заявку, мы подтверждаем трансфер от отеля в WhatsApp, и вы оплачиваете в день экскурсии. Цены указаны за человека в евро.",
+     "p": "Предоплата онлайн не требуется. Вы отправляете заявку, мы подтверждаем трансфер от отеля в WhatsApp, Viber, Telegram или MAX, и вы оплачиваете в день экскурсии. Цены указаны за человека в евро.",
      "li": []
     }
    ],
    "cta": {
     "h": "Не знаете, какой тур выбрать?",
-    "p": "Напишите нам в WhatsApp — поможем выбрать, исходя из того, сколько у вас дней и с кем вы путешествуете.",
+    "p": "Напишите нам в WhatsApp, Viber, Telegram или MAX — поможем выбрать, исходя из того, сколько у вас дней и с кем вы путешествуете.",
     "btn": "Спросить в WhatsApp",
     "href": "https://wa.me/905331429037?text=Здравствуйте!%20Хочу%20узнать%20про%20ваши%20экскурсии%20из%20Аланьи."
    }
@@ -428,7 +428,7 @@
     },
     {
      "q": "Muss ich online im Voraus bezahlen?",
-     "a": "Nein. Sie senden eine Anfrage über die Website, wir bestätigen Verfügbarkeit und Abholzeit per WhatsApp, und Sie zahlen am Tag der Tour."
+     "a": "Nein. Sie senden eine Anfrage über die Website, wir bestätigen Verfügbarkeit und Abholzeit per WhatsApp, Viber, Telegram oder MAX, und Sie zahlen am Tag der Tour."
     },
     {
      "q": "Welcher Ausflug lohnt sich, wenn ich nur einen Tag habe?",
@@ -454,13 +454,13 @@
     },
     {
      "h": "So funktioniert die Zahlung",
-     "p": "Keine Online-Vorauszahlung. Sie senden eine Buchungsanfrage, wir bestätigen Ihre Hotelabholung per WhatsApp, und Sie zahlen am Tag der Tour. Preise gelten pro Person in Euro.",
+     "p": "Keine Online-Vorauszahlung. Sie senden eine Buchungsanfrage, wir bestätigen Ihre Hotelabholung per WhatsApp, Viber, Telegram oder MAX, und Sie zahlen am Tag der Tour. Preise gelten pro Person in Euro.",
      "li": []
     }
    ],
    "cta": {
     "h": "Unsicher, welche Tour die richtige ist?",
-    "p": "Schreiben Sie uns auf WhatsApp — wir helfen Ihnen bei der Auswahl, je nachdem, wie viele Tage Sie haben und mit wem Sie reisen.",
+    "p": "Schreiben Sie uns auf WhatsApp, Viber, Telegram oder MAX — wir helfen Ihnen bei der Auswahl, je nachdem, wie viele Tage Sie haben und mit wem Sie reisen.",
     "btn": "Auf WhatsApp fragen",
     "href": "https://wa.me/905331429037?text=Hallo!%20Ich%20möchte%20mich%20über%20Ihre%20Ausflüge%20ab%20Alanya%20informieren."
    }
@@ -583,7 +583,7 @@
     },
     {
      "q": "Önceden online ödeme yapmam gerekiyor mu?",
-     "a": "Hayır. Site üzerinden talep gönderirsiniz, müsaitliği ve alış saatinizi WhatsApp'tan onaylarız, ödemeyi tur günü yaparsınız."
+     "a": "Hayır. Site üzerinden talep gönderirsiniz, müsaitliği ve alış saatinizi WhatsApp, Viber, Telegram veya MAX'ten onaylarız, ödemeyi tur günü yaparsınız."
     },
     {
      "q": "Sadece bir günüm varsa hangi tur en iyisi?",
@@ -609,13 +609,13 @@
     },
     {
      "h": "Ödeme nasıl yapılır",
-     "p": "Online ön ödeme yok. Rezervasyon talebi gönderirsiniz, otelden alış saatinizi WhatsApp'tan onaylarız ve tur günü ödersiniz. Fiyatlar kişi başı, euro cinsindendir.",
+     "p": "Online ön ödeme yok. Rezervasyon talebi gönderirsiniz, otelden alış saatinizi WhatsApp, Viber, Telegram veya MAX'ten onaylarız ve tur günü ödersiniz. Fiyatlar kişi başı, euro cinsindendir.",
      "li": []
     }
    ],
    "cta": {
     "h": "Hangi turu seçeceğinizden emin değil misiniz?",
-    "p": "WhatsApp'tan yazın; kaç gününüz olduğuna ve kiminle seyahat ettiğinize göre seçmenize yardımcı olalım.",
+    "p": "WhatsApp, Viber, Telegram veya MAX'ten yazın; kaç gününüz olduğuna ve kiminle seyahat ettiğinize göre seçmenize yardımcı olalım.",
     "btn": "WhatsApp'tan sorun",
     "href": "https://wa.me/905331429037?text=Merhaba!%20Alanya'dan%20turlarınız%20hakkında%20bilgi%20almak%20istiyorum."
    }
@@ -738,7 +738,7 @@
     },
     {
      "q": "Чи потрібно платити онлайн заздалегідь?",
-     "a": "Ні. Ви надсилаєте заявку через сайт, ми підтверджуємо наявність місць і час трансферу у WhatsApp, оплата — у день екскурсії."
+     "a": "Ні. Ви надсилаєте заявку через сайт, ми підтверджуємо наявність місць і час трансферу у WhatsApp, Viber, Telegram або MAX, оплата — у день екскурсії."
     },
     {
      "q": "Яку екскурсію обрати, якщо є лише один день?",
@@ -764,13 +764,13 @@
     },
     {
      "h": "Як відбувається оплата",
-     "p": "Передоплата онлайн не потрібна. Ви надсилаєте заявку, ми підтверджуємо трансфер від готелю у WhatsApp, і ви оплачуєте в день екскурсії. Ціни за особу, у євро.",
+     "p": "Передоплата онлайн не потрібна. Ви надсилаєте заявку, ми підтверджуємо трансфер від готелю у WhatsApp, Viber, Telegram або MAX, і ви оплачуєте в день екскурсії. Ціни за особу, у євро.",
      "li": []
     }
    ],
    "cta": {
     "h": "Не знаєте, який тур обрати?",
-    "p": "Напишіть нам у WhatsApp — допоможемо обрати, зважаючи на те, скільки у вас днів і з ким ви подорожуєте.",
+    "p": "Напишіть нам у WhatsApp, Viber, Telegram або MAX — допоможемо обрати, зважаючи на те, скільки у вас днів і з ким ви подорожуєте.",
     "btn": "Запитати у WhatsApp",
     "href": "https://wa.me/905331429037?text=Вітаю!%20Хочу%20дізнатися%20про%20ваші%20екскурсії%20з%20Аланії."
    }
@@ -893,7 +893,7 @@
     },
     {
      "q": "Da li moram da platim unapred preko interneta?",
-     "a": "Ne. Pošaljete zahtev preko sajta, mi potvrdimo slobodna mesta i vreme preuzimanja putem WhatsApp-a, a plaćate na dan ture."
+     "a": "Ne. Pošaljete zahtev preko sajta, mi potvrdimo slobodna mesta i vreme preuzimanja putem WhatsApp-a, Viber-a, Telegram-a ili MAX-a, a plaćate na dan ture."
     },
     {
      "q": "Koji izlet je najbolji ako imam samo jedan dan?",
@@ -919,13 +919,13 @@
     },
     {
      "h": "Kako se plaća",
-     "p": "Nema plaćanja unapred preko interneta. Pošaljete zahtev za rezervaciju, mi vam potvrdimo preuzimanje iz hotela putem WhatsApp-a, a plaćate na dan ture. Cene su po osobi, u evrima.",
+     "p": "Nema plaćanja unapred preko interneta. Pošaljete zahtev za rezervaciju, mi vam potvrdimo preuzimanje iz hotela putem WhatsApp-a, Viber-a, Telegram-a ili MAX-a, a plaćate na dan ture. Cene su po osobi, u evrima.",
      "li": []
     }
    ],
    "cta": {
     "h": "Niste sigurni koju turu da izaberete?",
-    "p": "Pišite nam na WhatsApp i pomoći ćemo vam da izaberete na osnovu toga koliko dana imate i s kim putujete.",
+    "p": "Pišite nam na WhatsApp, Viber, Telegram ili MAX i pomoći ćemo vam da izaberete na osnovu toga koliko dana imate i s kim putujete.",
     "btn": "Pitajte nas na WhatsApp-u",
     "href": "https://wa.me/905331429037?text=Zdravo!%20Zanimaju%20me%20vaši%20izleti%20iz%20Alanje."
    }
@@ -1029,7 +1029,7 @@
     },
     {
      "q": "Which resorts around Side do you pick up from?",
-     "a": "Free hotel pickup covers Side centre, Manavgat, Çolaklı, Kızılağaç, Evrenseki, Kumköy, Titreyengöl, Sorgun and Gündoğdu. The exact time is confirmed on WhatsApp the evening before."
+     "a": "Free hotel pickup covers Side centre, Manavgat, Çolaklı, Kızılağaç, Evrenseki, Kumköy, Titreyengöl, Sorgun and Gündoğdu. The exact time is confirmed on WhatsApp, Viber, Telegram or MAX the evening before."
     },
     {
      "q": "What is the best short excursion from Side?",
@@ -1041,7 +1041,7 @@
     },
     {
      "q": "Do I have to pay online in advance?",
-     "a": "No. You send a booking request through the site, we confirm availability and your pickup time on WhatsApp, and you pay on the day of the tour."
+     "a": "No. You send a booking request through the site, we confirm availability and your pickup time on WhatsApp, Viber, Telegram or MAX, and you pay on the day of the tour."
     }
    ],
    "sections": [
@@ -1052,7 +1052,7 @@
     },
     {
      "h": "Where we pick up around Side",
-     "p": "Free hotel pickup covers Side centre, Manavgat, Çolaklı, Kızılağaç, Evrenseki, Kumköy, Titreyengöl, Sorgun and Gündoğdu. Your exact pickup time is confirmed on WhatsApp the evening before the tour.",
+     "p": "Free hotel pickup covers Side centre, Manavgat, Çolaklı, Kızılağaç, Evrenseki, Kumköy, Titreyengöl, Sorgun and Gündoğdu. Your exact pickup time is confirmed on WhatsApp, Viber, Telegram or MAX the evening before the tour.",
      "li": []
     },
     {
@@ -1073,13 +1073,13 @@
     },
     {
      "h": "How payment works",
-     "p": "Nothing is charged through the website. Send the request, we reply on WhatsApp with availability and your pickup time, and the driver or guide takes payment on the morning of the tour. Euros, per person.",
+     "p": "Nothing is charged through the website. Send the request, we reply on WhatsApp, Viber, Telegram or MAX with availability and your pickup time, and the driver or guide takes payment on the morning of the tour. Euros, per person.",
      "li": []
     }
    ],
    "cta": {
     "h": "Not sure which tour to pick?",
-    "p": "Write to us on WhatsApp and we'll help you choose based on how many days you have and who is travelling with you.",
+    "p": "Write to us on WhatsApp, Viber, Telegram or MAX and we'll help you choose based on how many days you have and who is travelling with you.",
     "btn": "Ask us on WhatsApp",
     "href": "https://wa.me/905331429037?text=Hello%21%20I%27d%20like%20to%20ask%20about%20your%20excursions%20from%20Side."
    }
@@ -1181,7 +1181,7 @@
     },
     {
      "q": "Из каких курортов рядом с Сиде вы забираете?",
-     "a": "Бесплатный трансфер действует для центра Сиде, Манавгата, Чолаклы, Кызылагача, Эвренсеки, Кумкёя, Титреенгёля, Соргуна и Гюндогду. Точное время подтверждаем в WhatsApp накануне вечером."
+     "a": "Бесплатный трансфер действует для центра Сиде, Манавгата, Чолаклы, Кызылагача, Эвренсеки, Кумкёя, Титреенгёля, Соргуна и Гюндогду. Точное время подтверждаем в WhatsApp, Viber, Telegram или MAX накануне вечером."
     },
     {
      "q": "Какая экскурсия из Сиде самая короткая?",
@@ -1193,7 +1193,7 @@
     },
     {
      "q": "Нужна ли предоплата онлайн?",
-     "a": "Нет. Вы оставляете заявку на сайте, мы подтверждаем наличие мест и время выезда в WhatsApp, а оплата производится в день тура."
+     "a": "Нет. Вы оставляете заявку на сайте, мы подтверждаем наличие мест и время выезда в WhatsApp, Viber, Telegram или MAX, а оплата производится в день тура."
     }
    ],
    "sections": [
@@ -1204,7 +1204,7 @@
     },
     {
      "h": "Откуда мы забираем в районе Сиде",
-     "p": "Бесплатный трансфер действует для центра Сиде, Манавгата, Чолаклы, Кызылагача, Эвренсеки, Кумкёя, Титреенгёля, Соргуна и Гюндогду. Точное время выезда мы подтверждаем в WhatsApp накануне вечером.",
+     "p": "Бесплатный трансфер действует для центра Сиде, Манавгата, Чолаклы, Кызылагача, Эвренсеки, Кумкёя, Титреенгёля, Соргуна и Гюндогду. Точное время выезда мы подтверждаем в WhatsApp, Viber, Telegram или MAX накануне вечером.",
      "li": []
     },
     {
@@ -1225,13 +1225,13 @@
     },
     {
      "h": "Как происходит оплата",
-     "p": "Через сайт ничего не списывается. Вы отправляете заявку, мы отвечаем в WhatsApp с подтверждением мест и времени выезда, а оплату принимает водитель или гид утром в день тура. В евро, за человека.",
+     "p": "Через сайт ничего не списывается. Вы отправляете заявку, мы отвечаем в WhatsApp, Viber, Telegram или MAX с подтверждением мест и времени выезда, а оплату принимает водитель или гид утром в день тура. В евро, за человека.",
      "li": []
     }
    ],
    "cta": {
     "h": "Не знаете, какой тур выбрать?",
-    "p": "Напишите нам в WhatsApp — поможем выбрать, исходя из того, сколько у вас дней и с кем вы путешествуете.",
+    "p": "Напишите нам в WhatsApp, Viber, Telegram или MAX — поможем выбрать, исходя из того, сколько у вас дней и с кем вы путешествуете.",
     "btn": "Написать в WhatsApp",
     "href": "https://wa.me/905331429037?text=%D0%97%D0%B4%D1%80%D0%B0%D0%B2%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5%21%20%D0%A5%D0%BE%D1%87%D1%83%20%D1%83%D0%B7%D0%BD%D0%B0%D1%82%D1%8C%20%D0%BE%D0%B1%20%D1%8D%D0%BA%D1%81%D0%BA%D1%83%D1%80%D1%81%D0%B8%D1%8F%D1%85%20%D0%B8%D0%B7%20%D0%A1%D0%B8%D0%B4%D0%B5."
    }
@@ -1333,7 +1333,7 @@
     },
     {
      "q": "Aus welchen Orten rund um Side holen Sie ab?",
-     "a": "Die kostenlose Abholung gilt für das Zentrum von Side, Manavgat, Çolaklı, Kızılağaç, Evrenseki, Kumköy, Titreyengöl, Sorgun und Gündoğdu. Die genaue Zeit bestätigen wir am Vorabend per WhatsApp."
+     "a": "Die kostenlose Abholung gilt für das Zentrum von Side, Manavgat, Çolaklı, Kızılağaç, Evrenseki, Kumköy, Titreyengöl, Sorgun und Gündoğdu. Die genaue Zeit bestätigen wir am Vorabend per WhatsApp, Viber, Telegram oder MAX."
     },
     {
      "q": "Welcher Ausflug ab Side ist der kürzeste?",
@@ -1345,7 +1345,7 @@
     },
     {
      "q": "Muss ich online im Voraus bezahlen?",
-     "a": "Nein. Sie senden eine Buchungsanfrage über die Website, wir bestätigen Verfügbarkeit und Abholzeit per WhatsApp, und Sie zahlen am Tag der Tour."
+     "a": "Nein. Sie senden eine Buchungsanfrage über die Website, wir bestätigen Verfügbarkeit und Abholzeit per WhatsApp, Viber, Telegram oder MAX, und Sie zahlen am Tag der Tour."
     }
    ],
    "sections": [
@@ -1356,7 +1356,7 @@
     },
     {
      "h": "Wo wir rund um Side abholen",
-     "p": "Die kostenlose Hotelabholung gilt für das Zentrum von Side, Manavgat, Çolaklı, Kızılağaç, Evrenseki, Kumköy, Titreyengöl, Sorgun und Gündoğdu. Die genaue Abholzeit bestätigen wir am Vorabend per WhatsApp.",
+     "p": "Die kostenlose Hotelabholung gilt für das Zentrum von Side, Manavgat, Çolaklı, Kızılağaç, Evrenseki, Kumköy, Titreyengöl, Sorgun und Gündoğdu. Die genaue Abholzeit bestätigen wir am Vorabend per WhatsApp, Viber, Telegram oder MAX.",
      "li": []
     },
     {
@@ -1377,13 +1377,13 @@
     },
     {
      "h": "So funktioniert die Bezahlung",
-     "p": "Über die Website wird nichts abgebucht. Sie senden die Anfrage, wir antworten per WhatsApp mit Verfügbarkeit und Abholzeit, und Fahrer oder Guide nimmt die Zahlung am Morgen der Tour entgegen. In Euro, pro Person.",
+     "p": "Über die Website wird nichts abgebucht. Sie senden die Anfrage, wir antworten per WhatsApp, Viber, Telegram oder MAX mit Verfügbarkeit und Abholzeit, und Fahrer oder Guide nimmt die Zahlung am Morgen der Tour entgegen. In Euro, pro Person.",
      "li": []
     }
    ],
    "cta": {
     "h": "Unsicher, welche Tour die richtige ist?",
-    "p": "Schreiben Sie uns auf WhatsApp — wir helfen Ihnen bei der Auswahl, je nachdem, wie viele Tage Sie haben und mit wem Sie reisen.",
+    "p": "Schreiben Sie uns auf WhatsApp, Viber, Telegram oder MAX — wir helfen Ihnen bei der Auswahl, je nachdem, wie viele Tage Sie haben und mit wem Sie reisen.",
     "btn": "Auf WhatsApp fragen",
     "href": "https://wa.me/905331429037?text=Hallo%21%20Ich%20m%C3%B6chte%20mich%20%C3%BCber%20Ihre%20Ausfl%C3%BCge%20ab%20Side%20informieren."
    }
@@ -1485,7 +1485,7 @@
     },
     {
      "q": "Side çevresinde hangi beldelerden alış yapıyorsunuz?",
-     "a": "Ücretsiz otel alışı Side merkez, Manavgat, Çolaklı, Kızılağaç, Evrenseki, Kumköy, Titreyengöl, Sorgun ve Gündoğdu'yu kapsar. Kesin saat bir önceki akşam WhatsApp'tan teyit edilir."
+     "a": "Ücretsiz otel alışı Side merkez, Manavgat, Çolaklı, Kızılağaç, Evrenseki, Kumköy, Titreyengöl, Sorgun ve Gündoğdu'yu kapsar. Kesin saat bir önceki akşam WhatsApp, Viber, Telegram veya MAX'ten teyit edilir."
     },
     {
      "q": "Side'den en kısa tur hangisi?",
@@ -1497,7 +1497,7 @@
     },
     {
      "q": "Önceden online ödeme yapmam gerekir mi?",
-     "a": "Hayır. Site üzerinden rezervasyon talebi gönderirsiniz, müsaitliği ve alış saatinizi WhatsApp'tan teyit ederiz, ödemeyi tur günü yaparsınız."
+     "a": "Hayır. Site üzerinden rezervasyon talebi gönderirsiniz, müsaitliği ve alış saatinizi WhatsApp, Viber, Telegram veya MAX'ten teyit ederiz, ödemeyi tur günü yaparsınız."
     }
    ],
    "sections": [
@@ -1508,7 +1508,7 @@
     },
     {
      "h": "Side çevresinde alış yaptığımız yerler",
-     "p": "Ücretsiz otel alışı Side merkez, Manavgat, Çolaklı, Kızılağaç, Evrenseki, Kumköy, Titreyengöl, Sorgun ve Gündoğdu'yu kapsar. Kesin alış saatinizi bir önceki akşam WhatsApp üzerinden teyit ederiz.",
+     "p": "Ücretsiz otel alışı Side merkez, Manavgat, Çolaklı, Kızılağaç, Evrenseki, Kumköy, Titreyengöl, Sorgun ve Gündoğdu'yu kapsar. Kesin alış saatinizi bir önceki akşam WhatsApp, Viber, Telegram veya MAX üzerinden teyit ederiz.",
      "li": []
     },
     {
@@ -1529,13 +1529,13 @@
     },
     {
      "h": "Ödeme nasıl yapılır",
-     "p": "Web sitesi üzerinden hiçbir tahsilat yapılmaz. Talebinizi gönderirsiniz, biz WhatsApp'tan müsaitlik ve alış saatinizle yanıt veririz, ödemeyi ise tur sabahı şoför veya rehber alır. Euro cinsinden, kişi başı.",
+     "p": "Web sitesi üzerinden hiçbir tahsilat yapılmaz. Talebinizi gönderirsiniz, biz WhatsApp, Viber, Telegram veya MAX'ten müsaitlik ve alış saatinizle yanıt veririz, ödemeyi ise tur sabahı şoför veya rehber alır. Euro cinsinden, kişi başı.",
      "li": []
     }
    ],
    "cta": {
     "h": "Hangi turu seçeceğinizden emin değil misiniz?",
-    "p": "WhatsApp'tan bize yazın; kaç gününüz olduğuna ve kiminle seyahat ettiğinize göre seçmenize yardımcı olalım.",
+    "p": "WhatsApp, Viber, Telegram veya MAX'ten bize yazın; kaç gününüz olduğuna ve kiminle seyahat ettiğinize göre seçmenize yardımcı olalım.",
     "btn": "WhatsApp'tan sorun",
     "href": "https://wa.me/905331429037?text=Merhaba%21%20Side%27den%20turlar%C4%B1n%C4%B1z%20hakk%C4%B1nda%20bilgi%20almak%20istiyorum."
    }
@@ -1637,7 +1637,7 @@
     },
     {
      "q": "З яких курортів поблизу Сіде ви забираєте?",
-     "a": "Безкоштовний трансфер діє для центру Сіде, Манавгата, Чолакли, Кизилагача, Евренсекі, Кумкея, Тітреєнгеля, Соргуна та Гюндогду. Точний час підтверджуємо у WhatsApp напередодні ввечері."
+     "a": "Безкоштовний трансфер діє для центру Сіде, Манавгата, Чолакли, Кизилагача, Евренсекі, Кумкея, Тітреєнгеля, Соргуна та Гюндогду. Точний час підтверджуємо у WhatsApp, Viber, Telegram або MAX напередодні ввечері."
     },
     {
      "q": "Яка екскурсія із Сіде найкоротша?",
@@ -1649,7 +1649,7 @@
     },
     {
      "q": "Чи потрібна передоплата онлайн?",
-     "a": "Ні. Ви залишаєте заявку на сайті, ми підтверджуємо наявність місць і час виїзду у WhatsApp, а оплата здійснюється в день туру."
+     "a": "Ні. Ви залишаєте заявку на сайті, ми підтверджуємо наявність місць і час виїзду у WhatsApp, Viber, Telegram або MAX, а оплата здійснюється в день туру."
     }
    ],
    "sections": [
@@ -1660,7 +1660,7 @@
     },
     {
      "h": "Звідки ми забираємо в районі Сіде",
-     "p": "Безкоштовний трансфер діє для центру Сіде, Манавгата, Чолакли, Кизилагача, Евренсекі, Кумкея, Тітреєнгеля, Соргуна та Гюндогду. Точний час виїзду ми підтверджуємо у WhatsApp напередодні ввечері.",
+     "p": "Безкоштовний трансфер діє для центру Сіде, Манавгата, Чолакли, Кизилагача, Евренсекі, Кумкея, Тітреєнгеля, Соргуна та Гюндогду. Точний час виїзду ми підтверджуємо у WhatsApp, Viber, Telegram або MAX напередодні ввечері.",
      "li": []
     },
     {
@@ -1681,13 +1681,13 @@
     },
     {
      "h": "Як відбувається оплата",
-     "p": "Через сайт нічого не списується. Ви надсилаєте заявку, ми відповідаємо у WhatsApp із підтвердженням місць і часу виїзду, а оплату приймає водій або гід уранці в день туру. У євро, за особу.",
+     "p": "Через сайт нічого не списується. Ви надсилаєте заявку, ми відповідаємо у WhatsApp, Viber, Telegram або MAX із підтвердженням місць і часу виїзду, а оплату приймає водій або гід уранці в день туру. У євро, за особу.",
      "li": []
     }
    ],
    "cta": {
     "h": "Не знаєте, який тур обрати?",
-    "p": "Напишіть нам у WhatsApp — допоможемо обрати, зважаючи на те, скільки у вас днів і з ким ви подорожуєте.",
+    "p": "Напишіть нам у WhatsApp, Viber, Telegram або MAX — допоможемо обрати, зважаючи на те, скільки у вас днів і з ким ви подорожуєте.",
     "btn": "Написати у WhatsApp",
     "href": "https://wa.me/905331429037?text=%D0%92%D1%96%D1%82%D0%B0%D1%8E%21%20%D0%A5%D0%BE%D1%87%D1%83%20%D0%B4%D1%96%D0%B7%D0%BD%D0%B0%D1%82%D0%B8%D1%81%D1%8F%20%D0%BF%D1%80%D0%BE%20%D0%B5%D0%BA%D1%81%D0%BA%D1%83%D1%80%D1%81%D1%96%D1%97%20%D1%96%D0%B7%20%D0%A1%D1%96%D0%B4%D0%B5."
    }
@@ -1789,7 +1789,7 @@
     },
     {
      "q": "Iz kojih mesta oko Side preuzimate goste?",
-     "a": "Besplatno preuzimanje pokriva centar Side, Manavgat, Čolakli, Kizilagač, Evrenseki, Kumkoj, Titrejengel, Sorgun i Gundogdu. Tačno vreme potvrđujemo preko WhatsApp-a veče ranije."
+     "a": "Besplatno preuzimanje pokriva centar Side, Manavgat, Čolakli, Kizilagač, Evrenseki, Kumkoj, Titrejengel, Sorgun i Gundogdu. Tačno vreme potvrđujemo preko WhatsApp-a, Viber-a, Telegram-a ili MAX-a veče ranije."
     },
     {
      "q": "Koji je najkraći izlet iz Side?",
@@ -1801,7 +1801,7 @@
     },
     {
      "q": "Da li moram da platim unapred onlajn?",
-     "a": "Ne. Pošaljete zahtev preko sajta, mi potvrdimo slobodna mesta i vreme polaska preko WhatsApp-a, a plaćate na dan ture."
+     "a": "Ne. Pošaljete zahtev preko sajta, mi potvrdimo slobodna mesta i vreme polaska preko WhatsApp-a, Viber-a, Telegram-a ili MAX-a, a plaćate na dan ture."
     }
    ],
    "sections": [
@@ -1812,7 +1812,7 @@
     },
     {
      "h": "Odakle preuzimamo u okolini Side",
-     "p": "Besplatno preuzimanje pokriva centar Side, Manavgat, Čolakli, Kizilagač, Evrenseki, Kumkoj, Titrejengel, Sorgun i Gundogdu. Tačno vreme polaska potvrđujemo preko WhatsApp-a veče pre ture.",
+     "p": "Besplatno preuzimanje pokriva centar Side, Manavgat, Čolakli, Kizilagač, Evrenseki, Kumkoj, Titrejengel, Sorgun i Gundogdu. Tačno vreme polaska potvrđujemo preko WhatsApp-a, Viber-a, Telegram-a ili MAX-a veče pre ture.",
      "li": []
     },
     {
@@ -1833,13 +1833,13 @@
     },
     {
      "h": "Kako se plaća",
-     "p": "Preko sajta se ništa ne naplaćuje. Pošaljete zahtev, mi odgovorimo na WhatsApp-u sa slobodnim mestima i vremenom polaska, a vozač ili vodič naplaćuje ujutru na dan ture. U evrima, po osobi.",
+     "p": "Preko sajta se ništa ne naplaćuje. Pošaljete zahtev, mi odgovorimo na WhatsApp-u, Viber-u, Telegram-u ili MAX-u sa slobodnim mestima i vremenom polaska, a vozač ili vodič naplaćuje ujutru na dan ture. U evrima, po osobi.",
      "li": []
     }
    ],
    "cta": {
     "h": "Niste sigurni koju turu da izaberete?",
-    "p": "Pišite nam na WhatsApp — pomoći ćemo vam da izaberete na osnovu toga koliko dana imate i s kim putujete.",
+    "p": "Pišite nam na WhatsApp, Viber, Telegram ili MAX — pomoći ćemo vam da izaberete na osnovu toga koliko dana imate i s kim putujete.",
     "btn": "Pitajte nas na WhatsApp",
     "href": "https://wa.me/905331429037?text=Zdravo%21%20Zanimaju%20me%20va%C5%A1i%20izleti%20iz%20Side."
    }

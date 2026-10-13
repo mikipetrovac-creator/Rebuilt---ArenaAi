@@ -9,8 +9,17 @@
   var body = document.body;
 
   /* ---------- full-height hero ---------- */
-  function setFullH() { document.documentElement.style.setProperty('--fullh', window.innerHeight + 'px'); }
+  var hero = document.querySelector('.hero');
+  function fitHero() {
+    if (!hero) return;
+    var s = 1, max = window.innerHeight + 1;
+    hero.style.setProperty('--hs', '1');
+    while (hero.offsetHeight > max && s > 0.6) { s -= 0.03; hero.style.setProperty('--hs', s.toFixed(2)); }
+  }
+  function setFullH() { document.documentElement.style.setProperty('--fullh', window.innerHeight + 'px'); fitHero(); }
   setFullH();
+  if (document.fonts && document.fonts.ready) document.fonts.ready.then(fitHero);
+  window.addEventListener('load', fitHero);
 
   /* ---------- scroll lock helpers ---------- */
   var openLayers = 0;

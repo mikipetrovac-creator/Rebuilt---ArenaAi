@@ -780,8 +780,12 @@ def build_hub(lang, key):
     cta = ''
     if hd.get('cta'):
         ct = hd['cta']
-        cta = '<div class="hubcta"><h2>%s</h2><p>%s</p><a class="btn btn-gold" href="%s" target="_blank" rel="noopener">%s</a></div>' % (
-            e(ct['h']), e(ct['p']), e(ct['href']), e(ct['btn']))
+        cta = ('<div class="hubcta"><h2>%s</h2><p>%s</p><div class="chs">'
+               '<a href="%s" target="_blank" rel="noopener" style="background:#1F7A4D">WhatsApp</a>'
+               '<a href="viber://chat?number=%%2B%s" style="background:#5B4B9A">Viber</a>'
+               '<a href="https://t.me/+%s" target="_blank" rel="noopener" style="background:#1F6F99">Telegram</a>'
+               '<a href="%s" target="_blank" rel="noopener" style="background:#2D2A6E">MAX</a></div></div>') % (
+            e(ct['h']), e(ct['p']), e(ct['href']), C['whatsapp'], C['whatsapp'], e(C['max']))
     body = f'''<main id="main">
   <section class="thero">
     <img src="/images/v2/alanya-hero.jpg" srcset="{HERO_SRCSET}" sizes="100vw" alt="">

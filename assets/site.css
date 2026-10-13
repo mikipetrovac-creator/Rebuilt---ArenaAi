@@ -489,3 +489,21 @@ form{margin-top:24px;display:flex;flex-direction:column;gap:16px}
 .mob-lang>button{min-height:40px;padding:0 14px;border:1px solid rgba(255,255,255,.6);border-radius:50px;background:rgba(255,255,255,.12);-webkit-backdrop-filter:blur(6px);backdrop-filter:blur(6px);font-size:14px;letter-spacing:.04em}
 .hdr.on .mob-lang>button{border-color:var(--line);background:#fff}
 .mob-lang ul{right:-48px}
+/* hero always fits one screen: --hs is lowered by site.js until it fits (any language, any phone) */
+.hero-in{padding-top:calc(var(--hdr) + var(--hs,1) * clamp(28px,10vh,110px));padding-bottom:calc(var(--hs,1) * 28px)}
+.hero .pill{font-size:max(11.5px,calc(var(--hs,1) * 13px))}
+.hero h1{margin-top:calc(var(--hs,1) * 24px);font-size:calc(var(--hs,1) * clamp(42px,6.8vw,112px))}
+.hero .lead{margin-top:calc(var(--hs,1) * 22px);font-size:max(13.5px,calc(var(--hs,1) * clamp(15px,1.35vw,21px)));line-height:1.5}
+.hero-ctas{margin-top:calc(var(--hs,1) * 34px)}
+.film{margin-top:calc(var(--hs,1) * 30px)}
+.hstats{margin-bottom:calc(var(--hs,1) * 22px)}
+.hstats b{font-size:calc(var(--hs,1) * clamp(26px,3.4vw,52px))}
+@media (max-width:640px){
+  .hero-ctas .btn{min-height:calc(var(--hs,1) * 50px)}
+  .film .dot{width:calc(var(--hs,1) * 52px);height:calc(var(--hs,1) * 52px)}
+  .film em{font-size:calc(var(--hs,1) * 20px)}
+  .strip a{min-height:calc(var(--hs,1) * 52px)}
+}
+.hubcta .chs{display:flex;flex-wrap:wrap;justify-content:center;gap:10px;margin-top:18px}
+.hubcta .chs a{min-height:46px;padding:0 20px;display:inline-flex;align-items:center;border-radius:50px;color:#fff;text-decoration:none;font-size:15px;font-weight:500}
+.hubcta .chs a:hover{filter:brightness(1.08);color:#fff}
