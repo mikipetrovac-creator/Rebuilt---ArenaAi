@@ -48,6 +48,10 @@ EXTRA = {
               'de': 'Video zeigen', 'tr': 'Videoyu göster'},
     'photo': {'en': 'Show photo', 'sr': 'Prikaži fotografiju', 'ru': 'Показать фото', 'uk': 'Показати фото',
               'de': 'Foto zeigen', 'tr': 'Fotoğrafı göster'},
+    'askOr': {'en': 'or message us on', 'sr': 'ili nam pišite na', 'ru': 'или напишите нам в', 'uk': 'або напишіть нам у',
+              'de': 'oder schreiben Sie uns über', 'tr': 'veya bize yazın:'},
+    'askHello': {'en': 'Hello! I have a question about', 'sr': 'Zdravo! Imam pitanje o izletu', 'ru': 'Здравствуйте! У меня вопрос об экскурсии',
+                 'uk': 'Вітаю! У мене питання про екскурсію', 'de': 'Hallo! Ich habe eine Frage zum Ausflug', 'tr': 'Merhaba! Şu tur hakkında bir sorum var:'},
     'revTitle': {'en': 'Google reviews', 'sr': 'Google recenzije', 'ru': 'Отзывы Google', 'uk': 'Відгуки Google',
                  'de': 'Google-Bewertungen', 'tr': 'Google yorumları'},
 }
@@ -699,6 +703,7 @@ def build_tour(lang, tid):
           <div class="fld"><label for="aMsg">{u('ask.msg')}</label><textarea class="inp" id="aMsg" rows="3"></textarea></div>
           <button class="btn btn-line" type="submit">{u('ask.send')}</button>
           <p class="msg" id="aOut" role="status" hidden></p>
+          <div class="askch" data-hello="{e(x('askHello', lang))}"><span>{e(x('askOr', lang))}</span><a data-ch="wa" href="{wa_link()}" target="_blank" rel="noopener" style="background:#1F7A4D">WhatsApp</a><a data-ch="vb" href="viber://chat?number=%2B{C['whatsapp']}" style="background:#5B4B9A">Viber</a><a data-ch="tg" href="https://t.me/+{C['whatsapp']}" target="_blank" rel="noopener" style="background:#1F6F99">Telegram</a><a data-ch="mx" href="{e(C['max'])}" target="_blank" rel="noopener" style="background:#2D2A6E">MAX</a></div>
         </form>
       </section>'''
     price_txt = from_txt(lang, '<b>%s</b>' % eur(t['fromPrice']))

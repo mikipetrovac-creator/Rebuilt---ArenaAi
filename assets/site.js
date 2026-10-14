@@ -296,6 +296,18 @@
 
   /* ---------- ask form ---------- */
   var ask = $('#askForm');
+  // small WhatsApp/Viber/Telegram/MAX buttons under the question form: WhatsApp gets the typed question
+  var askch = $('.askch');
+  function askMsg() {
+    var n = $('#aName'), m = $('#aMsg'), parts = [askch.dataset.hello + ' ' + (C.tourName || '') + '.'];
+    if (n && n.value.trim()) parts.push(n.value.trim());
+    if (m && m.value.trim()) parts.push(m.value.trim());
+    return parts.join('\n');
+  }
+  if (askch && ask) {
+    channelLinks(askch, askMsg());
+    ask.addEventListener('input', function () { channelLinks(askch, askMsg()); });
+  }
   if (ask) ask.addEventListener('submit', function (e) {
     e.preventDefault();
     var n = $('#aName'), c = $('#aContact'), m = $('#aMsg'), out = $('#aOut');
