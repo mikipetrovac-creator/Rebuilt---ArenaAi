@@ -1,3 +1,9 @@
+!!! OKTOBAR 2026 — M.Y.V. 2.0 !!!
+Pocetna, 6 izleta i 2 hub strane se sada prave skriptom build/build.py
+iz podataka u build/data/*.json (svih 6 jezika odjednom).
+Kapadokija je na /cappadocia (ne vise na /). Blog je i dalje rucno uredjen.
+Tekst ispod opisuje STARI nacin i vazi jos samo za blog.
+
 ============================================================
   VISEJEZICNE STRANE — uputstvo (M.Y.V. Alanya Travel)
 ============================================================

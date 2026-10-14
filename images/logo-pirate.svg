@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" width="120" height="120" role="img" aria-label="M.Y.V. Alanya Travel - Pirate ship">
+<defs><clipPath id="c"><circle cx="60" cy="60" r="60"/></clipPath></defs>
+<g clip-path="url(#c)">
+<rect width="120" height="120" fill="#A8501F"/>
+<g fill="#FAF6F0">
+<path d="M18 78 H102 L94 94 H28Z"/>
+<path d="M84 78 V70 H104 L102 78Z"/>
+<path d="M40 34 Q48 40 40 50 H64 Q56 40 64 34Z"/>
+<path d="M38 54 Q48 62 38 72 H66 Q56 62 66 54Z"/>
+<path d="M72 44 Q80 50 72 58 H92 Q86 50 92 44Z"/>
+<path d="M72 61 Q80 67 72 74 H92 Q86 67 92 61Z"/>
+</g>
+<path d="M52 26 V78 M82 36 V78" stroke="#FAF6F0" stroke-width="2.8"/>
+<path d="M52 20 H66 L63 24 L66 28 H52Z" fill="#1A0F08"/>
+<circle cx="58.5" cy="23.5" r="2" fill="#FAF6F0"/>
+<g fill="#A8501F"><circle cx="40" cy="86" r="2.2"/><circle cx="52" cy="86" r="2.2"/><circle cx="64" cy="86" r="2.2"/><circle cx="76" cy="86" r="2.2"/></g>
+<path d="M0 96 Q15 90 30 95 Q45 100 60 94 Q75 88 90 94 Q105 100 120 95 L120 120 L0 120 Z" fill="#FAF6F0"/>
+</g>
+<circle cx="60" cy="60" r="55.5" fill="none" stroke="#D4A017" stroke-width="9"/>
+</svg>

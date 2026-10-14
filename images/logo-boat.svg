@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" width="120" height="120" role="img" aria-label="M.Y.V. Alanya Travel - Private boat">
+<defs><clipPath id="c"><circle cx="60" cy="60" r="60"/></clipPath></defs>
+<g clip-path="url(#c)">
+<rect width="120" height="120" fill="#A8501F"/>
+<circle cx="34" cy="36" r="9" fill="#F0C040"/>
+<g fill="#FAF6F0">
+<path d="M14 80 H106 L96 92 H24Z"/>
+<path d="M34 80 L40 66 H82 L90 80Z"/>
+<path d="M48 66 L52 56 H76 L80 66Z"/>
+</g>
+<g fill="#A8501F">
+<rect x="46" y="70" width="8" height="5" rx="1.5"/><rect x="58" y="70" width="8" height="5" rx="1.5"/><rect x="70" y="70" width="8" height="5" rx="1.5"/>
+<rect x="56" y="59" width="16" height="4" rx="1.5"/>
+</g>
+<path d="M64 56 V46" stroke="#FAF6F0" stroke-width="2.6" stroke-linecap="round"/>
+<path d="M0 96 Q15 90 30 95 Q45 100 60 94 Q75 88 90 94 Q105 100 120 95 L120 120 L0 120 Z" fill="#FAF6F0"/>
+<path d="M16 106 Q28 101 40 106 Q52 111 64 106 M70 108 Q82 103 94 108" stroke="#A8501F" stroke-width="2.4" fill="none" stroke-linecap="round" opacity=".5"/>
+</g>
+<circle cx="60" cy="60" r="55.5" fill="none" stroke="#D4A017" stroke-width="9"/>
+</svg>
