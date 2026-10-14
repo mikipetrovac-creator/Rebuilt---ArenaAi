@@ -28,32 +28,37 @@ T = TOURS['tours']
 C = SITE['contact']
 ST = SITE['stats']
 
-LANG_NAMES = {'en': 'English', 'ru': 'Русский', 'de': 'Deutsch', 'tr': 'Türkçe', 'uk': 'Українська', 'sr': 'Srpski'}
-OG_LOCALE = {'en': 'en_US', 'ru': 'ru_RU', 'de': 'de_DE', 'tr': 'tr_TR', 'uk': 'uk_UA', 'sr': 'sr_RS'}
+LANG_NAMES = {'en': 'English', 'ru': 'Русский', 'de': 'Deutsch', 'tr': 'Türkçe', 'uk': 'Українська', 'sr': 'Srpski', 'zh': '中文'}
+OG_LOCALE = {'en': 'en_US', 'ru': 'ru_RU', 'de': 'de_DE', 'tr': 'tr_TR', 'uk': 'uk_UA', 'sr': 'sr_RS', 'zh': 'zh_CN'}
+HREFLANG = {'zh': 'zh-Hans'}  # language code used in hreflang / <html lang>
+hl = lambda l: HREFLANG.get(l, l)
+BLOG_LANGS = ['en', 'ru', 'de', 'tr', 'uk', 'sr']  # blog exists only in these languages
+blog_url = lambda l: ('/' if l == 'en' or l not in BLOG_LANGS else '/%s/' % l) + 'blog'
+WECHAT_BTN = '<button type="button" class="wcbtn" data-open="wechatModal" style="background:#07C160">微信 WeChat</button>'
 PHONE_PH = {'en': '+44 7700 900123', 'ru': '+7 900 123 45 67', 'de': '+49 151 2345 6789', 'tr': '+90 532 123 45 67',
-            'uk': '+380 67 123 4567', 'sr': '+381 64 123 4567'}
+            'uk': '+380 67 123 4567', 'sr': '+381 64 123 4567', 'zh': '+86 138 0013 8000'}
 EXTRA = {
     'back': {'en': 'Back to the form', 'sr': 'Nazad na formu', 'ru': 'Вернуться к форме', 'uk': 'Повернутися до форми',
-             'de': 'Zurück zum Formular', 'tr': 'Forma geri dön'},
+             'de': 'Zurück zum Formular', 'tr': 'Forma geri dön', 'zh': '返回表格'},
     'heroAlt': {'en': 'Alanya peninsula with the castle and Cleopatra Beach from the air',
                 'sr': 'Poluostrvo Alanje sa tvrđavom i Kleopatrinom plažom iz vazduha',
                 'ru': 'Полуостров Аланьи с крепостью и пляжем Клеопатры с высоты',
                 'uk': 'Півострів Аланьї з фортецею та пляжем Клеопатри з висоти',
                 'de': 'Die Halbinsel von Alanya mit der Burg und dem Kleopatra-Strand aus der Luft',
-                'tr': 'Alanya yarımadası, kalesi ve Kleopatra Plajı havadan'},
+                'tr': 'Alanya yarımadası, kalesi ve Kleopatra Plajı havadan', 'zh': '从空中俯瞰阿拉尼亚半岛、城堡和克娄巴特拉海滩'},
     'bannerAlt': {'en': 'Hot air balloons over Cappadocia at sunrise', 'sr': 'Baloni nad Kapadokijom u zoru',
                   'ru': 'Воздушные шары над Каппадокией на рассвете', 'uk': 'Повітряні кулі над Каппадокією на світанку',
-                  'de': 'Heißluftballons über Kappadokien bei Sonnenaufgang', 'tr': 'Gün doğumunda Kapadokya üzerinde balonlar'},
+                  'de': 'Heißluftballons über Kappadokien bei Sonnenaufgang', 'tr': 'Gün doğumunda Kapadokya üzerinde balonlar', 'zh': '日出时卡帕多奇亚上空的热气球'},
     'video': {'en': 'Show video', 'sr': 'Prikaži video', 'ru': 'Показать видео', 'uk': 'Показати відео',
-              'de': 'Video zeigen', 'tr': 'Videoyu göster'},
+              'de': 'Video zeigen', 'tr': 'Videoyu göster', 'zh': '显示视频'},
     'photo': {'en': 'Show photo', 'sr': 'Prikaži fotografiju', 'ru': 'Показать фото', 'uk': 'Показати фото',
-              'de': 'Foto zeigen', 'tr': 'Fotoğrafı göster'},
+              'de': 'Foto zeigen', 'tr': 'Fotoğrafı göster', 'zh': '显示照片'},
     'askOr': {'en': 'or message us on', 'sr': 'ili nam pišite na', 'ru': 'или напишите нам в', 'uk': 'або напишіть нам у',
-              'de': 'oder schreiben Sie uns über', 'tr': 'veya bize yazın:'},
+              'de': 'oder schreiben Sie uns über', 'tr': 'veya bize yazın:', 'zh': '或通过以下方式联系我们'},
     'askHello': {'en': 'Hello! I have a question about', 'sr': 'Zdravo! Imam pitanje o izletu', 'ru': 'Здравствуйте! У меня вопрос об экскурсии',
-                 'uk': 'Вітаю! У мене питання про екскурсію', 'de': 'Hallo! Ich habe eine Frage zum Ausflug', 'tr': 'Merhaba! Şu tur hakkında bir sorum var:'},
+                 'uk': 'Вітаю! У мене питання про екскурсію', 'de': 'Hallo! Ich habe eine Frage zum Ausflug', 'tr': 'Merhaba! Şu tur hakkında bir sorum var:', 'zh': '您好！我想咨询行程：'},
     'revTitle': {'en': 'Google reviews', 'sr': 'Google recenzije', 'ru': 'Отзывы Google', 'uk': 'Відгуки Google',
-                 'de': 'Google-Bewertungen', 'tr': 'Google yorumları'},
+                 'de': 'Google-Bewertungen', 'tr': 'Google yorumları', 'zh': 'Google 评价'},
 }
 SLOTS = ['10:00 – 14:00', '16:00 – 20:00']
 
@@ -155,14 +160,14 @@ FONT_URL = ('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wg
 
 
 def head(lang, page, title, desc, og_image, jsonld, og_type='website', preload=None):
-    alt = '\n'.join('<link rel="alternate" hreflang="%s" href="%s">' % (l, absu(l, page)) for l in LANGS)
+    alt = '\n'.join('<link rel="alternate" hreflang="%s" href="%s">' % (hl(l), absu(l, page)) for l in LANGS)
     alt += '\n<link rel="alternate" hreflang="x-default" href="%s">' % absu('en', page)
     loc_alt = '\n'.join('<meta property="og:locale:alternate" content="%s">' % OG_LOCALE[l] for l in LANGS if l != lang)
     lds = '\n'.join('<script type="application/ld+json">%s</script>' % json.dumps(j, ensure_ascii=False).replace('</', '<\\/') for j in jsonld)
     pre = '<link rel="preload" as="image" href="%s" fetchpriority="high"%s>\n' % (preload[0], preload[1]) if preload else ''
     g = SITE['gtag']
     return f'''<!DOCTYPE html>
-<html lang="{lang}">
+<html lang="{hl(lang)}">
 <head>
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id={g}"></script>
@@ -246,7 +251,7 @@ def header(lang, page, kind):
     home_cur = ' class="cur"' if kind == 'home' else ''
     tours_cur = ' cur' if kind in ('tour', 'hub') else ''
     langs = ''.join('<li><a href="%s" hreflang="%s" lang="%s"%s>%s<span>%s</span></a></li>' % (
-        rel(l, page), l, l, ' aria-current="true"' if l == lang else '', LANG_NAMES[l], l) for l in LANGS)
+        rel(l, page), hl(l), hl(l), ' aria-current="true"' if l == lang else '', LANG_NAMES[l], l) for l in LANGS)
     sheet_langs = ''.join('<a href="%s" hreflang="%s" lang="%s"%s>%s</a>' % (
         rel(l, page), l, l, ' aria-current="true"' if l == lang else '', l) for l in LANGS)
     home = rel(lang)
@@ -261,7 +266,7 @@ def header(lang, page, kind):
       <a href="{home}"{home_cur}>{u('nav.home')}</a>
       <button class="nl{tours_cur}" type="button" id="megaBtn" aria-expanded="false" aria-controls="mega">{u('nav.tours')} {IC_CHEV}</button>
       <a href="{home}#about">{u('nav.about')}</a>
-      <a href="{rel(lang, 'blog')}">{u('nav.blog')}</a>
+      <a href="{blog_url(lang)}">{u('nav.blog')}</a>
       <a href="#contact">{u('nav.contact')}</a>
       <div class="langsw"><button type="button" aria-expanded="false" aria-label="{u('lang.label')}">{lang} {IC_CHEV}</button><ul hidden>{langs}</ul></div>
       <button class="btn btn-gold" type="button" data-book="">{u('nav.book')}</button>
@@ -287,7 +292,7 @@ def header(lang, page, kind):
   </div>
   <div class="sheet-sec"><span class="eyebrow">{u('nav.tours')}</span><div>{mega_items(lang)}</div></div>
   <div class="sheet-sec sheet-links">
-    <a href="{home}">{u('nav.home')}</a><a href="{hub}">{u('mega.all')}</a><a href="{home}#about">{u('nav.about')}</a><a href="{rel(lang, 'blog')}">{u('nav.blog')}</a><a href="#contact">{u('nav.contact')}</a>
+    <a href="{home}">{u('nav.home')}</a><a href="{hub}">{u('mega.all')}</a><a href="{home}#about">{u('nav.about')}</a><a href="{blog_url(lang)}">{u('nav.blog')}</a><a href="#contact">{u('nav.contact')}</a>
   </div>
   <div class="sheet-langs" aria-label="{u('lang.label')}">{sheet_langs}</div>
   <button class="btn btn-gold" type="button" data-book="">{u('hero.book')}</button>
@@ -315,7 +320,7 @@ def footer(lang, kind):
     </div>
     <div class="fcol">
       <p class="fh">{u('foot.quick')}</p>
-      <div class="fl"><a href="{home}">{u('nav.home')}</a><a href="{rel(lang, 'excursions-from-alanya')}">{u('foot.prices')}</a><a href="{rel(lang, 'excursions-from-side')}">{u('foot.side')}</a><a href="{home}#about">{u('nav.about')}</a><a href="{home}#reviews">{u('foot.reviews')}</a><a href="{rel(lang, 'blog')}">{u('nav.blog')}</a></div>
+      <div class="fl"><a href="{home}">{u('nav.home')}</a><a href="{rel(lang, 'excursions-from-alanya')}">{u('foot.prices')}</a><a href="{rel(lang, 'excursions-from-side')}">{u('foot.side')}</a><a href="{home}#about">{u('nav.about')}</a><a href="{home}#reviews">{u('foot.reviews')}</a><a href="{blog_url(lang)}">{u('nav.blog')}</a></div>
     </div>
     <div class="fcol">
       <p class="fh">{u('foot.tours')}</p>
@@ -327,7 +332,7 @@ def footer(lang, kind):
         <span>{e(C['address'])}</span>
         {phones}
         <a href="mailto:{C['email']}">{C['email']}</a>
-        <div class="msg"><a href="{wa_link()}" target="_blank" rel="noopener" style="background:#1F7A4D">WhatsApp</a><a href="viber://chat?number=%2B{C['whatsapp']}" style="background:#5B4B9A">Viber</a><a href="https://t.me/+{C['whatsapp']}" target="_blank" rel="noopener" style="background:#1F6F99">Telegram</a><a href="{e(C['max'])}" target="_blank" rel="noopener" style="background:#fff;color:#1A0F08">MAX</a></div>
+        <div class="msg">{WECHAT_BTN if lang == 'zh' else ''}<a href="{wa_link()}" target="_blank" rel="noopener" style="background:#1F7A4D">WhatsApp</a><a href="viber://chat?number=%2B{C['whatsapp']}" style="background:#5B4B9A">Viber</a><a href="https://t.me/+{C['whatsapp']}" target="_blank" rel="noopener" style="background:#1F6F99">Telegram</a><a href="{e(C['max'])}" target="_blank" rel="noopener" style="background:#fff;color:#1A0F08">MAX</a></div>
       </div>
     </div>
   </div>
@@ -345,6 +350,11 @@ def modal(mid, inner, wide=False, label=''):
             f'<button class="x" type="button" data-close aria-label="close">{IC_X}</button>{inner}</div></div>\n')
 
 
+def wechat_modal():
+    return modal('wechatModal', '<p class="eyebrow">WeChat</p><h2>微信联系我们</h2><p class="sub">用微信扫一扫添加 M.Y.V. Travel 为好友。手机上可以截图后在微信“扫一扫”中从相册识别。</p>'
+                 '<img src="/images/wechat-qr.png" alt="M.Y.V. Travel 微信二维码" width="280" height="284" style="margin:18px auto 0;width:min(280px,100%);height:auto">', label='WeChat')
+
+
 def legal_modals(lang):
     out = ''
     for k in ('termsModal', 'privacyModal', 'cookieModal'):
@@ -353,8 +363,8 @@ def legal_modals(lang):
     return out
 
 
-def channels():
-    return ('<div class="ch"><a data-ch="wa" href="%s" target="_blank" rel="noopener" style="background:#1F7A4D">WhatsApp</a>'
+def channels(lang='en'):
+    return ('<div class="ch">' + (WECHAT_BTN if lang == 'zh' else '') + '<a data-ch="wa" href="%s" target="_blank" rel="noopener" style="background:#1F7A4D">WhatsApp</a>'
             '<a data-ch="vb" href="#" style="background:#5B4B9A">Viber</a>'
             '<a data-ch="tg" href="#" target="_blank" rel="noopener" style="background:#1F6F99">Telegram</a>'
             '<a data-ch="mx" href="%s" target="_blank" rel="noopener" style="background:#2D2A6E">MAX</a></div>') % (wa_link(), e(C['max']))
@@ -398,13 +408,13 @@ def booking_modal(lang):
       <svg width="58" height="58" viewBox="0 0 24 24" fill="none" stroke="#2E7D4F" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M7 12.5l3.2 3.2L17 9"/></svg>
       <h2 class="serif">{u('b.okTitle')}</h2>
       <p class="sub" id="doneText"></p>
-      {channels()}
+      {channels(lang)}
       <button class="btn btn-line" type="button" data-close>{u('b.close')}</button>
     </div>
     <div class="done" id="mFail" hidden>
       <h2 class="serif">{u('b.errTitle')}</h2>
       <p class="sub">{u('b.errText')}</p>
-      {channels()}
+      {channels(lang)}
       <button class="btn btn-line" type="button" data-back>{e(x('back', lang))}</button>
     </div>'''
     return modal('bookModal', inner, label=ui(lang, 'b.title'))
@@ -454,7 +464,7 @@ def config(lang, kind, tid=None):
 
 def tail(lang, kind, tid=None, bar=''):
     return (bar + footer(lang, kind) + film_box(lang) + modal('stopModal', '<div id="smBody"></div>') +
-            booking_modal(lang) + legal_modals(lang) + netlify_forms() + '\n' + config(lang, kind, tid) +
+            booking_modal(lang) + legal_modals(lang) + (wechat_modal() if lang == 'zh' else '') + netlify_forms() + '\n' + config(lang, kind, tid) +
             '\n<script src="/assets/site.js" defer></script>\n</body>\n</html>\n')
 
 
@@ -560,7 +570,7 @@ def build_home(lang):
       <span class="chip-gold">{u('banner.chip')}</span>
       <h2>{u('banner.h2a')} <span>{u('banner.h2b')}</span></h2>
       <p>{u('banner.p')}</p>
-      <div class="chips"><span>WhatsApp</span><span>Viber</span><span>Telegram</span><span>MAX</span></div>
+      <div class="chips">{'<span>微信 WeChat</span>' if lang == 'zh' else ''}<span>WhatsApp</span><span>Viber</span><span>Telegram</span><span>MAX</span></div>
       <div class="ctas cta-pair"><button class="btn btn-gold" type="button" data-book="">{u('hero.book')}</button><a class="btn btn-white" href="{hub}">{u('banner.tours')}</a></div>
     </div></div>
   </section>
@@ -703,7 +713,7 @@ def build_tour(lang, tid):
           <div class="fld"><label for="aMsg">{u('ask.msg')}</label><textarea class="inp" id="aMsg" rows="3"></textarea></div>
           <button class="btn btn-line" type="submit">{u('ask.send')}</button>
           <p class="msg" id="aOut" role="status" hidden></p>
-          <div class="askch" data-hello="{e(x('askHello', lang))}"><span>{e(x('askOr', lang))}</span><a data-ch="wa" href="{wa_link()}" target="_blank" rel="noopener" style="background:#1F7A4D">WhatsApp</a><a data-ch="vb" href="viber://chat?number=%2B{C['whatsapp']}" style="background:#5B4B9A">Viber</a><a data-ch="tg" href="https://t.me/+{C['whatsapp']}" target="_blank" rel="noopener" style="background:#1F6F99">Telegram</a><a data-ch="mx" href="{e(C['max'])}" target="_blank" rel="noopener" style="background:#2D2A6E">MAX</a></div>
+          <div class="askch" data-hello="{e(x('askHello', lang))}"><span>{e(x('askOr', lang))}</span>{WECHAT_BTN if lang == 'zh' else ''}<a data-ch="wa" href="{wa_link()}" target="_blank" rel="noopener" style="background:#1F7A4D">WhatsApp</a><a data-ch="vb" href="viber://chat?number=%2B{C['whatsapp']}" style="background:#5B4B9A">Viber</a><a data-ch="tg" href="https://t.me/+{C['whatsapp']}" target="_blank" rel="noopener" style="background:#1F6F99">Telegram</a><a data-ch="mx" href="{e(C['max'])}" target="_blank" rel="noopener" style="background:#2D2A6E">MAX</a></div>
         </form>
       </section>'''
     price_txt = from_txt(lang, '<b>%s</b>' % eur(t['fromPrice']))
@@ -860,9 +870,10 @@ def sitemap():
            '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"',
            '        xmlns:xhtml="http://www.w3.org/1999/xhtml">']
     for page in PAGES + BLOG:
-        alts = ''.join('\n    <xhtml:link rel="alternate" hreflang="%s" href="%s"/>' % (l, absu(l, page)) for l in LANGS)
+        langs = LANGS if page in PAGES else BLOG_LANGS
+        alts = ''.join('\n    <xhtml:link rel="alternate" hreflang="%s" href="%s"/>' % (hl(l), absu(l, page)) for l in langs)
         alts += '\n    <xhtml:link rel="alternate" hreflang="x-default" href="%s"/>' % absu('en', page)
-        for lang in LANGS:
+        for lang in langs:
             out.append('  <url>\n    <loc>%s</loc>\n    <lastmod>%s</lastmod>%s\n  </url>' % (absu(lang, page), today, alts))
     out.append('</urlset>\n')
     with open(os.path.join(ROOT, 'sitemap.xml'), 'w', encoding='utf-8') as fh:

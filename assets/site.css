@@ -566,3 +566,13 @@ form{margin-top:24px;display:flex;flex-direction:column;gap:16px}
 .askch span{margin-right:4px}
 .askch a{color:#fff;text-decoration:none;padding:7px 14px;border-radius:50px;font-size:13px;font-weight:500}
 .askch a:hover{filter:brightness(1.1);color:#fff}
+/* Chinese: CJK fallback fonts, no italics for Chinese text */
+html[lang^="zh"]{--serif:'Cormorant Garamond','Noto Serif SC','Songti SC','SimSun',serif;--sans:'Jost','PingFang SC','Noto Sans SC','Microsoft YaHei',sans-serif}
+html[lang^="zh"] h1,html[lang^="zh"] h2,html[lang^="zh"] h3,html[lang^="zh"] em,html[lang^="zh"] .film em{font-style:normal}
+html[lang^="zh"] .eyebrow{letter-spacing:.12em}
+/* WeChat button (Chinese pages) */
+.wcbtn{border:0;cursor:pointer;color:#fff;font:inherit;font-weight:500;border-radius:50px}
+.msg .wcbtn,.askch .wcbtn{padding:7px 14px;font-size:13px}
+.ch .wcbtn{min-height:48px;font-size:15px}
+.wcbtn:hover{filter:brightness(1.08)}
+html[lang^="zh"] h1 span,html[lang^="zh"] h2 span,html[lang^="zh"] .bt,html[lang^="zh"] .hero h1 span{font-style:normal}

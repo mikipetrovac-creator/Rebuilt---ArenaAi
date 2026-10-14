@@ -5,7 +5,8 @@
   "de",
   "tr",
   "uk",
-  "sr"
+  "sr",
+  "zh"
  ],
  "domain": "https://myvalanyatravel.com",
  "ui": {
@@ -776,6 +777,134 @@
    "legal.cookies": "Çerez politikası",
    "lang.label": "Dil",
    "skip": "İçeriğe geç"
+  },
+  "zh": {
+   "nav.home": "首页",
+   "nav.tours": "行程",
+   "nav.about": "关于我们",
+   "nav.blog": "博客",
+   "nav.contact": "联系我们",
+   "nav.book": "立即预订",
+   "nav.menu": "打开菜单",
+   "nav.close": "关闭",
+   "mega.foot": "阿拉尼亚和锡德酒店接送 · 出团当天付款",
+   "mega.all": "全部行程",
+   "hero.pill": "73 条 Google 评价 · 阿拉尼亚与锡德",
+   "hero.h1a": "体验土耳其蔚蓝海岸",
+   "hero.h1b": "前所未有的旅程",
+   "hero.lead": "从阿拉尼亚和锡德出发的导游团：从卡帕多奇亚的热气球到碧蓝大海上的私人游船。无需预付，出团当天付款。",
+   "hero.book": "预订行程",
+   "hero.tours": "查看行程",
+   "hero.filmSmall": "观看影片",
+   "stat.rating": "平均评分",
+   "stat.reviews": "Google 评价",
+   "stat.years": "年旅游经验",
+   "stat.tours": "带团次数",
+   "about.eyebrow": "关于我们",
+   "about.h2a": "家庭经营的旅行社，",
+   "about.h2b": "本地人带您玩",
+   "about.body": "M.Y.V. Alanya Travel 位于阿拉尼亚，拥有 6 年以上本地经验，帮助游客探索土耳其各地的行程。从阿拉尼亚或锡德的酒店接送，到把您安全送回，每个细节我们都会照顾好。",
+   "about.why": "为什么选择 M.Y.V.",
+   "p1.t": "100% 透明价格",
+   "p1.p": "所见即所付。所有包含项目和可选项目都清楚列出。",
+   "p2.t": "不强迫购物",
+   "p2.p": "和土耳其所有旅行社一样，部分行程途中会安排购物点。但在我们这里，没有人会强迫您购买。",
+   "p3.t": "您的导游是 Elena",
+   "p3.p": "持证导游（英语 / 俄语 / 土耳其语）。我们是家庭旅行社，您清楚知道是谁在带您。",
+   "p4.t": "出团当天付款",
+   "p4.p": "无需在线付款，无需定金。2 小时内确认：微信、WhatsApp、Viber、Telegram 或 MAX。",
+   "rev.eyebrow": "评价",
+   "rev.h2a": "真实的故事",
+   "rev.h2b": "来自真实的游客",
+   "rev.count": "{n} 条 Google 评价",
+   "rev.all": "查看全部评价（{n}）",
+   "rev.rate": "和我们一起旅行过？请在 Google 上给我们评分 →",
+   "rev.note": "评价以原文语言显示。",
+   "banner.chip": "无需预付",
+   "banner.h2a": "今天预订，",
+   "banner.h2b": "出团当天付款",
+   "banner.p": "2 小时内确认，用您最方便的方式联系。阿拉尼亚和锡德酒店接送。",
+   "banner.tours": "全部行程",
+   "tours.eyebrow": "行程与价格",
+   "tours.h1a": "找到",
+   "tours.h1b": "属于您的一天",
+   "choice.g.eyebrow": "拼团行程",
+   "choice.g.h": "加入拼团",
+   "choice.g.p": "卡帕多奇亚、棉花堡、代姆雷、绿色峡谷和海盗船。选择日期和人数：按人计价，出团当天付款。",
+   "choice.g.btn": "选择日期",
+   "choice.p.eyebrow": "私人包船",
+   "choice.p.h": "整艘船只属于您",
+   "choice.p.p": "家人、朋友或庆祝活动：最多 12 人，每天 10:00–14:00 或 16:00–20:00。6 人以内 €350，超过 6 人每人加 €20。含接送、餐食和软饮。",
+   "choice.p.btn": "发送询价",
+   "card.details": "行程详情 →",
+   "card.new": "新",
+   "from": "起",
+   "perPerson": "每人",
+   "t.back": "全部行程",
+   "t.book": "预订此行程",
+   "t.noPrepay": "无需预付 · 出团当天付款",
+   "t.watch": "观看影片",
+   "t.prices": "价格与套餐",
+   "t.included": "包含",
+   "t.excluded": "不包含",
+   "t.bring": "别忘了带",
+   "t.gallery": "图集",
+   "t.faq": "常见问题",
+   "t.highlight": "特别景点",
+   "t.more": "详情 ›",
+   "t.gotIt": "知道了",
+   "t.bookFull": "立即预订，出团当天付款",
+   "t.tapThumb": "点击缩略图查看大图。",
+   "cat.adults": "成人",
+   "cat.children": "儿童",
+   "cat.infants": "婴儿",
+   "cat.free": "免费",
+   "ask.h": "有问题吗？",
+   "ask.p": "给我们留言，我们会在 2 小时内回复。",
+   "ask.name": "姓名",
+   "ask.contact": "电话或邮箱",
+   "ask.msg": "您的问题",
+   "ask.send": "发送问题",
+   "ask.ok": "谢谢！我们会在 2 小时内回复。",
+   "ask.err": "消息发送失败。请通过微信、WhatsApp、Viber、Telegram 或 MAX 联系我们。",
+   "b.eyebrow": "无需预付",
+   "b.title": "预订",
+   "b.sub": "出团当天付款。2 小时内确认：微信、WhatsApp、Viber、Telegram 或 MAX。",
+   "b.tour": "行程",
+   "b.pkg": "套餐",
+   "b.name": "姓名 *",
+   "b.namePh": "您的姓名",
+   "b.phone": "电话（WhatsApp / 微信 / Viber / Telegram）*",
+   "b.date": "日期 *",
+   "b.slot": "时段",
+   "b.people": "人数（最多 12 人）",
+   "b.hotel": "酒店 / 接送地点 *",
+   "b.hotelPh": "酒店名称",
+   "b.notes": "留言（可选）",
+   "b.est": "预估价格",
+   "b.estBoat": "整船预估价格",
+   "b.send": "发送预订",
+   "b.sending": "发送中…",
+   "b.errReq": "请填写姓名、电话、日期和酒店。",
+   "b.errPhone": "请输入带国家区号的电话号码，例如 +86 138 0013 8000。",
+   "b.okTitle": "请求已发送",
+   "b.okText": "我们会在 2 小时内通过您选择的应用确认。您也可以直接联系我们：",
+   "b.errTitle": "预订未发送成功",
+   "b.errText": "信息没有丢失，您填写的内容仍在这里。请直接发给我们，以免错过您的预订：",
+   "b.close": "关闭",
+   "film.yt": "YouTube 视频",
+   "foot.desc": "值得信赖的旅行社，带您体验难忘的行程。从阿拉尼亚和锡德出发的导游团，出团当天付款。",
+   "foot.quick": "快速链接",
+   "foot.tours": "行程",
+   "foot.contact": "联系我们",
+   "foot.side": "锡德出发的行程",
+   "foot.prices": "行程与价格",
+   "foot.reviews": "评价",
+   "legal.terms": "条款与条件",
+   "legal.privacy": "隐私政策",
+   "legal.cookies": "Cookie 政策",
+   "lang.label": "语言",
+   "skip": "跳到正文"
   }
  },
  "pkgNames": {
@@ -802,6 +931,10 @@
   "tr": {
    "premium": "Premium",
    "budget": "Bütçe"
+  },
+  "zh": {
+   "premium": "高级",
+   "budget": "经济"
   }
  },
  "fromFmt": {
@@ -810,7 +943,8 @@
   "ru": "от {p}",
   "uk": "від {p}",
   "de": "ab {p}",
-  "tr": "{p}'den"
+  "tr": "{p}'den",
+  "zh": "{p} 起"
  },
  "dayFmt": {
   "en": "Day {n}",
@@ -818,7 +952,8 @@
   "ru": "День {n}",
   "uk": "День {n}",
   "de": "Tag {n}",
-  "tr": "{n}. Gün"
+  "tr": "{n}. Gün",
+  "zh": "第 {n} 天"
  },
  "homeMeta": {
   "en": {
@@ -844,6 +979,10 @@
   "tr": {
    "title": "Alanya ve Side'den Turlar | M.Y.V. Alanya Travel",
    "desc": "Alanya ve Side'den rehberli turlar: Kapadokya, Pamukkale, Demre-Myra-Kekova, Green Canyon, özel tekne ve korsan gemisi. Google'da 5.0, otelden alım, ödeme tur günü."
+  },
+  "zh": {
+   "title": "阿拉尼亚和锡德出发的一日游与行程 | M.Y.V. Alanya Travel",
+   "desc": "从阿拉尼亚和锡德出发的导游团：卡帕多奇亚、棉花堡、代姆雷-米拉-凯考瓦、绿色峡谷、私人包船和海盗船。Google 5.0 分，酒店接送，出团当天付款。"
   }
  },
  "legalLine": {
@@ -852,7 +991,8 @@
   "de": "© 2026 M.Y.V. Alanya Travel. Alle Rechte vorbehalten. M.Y.V. Alanya Travel ist ein offizieller und autorisierter Online-Vertriebspartner von AXIGEL TURİZM (TÜRSAB Belge No: 2484)",
   "tr": "© 2026 M.Y.V. Alanya Travel. Tüm hakları saklıdır. M.Y.V. Alanya Travel, AXIGEL TURİZM'nin (TÜRSAB Belge No: 2484) resmi ve yetkili çevrim içi satış ortağıdır",
   "uk": "© 2026 M.Y.V. Alanya Travel. Усі права захищені. M.Y.V. Alanya Travel є офіційним та уповноваженим онлайн-партнером з продажу послуг AXIGEL TURİZM (TÜRSAB Belge No: 2484)",
-  "sr": "© 2026 M.Y.V. Alanya Travel. Sva prava zadržana. M.Y.V. Alanya Travel je zvanični i ovlašćeni online prodajni partner agencije AXIGEL TURİZM (TÜRSAB Belge No: 2484)"
+  "sr": "© 2026 M.Y.V. Alanya Travel. Sva prava zadržana. M.Y.V. Alanya Travel je zvanični i ovlašćeni online prodajni partner agencije AXIGEL TURİZM (TÜRSAB Belge No: 2484)",
+  "zh": "© 2026 M.Y.V. Alanya Travel。保留所有权利。M.Y.V. Alanya Travel 是 AXIGEL TURİZM（TÜRSAB 许可证号：2484）的官方授权在线销售合作伙伴"
  },
  "aboutLegal": {
   "en": "Based in Alanya, M.Y.V. Alanya Travel brings 6+ years of local experience in helping guests discover tours across Turkey. M.Y.V. Alanya Travel is an official and authorized online sales partner of AXIGEL TURİZM (TÜRSAB Belge No: 2484); travel-agency services and tour operations are provided by AXIGEL TURİZM.",
@@ -860,7 +1000,8 @@
   "de": "M.Y.V. Alanya Travel mit Sitz in Alanya verfügt über mehr als 6 Jahre lokale Erfahrung und hilft Gästen, Ausflüge in der Türkei zu entdecken. M.Y.V. Alanya Travel ist offizieller und autorisierter Online-Vertriebspartner von AXIGEL TURİZM (TÜRSAB-Lizenz Nr. 2484); Reisebüroleistungen und die Durchführung der Touren werden von AXIGEL TURİZM erbracht.",
   "tr": "Alanya merkezli M.Y.V. Alanya Travel, 6 yılı aşkın yerel deneyimiyle misafirlerin Türkiye'deki turları keşfetmesine yardımcı olur. M.Y.V. Alanya Travel, AXIGEL TURİZM'in (TÜRSAB Belge No: 2484) resmi ve yetkili online satış ortağıdır; seyahat acentası hizmetleri ve tur operasyonları AXIGEL TURİZM tarafından sağlanır.",
   "uk": "M.Y.V. Alanya Travel, що базується в Аланії, має понад 6 років місцевого досвіду та допомагає гостям обирати екскурсії Туреччиною. M.Y.V. Alanya Travel є офіційним та уповноваженим онлайн-партнером з продажу AXIGEL TURİZM (ліцензія TÜRSAB № 2484); туристичні агентські послуги та проведення турів забезпечує AXIGEL TURİZM.",
-  "sr": "M.Y.V. Alanya Travel, sa sedištem u Alanji, ima više od 6 godina lokalnog iskustva i pomaže gostima da pronađu izlete širom Turske. M.Y.V. Alanya Travel je zvanični i ovlašćeni online prodajni partner kompanije AXIGEL TURİZM (TÜRSAB licenca br. 2484); usluge turističke agencije i organizaciju tura pruža AXIGEL TURİZM."
+  "sr": "M.Y.V. Alanya Travel, sa sedištem u Alanji, ima više od 6 godina lokalnog iskustva i pomaže gostima da pronađu izlete širom Turske. M.Y.V. Alanya Travel je zvanični i ovlašćeni online prodajni partner kompanije AXIGEL TURİZM (TÜRSAB licenca br. 2484); usluge turističke agencije i organizaciju tura pruža AXIGEL TURİZM.",
+  "zh": "M.Y.V. Alanya Travel 位于阿拉尼亚，拥有 6 年以上本地经验，帮助游客探索土耳其各地的行程。M.Y.V. Alanya Travel 是 AXIGEL TURİZM（TÜRSAB 许可证号：2484）的官方授权在线销售合作伙伴；旅行社服务和行程运营由 AXIGEL TURİZM 提供。"
  },
  "contact": {
   "address": "Saray Mah. Macaroğlu Sok. Macaroğlu Apt. No 1/8, Alanya / Antalya, Turkey",

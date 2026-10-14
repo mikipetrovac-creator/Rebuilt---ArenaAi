@@ -929,6 +929,161 @@
     "btn": "Pitajte nas na WhatsApp-u",
     "href": "https://wa.me/905331429037?text=Zdravo!%20Zanimaju%20me%20vaši%20izleti%20iz%20Alanje."
    }
+  },
+  "zh": {
+   "meta": {
+    "title": "阿拉尼亚和锡德出发的行程 — 2026 价格 | M.Y.V. Alanya Travel",
+    "desc": "从阿拉尼亚和锡德出发的全部行程及 2026 年价格：卡帕多奇亚 €50 起，棉花堡 €40 起，代姆雷-米拉-凯考瓦 €55 起，绿色峡谷 €30 起。酒店接送，持证导游，到时付款。",
+    "ogTitle": "阿拉尼亚和锡德出发的行程 — 2026 价格 | M.Y.V. Alanya Travel",
+    "ogDesc": "从阿拉尼亚和锡德出发的全部行程及 2026 年价格：卡帕多奇亚 €50 起，棉花堡 €40 起，代姆雷-米拉-凯考瓦 €55 起，绿色峡谷 €30 起。酒店接送，持证导游，到时付款。"
+   },
+   "jsonld": [
+    "{\"@context\": \"https://schema.org\", \"@type\": \"FAQPage\", \"mainEntity\": [{\"@type\": \"Question\", \"name\": \"How much do excursions from Alanya cost in 2026?\", \"acceptedAnswer\": {\"@type\": \"Answer\", \"text\": \"Our day tours start at €30 per adult for Green Canyon, €40 for Pamukkale and €55 for Demre-Myra-Kekova. The 2-day Cappadocia tour starts at €50 per adult in the budget package. Children pay less and infants under 3 travel free.\"}}, {\"@type\": \"Question\", \"name\": \"Do you pick up from Side as well as Alanya?\", \"acceptedAnswer\": {\"@type\": \"Answer\", \"text\": \"Yes. All our tours include free hotel pickup from Alanya, Side and the resorts in between, including Konaklı, Avsallar, Okurcalar, Mahmutlar and Kestel.\"}}, {\"@type\": \"Question\", \"name\": \"Do I have to pay online in advance?\", \"acceptedAnswer\": {\"@type\": \"Answer\", \"text\": \"No. You send a booking request through the site, we confirm availability and your pickup time on WhatsApp, and you pay on the day of the tour.\"}}, {\"@type\": \"Question\", \"name\": \"Which excursion is best if I only have one day?\", \"acceptedAnswer\": {\"@type\": \"Answer\", \"text\": \"Pamukkale and Demre-Myra-Kekova are the two classic full-day trips. Green Canyon is a more relaxed day on the water. Cappadocia needs two days because of the distance.\"}}]}",
+    "{\"@context\": \"https://schema.org\", \"@type\": \"ItemList\", \"itemListElement\": [{\"@type\": \"ListItem\", \"position\": 1, \"name\": \"Cappadocia (2 days)\", \"url\": \"https://myvalanyatravel.com/\"}, {\"@type\": \"ListItem\", \"position\": 2, \"name\": \"Pamukkale\", \"url\": \"https://myvalanyatravel.com/pamukkale\"}, {\"@type\": \"ListItem\", \"position\": 3, \"name\": \"Demre · Myra · Kekova\", \"url\": \"https://myvalanyatravel.com/demre-myra-kekova\"}, {\"@type\": \"ListItem\", \"position\": 4, \"name\": \"Green Canyon\", \"url\": \"https://myvalanyatravel.com/green-canyon\"}]}"
+   ],
+   "h1": "阿拉尼亚和锡德出发的行程",
+   "sub": "全部行程，2026 年诚信价格。含酒店接送，持证导游，出团当天付款，无需在线预付。",
+   "upd": "更新：2026 年 7 月",
+   "switch": [
+    {
+     "href": "/excursions-from-alanya",
+     "label": "阿拉尼亚出发",
+     "on": true
+    },
+    {
+     "href": "/excursions-from-side",
+     "label": "锡德出发",
+     "on": false
+    }
+   ],
+   "th": [
+    "行程",
+    "时长",
+    "出团日",
+    "起价（成人）",
+    "高级",
+    ""
+   ],
+   "rows": [
+    {
+     "cells": [
+      "卡帕多奇亚（2 天）",
+      "2 天 1 晚",
+      "周一、周四、周六",
+      "€50 起",
+      "€100",
+      "查看行程 →"
+     ],
+     "href": "https://myvalanyatravel.com/",
+     "tour": "cappadocia"
+    },
+    {
+     "cells": [
+      "棉花堡",
+      "全天",
+      "每天",
+      "€40 起",
+      "€70",
+      "查看行程 →"
+     ],
+     "href": "https://myvalanyatravel.com/pamukkale",
+     "tour": "pamukkale"
+    },
+    {
+     "cells": [
+      "代姆雷 · 米拉 · 凯考瓦",
+      "全天",
+      "周三、周日",
+      "€55 起",
+      "€80",
+      "查看行程 →"
+     ],
+     "href": "https://myvalanyatravel.com/demre-myra-kekova",
+     "tour": "demre"
+    },
+    {
+     "cells": [
+      "绿色峡谷",
+      "轻松的一天",
+      "每天",
+      "€30 起",
+      "单一套餐",
+      "查看行程 →"
+     ],
+     "href": "https://myvalanyatravel.com/green-canyon",
+     "tour": "greencanyon"
+    },
+    {
+     "cells": [
+      "私人包船",
+      "4 小时",
+      "每天",
+      "€350 起",
+      "单一套餐",
+      "查看行程 →"
+     ],
+     "tour": "boat"
+    },
+    {
+     "cells": [
+      "海盗船",
+      "船上 4 小时",
+      "船上时间 10:00–14:00",
+      "€20 起",
+      "单一套餐",
+      "查看行程 →"
+     ],
+     "tour": "pirate"
+    }
+   ],
+   "faqTitle": "常见问题",
+   "faq": [
+    {
+     "q": "2026 年从阿拉尼亚出发的行程多少钱？",
+     "a": "一日游起价：绿色峡谷每位成人 €30，棉花堡 €40，代姆雷-米拉-凯考瓦 €55。卡帕多奇亚两日游经济套餐每位成人 €50 起。儿童价格更低，3 岁以下婴儿免费。"
+    },
+    {
+     "q": "除了阿拉尼亚，也从锡德接人吗？",
+     "a": "是的。所有行程都包含阿拉尼亚、锡德及两者之间度假区的免费酒店接送，包括 Konaklı、Avsallar、Okurcalar、Mahmutlar 和 Kestel。"
+    },
+    {
+     "q": "需要提前在线付款吗？",
+     "a": "不需要。您通过网站发送预订请求，我们通过微信、WhatsApp、Viber、Telegram 或 MAX 确认名额和接人时间，出团当天付款。"
+    },
+    {
+     "q": "如果我只有一天，选哪个行程最好？",
+     "a": "棉花堡和代姆雷-米拉-凯考瓦是两个经典的全天行程。绿色峡谷是更轻松的水上一日游。卡帕多奇亚因距离较远需要两天。"
+    }
+   ],
+   "sections": [
+    {
+     "h": "每个行程都包含什么",
+     "p": "",
+     "li": [
+      "阿拉尼亚、锡德及附近度假区的酒店接送",
+      "空调交通",
+      "持证专业导游（英语 / 俄语 / 土耳其语）",
+      "各行程页面列出的餐食",
+      "旅游保险"
+     ]
+    },
+    {
+     "h": "儿童与婴儿",
+     "p": "0–3 岁婴儿免费（坐在父母腿上，不单独占座）。儿童享受优惠价，具体价格见各行程页面。",
+     "li": []
+    },
+    {
+     "h": "付款方式",
+     "p": "无需在线预付。您发送预订请求，我们通过微信、WhatsApp、Viber、Telegram 或 MAX 确认酒店接人，出团当天付款。价格为每人欧元价。",
+     "li": []
+    }
+   ],
+   "cta": {
+    "h": "不知道选哪个行程？",
+    "p": "通过微信、WhatsApp、Viber、Telegram 或 MAX 给我们留言，我们会根据您的天数和同行人员帮您挑选。",
+    "btn": "通过 WhatsApp 咨询",
+    "href": "https://wa.me/905331429037?text=Hello!%20I'd%20like%20to%20ask%20about%20your%20excursions%20from%20Alanya."
+   }
   }
  },
  "side": {
@@ -1842,6 +1997,158 @@
     "p": "Pišite nam na WhatsApp, Viber, Telegram ili MAX — pomoći ćemo vam da izaberete na osnovu toga koliko dana imate i s kim putujete.",
     "btn": "Pitajte nas na WhatsApp",
     "href": "https://wa.me/905331429037?text=Zdravo%21%20Zanimaju%20me%20va%C5%A1i%20izleti%20iz%20Side."
+   }
+  },
+  "zh": {
+   "meta": {
+    "title": "锡德和马纳夫加特出发的行程 — 2026 价格 | M.Y.V. Alanya Travel",
+    "desc": "从锡德、马纳夫加特及附近度假区出发的行程，免费酒店接送。2026 年价格：绿色峡谷 €30，棉花堡 €40，代姆雷-米拉-凯考瓦 €55，卡帕多奇亚 €50。",
+    "ogTitle": "锡德和马纳夫加特出发的行程 — 2026 价格 | M.Y.V. Alanya Travel",
+    "ogDesc": "从锡德、马纳夫加特及附近度假区出发的行程，免费酒店接送。2026 年价格：绿色峡谷 €30，棉花堡 €40，代姆雷-米拉-凯考瓦 €55，卡帕多奇亚 €50。"
+   },
+   "jsonld": [
+    "{\"@context\": \"https://schema.org\", \"@type\": \"FAQPage\", \"mainEntity\": [{\"@type\": \"Question\", \"name\": \"How much do excursions from Side cost in 2026?\", \"acceptedAnswer\": {\"@type\": \"Answer\", \"text\": \"Green Canyon starts at €30 per adult, Pamukkale at €40 and Demre-Myra-Kekova at €55. The 2-day Cappadocia tour starts at €50 per adult in the budget package. Children pay a reduced rate and infants under 3 travel free.\"}}, {\"@type\": \"Question\", \"name\": \"Which resorts around Side do you pick up from?\", \"acceptedAnswer\": {\"@type\": \"Answer\", \"text\": \"Free hotel pickup covers Side centre, Manavgat, Çolaklı, Kızılağaç, Evrenseki, Kumköy, Titreyengöl, Sorgun and Gündoğdu. The exact time is confirmed on WhatsApp the evening before.\"}}, {\"@type\": \"Question\", \"name\": \"What is the best short excursion from Side?\", \"acceptedAnswer\": {\"@type\": \"Answer\", \"text\": \"Green Canyon. The Oymapınar reservoir sits just above Manavgat, roughly half an hour from Side, so pickup is late morning and you are back the same afternoon — the most relaxed day we run.\"}}, {\"@type\": \"Question\", \"name\": \"Can I join the Cappadocia tour starting from Side?\", \"acceptedAnswer\": {\"@type\": \"Answer\", \"text\": \"Yes. The 2-day Cappadocia tour picks up from Side hotels on the same schedule as Alanya — Mondays, Thursdays and Saturdays. The distance is exactly why it is a 2-day tour with an overnight stay.\"}}, {\"@type\": \"Question\", \"name\": \"Do I have to pay online in advance?\", \"acceptedAnswer\": {\"@type\": \"Answer\", \"text\": \"No. You send a booking request through the site, we confirm availability and your pickup time on WhatsApp, and you pay on the day of the tour.\"}}]}",
+    "{\"@context\": \"https://schema.org\", \"@type\": \"ItemList\", \"itemListElement\": [{\"@type\": \"ListItem\", \"position\": 1, \"name\": \"Green Canyon\", \"url\": \"https://myvalanyatravel.com/green-canyon\"}, {\"@type\": \"ListItem\", \"position\": 2, \"name\": \"Pamukkale\", \"url\": \"https://myvalanyatravel.com/pamukkale\"}, {\"@type\": \"ListItem\", \"position\": 3, \"name\": \"Demre · Myra · Kekova\", \"url\": \"https://myvalanyatravel.com/demre-myra-kekova\"}, {\"@type\": \"ListItem\", \"position\": 4, \"name\": \"Cappadocia (2 days)\", \"url\": \"https://myvalanyatravel.com/\"}]}"
+   ],
+   "h1": "锡德和马纳夫加特出发的行程",
+   "sub": "我们所有行程都提供锡德及周边度假区的免费接送。2026 年诚信价格，持证导游，出团当天付款，无需在线预付。",
+   "upd": "更新：2026 年 7 月",
+   "switch": [
+    {
+     "href": "/excursions-from-alanya",
+     "label": "阿拉尼亚出发",
+     "on": false
+    },
+    {
+     "href": "/excursions-from-side",
+     "label": "锡德出发",
+     "on": true
+    }
+   ],
+   "th": [
+    "行程",
+    "时长",
+    "出团日",
+    "锡德接人时间",
+    "起价（成人）",
+    "高级",
+    ""
+   ],
+   "rows": [
+    {
+     "cells": [
+      "绿色峡谷",
+      "轻松的一天",
+      "每天",
+      "约 08:30–09:00",
+      "€30 起",
+      "单一套餐",
+      "查看行程 →"
+     ],
+     "href": "https://myvalanyatravel.com/green-canyon",
+     "tour": "greencanyon"
+    },
+    {
+     "cells": [
+      "棉花堡",
+      "全天",
+      "每天",
+      "02:00–04:00",
+      "€40 起",
+      "€70",
+      "查看行程 →"
+     ],
+     "href": "https://myvalanyatravel.com/pamukkale",
+     "tour": "pamukkale"
+    },
+    {
+     "cells": [
+      "代姆雷 · 米拉 · 凯考瓦",
+      "全天",
+      "周三、周日",
+      "03:00–05:00",
+      "€55 起",
+      "€80",
+      "查看行程 →"
+     ],
+     "href": "https://myvalanyatravel.com/demre-myra-kekova",
+     "tour": "demre"
+    },
+    {
+     "cells": [
+      "卡帕多奇亚（2 天）",
+      "2 天 1 晚",
+      "周一、周四、周六",
+      "清晨",
+      "€50 起",
+      "€100",
+      "查看行程 →"
+     ],
+     "href": "https://myvalanyatravel.com/",
+     "tour": "cappadocia"
+    }
+   ],
+   "faqTitle": "常见问题",
+   "faq": [
+    {
+     "q": "2026 年从锡德出发的行程多少钱？",
+     "a": "绿色峡谷每位成人 €30 起，棉花堡 €40 起，代姆雷-米拉-凯考瓦 €55 起。卡帕多奇亚两日游经济套餐每位成人 €50 起。儿童享受优惠价，3 岁以下婴儿免费。"
+    },
+    {
+     "q": "锡德周边哪些度假区可以接人？",
+     "a": "免费酒店接送覆盖锡德市中心、马纳夫加特、Çolaklı、Kızılağaç、Evrenseki、Kumköy、Titreyengöl、Sorgun 和 Gündoğdu。具体时间会在前一天晚上通过微信、WhatsApp、Viber、Telegram 或 MAX 确认。"
+    },
+    {
+     "q": "从锡德出发，最好的短途行程是哪个？",
+     "a": "绿色峡谷。奥伊马珀纳尔水库就在马纳夫加特上方，距锡德约半小时车程，所以接人时间在上午较晚，当天下午就能回来，是我们最轻松的一天。"
+    },
+    {
+     "q": "可以从锡德出发参加卡帕多奇亚行程吗？",
+     "a": "可以。卡帕多奇亚两日游从锡德酒店接人，日期与阿拉尼亚相同：每周一、周四和周六。正因为距离较远，这才是含一晚住宿的两日游。"
+    },
+    {
+     "q": "需要提前在线付款吗？",
+     "a": "不需要。您通过网站发送预订请求，我们通过微信、WhatsApp、Viber、Telegram 或 MAX 确认名额和接人时间，出团当天付款。"
+    }
+   ],
+   "sections": [
+    {
+     "h": "为什么锡德是理想的出发地",
+     "p": "锡德位于阿拉尼亚以西约 60 公里，这改变了一日游的路程。从这里去棉花堡和代姆雷周边的吕基亚海岸明显更近，在车上的时间更少。绿色峡谷更近，奥伊马珀纳尔水库就在马纳夫加特上方，往内陆开一小段即到。卡帕多奇亚是例外：它远在东北方，所以我们安排两天并住一晚，而不是挤在一天里。",
+     "li": []
+    },
+    {
+     "h": "锡德周边的接人地点",
+     "p": "免费酒店接送覆盖锡德市中心、马纳夫加特、Çolaklı、Kızılağaç、Evrenseki、Kumköy、Titreyengöl、Sorgun 和 Gündoğdu。具体接人时间会在出团前一天晚上通过微信、WhatsApp、Viber、Telegram 或 MAX 确认。",
+     "li": []
+    },
+    {
+     "h": "每个行程都包含什么",
+     "p": "",
+     "li": [
+      "锡德和马纳夫加特周边免费酒店接送",
+      "空调交通",
+      "持证专业导游（英语 / 俄语 / 土耳其语）",
+      "各行程页面列出的餐食",
+      "旅游保险"
+     ]
+    },
+    {
+     "h": "儿童与婴儿",
+     "p": "3 岁以下婴儿坐在父母腿上免费，不单独占座。4–7 岁儿童所有行程均享优惠价，具体金额见各行程页面。",
+     "li": []
+    },
+    {
+     "h": "付款方式",
+     "p": "网站上不收取任何费用。发送请求后，我们通过微信、WhatsApp、Viber、Telegram 或 MAX 回复名额和接人时间，出团当天早上由司机或导游收款。按人计价，欧元。",
+     "li": []
+    }
+   ],
+   "cta": {
+    "h": "不知道选哪个行程？",
+    "p": "通过微信、WhatsApp、Viber、Telegram 或 MAX 给我们留言，我们会根据您的天数和同行人员帮您挑选。",
+    "btn": "通过 WhatsApp 咨询",
+    "href": "https://wa.me/905331429037?text=Hello%21%20I%27d%20like%20to%20ask%20about%20your%20excursions%20from%20Side."
    }
   }
  }
