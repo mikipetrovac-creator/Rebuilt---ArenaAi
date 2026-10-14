@@ -147,8 +147,10 @@
   $$('[data-open]').forEach(function (b) {
     b.addEventListener('click', function () { openModal(document.getElementById(b.dataset.open)); });
   });
-  $$('[data-close]').forEach(function (b) {
-    b.addEventListener('click', function () { closeModal(b.closest('.modal, .filmbox')); });
+  // delegated: also works for buttons added later (e.g. inside the "special highlight" window)
+  document.addEventListener('click', function (e) {
+    var b = e.target.closest('[data-close]');
+    if (b) closeModal(b.closest('.modal, .filmbox'));
   });
   $$('.modal, .filmbox').forEach(function (m) {
     m.addEventListener('click', function (e) { if (e.target === m) closeModal(m); });
