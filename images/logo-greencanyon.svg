@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" width="120" height="120" role="img" aria-label="M.Y.V. Alanya Travel - Green Canyon">
+<defs><clipPath id="c"><circle cx="60" cy="60" r="60"/></clipPath></defs>
+<g clip-path="url(#c)">
+<rect width="120" height="120" fill="#A8501F"/>
+<circle cx="60" cy="30" r="7" fill="#F0C040"/>
+<path d="M0 30 L22 34 L30 52 L40 60 L46 84 L0 84Z" fill="#FAF6F0"/>
+<path d="M120 26 L98 32 L90 50 L80 58 L74 84 L120 84Z" fill="#FAF6F0"/>
+<path d="M14 44 L20 56 M8 62 L16 72 M104 42 L98 54 M110 62 L102 72" stroke="#A8501F" stroke-width="2.4" stroke-linecap="round"/>
+<rect x="0" y="82" width="120" height="38" fill="#3FB59F"/>
+<path d="M50 80 H74 L70 87 H54Z" fill="#FAF6F0"/>
+<path d="M60 66 V80 M60 67 L69 79 H60" stroke="#FAF6F0" stroke-width="2.6" fill="#FAF6F0" stroke-linejoin="round"/>
+<path d="M10 98 Q24 93 38 98 Q52 103 66 98 M70 108 Q84 103 98 108" stroke="#FAF6F0" stroke-width="2.6" fill="none" stroke-linecap="round" opacity=".7"/>
+</g>
+<circle cx="60" cy="60" r="55.5" fill="none" stroke="#D4A017" stroke-width="9"/>
+</svg>

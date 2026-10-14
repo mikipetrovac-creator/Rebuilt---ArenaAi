@@ -129,9 +129,19 @@ IC_BACK = svg('<path d="M19 12H5M11 6l-6 6 6 6"/>', 16)
 IC_CHEV = svg('<path d="M6 9l6 6 6-6"/>', 12, sw='2.2', extra=' class="chev"')
 IC_BURGER = svg('<path d="M4 7h16M4 12h16M4 17h16"/>', 26)
 PLAY = lambda size=20, fill='#A8501F': '<svg width="%s" height="%s" viewBox="0 0 24 24" fill="%s" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg>' % (size, size, fill)
+CUR_TOUR = [None]  # tour being built (set in build_tour), for its own logo mark
+TOUR_LOGO = {'cappadocia': 'logo-mark.svg', 'pamukkale': 'logo-pamukkale.svg', 'demre': 'logo-demre.svg',
+             'greencanyon': 'logo-greencanyon.svg', 'boat': 'logo-boat.svg', 'pirate': 'logo-pirate.svg'}
+
+
 def brand_inner(kind):
-    # home page: new Alanya badge (castle + sail); all other pages keep the original fairy-chimney mark
-    src = '/images/logo-myv-badge.svg' if kind == 'home' else '/images/logo-mark.svg'
+    # home: Alanya badge; each tour: its own mark (Cappadocia keeps the fairy chimneys); hubs: original mark
+    if kind == 'home':
+        src = '/images/logo-myv-badge.svg'
+    elif kind == 'tour' and CUR_TOUR[0] in TOUR_LOGO:
+        src = '/images/' + TOUR_LOGO[CUR_TOUR[0]]
+    else:
+        src = '/images/logo-mark.svg'
     return '<img src="%s" alt="" width="34" height="34"><span>M.Y.V. <i>Alanya Travel</i></span>' % src
 
 
@@ -628,6 +638,7 @@ def itinerary_html(lang, tid):
 
 
 def build_tour(lang, tid):
+    CUR_TOUR[0] = tid
     u = lambda k: e(ui(lang, k))
     t, d = T[tid], t18(tid, lang)
     page = t['slug']

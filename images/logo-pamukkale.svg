@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" width="120" height="120" role="img" aria-label="M.Y.V. Alanya Travel - Pamukkale">
+<defs><clipPath id="c"><circle cx="60" cy="60" r="60"/></clipPath></defs>
+<g clip-path="url(#c)">
+<rect width="120" height="120" fill="#A8501F"/>
+<circle cx="90" cy="30" r="7" fill="#F0C040"/>
+<path d="M0 100 L30 46 Q34 40 40 40 H80 Q86 40 90 46 L120 100 V120 H0Z" fill="#FAF6F0"/>
+<path d="M36 50 Q47.0 63 58 50Z" fill="#7FD0DC"/><path d="M62 50 Q73.0 63 84 50Z" fill="#7FD0DC"/><path d="M24 67 Q35.0 80 46 67Z" fill="#7FD0DC"/><path d="M49 67 Q60.0 80 71 67Z" fill="#7FD0DC"/><path d="M74 67 Q85.0 80 96 67Z" fill="#7FD0DC"/><path d="M10 84 Q21.5 97 33 84Z" fill="#7FD0DC"/><path d="M36 84 Q47.0 97 58 84Z" fill="#7FD0DC"/><path d="M62 84 Q73.0 97 84 84Z" fill="#7FD0DC"/><path d="M87 84 Q98.5 97 110 84Z" fill="#7FD0DC"/>
+<path d="M0 104 H120" stroke="#7FD0DC" stroke-width="0"/>
+</g>
+<circle cx="60" cy="60" r="55.5" fill="none" stroke="#D4A017" stroke-width="9"/>
+</svg>
