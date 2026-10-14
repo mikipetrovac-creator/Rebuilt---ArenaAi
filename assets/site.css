@@ -557,3 +557,7 @@ form{margin-top:24px;display:flex;flex-direction:column;gap:16px}
 }
 /* top-right book button on desktop: a little bigger */
 @media (min-width:1061px){.nav .btn-gold{min-height:46px;padding:0 30px;font-size:15.5px;box-shadow:0 6px 18px rgba(212,160,23,.3)}}
+/* close (X) button: solid round button that stays visible over photos */
+.dialog .x{z-index:3;top:10px;right:10px;width:42px;height:42px;background:#fff;color:var(--text);box-shadow:0 4px 14px rgba(26,15,8,.22);border:1px solid var(--line)}
+.dialog .x:hover{background:var(--blush);color:var(--terra)}
+#stopModal .sm-img{margin-top:34px}
