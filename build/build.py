@@ -45,7 +45,7 @@ EXTRA = {
                 'ru': 'Полуостров Аланьи с крепостью и пляжем Клеопатры с высоты',
                 'uk': 'Півострів Аланьї з фортецею та пляжем Клеопатри з висоти',
                 'de': 'Die Halbinsel von Alanya mit der Burg und dem Kleopatra-Strand aus der Luft',
-                'tr': 'Alanya yarımadası, kalesi ve Kleopatra Plajı havadan', 'zh': '从空中俯瞰阿拉尼亚半岛、城堡和克娄巴特拉海滩'},
+                'tr': 'Alanya yarımadası, kalesi ve Kleopatra Plajı havadan', 'zh': '从空中俯瞰阿拉尼亚半岛、城堡和埃及艳后海滩'},
     'bannerAlt': {'en': 'Hot air balloons over Cappadocia at sunrise', 'sr': 'Baloni nad Kapadokijom u zoru',
                   'ru': 'Воздушные шары над Каппадокией на рассвете', 'uk': 'Повітряні кулі над Каппадокією на світанку',
                   'de': 'Heißluftballons über Kappadokien bei Sonnenaufgang', 'tr': 'Gün doğumunda Kapadokya üzerinde balonlar', 'zh': '日出时卡帕多奇亚上空的热气球'},
